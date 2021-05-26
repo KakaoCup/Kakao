@@ -2,7 +2,6 @@ ext.versions = [
         kotlin         : '1.4.32',
         dokka          : '0.9.18',
         android_gradle : '4.0.0',
-        bintray        : '1.8.5',
         maven          : '1.5',
         oss            : '4.5.4',
         appcompat      : '1.2.0',
@@ -22,7 +21,6 @@ ext.libraries = [
         kotlin_stdlib   : "org.jetbrains.kotlin:kotlin-stdlib:$versions.kotlin",
         dokka           : "org.jetbrains.dokka:dokka-android-gradle-plugin:$versions.dokka",
         android_gradle  : "com.android.tools.build:gradle:$versions.android_gradle",
-        bintray         : "com.jfrog.bintray.gradle:gradle-bintray-plugin:$versions.bintray",
         maven           : "com.github.dcendents:android-maven-gradle-plugin:$versions.maven",
         oss             : "org.jfrog.buildinfo:build-info-extractor-gradle:$versions.oss",
         appcompat       : "androidx.appcompat:appcompat:$versions.appcompat",
@@ -40,9 +38,6 @@ ext.libraries = [
         junit           : "junit:junit:$versions.junit",
         junit_ext       :  "androidx.test.ext:junit:$versions.junit_ext"
 ]
-
-
-def alias = System.getenv('BINTRAY_ALIAS') ?: ''
 
 def kakaoVersion = new File('buildsystem/version').text.trim() + alias
 
