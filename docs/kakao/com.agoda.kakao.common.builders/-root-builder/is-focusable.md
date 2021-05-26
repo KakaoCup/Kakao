@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.common.builders](../index.md) / [RootBuilder](index.md) / [isFocusable](./is-focusable.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.common.builders](../index.md) / [RootBuilder](index.md) / [isFocusable](./is-focusable.md)
 
 # isFocusable
 

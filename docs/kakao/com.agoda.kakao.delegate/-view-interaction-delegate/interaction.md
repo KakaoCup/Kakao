@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.delegate](../index.md) / [ViewInteractionDelegate](index.md) / [interaction](./interaction.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.delegate](../index.md) / [ViewInteractionDelegate](index.md) / [interaction](./interaction.md)
 
 # interaction
 

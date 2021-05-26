@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.pager2](../index.md) / [ViewPager2AdapterAssertions](index.md) / [hasSize](./has-size.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.pager2](../index.md) / [ViewPager2AdapterAssertions](index.md) / [hasSize](./has-size.md)
 
 # hasSize
 

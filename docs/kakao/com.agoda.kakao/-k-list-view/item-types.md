@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [KListView](index.md) / [itemTypes](./item-types.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao](../index.md) / [KListView](index.md) / [itemTypes](./item-types.md)
 
 # itemTypes
 

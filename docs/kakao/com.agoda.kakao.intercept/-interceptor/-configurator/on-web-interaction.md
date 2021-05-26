@@ -1,4 +1,4 @@
-[kakao](../../../index.md) / [com.agoda.kakao.intercept](../../index.md) / [Interceptor](../index.md) / [Configurator](index.md) / [onWebInteraction](./on-web-interaction.md)
+[kakao](../../../index.md) / [io.github.kakaocup.kakao.intercept](../../index.md) / [Interceptor](../index.md) / [Configurator](index.md) / [onWebInteraction](./on-web-interaction.md)
 
 # onWebInteraction
 

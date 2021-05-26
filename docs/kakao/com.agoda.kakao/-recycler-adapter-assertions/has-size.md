@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [RecyclerAdapterAssertions](index.md) / [hasSize](./has-size.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao](../index.md) / [RecyclerAdapterAssertions](index.md) / [hasSize](./has-size.md)
 
 # hasSize
 

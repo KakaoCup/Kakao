@@ -1,4 +1,4 @@
-[kakao](../../../index.md) / [com.agoda.kakao.web](../../index.md) / [WebElementBuilder](../index.md) / [KWebInteraction](./index.md)
+[kakao](../../../index.md) / [io.github.kakaocup.kakao.web](../../index.md) / [WebElementBuilder](../index.md) / [KWebInteraction](./index.md)
 
 # KWebInteraction
 
@@ -8,14 +8,14 @@
 
 | Name | Summary |
 |---|---|
-| [&lt;init&gt;](-init-.md) | `KWebInteraction(web: `[`WebInteractionDelegate`](../../../com.agoda.kakao.delegate/-web-interaction-delegate/index.md)`, ref: Atom<ElementReference>)` |
+| [&lt;init&gt;](-init-.md) | `KWebInteraction(web: `[`WebInteractionDelegate`](../../../io.github.kakaocup.kakao.delegate/-web-interaction-delegate/index.md)`, ref: Atom<ElementReference>)` |
 
 ### Properties
 
 | Name | Summary |
 |---|---|
 | [ref](ref.md) | `val ref: Atom<ElementReference>` |
-| [web](web.md) | `val web: `[`WebInteractionDelegate`](../../../com.agoda.kakao.delegate/-web-interaction-delegate/index.md) |
+| [web](web.md) | `val web: `[`WebInteractionDelegate`](../../../io.github.kakaocup.kakao.delegate/-web-interaction-delegate/index.md) |
 
 ### Inherited Functions
 

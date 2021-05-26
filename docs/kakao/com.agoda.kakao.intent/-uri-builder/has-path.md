@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.intent](../index.md) / [UriBuilder](index.md) / [hasPath](./has-path.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.intent](../index.md) / [UriBuilder](index.md) / [hasPath](./has-path.md)
 
 # hasPath
 

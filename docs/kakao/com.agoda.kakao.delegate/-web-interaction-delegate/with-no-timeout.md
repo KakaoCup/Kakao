@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.delegate](../index.md) / [WebInteractionDelegate](index.md) / [withNoTimeout](./with-no-timeout.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.delegate](../index.md) / [WebInteractionDelegate](index.md) / [withNoTimeout](./with-no-timeout.md)
 
 # withNoTimeout
 

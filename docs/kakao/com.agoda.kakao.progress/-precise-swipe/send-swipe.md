@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.progress](../index.md) / [PreciseSwipe](index.md) / [sendSwipe](./send-swipe.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.progress](../index.md) / [PreciseSwipe](index.md) / [sendSwipe](./send-swipe.md)
 
 # sendSwipe
 

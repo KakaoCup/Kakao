@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.intent](../index.md) / [ActivityResultBuilder](index.md) / [getResult](./get-result.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.intent](../index.md) / [ActivityResultBuilder](index.md) / [getResult](./get-result.md)
 
 # getResult
 

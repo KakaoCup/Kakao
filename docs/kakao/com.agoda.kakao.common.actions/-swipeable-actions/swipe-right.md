@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.common.actions](../index.md) / [SwipeableActions](index.md) / [swipeRight](./swipe-right.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.common.actions](../index.md) / [SwipeableActions](index.md) / [swipeRight](./swipe-right.md)
 
 # swipeRight
 

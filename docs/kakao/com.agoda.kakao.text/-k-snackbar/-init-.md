@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.text](../index.md) / [KSnackbar](index.md) / [&lt;init&gt;](./-init-.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.text](../index.md) / [KSnackbar](index.md) / [&lt;init&gt;](./-init-.md)
 
 # &lt;init&gt;
 

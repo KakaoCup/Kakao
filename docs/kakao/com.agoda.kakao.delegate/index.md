@@ -1,6 +1,6 @@
-[kakao](../index.md) / [com.agoda.kakao.delegate](./index.md)
+[kakao](../index.md) / [io.github.kakaocup.kakao.delegate](./index.md)
 
-## Package com.agoda.kakao.delegate
+## Package io.github.kakaocup.kakao.delegate
 
 ### Types
 

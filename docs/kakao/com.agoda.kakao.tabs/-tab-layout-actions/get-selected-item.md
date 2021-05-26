@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.tabs](../index.md) / [TabLayoutActions](index.md) / [getSelectedItem](./get-selected-item.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.tabs](../index.md) / [TabLayoutActions](index.md) / [getSelectedItem](./get-selected-item.md)
 
 # getSelectedItem
 

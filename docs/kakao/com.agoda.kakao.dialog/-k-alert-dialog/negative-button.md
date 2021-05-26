@@ -1,5 +1,5 @@
-[kakao](../../index.md) / [com.agoda.kakao.dialog](../index.md) / [KAlertDialog](index.md) / [negativeButton](./negative-button.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.dialog](../index.md) / [KAlertDialog](index.md) / [negativeButton](./negative-button.md)
 
 # negativeButton
 
-`val negativeButton: `[`KButton`](../../com.agoda.kakao.text/-k-button/index.md)
+`val negativeButton: `[`KButton`](../../io.github.kakaocup.kakao.text/-k-button/index.md)

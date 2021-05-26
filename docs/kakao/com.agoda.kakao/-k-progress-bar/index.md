@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [KProgressBar](./index.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao](../index.md) / [KProgressBar](./index.md)
 
 # KProgressBar
 

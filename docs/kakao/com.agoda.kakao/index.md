@@ -1,6 +1,6 @@
-[kakao](../index.md) / [com.agoda.kakao](./index.md)
+[kakao](../index.md) / [io.github.kakaocup.kakao](./index.md)
 
-## Package com.agoda.kakao
+## Package io.github.kakaocup.kakao
 
 ### Types
 

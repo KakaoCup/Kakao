@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.text](../index.md) / [TextViewAssertions](index.md) / [hasHint](./has-hint.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.text](../index.md) / [TextViewAssertions](index.md) / [hasHint](./has-hint.md)
 
 # hasHint
 

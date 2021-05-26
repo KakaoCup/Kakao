@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.intent](../index.md) / [BundleBuilder](index.md) / [hasValue](./has-value.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.intent](../index.md) / [BundleBuilder](index.md) / [hasValue](./has-value.md)
 
 # hasValue
 

@@ -1,5 +1,5 @@
-[kakao](../../index.md) / [com.agoda.kakao.dialog](../index.md) / [KAlertDialog](index.md) / [message](./message.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.dialog](../index.md) / [KAlertDialog](index.md) / [message](./message.md)
 
 # message
 
-`val message: `[`KTextView`](../../com.agoda.kakao.text/-k-text-view/index.md)
+`val message: `[`KTextView`](../../io.github.kakaocup.kakao.text/-k-text-view/index.md)

@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.intercept](../index.md) / [Interceptor](index.md) / [onAll](./on-all.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.intercept](../index.md) / [Interceptor](index.md) / [onAll](./on-all.md)
 
 # onAll
 

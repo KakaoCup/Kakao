@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.intent](../index.md) / [KIntent](index.md) / [intended](./intended.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.intent](../index.md) / [KIntent](index.md) / [intended](./intended.md)
 
 # intended
 

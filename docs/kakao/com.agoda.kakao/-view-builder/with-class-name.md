@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [ViewBuilder](index.md) / [withClassName](./with-class-name.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao](../index.md) / [ViewBuilder](index.md) / [withClassName](./with-class-name.md)
 
 # withClassName
 

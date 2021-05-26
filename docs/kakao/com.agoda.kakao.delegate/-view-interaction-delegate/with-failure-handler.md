@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.delegate](../index.md) / [ViewInteractionDelegate](index.md) / [withFailureHandler](./with-failure-handler.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.delegate](../index.md) / [ViewInteractionDelegate](index.md) / [withFailureHandler](./with-failure-handler.md)
 
 # withFailureHandler
 

@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.pager](../index.md) / [ViewPagerAssertions](index.md) / [isAtPage](./is-at-page.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.pager](../index.md) / [ViewPagerAssertions](index.md) / [isAtPage](./is-at-page.md)
 
 # isAtPage
 

@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [KEditText](./index.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao](../index.md) / [KEditText](./index.md)
 
 # KEditText
 

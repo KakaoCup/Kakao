@@ -1,5 +1,5 @@
-[kakao](../../index.md) / [com.agoda.kakao.picker.date](../index.md) / [KDatePickerDialog](index.md) / [okButton](./ok-button.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.picker.date](../index.md) / [KDatePickerDialog](index.md) / [okButton](./ok-button.md)
 
 # okButton
 
-`val okButton: `[`KButton`](../../com.agoda.kakao.text/-k-button/index.md)
+`val okButton: `[`KButton`](../../io.github.kakaocup.kakao.text/-k-button/index.md)

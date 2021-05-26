@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.pager2](../index.md) / [KViewPager2](index.md) / [perform](./perform.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.pager2](../index.md) / [KViewPager2](index.md) / [perform](./perform.md)
 
 # perform
 

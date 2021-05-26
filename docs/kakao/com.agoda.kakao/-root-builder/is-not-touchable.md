@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [RootBuilder](index.md) / [isNotTouchable](./is-not-touchable.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao](../index.md) / [RootBuilder](index.md) / [isNotTouchable](./is-not-touchable.md)
 
 # isNotTouchable
 

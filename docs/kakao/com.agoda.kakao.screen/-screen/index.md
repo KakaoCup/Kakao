@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.screen](../index.md) / [Screen](./index.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.screen](../index.md) / [Screen](./index.md)
 
 # Screen
 
@@ -27,14 +27,14 @@ such as tapBack() and closeSoftKeyboard()
 
 | Name | Summary |
 |---|---|
-| [rootView](root-view.md) | `open var rootView: `[`KBaseView`](../../com.agoda.kakao.common.views/-k-base-view/index.md)`<*>?`<br>The visibility of rootView will be checked when entering the screen |
-| [view](view.md) | `open val view: `[`ViewInteractionDelegate`](../../com.agoda.kakao.delegate/-view-interaction-delegate/index.md)<br>ViewInteractionDelegate on which all actions are performed (root view by default) |
+| [rootView](root-view.md) | `open var rootView: `[`KBaseView`](../../io.github.kakaocup.kakao.common.views/-k-base-view/index.md)`<*>?`<br>The visibility of rootView will be checked when entering the screen |
+| [view](view.md) | `open val view: `[`ViewInteractionDelegate`](../../io.github.kakaocup.kakao.delegate/-view-interaction-delegate/index.md)<br>ViewInteractionDelegate on which all actions are performed (root view by default) |
 
 ### Functions
 
 | Name | Summary |
 |---|---|
-| [intercept](intercept.md) | `fun intercept(configurator: `[`Interceptor.Configurator`](../../com.agoda.kakao.intercept/-interceptor/-configurator/index.md)`.() -> `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)<br>Sets the interceptors for the screen. Interceptors will be invoked on all interactions while the screen is active. |
+| [intercept](intercept.md) | `fun intercept(configurator: `[`Interceptor.Configurator`](../../io.github.kakaocup.kakao.intercept/-interceptor/-configurator/index.md)`.() -> `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)<br>Sets the interceptors for the screen. Interceptors will be invoked on all interactions while the screen is active. |
 | [invoke](invoke.md) | `operator fun invoke(function: `[`T`](index.md#T)`.() -> `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)<br>Operator that allows usage of DSL style |
 | [reset](reset.md) | `fun reset(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)<br>Removes the interceptors from the screen. |
 

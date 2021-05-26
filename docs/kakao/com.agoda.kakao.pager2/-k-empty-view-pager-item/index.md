@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.pager2](../index.md) / [KEmptyViewPagerItem](./index.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.pager2](../index.md) / [KEmptyViewPagerItem](./index.md)
 
 # KEmptyViewPagerItem
 
@@ -27,7 +27,7 @@ Use this if you want to perform/assert on the root view of view holder
 | Name | Summary |
 |---|---|
 | [root](../-k-view-pager-item/root.md) | `open var root: Matcher<Root!>!` |
-| [view](../-k-view-pager-item/view.md) | `open val view: `[`ViewInteractionDelegate`](../../com.agoda.kakao.delegate/-view-interaction-delegate/index.md) |
+| [view](../-k-view-pager-item/view.md) | `open val view: `[`ViewInteractionDelegate`](../../io.github.kakaocup.kakao.delegate/-view-interaction-delegate/index.md) |
 
 ### Inherited Functions
 

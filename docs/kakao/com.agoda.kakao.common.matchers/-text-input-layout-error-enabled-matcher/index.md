@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.common.matchers](../index.md) / [TextInputLayoutErrorEnabledMatcher](./index.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.common.matchers](../index.md) / [TextInputLayoutErrorEnabledMatcher](./index.md)
 
 # TextInputLayoutErrorEnabledMatcher
 

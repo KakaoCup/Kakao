@@ -1,8 +1,8 @@
-[kakao](../../index.md) / [com.agoda.kakao.screen](../index.md) / [Screen](index.md) / [rootView](./root-view.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.screen](../index.md) / [Screen](index.md) / [rootView](./root-view.md)
 
 # rootView
 
-`open var rootView: `[`KBaseView`](../../com.agoda.kakao.common.views/-k-base-view/index.md)`<*>?`
+`open var rootView: `[`KBaseView`](../../io.github.kakaocup.kakao.common.views/-k-base-view/index.md)`<*>?`
 
 The visibility of rootView will be checked when entering the screen
 

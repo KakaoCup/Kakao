@@ -1,8 +1,8 @@
-[kakao](../../index.md) / [com.agoda.kakao.screen](../index.md) / [Screen](index.md) / [intercept](./intercept.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.screen](../index.md) / [Screen](index.md) / [intercept](./intercept.md)
 
 # intercept
 
-`fun intercept(configurator: `[`Interceptor.Configurator`](../../com.agoda.kakao.intercept/-interceptor/-configurator/index.md)`.() -> `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+`fun intercept(configurator: `[`Interceptor.Configurator`](../../io.github.kakaocup.kakao.intercept/-interceptor/-configurator/index.md)`.() -> `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
 
 Sets the interceptors for the screen.
 Interceptors will be invoked on all interactions while the screen is active.
@@ -34,5 +34,5 @@ in LIFO order (using Deque).
 
 **See Also**
 
-[Interceptor](../../com.agoda.kakao.intercept/-interceptor/index.md)
+[Interceptor](../../io.github.kakaocup.kakao.intercept/-interceptor/index.md)
 

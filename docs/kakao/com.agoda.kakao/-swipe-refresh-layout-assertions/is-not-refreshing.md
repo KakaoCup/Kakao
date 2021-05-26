@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [SwipeRefreshLayoutAssertions](index.md) / [isNotRefreshing](./is-not-refreshing.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao](../index.md) / [SwipeRefreshLayoutAssertions](index.md) / [isNotRefreshing](./is-not-refreshing.md)
 
 # isNotRefreshing
 

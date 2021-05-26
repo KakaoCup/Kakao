@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [DrawerActions](index.md) / [open](./open.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao](../index.md) / [DrawerActions](index.md) / [open](./open.md)
 
 # open
 

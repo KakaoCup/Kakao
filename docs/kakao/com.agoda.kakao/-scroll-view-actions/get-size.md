@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [ScrollViewActions](index.md) / [getSize](./get-size.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao](../index.md) / [ScrollViewActions](index.md) / [getSize](./get-size.md)
 
 # getSize
 

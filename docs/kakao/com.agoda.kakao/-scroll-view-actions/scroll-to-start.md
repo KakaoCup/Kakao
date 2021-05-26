@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [ScrollViewActions](index.md) / [scrollToStart](./scroll-to-start.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao](../index.md) / [ScrollViewActions](index.md) / [scrollToStart](./scroll-to-start.md)
 
 # scrollToStart
 

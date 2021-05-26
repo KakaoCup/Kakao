@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.list](../index.md) / [KListView](index.md) / [emptyLastChild](./empty-last-child.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.list](../index.md) / [KListView](index.md) / [emptyLastChild](./empty-last-child.md)
 
 # emptyLastChild
 

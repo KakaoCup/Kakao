@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.intercept](../index.md) / [Interceptable](index.md) / [intercept](./intercept.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.intercept](../index.md) / [Interceptable](index.md) / [intercept](./intercept.md)
 
 # intercept
 

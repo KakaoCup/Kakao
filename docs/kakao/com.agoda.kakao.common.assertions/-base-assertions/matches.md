@@ -1,8 +1,8 @@
-[kakao](../../index.md) / [com.agoda.kakao.common.assertions](../index.md) / [BaseAssertions](index.md) / [matches](./matches.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.common.assertions](../index.md) / [BaseAssertions](index.md) / [matches](./matches.md)
 
 # matches
 
-`open fun matches(function: `[`ViewBuilder`](../../com.agoda.kakao.common.builders/-view-builder/index.md)`.() -> `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+`open fun matches(function: `[`ViewBuilder`](../../io.github.kakaocup.kakao.common.builders/-view-builder/index.md)`.() -> `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
 
 Check if the view matches given matcher
 
@@ -12,5 +12,5 @@ Check if the view matches given matcher
 
 **See Also**
 
-[ViewBuilder](../../com.agoda.kakao.common.builders/-view-builder/index.md)
+[ViewBuilder](../../io.github.kakaocup.kakao.common.builders/-view-builder/index.md)
 

@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.common.builders](../index.md) / [ViewBuilder](index.md) / [withDescendant](./with-descendant.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.common.builders](../index.md) / [ViewBuilder](index.md) / [withDescendant](./with-descendant.md)
 
 # withDescendant
 

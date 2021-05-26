@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.progress](../index.md) / [ProgressBarAssertions](index.md) / [hasProgress](./has-progress.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.progress](../index.md) / [ProgressBarAssertions](index.md) / [hasProgress](./has-progress.md)
 
 # hasProgress
 

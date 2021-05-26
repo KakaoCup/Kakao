@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.spinner](../index.md) / [SpinnerAdapterActions](index.md) / [open](./open.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.spinner](../index.md) / [SpinnerAdapterActions](index.md) / [open](./open.md)
 
 # open
 

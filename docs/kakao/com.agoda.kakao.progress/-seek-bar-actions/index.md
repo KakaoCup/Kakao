@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.progress](../index.md) / [SeekBarActions](./index.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.progress](../index.md) / [SeekBarActions](./index.md)
 
 # SeekBarActions
 
@@ -22,4 +22,4 @@ Provides action for SeekBar
 
 | Name | Summary |
 |---|---|
-| [KSeekBar](../-k-seek-bar/index.md) | `class KSeekBar : `[`KBaseView`](../../com.agoda.kakao.common.views/-k-base-view/index.md)`<`[`KSeekBar`](../-k-seek-bar/index.md)`>, `[`SeekBarActions`](./index.md)`, `[`ProgressBarAssertions`](../-progress-bar-assertions/index.md)<br>View with SeekBarActions and ProgressBarAssertions |
+| [KSeekBar](../-k-seek-bar/index.md) | `class KSeekBar : `[`KBaseView`](../../io.github.kakaocup.kakao.common.views/-k-base-view/index.md)`<`[`KSeekBar`](../-k-seek-bar/index.md)`>, `[`SeekBarActions`](./index.md)`, `[`ProgressBarAssertions`](../-progress-bar-assertions/index.md)<br>View with SeekBarActions and ProgressBarAssertions |

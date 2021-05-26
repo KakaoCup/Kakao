@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [ViewBuilder](index.md) / [isDisplayed](./is-displayed.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao](../index.md) / [ViewBuilder](index.md) / [isDisplayed](./is-displayed.md)
 
 # isDisplayed
 

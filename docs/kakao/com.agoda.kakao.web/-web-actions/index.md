@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.web](../index.md) / [WebActions](./index.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.web](../index.md) / [WebActions](./index.md)
 
 # WebActions
 
@@ -15,7 +15,7 @@ Provides action for interacting with WebViews
 | Name | Summary |
 |---|---|
 | [ref](ref.md) | `abstract val ref: Atom<ElementReference>` |
-| [web](web.md) | `abstract val web: `[`WebInteractionDelegate`](../../com.agoda.kakao.delegate/-web-interaction-delegate/index.md) |
+| [web](web.md) | `abstract val web: `[`WebInteractionDelegate`](../../io.github.kakaocup.kakao.delegate/-web-interaction-delegate/index.md) |
 
 ### Functions
 

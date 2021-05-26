@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.toolbar](../index.md) / [ToolbarViewAssertions](index.md) / [hasSubtitle](./has-subtitle.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.toolbar](../index.md) / [ToolbarViewAssertions](index.md) / [hasSubtitle](./has-subtitle.md)
 
 # hasSubtitle
 

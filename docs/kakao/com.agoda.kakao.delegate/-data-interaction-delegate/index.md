@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.delegate](../index.md) / [DataInteractionDelegate](./index.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.delegate](../index.md) / [DataInteractionDelegate](./index.md)
 
 # DataInteractionDelegate
 
@@ -11,7 +11,7 @@ Wraps all available public calls and intercepts [check](check.md) and [perform](
 
 [Delegate](../-delegate/index.md)
 
-[Interceptor](../../com.agoda.kakao.intercept/-interceptor/index.md)
+[Interceptor](../../io.github.kakaocup.kakao.intercept/-interceptor/index.md)
 
 ### Constructors
 
@@ -24,7 +24,7 @@ Wraps all available public calls and intercepts [check](check.md) and [perform](
 | Name | Summary |
 |---|---|
 | [interaction](interaction.md) | `var interaction: DataInteraction` |
-| [interceptor](interceptor.md) | `var interceptor: `[`Interceptor`](../../com.agoda.kakao.intercept/-interceptor/index.md)`<DataInteraction, ViewAssertion, ViewAction>?` |
+| [interceptor](interceptor.md) | `var interceptor: `[`Interceptor`](../../io.github.kakaocup.kakao.intercept/-interceptor/index.md)`<DataInteraction, ViewAssertion, ViewAction>?` |
 
 ### Functions
 
@@ -34,10 +34,10 @@ Wraps all available public calls and intercepts [check](check.md) and [perform](
 | [check](check.md) | `fun check(viewAssert: ViewAssertion): `[`ViewInteractionDelegate`](../-view-interaction-delegate/index.md) |
 | [inAdapterView](in-adapter-view.md) | `fun inAdapterView(adapterMatcher: Matcher<`[`View`](https://developer.android.com/reference/android/view/View.html)`>): `[`DataInteractionDelegate`](./index.md) |
 | [inRoot](in-root.md) | `fun inRoot(rootMatcher: Matcher<Root>): `[`DataInteractionDelegate`](./index.md) |
-| [kakaoInterceptor](kakao-interceptor.md) | `fun kakaoInterceptor(): `[`Interceptor`](../../com.agoda.kakao.intercept/-interceptor/index.md)`<DataInteraction, ViewAssertion, ViewAction>?` |
+| [kakaoInterceptor](kakao-interceptor.md) | `fun kakaoInterceptor(): `[`Interceptor`](../../io.github.kakaocup.kakao.intercept/-interceptor/index.md)`<DataInteraction, ViewAssertion, ViewAction>?` |
 | [onChildView](on-child-view.md) | `fun onChildView(childMatcher: Matcher<`[`View`](https://developer.android.com/reference/android/view/View.html)`>): `[`DataInteractionDelegate`](./index.md) |
 | [perform](perform.md) | `fun perform(vararg viewActions: ViewAction): `[`ViewInteractionDelegate`](../-view-interaction-delegate/index.md) |
-| [screenInterceptors](screen-interceptors.md) | `fun screenInterceptors(): `[`Deque`](https://developer.android.com/reference/java/util/Deque.html)`<`[`Interceptor`](../../com.agoda.kakao.intercept/-interceptor/index.md)`<DataInteraction, ViewAssertion, ViewAction>>` |
+| [screenInterceptors](screen-interceptors.md) | `fun screenInterceptors(): `[`Deque`](https://developer.android.com/reference/java/util/Deque.html)`<`[`Interceptor`](../../io.github.kakaocup.kakao.intercept/-interceptor/index.md)`<DataInteraction, ViewAssertion, ViewAction>>` |
 | [usingAdapterViewProtocol](using-adapter-view-protocol.md) | `fun usingAdapterViewProtocol(adapterViewProtocol: AdapterViewProtocol): `[`DataInteractionDelegate`](./index.md) |
 
 ### Inherited Functions

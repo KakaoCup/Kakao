@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.recycler](../index.md) / [KRecyclerView](index.md) / [emptyFirstChild](./empty-first-child.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.recycler](../index.md) / [KRecyclerView](index.md) / [emptyFirstChild](./empty-first-child.md)
 
 # emptyFirstChild
 

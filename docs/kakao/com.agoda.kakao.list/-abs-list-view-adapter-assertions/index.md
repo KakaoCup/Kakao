@@ -1,8 +1,8 @@
-[kakao](../../index.md) / [com.agoda.kakao.list](../index.md) / [AbsListViewAdapterAssertions](./index.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.list](../index.md) / [AbsListViewAdapterAssertions](./index.md)
 
 # AbsListViewAdapterAssertions
 
-`interface AbsListViewAdapterAssertions : `[`AdapterAssertions`](../../com.agoda.kakao.common.assertions/-adapter-assertions/index.md)
+`interface AbsListViewAdapterAssertions : `[`AdapterAssertions`](../../io.github.kakaocup.kakao.common.assertions/-adapter-assertions/index.md)
 
 Provides assertions for AbsListView adapter
 
@@ -10,7 +10,7 @@ Provides assertions for AbsListView adapter
 
 | Name | Summary |
 |---|---|
-| [view](../../com.agoda.kakao.common.assertions/-adapter-assertions/view.md) | `abstract val view: `[`ViewInteractionDelegate`](../../com.agoda.kakao.delegate/-view-interaction-delegate/index.md) |
+| [view](../../io.github.kakaocup.kakao.common.assertions/-adapter-assertions/view.md) | `abstract val view: `[`ViewInteractionDelegate`](../../io.github.kakaocup.kakao.delegate/-view-interaction-delegate/index.md) |
 
 ### Functions
 
@@ -22,4 +22,4 @@ Provides assertions for AbsListView adapter
 
 | Name | Summary |
 |---|---|
-| [KAbsListView](../-k-abs-list-view/index.md) | `class KAbsListView : `[`ScrollViewActions`](../../com.agoda.kakao.scroll/-scroll-view-actions/index.md)`, `[`AbsListViewAdapterActions`](../-abs-list-view-adapter-actions/index.md)`, `[`BaseAssertions`](../../com.agoda.kakao.common.assertions/-base-assertions/index.md)`, `[`AbsListViewAdapterAssertions`](./index.md)<br>View with ScrollViewActions and BaseAssertions. Gives access to it's children |
+| [KAbsListView](../-k-abs-list-view/index.md) | `class KAbsListView : `[`ScrollViewActions`](../../io.github.kakaocup.kakao.scroll/-scroll-view-actions/index.md)`, `[`AbsListViewAdapterActions`](../-abs-list-view-adapter-actions/index.md)`, `[`BaseAssertions`](../../io.github.kakaocup.kakao.common.assertions/-base-assertions/index.md)`, `[`AbsListViewAdapterAssertions`](./index.md)<br>View with ScrollViewActions and BaseAssertions. Gives access to it's children |

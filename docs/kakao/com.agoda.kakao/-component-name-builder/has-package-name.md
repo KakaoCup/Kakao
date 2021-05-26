@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [ComponentNameBuilder](index.md) / [hasPackageName](./has-package-name.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao](../index.md) / [ComponentNameBuilder](index.md) / [hasPackageName](./has-package-name.md)
 
 # hasPackageName
 

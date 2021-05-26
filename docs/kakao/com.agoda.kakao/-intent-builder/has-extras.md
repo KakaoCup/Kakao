@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [IntentBuilder](index.md) / [hasExtras](./has-extras.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao](../index.md) / [IntentBuilder](index.md) / [hasExtras](./has-extras.md)
 
 # hasExtras
 

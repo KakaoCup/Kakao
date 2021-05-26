@@ -1,5 +1,5 @@
-[kakao](../../index.md) / [com.agoda.kakao.spinner](../index.md) / [SpinnerAdapterActions](index.md) / [view](./view.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.spinner](../index.md) / [SpinnerAdapterActions](index.md) / [view](./view.md)
 
 # view
 
-`abstract val view: `[`ViewInteractionDelegate`](../../com.agoda.kakao.delegate/-view-interaction-delegate/index.md)
+`abstract val view: `[`ViewInteractionDelegate`](../../io.github.kakaocup.kakao.delegate/-view-interaction-delegate/index.md)

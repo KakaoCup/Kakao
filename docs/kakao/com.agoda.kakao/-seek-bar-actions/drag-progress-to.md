@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [SeekBarActions](index.md) / [dragProgressTo](./drag-progress-to.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao](../index.md) / [SeekBarActions](index.md) / [dragProgressTo](./drag-progress-to.md)
 
 # dragProgressTo
 

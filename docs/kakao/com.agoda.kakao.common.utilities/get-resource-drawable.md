@@ -1,4 +1,4 @@
-[kakao](../index.md) / [com.agoda.kakao.common.utilities](index.md) / [getResourceDrawable](./get-resource-drawable.md)
+[kakao](../index.md) / [io.github.kakaocup.kakao.common.utilities](index.md) / [getResourceDrawable](./get-resource-drawable.md)
 
 # getResourceDrawable
 

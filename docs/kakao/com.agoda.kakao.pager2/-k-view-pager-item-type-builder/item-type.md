@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.pager2](../index.md) / [KViewPagerItemTypeBuilder](index.md) / [itemType](./item-type.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.pager2](../index.md) / [KViewPagerItemTypeBuilder](index.md) / [itemType](./item-type.md)
 
 # itemType
 

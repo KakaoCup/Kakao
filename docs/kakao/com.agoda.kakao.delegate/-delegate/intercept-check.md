@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.delegate](../index.md) / [Delegate](index.md) / [interceptCheck](./intercept-check.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.delegate](../index.md) / [Delegate](index.md) / [interceptCheck](./intercept-check.md)
 
 # interceptCheck
 

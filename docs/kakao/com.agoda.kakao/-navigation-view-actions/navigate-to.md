@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [NavigationViewActions](index.md) / [navigateTo](./navigate-to.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao](../index.md) / [NavigationViewActions](index.md) / [navigateTo](./navigate-to.md)
 
 # navigateTo
 

@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.delegate](../index.md) / [WebInteractionDelegate](index.md) / [withContextualElement](./with-contextual-element.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.delegate](../index.md) / [WebInteractionDelegate](index.md) / [withContextualElement](./with-contextual-element.md)
 
 # withContextualElement
 

@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [BundleBuilder](index.md) / [hasEntry](./has-entry.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao](../index.md) / [BundleBuilder](index.md) / [hasEntry](./has-entry.md)
 
 # hasEntry
 

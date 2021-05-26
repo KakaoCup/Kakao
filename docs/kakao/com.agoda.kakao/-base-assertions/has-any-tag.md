@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [BaseAssertions](index.md) / [hasAnyTag](./has-any-tag.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao](../index.md) / [BaseAssertions](index.md) / [hasAnyTag](./has-any-tag.md)
 
 # hasAnyTag
 

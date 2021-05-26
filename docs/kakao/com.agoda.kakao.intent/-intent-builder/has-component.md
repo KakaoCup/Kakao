@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.intent](../index.md) / [IntentBuilder](index.md) / [hasComponent](./has-component.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.intent](../index.md) / [IntentBuilder](index.md) / [hasComponent](./has-component.md)
 
 # hasComponent
 

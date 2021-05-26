@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [ListViewViewAdapterSizeMatcher](index.md) / [matchesSafely](./matches-safely.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao](../index.md) / [ListViewViewAdapterSizeMatcher](index.md) / [matchesSafely](./matches-safely.md)
 
 # matchesSafely
 

@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.list](../index.md) / [KAdapterItem](index.md) / [invoke](./invoke.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.list](../index.md) / [KAdapterItem](index.md) / [invoke](./invoke.md)
 
 # invoke
 

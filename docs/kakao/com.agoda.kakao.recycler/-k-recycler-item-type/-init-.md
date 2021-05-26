@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.recycler](../index.md) / [KRecyclerItemType](index.md) / [&lt;init&gt;](./-init-.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.recycler](../index.md) / [KRecyclerItemType](index.md) / [&lt;init&gt;](./-init-.md)
 
 # &lt;init&gt;
 

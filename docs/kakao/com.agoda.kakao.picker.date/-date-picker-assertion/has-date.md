@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.picker.date](../index.md) / [DatePickerAssertion](index.md) / [hasDate](./has-date.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.picker.date](../index.md) / [DatePickerAssertion](index.md) / [hasDate](./has-date.md)
 
 # hasDate
 

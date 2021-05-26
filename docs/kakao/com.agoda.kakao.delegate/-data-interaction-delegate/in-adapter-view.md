@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.delegate](../index.md) / [DataInteractionDelegate](index.md) / [inAdapterView](./in-adapter-view.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.delegate](../index.md) / [DataInteractionDelegate](index.md) / [inAdapterView](./in-adapter-view.md)
 
 # inAdapterView
 

@@ -1,9 +1,9 @@
-[kakao](../index.md) / [com.agoda.kakao.dialog](./index.md)
+[kakao](../index.md) / [io.github.kakaocup.kakao.dialog](./index.md)
 
-## Package com.agoda.kakao.dialog
+## Package io.github.kakaocup.kakao.dialog
 
 ### Types
 
 | Name | Summary |
 |---|---|
-| [KAlertDialog](-k-alert-dialog/index.md) | `class KAlertDialog : `[`KBaseView`](../com.agoda.kakao.common.views/-k-base-view/index.md)`<`[`KAlertDialog`](-k-alert-dialog/index.md)`>`<br>View for interact with default alert dialog |
+| [KAlertDialog](-k-alert-dialog/index.md) | `class KAlertDialog : `[`KBaseView`](../io.github.kakaocup.kakao.common.views/-k-base-view/index.md)`<`[`KAlertDialog`](-k-alert-dialog/index.md)`>`<br>View for interact with default alert dialog |

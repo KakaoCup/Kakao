@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.check](../index.md) / [CheckableAssertions](index.md) / [isNotChecked](./is-not-checked.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.check](../index.md) / [CheckableAssertions](index.md) / [isNotChecked](./is-not-checked.md)
 
 # isNotChecked
 

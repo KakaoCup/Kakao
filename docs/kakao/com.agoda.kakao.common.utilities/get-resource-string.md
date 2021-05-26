@@ -1,4 +1,4 @@
-[kakao](../index.md) / [com.agoda.kakao.common.utilities](index.md) / [getResourceString](./get-resource-string.md)
+[kakao](../index.md) / [io.github.kakaocup.kakao.common.utilities](index.md) / [getResourceString](./get-resource-string.md)
 
 # getResourceString
 

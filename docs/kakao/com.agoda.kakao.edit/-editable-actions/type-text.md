@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.edit](../index.md) / [EditableActions](index.md) / [typeText](./type-text.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.edit](../index.md) / [EditableActions](index.md) / [typeText](./type-text.md)
 
 # typeText
 

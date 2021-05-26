@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [WebActions](index.md) / [scroll](./scroll.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao](../index.md) / [WebActions](index.md) / [scroll](./scroll.md)
 
 # scroll
 

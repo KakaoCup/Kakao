@@ -1,4 +1,4 @@
-[kakao](../../../index.md) / [com.agoda.kakao.switch](../../index.md) / [SwitchableActions](../index.md) / [Direction](./index.md)
+[kakao](../../../index.md) / [io.github.kakaocup.kakao.switch](../../index.md) / [SwitchableActions](../index.md) / [Direction](./index.md)
 
 # Direction
 

@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.chipgroup](../index.md) / [ChipGroupActions](index.md) / [selectChipAt](./select-chip-at.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.chipgroup](../index.md) / [ChipGroupActions](index.md) / [selectChipAt](./select-chip-at.md)
 
 # selectChipAt
 

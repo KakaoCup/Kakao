@@ -1,6 +1,6 @@
-[kakao](../index.md) / [com.agoda.kakao.common.assertions](./index.md)
+[kakao](../index.md) / [io.github.kakaocup.kakao.common.assertions](./index.md)
 
-## Package com.agoda.kakao.common.assertions
+## Package io.github.kakaocup.kakao.common.assertions
 
 ### Types
 

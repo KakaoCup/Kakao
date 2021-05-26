@@ -1,4 +1,4 @@
-[kakao](../../../index.md) / [com.agoda.kakao](../../index.md) / [WebElementBuilder](../index.md) / [KWebInteraction](index.md) / [web](./web.md)
+[kakao](../../../index.md) / [io.github.kakaocup.kakao](../../index.md) / [WebElementBuilder](../index.md) / [KWebInteraction](index.md) / [web](./web.md)
 
 # web
 

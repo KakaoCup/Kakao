@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.web](../index.md) / [KWebView](./index.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.web](../index.md) / [KWebView](./index.md)
 
 # KWebView
 
@@ -14,7 +14,7 @@ Class for interacting with WebViews
 
 | Name | Summary |
 |---|---|
-| [&lt;init&gt;](-init-.md) | `KWebView(matcher: (`[`ViewBuilder`](../../com.agoda.kakao.common.builders/-view-builder/index.md)`.() -> `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)`)? = null)`<br>Class for interacting with WebViews |
+| [&lt;init&gt;](-init-.md) | `KWebView(matcher: (`[`ViewBuilder`](../../io.github.kakaocup.kakao.common.builders/-view-builder/index.md)`.() -> `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)`)? = null)`<br>Class for interacting with WebViews |
 
 ### Functions
 

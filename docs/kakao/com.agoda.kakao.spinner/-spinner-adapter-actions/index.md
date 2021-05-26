@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.spinner](../index.md) / [SpinnerAdapterActions](./index.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.spinner](../index.md) / [SpinnerAdapterActions](./index.md)
 
 # SpinnerAdapterActions
 
@@ -8,8 +8,8 @@
 
 | Name | Summary |
 |---|---|
-| [popupView](popup-view.md) | `abstract var popupView: `[`ViewInteractionDelegate`](../../com.agoda.kakao.delegate/-view-interaction-delegate/index.md)`?` |
-| [view](view.md) | `abstract val view: `[`ViewInteractionDelegate`](../../com.agoda.kakao.delegate/-view-interaction-delegate/index.md) |
+| [popupView](popup-view.md) | `abstract var popupView: `[`ViewInteractionDelegate`](../../io.github.kakaocup.kakao.delegate/-view-interaction-delegate/index.md)`?` |
+| [view](view.md) | `abstract val view: `[`ViewInteractionDelegate`](../../io.github.kakaocup.kakao.delegate/-view-interaction-delegate/index.md) |
 
 ### Functions
 
@@ -23,4 +23,4 @@
 
 | Name | Summary |
 |---|---|
-| [KSpinner](../-k-spinner/index.md) | `class KSpinner : `[`SpinnerAdapterActions`](./index.md)`, `[`SpinnerAdapterAssertions`](../-spinner-adapter-assertions/index.md)`, `[`BaseAssertions`](../../com.agoda.kakao.common.assertions/-base-assertions/index.md) |
+| [KSpinner](../-k-spinner/index.md) | `class KSpinner : `[`SpinnerAdapterActions`](./index.md)`, `[`SpinnerAdapterAssertions`](../-spinner-adapter-assertions/index.md)`, `[`BaseAssertions`](../../io.github.kakaocup.kakao.common.assertions/-base-assertions/index.md) |

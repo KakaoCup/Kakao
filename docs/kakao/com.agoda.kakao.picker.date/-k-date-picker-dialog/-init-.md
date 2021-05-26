@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.picker.date](../index.md) / [KDatePickerDialog](index.md) / [&lt;init&gt;](./-init-.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.picker.date](../index.md) / [KDatePickerDialog](index.md) / [&lt;init&gt;](./-init-.md)
 
 # &lt;init&gt;
 

@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.common.assertions](../index.md) / [BaseAssertions](index.md) / [isNotFocusable](./is-not-focusable.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.common.assertions](../index.md) / [BaseAssertions](index.md) / [isNotFocusable](./is-not-focusable.md)
 
 # isNotFocusable
 

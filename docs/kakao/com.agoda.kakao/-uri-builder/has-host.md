@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [UriBuilder](index.md) / [hasHost](./has-host.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao](../index.md) / [UriBuilder](index.md) / [hasHost](./has-host.md)
 
 # hasHost
 

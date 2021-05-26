@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [BundleBuilder](./index.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao](../index.md) / [BundleBuilder](./index.md)
 
 # BundleBuilder
 

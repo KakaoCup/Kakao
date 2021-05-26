@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.list](../index.md) / [KAbsListView](index.md) / [childWith](./child-with.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.list](../index.md) / [KAbsListView](index.md) / [childWith](./child-with.md)
 
 # childWith
 

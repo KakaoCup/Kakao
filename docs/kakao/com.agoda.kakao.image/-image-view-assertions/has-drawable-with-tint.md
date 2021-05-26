@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.image](../index.md) / [ImageViewAssertions](index.md) / [hasDrawableWithTint](./has-drawable-with-tint.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.image](../index.md) / [ImageViewAssertions](index.md) / [hasDrawableWithTint](./has-drawable-with-tint.md)
 
 # hasDrawableWithTint
 

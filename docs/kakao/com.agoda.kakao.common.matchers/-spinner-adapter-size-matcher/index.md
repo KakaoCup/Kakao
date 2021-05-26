@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.common.matchers](../index.md) / [SpinnerAdapterSizeMatcher](./index.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.common.matchers](../index.md) / [SpinnerAdapterSizeMatcher](./index.md)
 
 # SpinnerAdapterSizeMatcher
 

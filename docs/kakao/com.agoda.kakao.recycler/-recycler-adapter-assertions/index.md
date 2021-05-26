@@ -1,8 +1,8 @@
-[kakao](../../index.md) / [com.agoda.kakao.recycler](../index.md) / [RecyclerAdapterAssertions](./index.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.recycler](../index.md) / [RecyclerAdapterAssertions](./index.md)
 
 # RecyclerAdapterAssertions
 
-`interface RecyclerAdapterAssertions : `[`AdapterAssertions`](../../com.agoda.kakao.common.assertions/-adapter-assertions/index.md)
+`interface RecyclerAdapterAssertions : `[`AdapterAssertions`](../../io.github.kakaocup.kakao.common.assertions/-adapter-assertions/index.md)
 
 Provides assertions for recyclerView adapter
 
@@ -10,7 +10,7 @@ Provides assertions for recyclerView adapter
 
 | Name | Summary |
 |---|---|
-| [view](../../com.agoda.kakao.common.assertions/-adapter-assertions/view.md) | `abstract val view: `[`ViewInteractionDelegate`](../../com.agoda.kakao.delegate/-view-interaction-delegate/index.md) |
+| [view](../../io.github.kakaocup.kakao.common.assertions/-adapter-assertions/view.md) | `abstract val view: `[`ViewInteractionDelegate`](../../io.github.kakaocup.kakao.delegate/-view-interaction-delegate/index.md) |
 
 ### Functions
 
@@ -22,4 +22,4 @@ Provides assertions for recyclerView adapter
 
 | Name | Summary |
 |---|---|
-| [KRecyclerView](../-k-recycler-view/index.md) | `class KRecyclerView : `[`RecyclerActions`](../-recycler-actions/index.md)`, `[`BaseAssertions`](../../com.agoda.kakao.common.assertions/-base-assertions/index.md)`, `[`RecyclerAdapterAssertions`](./index.md)<br>View with RecyclerActions, BaseAssertions and RecyclerAdapterAssertions. Gives access to it's children |
+| [KRecyclerView](../-k-recycler-view/index.md) | `class KRecyclerView : `[`RecyclerActions`](../-recycler-actions/index.md)`, `[`BaseAssertions`](../../io.github.kakaocup.kakao.common.assertions/-base-assertions/index.md)`, `[`RecyclerAdapterAssertions`](./index.md)<br>View with RecyclerActions, BaseAssertions and RecyclerAdapterAssertions. Gives access to it's children |

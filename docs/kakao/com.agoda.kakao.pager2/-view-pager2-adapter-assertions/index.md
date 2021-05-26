@@ -1,8 +1,8 @@
-[kakao](../../index.md) / [com.agoda.kakao.pager2](../index.md) / [ViewPager2AdapterAssertions](./index.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.pager2](../index.md) / [ViewPager2AdapterAssertions](./index.md)
 
 # ViewPager2AdapterAssertions
 
-`interface ViewPager2AdapterAssertions : `[`AdapterAssertions`](../../com.agoda.kakao.common.assertions/-adapter-assertions/index.md)
+`interface ViewPager2AdapterAssertions : `[`AdapterAssertions`](../../io.github.kakaocup.kakao.common.assertions/-adapter-assertions/index.md)
 
 Provides assertions for viewpager2 adapter
 
@@ -10,7 +10,7 @@ Provides assertions for viewpager2 adapter
 
 | Name | Summary |
 |---|---|
-| [view](../../com.agoda.kakao.common.assertions/-adapter-assertions/view.md) | `abstract val view: `[`ViewInteractionDelegate`](../../com.agoda.kakao.delegate/-view-interaction-delegate/index.md) |
+| [view](../../io.github.kakaocup.kakao.common.assertions/-adapter-assertions/view.md) | `abstract val view: `[`ViewInteractionDelegate`](../../io.github.kakaocup.kakao.delegate/-view-interaction-delegate/index.md) |
 
 ### Functions
 
@@ -22,4 +22,4 @@ Provides assertions for viewpager2 adapter
 
 | Name | Summary |
 |---|---|
-| [KViewPager2](../-k-view-pager2/index.md) | `class KViewPager2 : `[`ViewPager2Actions`](../-view-pager2-actions/index.md)`, `[`ViewPager2AdapterAssertions`](./index.md)`, `[`SwipeableActions`](../../com.agoda.kakao.common.actions/-swipeable-actions/index.md)`, `[`BaseAssertions`](../../com.agoda.kakao.common.assertions/-base-assertions/index.md)<br>View with SwipeableActions and ViewPager2Assertions |
+| [KViewPager2](../-k-view-pager2/index.md) | `class KViewPager2 : `[`ViewPager2Actions`](../-view-pager2-actions/index.md)`, `[`ViewPager2AdapterAssertions`](./index.md)`, `[`SwipeableActions`](../../io.github.kakaocup.kakao.common.actions/-swipeable-actions/index.md)`, `[`BaseAssertions`](../../io.github.kakaocup.kakao.common.assertions/-base-assertions/index.md)<br>View with SwipeableActions and ViewPager2Assertions |

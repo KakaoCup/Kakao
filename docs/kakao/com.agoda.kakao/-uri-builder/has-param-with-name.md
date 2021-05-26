@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [UriBuilder](index.md) / [hasParamWithName](./has-param-with-name.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao](../index.md) / [UriBuilder](index.md) / [hasParamWithName](./has-param-with-name.md)
 
 # hasParamWithName
 

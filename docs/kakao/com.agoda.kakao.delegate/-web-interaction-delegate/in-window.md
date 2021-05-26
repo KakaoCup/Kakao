@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.delegate](../index.md) / [WebInteractionDelegate](index.md) / [inWindow](./in-window.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.delegate](../index.md) / [WebInteractionDelegate](index.md) / [inWindow](./in-window.md)
 
 # inWindow
 

@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [Kakao](index.md) / [invoke](./invoke.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao](../index.md) / [Kakao](index.md) / [invoke](./invoke.md)
 
 # invoke
 

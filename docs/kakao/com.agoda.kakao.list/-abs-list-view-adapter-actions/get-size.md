@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.list](../index.md) / [AbsListViewAdapterActions](index.md) / [getSize](./get-size.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.list](../index.md) / [AbsListViewAdapterActions](index.md) / [getSize](./get-size.md)
 
 # getSize
 

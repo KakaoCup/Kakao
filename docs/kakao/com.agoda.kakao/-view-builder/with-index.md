@@ -1,10 +1,10 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [ViewBuilder](index.md) / [withIndex](./with-index.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao](../index.md) / [ViewBuilder](index.md) / [withIndex](./with-index.md)
 
 # withIndex
 
 `fun withIndex(index: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, function: `[`ViewBuilder`](index.md)`.() -> `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
 
-Matches only view at given [index](with-index.md#com.agoda.kakao.ViewBuilder$withIndex(kotlin.Int, kotlin.Function1((com.agoda.kakao.ViewBuilder, kotlin.Unit)))/index), if there are multiple views that matches
+Matches only view at given [index](with-index.md#io.github.kakaocup.kakao.ViewBuilder$withIndex(kotlin.Int, kotlin.Function1((io.github.kakaocup.kakao.ViewBuilder, kotlin.Unit)))/index), if there are multiple views that matches
 
 IMPORTANT: this matcher is single-use only, since it does not reset it's
 index counter due to specific espresso's matching process. Thus only one action

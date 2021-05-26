@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [CheckableActions](index.md) / [setChecked](./set-checked.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao](../index.md) / [CheckableActions](index.md) / [setChecked](./set-checked.md)
 
 # setChecked
 

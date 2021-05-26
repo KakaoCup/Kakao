@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.intent](../index.md) / [ComponentNameBuilder](index.md) / [hasClassName](./has-class-name.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.intent](../index.md) / [ComponentNameBuilder](index.md) / [hasClassName](./has-class-name.md)
 
 # hasClassName
 

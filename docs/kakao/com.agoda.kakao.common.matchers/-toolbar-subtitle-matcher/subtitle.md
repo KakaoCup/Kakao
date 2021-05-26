@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.common.matchers](../index.md) / [ToolbarSubtitleMatcher](index.md) / [subtitle](./subtitle.md)
+[kakao](../../index.md) / [io.github.kakaocup.kakao.common.matchers](../index.md) / [ToolbarSubtitleMatcher](index.md) / [subtitle](./subtitle.md)
 
 # subtitle
 
