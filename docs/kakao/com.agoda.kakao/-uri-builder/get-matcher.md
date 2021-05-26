@@ -1,5 +1,0 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao](../index.md) / [UriBuilder](index.md) / [getMatcher](./get-matcher.md)
-
-# getMatcher
-
-`fun getMatcher(): Matcher<`[`Uri`](https://developer.android.com/reference/android/net/Uri.html)`>`

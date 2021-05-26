@@ -67,7 +67,9 @@
 | [io.github.kakaocup.kakao.recycler.KRecyclerItemTypeBuilder](../io.github.kakaocup.kakao.recycler/-k-recycler-item-type-builder/index.md) | Class that maps types to providing functions |
 | [io.github.kakaocup.kakao.recycler.KRecyclerView](../io.github.kakaocup.kakao.recycler/-k-recycler-view/index.md) | View with RecyclerActions, BaseAssertions and RecyclerAdapterAssertions. Gives access to it's children |
 | [io.github.kakaocup.kakao.scroll.KScrollView](../io.github.kakaocup.kakao.scroll/-k-scroll-view/index.md) | View with ScrollViewActions and BaseAssertions |
+| [io.github.kakaocup.kakao.searchview.KSearchView](../io.github.kakaocup.kakao.searchview/-k-search-view/index.md) |  |
 | [io.github.kakaocup.kakao.progress.KSeekBar](../io.github.kakaocup.kakao.progress/-k-seek-bar/index.md) | View with SeekBarActions and ProgressBarAssertions |
+| [io.github.kakaocup.kakao.slider.KSlider](../io.github.kakaocup.kakao.slider/-k-slider/index.md) |  |
 | [io.github.kakaocup.kakao.text.KSnackbar](../io.github.kakaocup.kakao.text/-k-snackbar/index.md) | View with internal TextView and a Button |
 | [io.github.kakaocup.kakao.spinner.KSpinner](../io.github.kakaocup.kakao.spinner/-k-spinner/index.md) |  |
 | [io.github.kakaocup.kakao.spinner.KSpinnerItem](../io.github.kakaocup.kakao.spinner/-k-spinner-item/index.md) | KTextView implementation of KAdapterItem |
@@ -108,8 +110,13 @@
 | [io.github.kakaocup.kakao.screen.ScreenActions](../io.github.kakaocup.kakao.screen/-screen-actions/index.md) | Interface with common actions for all screens |
 | [io.github.kakaocup.kakao.common.actions.ScrollableActions](../io.github.kakaocup.kakao.common.actions/-scrollable-actions/index.md) | Provides scrolling actions for view |
 | [io.github.kakaocup.kakao.scroll.ScrollViewActions](../io.github.kakaocup.kakao.scroll/-scroll-view-actions/index.md) | Provides ScrollableActions implementation for ScrollView |
+| [io.github.kakaocup.kakao.searchview.SearchViewActions](../io.github.kakaocup.kakao.searchview/-search-view-actions/index.md) |  |
+| [io.github.kakaocup.kakao.searchview.SearchViewAssertions](../io.github.kakaocup.kakao.searchview/-search-view-assertions/index.md) |  |
 | [io.github.kakaocup.kakao.progress.SeekBarActions](../io.github.kakaocup.kakao.progress/-seek-bar-actions/index.md) | Provides action for SeekBar |
 | [io.github.kakaocup.kakao.common.matchers.SelectedChipMatcher](../io.github.kakaocup.kakao.common.matchers/-selected-chip-matcher/index.md) | Matches checked chip |
+| [io.github.kakaocup.kakao.slider.SliderActions](../io.github.kakaocup.kakao.slider/-slider-actions/index.md) | Provides action for Slider |
+| [io.github.kakaocup.kakao.slider.SliderAssertions](../io.github.kakaocup.kakao.slider/-slider-assertions/index.md) |  |
+| [io.github.kakaocup.kakao.common.matchers.SliderMatcher](../io.github.kakaocup.kakao.common.matchers/-slider-matcher/index.md) | Matcher of value slider of given matcher |
 | [io.github.kakaocup.kakao.spinner.SpinnerAdapterActions](../io.github.kakaocup.kakao.spinner/-spinner-adapter-actions/index.md) |  |
 | [io.github.kakaocup.kakao.spinner.SpinnerAdapterAssertions](../io.github.kakaocup.kakao.spinner/-spinner-adapter-assertions/index.md) | Provides assertions for Spinner adapter |
 | [io.github.kakaocup.kakao.common.matchers.SpinnerAdapterSizeMatcher](../io.github.kakaocup.kakao.common.matchers/-spinner-adapter-size-matcher/index.md) | Matches Spinner with count of children |

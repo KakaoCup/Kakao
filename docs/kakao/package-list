@@ -30,6 +30,8 @@ io.github.kakaocup.kakao.rating
 io.github.kakaocup.kakao.recycler
 io.github.kakaocup.kakao.screen
 io.github.kakaocup.kakao.scroll
+io.github.kakaocup.kakao.searchview
+io.github.kakaocup.kakao.slider
 io.github.kakaocup.kakao.spinner
 io.github.kakaocup.kakao.swiperefresh
 io.github.kakaocup.kakao.switch
