@@ -2,4 +2,4 @@
 
 # noActivity
 
-`@Contract("_->this") fun noActivity(): `[`ViewInteractionDelegate`](index.md)
+`@Contract("_->this") fun noActivity(): <ERROR CLASS>`

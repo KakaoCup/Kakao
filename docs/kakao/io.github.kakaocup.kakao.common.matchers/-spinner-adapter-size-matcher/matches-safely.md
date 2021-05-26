@@ -2,4 +2,4 @@
 
 # matchesSafely
 
-`protected fun matchesSafely(view: `[`Spinner`](https://developer.android.com/reference/android/widget/Spinner.html)`): `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
+`protected fun matchesSafely(view: `[`Spinner`](https://developer.android.com/reference/android/widget/Spinner.html)`): <ERROR CLASS>`

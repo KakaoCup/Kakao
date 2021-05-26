@@ -16,7 +16,7 @@ Provides actions for time picker
 
 | Name | Summary |
 |---|---|
-| [setTime](set-time.md) | `open fun setTime(hour: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, minutes: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`): `[`ViewInteractionDelegate`](../../io.github.kakaocup.kakao.delegate/-view-interaction-delegate/index.md)<br>Set time to picker dialog |
+| [setTime](set-time.md) | `open fun setTime(hour: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, minutes: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`): <ERROR CLASS>`<br>Set time to picker dialog |
 
 ### Inherited Functions
 

@@ -2,5 +2,5 @@
 
 # inWindow
 
-`fun inWindow(window: WindowReference): `[`WebInteractionDelegate`](index.md)
-`fun inWindow(windowPicker: Atom<WindowReference>): `[`WebInteractionDelegate`](index.md)
+`fun inWindow(window: WindowReference): <ERROR CLASS>`
+`fun inWindow(windowPicker: Atom<WindowReference>): <ERROR CLASS>`

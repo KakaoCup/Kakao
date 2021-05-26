@@ -2,4 +2,4 @@
 
 # onChildView
 
-`@Contract("_->this") fun onChildView(childMatcher: Matcher<`[`View`](https://developer.android.com/reference/android/view/View.html)`>): `[`DataInteractionDelegate`](index.md)
+`@Contract("_->this") fun onChildView(childMatcher: Matcher<`[`View`](https://developer.android.com/reference/android/view/View.html)`>): <ERROR CLASS>`

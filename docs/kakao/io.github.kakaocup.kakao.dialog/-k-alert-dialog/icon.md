@@ -2,4 +2,4 @@
 
 # icon
 
-`val icon: `[`KImageView`](../../io.github.kakaocup.kakao.image/-k-image-view/index.md)
+`val icon: <ERROR CLASS>`

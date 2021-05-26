@@ -1,5 +1,5 @@
 # Kakao
-[![Kotlin version badge](https://img.shields.io/badge/kotlin-1.4.10-blue.svg)](http://kotlinlang.org/)
+[![Kotlin version badge](https://img.shields.io/badge/kotlin-1.5.0-blue.svg)](http://kotlinlang.org/)
 
 Nice and simple DSL for Espresso in Kotlin
 

@@ -2,4 +2,4 @@
 
 # check
 
-`fun check(assertion: WebAssertion<*>): `[`WebInteractionDelegate`](index.md)
+`fun check(assertion: WebAssertion<*>): <ERROR CLASS>`

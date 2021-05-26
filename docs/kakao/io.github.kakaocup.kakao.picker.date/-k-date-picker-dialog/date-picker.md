@@ -2,4 +2,4 @@
 
 # datePicker
 
-`val datePicker: `[`KDatePicker`](../-k-date-picker/index.md)
+`val datePicker: <ERROR CLASS>`

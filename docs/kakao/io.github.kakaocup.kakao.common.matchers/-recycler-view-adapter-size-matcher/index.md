@@ -21,4 +21,4 @@ Matches RecyclerView with count of children
 | Name | Summary |
 |---|---|
 | [describeTo](describe-to.md) | `fun describeTo(description: Description): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) |
-| [matchesSafely](matches-safely.md) | `fun matchesSafely(view: RecyclerView): `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) |
+| [matchesSafely](matches-safely.md) | `fun matchesSafely(view: RecyclerView): <ERROR CLASS>` |

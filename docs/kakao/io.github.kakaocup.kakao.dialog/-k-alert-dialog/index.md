@@ -20,12 +20,12 @@ View for interact with default alert dialog
 
 | Name | Summary |
 |---|---|
-| [icon](icon.md) | `val icon: `[`KImageView`](../../io.github.kakaocup.kakao.image/-k-image-view/index.md) |
-| [message](message.md) | `val message: `[`KTextView`](../../io.github.kakaocup.kakao.text/-k-text-view/index.md) |
-| [negativeButton](negative-button.md) | `val negativeButton: `[`KButton`](../../io.github.kakaocup.kakao.text/-k-button/index.md) |
-| [neutralButton](neutral-button.md) | `val neutralButton: `[`KButton`](../../io.github.kakaocup.kakao.text/-k-button/index.md) |
-| [positiveButton](positive-button.md) | `val positiveButton: `[`KButton`](../../io.github.kakaocup.kakao.text/-k-button/index.md) |
-| [title](title.md) | `val title: `[`KTextView`](../../io.github.kakaocup.kakao.text/-k-text-view/index.md) |
+| [icon](icon.md) | `val icon: <ERROR CLASS>` |
+| [message](message.md) | `val message: <ERROR CLASS>` |
+| [negativeButton](negative-button.md) | `val negativeButton: <ERROR CLASS>` |
+| [neutralButton](neutral-button.md) | `val neutralButton: <ERROR CLASS>` |
+| [positiveButton](positive-button.md) | `val positiveButton: <ERROR CLASS>` |
+| [title](title.md) | `val title: <ERROR CLASS>` |
 
 ### Inherited Properties
 

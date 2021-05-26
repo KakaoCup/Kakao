@@ -2,4 +2,4 @@
 
 # cancelButton
 
-`val cancelButton: `[`KButton`](../../io.github.kakaocup.kakao.text/-k-button/index.md)
+`val cancelButton: <ERROR CLASS>`

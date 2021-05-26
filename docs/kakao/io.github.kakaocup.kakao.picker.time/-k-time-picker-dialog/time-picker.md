@@ -2,4 +2,4 @@
 
 # timePicker
 
-`val timePicker: `[`KTimePicker`](../-k-time-picker/index.md)
+`val timePicker: <ERROR CLASS>`

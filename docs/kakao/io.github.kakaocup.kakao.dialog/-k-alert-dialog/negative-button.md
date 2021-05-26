@@ -2,4 +2,4 @@
 
 # negativeButton
 
-`val negativeButton: `[`KButton`](../../io.github.kakaocup.kakao.text/-k-button/index.md)
+`val negativeButton: <ERROR CLASS>`

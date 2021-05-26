@@ -2,4 +2,4 @@
 
 # title
 
-`val title: `[`KTextView`](../../io.github.kakaocup.kakao.text/-k-text-view/index.md)
+`val title: <ERROR CLASS>`

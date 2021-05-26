@@ -2,4 +2,4 @@
 
 # message
 
-`val message: `[`KTextView`](../../io.github.kakaocup.kakao.text/-k-text-view/index.md)
+`val message: <ERROR CLASS>`

@@ -30,15 +30,15 @@ Wraps all available public calls and intercepts [check](check.md) and [perform](
 
 | Name | Summary |
 |---|---|
-| [atPosition](at-position.md) | `fun atPosition(atPosition: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`): `[`DataInteractionDelegate`](./index.md) |
+| [atPosition](at-position.md) | `fun atPosition(atPosition: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`): <ERROR CLASS>` |
 | [check](check.md) | `fun check(viewAssert: ViewAssertion): `[`ViewInteractionDelegate`](../-view-interaction-delegate/index.md) |
-| [inAdapterView](in-adapter-view.md) | `fun inAdapterView(adapterMatcher: Matcher<`[`View`](https://developer.android.com/reference/android/view/View.html)`>): `[`DataInteractionDelegate`](./index.md) |
-| [inRoot](in-root.md) | `fun inRoot(rootMatcher: Matcher<Root>): `[`DataInteractionDelegate`](./index.md) |
+| [inAdapterView](in-adapter-view.md) | `fun inAdapterView(adapterMatcher: Matcher<`[`View`](https://developer.android.com/reference/android/view/View.html)`>): <ERROR CLASS>` |
+| [inRoot](in-root.md) | `fun inRoot(rootMatcher: Matcher<Root>): <ERROR CLASS>` |
 | [kakaoInterceptor](kakao-interceptor.md) | `fun kakaoInterceptor(): `[`Interceptor`](../../io.github.kakaocup.kakao.intercept/-interceptor/index.md)`<DataInteraction, ViewAssertion, ViewAction>?` |
-| [onChildView](on-child-view.md) | `fun onChildView(childMatcher: Matcher<`[`View`](https://developer.android.com/reference/android/view/View.html)`>): `[`DataInteractionDelegate`](./index.md) |
+| [onChildView](on-child-view.md) | `fun onChildView(childMatcher: Matcher<`[`View`](https://developer.android.com/reference/android/view/View.html)`>): <ERROR CLASS>` |
 | [perform](perform.md) | `fun perform(vararg viewActions: ViewAction): `[`ViewInteractionDelegate`](../-view-interaction-delegate/index.md) |
 | [screenInterceptors](screen-interceptors.md) | `fun screenInterceptors(): `[`Deque`](https://developer.android.com/reference/java/util/Deque.html)`<`[`Interceptor`](../../io.github.kakaocup.kakao.intercept/-interceptor/index.md)`<DataInteraction, ViewAssertion, ViewAction>>` |
-| [usingAdapterViewProtocol](using-adapter-view-protocol.md) | `fun usingAdapterViewProtocol(adapterViewProtocol: AdapterViewProtocol): `[`DataInteractionDelegate`](./index.md) |
+| [usingAdapterViewProtocol](using-adapter-view-protocol.md) | `fun usingAdapterViewProtocol(adapterViewProtocol: AdapterViewProtocol): <ERROR CLASS>` |
 
 ### Inherited Functions
 

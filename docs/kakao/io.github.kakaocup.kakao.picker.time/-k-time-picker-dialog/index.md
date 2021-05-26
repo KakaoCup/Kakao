@@ -20,9 +20,9 @@ View for interact with default date picker dialog
 
 | Name | Summary |
 |---|---|
-| [cancelButton](cancel-button.md) | `val cancelButton: `[`KButton`](../../io.github.kakaocup.kakao.text/-k-button/index.md) |
-| [okButton](ok-button.md) | `val okButton: `[`KButton`](../../io.github.kakaocup.kakao.text/-k-button/index.md) |
-| [timePicker](time-picker.md) | `val timePicker: `[`KTimePicker`](../-k-time-picker/index.md) |
+| [cancelButton](cancel-button.md) | `val cancelButton: <ERROR CLASS>` |
+| [okButton](ok-button.md) | `val okButton: <ERROR CLASS>` |
+| [timePicker](time-picker.md) | `val timePicker: <ERROR CLASS>` |
 
 ### Inherited Properties
 

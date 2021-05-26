@@ -30,18 +30,18 @@ Wraps all available public calls and intercepts [check](check.md) and [perform](
 
 | Name | Summary |
 |---|---|
-| [check](check.md) | `fun check(assertion: WebAssertion<*>): `[`WebInteractionDelegate`](./index.md) |
-| [forceJavascriptEnabled](force-javascript-enabled.md) | `fun forceJavascriptEnabled(): `[`WebInteractionDelegate`](./index.md) |
+| [check](check.md) | `fun check(assertion: WebAssertion<*>): <ERROR CLASS>` |
+| [forceJavascriptEnabled](force-javascript-enabled.md) | `fun forceJavascriptEnabled(): <ERROR CLASS>` |
 | [get](get.md) | `fun get(): `[`Any`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |
-| [inWindow](in-window.md) | `fun inWindow(window: WindowReference): `[`WebInteractionDelegate`](./index.md)<br>`fun inWindow(windowPicker: Atom<WindowReference>): `[`WebInteractionDelegate`](./index.md) |
+| [inWindow](in-window.md) | `fun inWindow(window: WindowReference): <ERROR CLASS>`<br>`fun inWindow(windowPicker: Atom<WindowReference>): <ERROR CLASS>` |
 | [kakaoInterceptor](kakao-interceptor.md) | `fun kakaoInterceptor(): `[`Interceptor`](../../io.github.kakaocup.kakao.intercept/-interceptor/index.md)`<WebInteraction<*>, WebAssertion<*>, Atom<*>>?` |
-| [perform](perform.md) | `fun perform(atom: Atom<*>): `[`WebInteractionDelegate`](./index.md) |
-| [reset](reset.md) | `fun reset(): `[`WebInteractionDelegate`](./index.md) |
+| [perform](perform.md) | `fun perform(atom: Atom<*>): <ERROR CLASS>` |
+| [reset](reset.md) | `fun reset(): <ERROR CLASS>` |
 | [screenInterceptors](screen-interceptors.md) | `fun screenInterceptors(): `[`Deque`](https://developer.android.com/reference/java/util/Deque.html)`<`[`Interceptor`](../../io.github.kakaocup.kakao.intercept/-interceptor/index.md)`<WebInteraction<*>, WebAssertion<*>, Atom<*>>>` |
-| [withContextualElement](with-contextual-element.md) | `fun withContextualElement(elementPicker: Atom<ElementReference>): `[`WebInteractionDelegate`](./index.md) |
-| [withElement](with-element.md) | `fun withElement(element: ElementReference): `[`WebInteractionDelegate`](./index.md)<br>`fun withElement(elementPicker: Atom<ElementReference>): `[`WebInteractionDelegate`](./index.md) |
-| [withNoTimeout](with-no-timeout.md) | `fun withNoTimeout(): `[`WebInteractionDelegate`](./index.md) |
-| [withTimeout](with-timeout.md) | `fun withTimeout(amount: `[`Long`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, unit: `[`TimeUnit`](https://developer.android.com/reference/java/util/concurrent/TimeUnit.html)`): `[`WebInteractionDelegate`](./index.md) |
+| [withContextualElement](with-contextual-element.md) | `fun withContextualElement(elementPicker: Atom<ElementReference>): <ERROR CLASS>` |
+| [withElement](with-element.md) | `fun withElement(element: ElementReference): <ERROR CLASS>`<br>`fun withElement(elementPicker: Atom<ElementReference>): <ERROR CLASS>` |
+| [withNoTimeout](with-no-timeout.md) | `fun withNoTimeout(): <ERROR CLASS>` |
+| [withTimeout](with-timeout.md) | `fun withTimeout(amount: `[`Long`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, unit: `[`TimeUnit`](https://developer.android.com/reference/java/util/concurrent/TimeUnit.html)`): <ERROR CLASS>` |
 
 ### Inherited Functions
 

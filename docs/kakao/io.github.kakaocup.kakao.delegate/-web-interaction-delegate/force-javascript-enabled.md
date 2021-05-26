@@ -2,4 +2,4 @@
 
 # forceJavascriptEnabled
 
-`fun forceJavascriptEnabled(): `[`WebInteractionDelegate`](index.md)
+`fun forceJavascriptEnabled(): <ERROR CLASS>`

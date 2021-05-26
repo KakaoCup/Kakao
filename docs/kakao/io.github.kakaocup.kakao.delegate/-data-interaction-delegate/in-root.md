@@ -2,4 +2,4 @@
 
 # inRoot
 
-`@Contract("_->this") fun inRoot(rootMatcher: Matcher<Root>): `[`DataInteractionDelegate`](index.md)
+`@Contract("_->this") fun inRoot(rootMatcher: Matcher<Root>): <ERROR CLASS>`
