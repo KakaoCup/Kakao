@@ -69,10 +69,6 @@ install {
     }
 }
 
-apply plugin: 'com.jfrog.bintray'
-
-version = kakao.version
-
 task sourcesJar(type: Jar) {
     classifier = 'sources'
     from android.sourceSets.main.java.srcDirs
@@ -86,51 +82,4 @@ task javadocJar(type: Jar, dependsOn: dokka) {
 artifacts {
     archives javadocJar
     archives sourcesJar
-}
-
-bintray {
-    user = System.getenv('BINTRAY_USER')
-    key = System.getenv('BINTRAY_KEY')
-
-    configurations = ['archives']
-
-    pkg {
-        repo = 'maven'
-        name = kakao.name
-        desc = kakao.description
-        vcsUrl = kakao.github
-        publish = true
-        publicDownloadNumbers = true
-
-        licenses = ['Apache-2.0']
-
-        version {
-            name = kakao.version
-            desc = kakao.version_desc
-            vcsTag = kakao.version
-            released = new Date()
-        }
-    }
-}
-
-apply plugin: 'com.jfrog.artifactory'
-
-artifactory {
-    contextUrl = 'http://oss.jfrog.org/artifactory'
-
-    publish {
-        repository {
-            repoKey = 'oss-snapshot-local'
-            username = System.getenv('BINTRAY_USER')
-            password = System.getenv('BINTRAY_KEY')
-        }
-
-        defaults {
-            publishConfigs('archives')
-            publishArtifacts = true
-            publishPom = true
-            publishIvy = false
-            publishBuildInfo = false
-        }
-    }
 }
