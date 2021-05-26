@@ -33,6 +33,7 @@ detekt {
     }
 }
 
+
 allprojects {
     repositories {
         jcenter()
