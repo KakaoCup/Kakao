@@ -41,7 +41,7 @@ ext.libraries = [
         junit_ext       :  "androidx.test.ext:junit:$versions.junit_ext"
 ]
 
-def kakaoVersion = new File('buildsystem/version').text.trim() + alias
+def kakaoVersion = new File('buildsystem/version').text.trim()
 
 ext.kakao = [
         group           : 'io.github.kakaocup',
