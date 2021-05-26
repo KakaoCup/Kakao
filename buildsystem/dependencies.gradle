@@ -1,5 +1,6 @@
 ext.versions = [
         kotlin         : '1.4.32',
+        detekt         : '1.17.1',
         dokka          : '0.9.18',
         android_gradle : '4.0.0',
         maven          : '1.5',
@@ -19,6 +20,7 @@ ext.versions = [
 ext.libraries = [
         kotlin          : "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin",
         kotlin_stdlib   : "org.jetbrains.kotlin:kotlin-stdlib:$versions.kotlin",
+        detekt          : "io.gitlab.arturbosch.detekt:detekt-gradle-plugin:$versions.detekt",
         dokka           : "org.jetbrains.dokka:dokka-android-gradle-plugin:$versions.dokka",
         android_gradle  : "com.android.tools.build:gradle:$versions.android_gradle",
         maven           : "com.github.dcendents:android-maven-gradle-plugin:$versions.maven",

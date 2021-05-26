@@ -3,6 +3,7 @@ buildscript {
 
     repositories {
         jcenter()
+        mavenCentral()
         google()
     }
 
@@ -12,6 +13,23 @@ buildscript {
         classpath libraries.maven
         classpath libraries.dokka
         classpath libraries.oss
+        classpath libraries.detekt
+    }
+}
+
+apply plugin: 'io.gitlab.arturbosch.detekt'
+detekt {
+    toolVersion = "1.17.1"
+    input = files(subprojects.collect{
+        return [new File(it.projectDir, '/src/main/kotlin')]
+    })
+    buildUponDefaultConfig = true
+    config = files("$projectDir/detekt-config.yml")
+    baseline = file("$projectDir/detekt-baseline.xml")
+
+    reports {
+        html.enabled = true
+        xml.enabled = true
     }
 }
 
