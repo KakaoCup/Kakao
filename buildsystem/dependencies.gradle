@@ -42,7 +42,7 @@ ext.libraries = [
 def kakaoVersion = new File('buildsystem/version').text.trim() + alias
 
 ext.kakao = [
-        group           : 'com.agoda.kakao',
+        group           : 'io.github.kakaocup',
         artifact        : 'kakao',
         name            : 'kakao',
         description     : 'Kotlin based DSL for fluent AT with Espresso',

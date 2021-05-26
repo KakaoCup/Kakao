@@ -1,0 +1,12 @@
+[kakao](../index.md) / [io.github.kakaocup.kakao.web](./index.md)
+
+## Package io.github.kakaocup.kakao.web
+
+### Types
+
+| Name | Summary |
+|---|---|
+| [KWebView](-k-web-view/index.md) | `open class KWebView`<br>Class for interacting with WebViews |
+| [WebActions](-web-actions/index.md) | `interface WebActions`<br>Provides action for interacting with WebViews |
+| [WebAssertions](-web-assertions/index.md) | `interface WebAssertions`<br>Interface that provides assertions for WebViews |
+| [WebElementBuilder](-web-element-builder/index.md) | `class WebElementBuilder : `[`Interceptable`](../io.github.kakaocup.kakao.intercept/-interceptable/index.md)`<WebInteraction<*>, WebAssertion<*>, Atom<*>>`<br>Class for building WebView element matchers |
