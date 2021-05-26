@@ -1,5 +1,5 @@
-[kakao](../../index.md) / [com.agoda.kakao.dialog](../index.md) / [KAlertDialog](index.md) / [title](./title.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.dialog](../index.md) / [KAlertDialog](index.md) / [title](./title.md)
 
 # title
 
-`val title: `[`KTextView`](../../com.agoda.kakao.text/-k-text-view/index.md)
+`val title: `[`KTextView`](../../io.github.kakaoandroid.kakao.text/-k-text-view/index.md)

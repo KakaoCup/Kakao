@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.pager2](../index.md) / [ViewPager2Actions](index.md) / [getSize](./get-size.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.pager2](../index.md) / [ViewPager2Actions](index.md) / [getSize](./get-size.md)
 
 # getSize
 

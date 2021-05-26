@@ -1,6 +1,6 @@
-[kakao](../index.md) / [com.agoda.kakao.common.builders](./index.md)
+[kakao](../index.md) / [io.github.kakaoandroid.kakao.common.builders](./index.md)
 
-## Package com.agoda.kakao.common.builders
+## Package io.github.kakaoandroid.kakao.common.builders
 
 ### Types
 

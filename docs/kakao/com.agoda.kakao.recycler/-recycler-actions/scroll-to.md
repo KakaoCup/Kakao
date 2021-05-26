@@ -1,10 +1,10 @@
-[kakao](../../index.md) / [com.agoda.kakao.recycler](../index.md) / [RecyclerActions](index.md) / [scrollTo](./scroll-to.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.recycler](../index.md) / [RecyclerActions](index.md) / [scrollTo](./scroll-to.md)
 
 # scrollTo
 
 `open fun scrollTo(position: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
 
-Overrides [ScrollableActions.scrollTo](../../com.agoda.kakao.common.actions/-scrollable-actions/scroll-to.md)
+Overrides [ScrollableActions.scrollTo](../../io.github.kakaoandroid.kakao.common.actions/-scrollable-actions/scroll-to.md)
 
 Scrolls to the specific position of the view
 
@@ -16,7 +16,7 @@ Scrolls to specific view holder that matches given matcher
 
 ### Parameters
 
-`matcher` - Matcher for view holder, which is scroll destination`open fun scrollTo(viewBuilder: `[`ViewBuilder`](../../com.agoda.kakao.common.builders/-view-builder/index.md)`.() -> `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+`matcher` - Matcher for view holder, which is scroll destination`open fun scrollTo(viewBuilder: `[`ViewBuilder`](../../io.github.kakaoandroid.kakao.common.builders/-view-builder/index.md)`.() -> `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
 
 Scrolls to specific view holder that matches given matcher
 

@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [TextViewActions](index.md) / [openLinkWithText](./open-link-with-text.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao](../index.md) / [TextViewActions](index.md) / [openLinkWithText](./open-link-with-text.md)
 
 # openLinkWithText
 

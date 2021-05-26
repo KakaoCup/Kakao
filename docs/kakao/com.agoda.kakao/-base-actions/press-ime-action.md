@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [BaseActions](index.md) / [pressImeAction](./press-ime-action.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao](../index.md) / [BaseActions](index.md) / [pressImeAction](./press-ime-action.md)
 
 # pressImeAction
 

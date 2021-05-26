@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [KRecyclerView](index.md) / [perform](./perform.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao](../index.md) / [KRecyclerView](index.md) / [perform](./perform.md)
 
 # perform
 

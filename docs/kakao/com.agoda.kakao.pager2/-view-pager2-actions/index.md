@@ -1,16 +1,16 @@
-[kakao](../../index.md) / [com.agoda.kakao.pager2](../index.md) / [ViewPager2Actions](./index.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.pager2](../index.md) / [ViewPager2Actions](./index.md)
 
 # ViewPager2Actions
 
-`interface ViewPager2Actions : `[`ScrollableActions`](../../com.agoda.kakao.common.actions/-scrollable-actions/index.md)`, `[`SwipeableActions`](../../com.agoda.kakao.common.actions/-swipeable-actions/index.md)
+`interface ViewPager2Actions : `[`ScrollableActions`](../../io.github.kakaoandroid.kakao.common.actions/-scrollable-actions/index.md)`, `[`SwipeableActions`](../../io.github.kakaoandroid.kakao.common.actions/-swipeable-actions/index.md)
 
 Provides ScrollableActions implementation for ViewPager2
 
 **See Also**
 
-[ScrollableActions](../../com.agoda.kakao.common.actions/-scrollable-actions/index.md)
+[ScrollableActions](../../io.github.kakaoandroid.kakao.common.actions/-scrollable-actions/index.md)
 
-[SwipeableActions](../../com.agoda.kakao.common.actions/-swipeable-actions/index.md)
+[SwipeableActions](../../io.github.kakaoandroid.kakao.common.actions/-swipeable-actions/index.md)
 
 [ViewPager2](#)
 
@@ -27,13 +27,13 @@ Provides ScrollableActions implementation for ViewPager2
 
 | Name | Summary |
 |---|---|
-| [swipeDown](../../com.agoda.kakao.common.actions/-swipeable-actions/swipe-down.md) | `open fun swipeDown(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)<br>Swipes down on the view |
-| [swipeLeft](../../com.agoda.kakao.common.actions/-swipeable-actions/swipe-left.md) | `open fun swipeLeft(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)<br>Swipes left on the view |
-| [swipeRight](../../com.agoda.kakao.common.actions/-swipeable-actions/swipe-right.md) | `open fun swipeRight(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)<br>Swipes right on the view |
-| [swipeUp](../../com.agoda.kakao.common.actions/-swipeable-actions/swipe-up.md) | `open fun swipeUp(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)<br>Swipes up on the view |
+| [swipeDown](../../io.github.kakaoandroid.kakao.common.actions/-swipeable-actions/swipe-down.md) | `open fun swipeDown(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)<br>Swipes down on the view |
+| [swipeLeft](../../io.github.kakaoandroid.kakao.common.actions/-swipeable-actions/swipe-left.md) | `open fun swipeLeft(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)<br>Swipes left on the view |
+| [swipeRight](../../io.github.kakaoandroid.kakao.common.actions/-swipeable-actions/swipe-right.md) | `open fun swipeRight(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)<br>Swipes right on the view |
+| [swipeUp](../../io.github.kakaoandroid.kakao.common.actions/-swipeable-actions/swipe-up.md) | `open fun swipeUp(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)<br>Swipes up on the view |
 
 ### Inheritors
 
 | Name | Summary |
 |---|---|
-| [KViewPager2](../-k-view-pager2/index.md) | `class KViewPager2 : `[`ViewPager2Actions`](./index.md)`, `[`ViewPager2AdapterAssertions`](../-view-pager2-adapter-assertions/index.md)`, `[`SwipeableActions`](../../com.agoda.kakao.common.actions/-swipeable-actions/index.md)`, `[`BaseAssertions`](../../com.agoda.kakao.common.assertions/-base-assertions/index.md)<br>View with SwipeableActions and ViewPager2Assertions |
+| [KViewPager2](../-k-view-pager2/index.md) | `class KViewPager2 : `[`ViewPager2Actions`](./index.md)`, `[`ViewPager2AdapterAssertions`](../-view-pager2-adapter-assertions/index.md)`, `[`SwipeableActions`](../../io.github.kakaoandroid.kakao.common.actions/-swipeable-actions/index.md)`, `[`BaseAssertions`](../../io.github.kakaoandroid.kakao.common.assertions/-base-assertions/index.md)<br>View with SwipeableActions and ViewPager2Assertions |

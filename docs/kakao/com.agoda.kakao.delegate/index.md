@@ -1,6 +1,6 @@
-[kakao](../index.md) / [com.agoda.kakao.delegate](./index.md)
+[kakao](../index.md) / [io.github.kakaoandroid.kakao.delegate](./index.md)
 
-## Package com.agoda.kakao.delegate
+## Package io.github.kakaoandroid.kakao.delegate
 
 ### Types
 

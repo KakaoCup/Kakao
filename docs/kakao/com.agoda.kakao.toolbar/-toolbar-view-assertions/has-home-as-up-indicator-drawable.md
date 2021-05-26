@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.toolbar](../index.md) / [ToolbarViewAssertions](index.md) / [hasHomeAsUpIndicatorDrawable](./has-home-as-up-indicator-drawable.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.toolbar](../index.md) / [ToolbarViewAssertions](index.md) / [hasHomeAsUpIndicatorDrawable](./has-home-as-up-indicator-drawable.md)
 
 # hasHomeAsUpIndicatorDrawable
 

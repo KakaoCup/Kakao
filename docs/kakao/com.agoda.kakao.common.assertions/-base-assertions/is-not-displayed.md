@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.common.assertions](../index.md) / [BaseAssertions](index.md) / [isNotDisplayed](./is-not-displayed.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.common.assertions](../index.md) / [BaseAssertions](index.md) / [isNotDisplayed](./is-not-displayed.md)
 
 # isNotDisplayed
 

@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [ViewBuilder](index.md) / [withContentDescription](./with-content-description.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao](../index.md) / [ViewBuilder](index.md) / [withContentDescription](./with-content-description.md)
 
 # withContentDescription
 

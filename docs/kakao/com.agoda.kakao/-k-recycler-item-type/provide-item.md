@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [KRecyclerItemType](index.md) / [provideItem](./provide-item.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao](../index.md) / [KRecyclerItemType](index.md) / [provideItem](./provide-item.md)
 
 # provideItem
 

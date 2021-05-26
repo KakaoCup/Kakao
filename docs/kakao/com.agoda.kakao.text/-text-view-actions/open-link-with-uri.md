@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.text](../index.md) / [TextViewActions](index.md) / [openLinkWithUri](./open-link-with-uri.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.text](../index.md) / [TextViewActions](index.md) / [openLinkWithUri](./open-link-with-uri.md)
 
 # openLinkWithUri
 

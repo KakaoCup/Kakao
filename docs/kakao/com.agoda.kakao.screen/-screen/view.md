@@ -1,8 +1,8 @@
-[kakao](../../index.md) / [com.agoda.kakao.screen](../index.md) / [Screen](index.md) / [view](./view.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.screen](../index.md) / [Screen](index.md) / [view](./view.md)
 
 # view
 
-`open val view: `[`ViewInteractionDelegate`](../../com.agoda.kakao.delegate/-view-interaction-delegate/index.md)
+`open val view: `[`ViewInteractionDelegate`](../../io.github.kakaoandroid.kakao.delegate/-view-interaction-delegate/index.md)
 
 Overrides [ScreenActions.view](../-screen-actions/view.md)
 

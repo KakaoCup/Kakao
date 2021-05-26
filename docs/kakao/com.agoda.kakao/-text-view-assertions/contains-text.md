@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [TextViewAssertions](index.md) / [containsText](./contains-text.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao](../index.md) / [TextViewAssertions](index.md) / [containsText](./contains-text.md)
 
 # containsText
 

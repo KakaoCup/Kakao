@@ -1,8 +1,8 @@
-[kakao](../../index.md) / [com.agoda.kakao.list](../index.md) / [ListViewAdapterAssertions](./index.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.list](../index.md) / [ListViewAdapterAssertions](./index.md)
 
 # ListViewAdapterAssertions
 
-`interface ListViewAdapterAssertions : `[`AdapterAssertions`](../../com.agoda.kakao.common.assertions/-adapter-assertions/index.md)
+`interface ListViewAdapterAssertions : `[`AdapterAssertions`](../../io.github.kakaoandroid.kakao.common.assertions/-adapter-assertions/index.md)
 
 Provides assertions for listView adapter
 
@@ -10,7 +10,7 @@ Provides assertions for listView adapter
 
 | Name | Summary |
 |---|---|
-| [view](../../com.agoda.kakao.common.assertions/-adapter-assertions/view.md) | `abstract val view: ViewInteraction` |
+| [view](../../io.github.kakaoandroid.kakao.common.assertions/-adapter-assertions/view.md) | `abstract val view: ViewInteraction` |
 
 ### Functions
 
@@ -22,4 +22,4 @@ Provides assertions for listView adapter
 
 | Name | Summary |
 |---|---|
-| [KListView](../-k-list-view/index.md) | `class KListView : `[`ScrollViewActions`](../-scroll-view-actions/index.md)`, `[`BaseAssertions`](../../com.agoda.kakao.common.assertions/-base-assertions/index.md)`, `[`ListViewAdapterAssertions`](./index.md)<br>View with ScrollViewActions and BaseAssertions. Gives access to it's children |
+| [KListView](../-k-list-view/index.md) | `class KListView : `[`ScrollViewActions`](../-scroll-view-actions/index.md)`, `[`BaseAssertions`](../../io.github.kakaoandroid.kakao.common.assertions/-base-assertions/index.md)`, `[`ListViewAdapterAssertions`](./index.md)<br>View with ScrollViewActions and BaseAssertions. Gives access to it's children |

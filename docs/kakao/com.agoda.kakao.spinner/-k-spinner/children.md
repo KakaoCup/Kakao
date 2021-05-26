@@ -1,8 +1,8 @@
-[kakao](../../index.md) / [com.agoda.kakao.spinner](../index.md) / [KSpinner](index.md) / [children](./children.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.spinner](../index.md) / [KSpinner](index.md) / [children](./children.md)
 
 # children
 
-`inline fun <reified T : `[`KAdapterItem`](../../com.agoda.kakao.list/-k-adapter-item/index.md)`<*>> children(function: `[`T`](children.md#T)`.() -> `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+`inline fun <reified T : `[`KAdapterItem`](../../io.github.kakaoandroid.kakao.list/-k-adapter-item/index.md)`<*>> children(function: `[`T`](children.md#T)`.() -> `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
 
 Performs given actions/assertion on all children in adapter
 

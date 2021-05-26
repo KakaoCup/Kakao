@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.intercept](../index.md) / [Interceptable](index.md) / [reset](./reset.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.intercept](../index.md) / [Interceptable](index.md) / [reset](./reset.md)
 
 # reset
 

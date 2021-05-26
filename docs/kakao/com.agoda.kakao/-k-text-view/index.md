@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [KTextView](./index.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao](../index.md) / [KTextView](./index.md)
 
 # KTextView
 

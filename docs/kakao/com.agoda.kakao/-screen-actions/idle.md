@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [ScreenActions](index.md) / [idle](./idle.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao](../index.md) / [ScreenActions](index.md) / [idle](./idle.md)
 
 # idle
 

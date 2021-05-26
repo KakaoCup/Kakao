@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [Kakao](index.md) / [reset](./reset.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao](../index.md) / [Kakao](index.md) / [reset](./reset.md)
 
 # reset
 
@@ -10,5 +10,5 @@ Removes the interceptors from the Kakao runtime.
 
 [intercept](intercept.md)
 
-[Interceptor](../../com.agoda.kakao.intercept/-interceptor/index.md)
+[Interceptor](../../io.github.kakaoandroid.kakao.intercept/-interceptor/index.md)
 

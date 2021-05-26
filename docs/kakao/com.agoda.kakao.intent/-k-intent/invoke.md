@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.intent](../index.md) / [KIntent](index.md) / [invoke](./invoke.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.intent](../index.md) / [KIntent](index.md) / [invoke](./invoke.md)
 
 # invoke
 

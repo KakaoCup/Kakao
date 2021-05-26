@@ -1,12 +1,12 @@
-[kakao](../../index.md) / [com.agoda.kakao.recycler](../index.md) / [KRecyclerItem](index.md) / [view](./view.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.recycler](../index.md) / [KRecyclerItem](index.md) / [view](./view.md)
 
 # view
 
-`open val view: `[`ViewInteractionDelegate`](../../com.agoda.kakao.delegate/-view-interaction-delegate/index.md)
+`open val view: `[`ViewInteractionDelegate`](../../io.github.kakaoandroid.kakao.delegate/-view-interaction-delegate/index.md)
 
-Overrides [BaseActions.view](../../com.agoda.kakao.common.actions/-base-actions/view.md)
+Overrides [BaseActions.view](../../io.github.kakaoandroid.kakao.common.actions/-base-actions/view.md)
 
-Overrides [BaseAssertions.view](../../com.agoda.kakao.common.assertions/-base-assertions/view.md)
+Overrides [BaseAssertions.view](../../io.github.kakaoandroid.kakao.common.assertions/-base-assertions/view.md)
 
-Overrides [Interceptable.view](../../com.agoda.kakao.intercept/-interceptable/view.md)
+Overrides [Interceptable.view](../../io.github.kakaoandroid.kakao.intercept/-interceptable/view.md)
 

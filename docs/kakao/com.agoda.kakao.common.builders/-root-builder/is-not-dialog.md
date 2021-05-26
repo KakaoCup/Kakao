@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.common.builders](../index.md) / [RootBuilder](index.md) / [isNotDialog](./is-not-dialog.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.common.builders](../index.md) / [RootBuilder](index.md) / [isNotDialog](./is-not-dialog.md)
 
 # isNotDialog
 

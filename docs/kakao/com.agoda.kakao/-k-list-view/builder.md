@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [KListView](index.md) / [builder](.)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao](../index.md) / [KListView](index.md) / [builder](.)
 
 # builder
 

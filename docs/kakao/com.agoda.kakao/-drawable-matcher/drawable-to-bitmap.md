@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [DrawableMatcher](index.md) / [drawableToBitmap](.)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao](../index.md) / [DrawableMatcher](index.md) / [drawableToBitmap](.)
 
 # drawableToBitmap
 

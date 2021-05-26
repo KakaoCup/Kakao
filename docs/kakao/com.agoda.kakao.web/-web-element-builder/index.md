@@ -1,8 +1,8 @@
-[kakao](../../index.md) / [com.agoda.kakao.web](../index.md) / [WebElementBuilder](./index.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.web](../index.md) / [WebElementBuilder](./index.md)
 
 # WebElementBuilder
 
-`class WebElementBuilder : `[`Interceptable`](../../com.agoda.kakao.intercept/-interceptable/index.md)`<WebInteraction<*>, WebAssertion<*>, Atom<*>>`
+`class WebElementBuilder : `[`Interceptable`](../../io.github.kakaoandroid.kakao.intercept/-interceptable/index.md)`<WebInteraction<*>, WebAssertion<*>, Atom<*>>`
 
 Class for building WebView element matchers
 
@@ -20,13 +20,13 @@ Class for building WebView element matchers
 
 | Name | Summary |
 |---|---|
-| [&lt;init&gt;](-init-.md) | `WebElementBuilder(view: `[`WebInteractionDelegate`](../../com.agoda.kakao.delegate/-web-interaction-delegate/index.md)`)`<br>Class for building WebView element matchers |
+| [&lt;init&gt;](-init-.md) | `WebElementBuilder(view: `[`WebInteractionDelegate`](../../io.github.kakaoandroid.kakao.delegate/-web-interaction-delegate/index.md)`)`<br>Class for building WebView element matchers |
 
 ### Properties
 
 | Name | Summary |
 |---|---|
-| [view](view.md) | `val view: `[`WebInteractionDelegate`](../../com.agoda.kakao.delegate/-web-interaction-delegate/index.md) |
+| [view](view.md) | `val view: `[`WebInteractionDelegate`](../../io.github.kakaoandroid.kakao.delegate/-web-interaction-delegate/index.md) |
 
 ### Functions
 
@@ -38,5 +38,5 @@ Class for building WebView element matchers
 
 | Name | Summary |
 |---|---|
-| [intercept](../../com.agoda.kakao.intercept/-interceptable/intercept.md) | `open fun intercept(builder: `[`Interceptor.Builder`](../../com.agoda.kakao.intercept/-interceptor/-builder/index.md)`<`[`INTERACTION`](../../com.agoda.kakao.intercept/-interceptable/index.md#INTERACTION)`, `[`ASSERTION`](../../com.agoda.kakao.intercept/-interceptable/index.md#ASSERTION)`, `[`ACTION`](../../com.agoda.kakao.intercept/-interceptable/index.md#ACTION)`>.() -> `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)<br>Sets the interceptors for the instance. Interceptors will be invoked on the interaction with the KView. |
-| [reset](../../com.agoda.kakao.intercept/-interceptable/reset.md) | `open fun reset(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)<br>Removes the interceptors from the instance. |
+| [intercept](../../io.github.kakaoandroid.kakao.intercept/-interceptable/intercept.md) | `open fun intercept(builder: `[`Interceptor.Builder`](../../io.github.kakaoandroid.kakao.intercept/-interceptor/-builder/index.md)`<`[`INTERACTION`](../../io.github.kakaoandroid.kakao.intercept/-interceptable/index.md#INTERACTION)`, `[`ASSERTION`](../../io.github.kakaoandroid.kakao.intercept/-interceptable/index.md#ASSERTION)`, `[`ACTION`](../../io.github.kakaoandroid.kakao.intercept/-interceptable/index.md#ACTION)`>.() -> `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)<br>Sets the interceptors for the instance. Interceptors will be invoked on the interaction with the KView. |
+| [reset](../../io.github.kakaoandroid.kakao.intercept/-interceptable/reset.md) | `open fun reset(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)<br>Removes the interceptors from the instance. |

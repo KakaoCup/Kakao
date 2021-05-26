@@ -1,8 +1,8 @@
-[kakao](../../index.md) / [com.agoda.kakao.pager2](../index.md) / [KViewPager2](index.md) / [root](./root.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.pager2](../index.md) / [KViewPager2](index.md) / [root](./root.md)
 
 # root
 
 `var root: Matcher<Root>`
 
-Overrides [BaseAssertions.root](../../com.agoda.kakao.common.assertions/-base-assertions/root.md)
+Overrides [BaseAssertions.root](../../io.github.kakaoandroid.kakao.common.assertions/-base-assertions/root.md)
 

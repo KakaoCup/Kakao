@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [IntentBuilder](index.md) / [toPackage](./to-package.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao](../index.md) / [IntentBuilder](index.md) / [toPackage](./to-package.md)
 
 # toPackage
 

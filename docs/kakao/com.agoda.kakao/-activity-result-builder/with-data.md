@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [ActivityResultBuilder](index.md) / [withData](./with-data.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao](../index.md) / [ActivityResultBuilder](index.md) / [withData](./with-data.md)
 
 # withData
 

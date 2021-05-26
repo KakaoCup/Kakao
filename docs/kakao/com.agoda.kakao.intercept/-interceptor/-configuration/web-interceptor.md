@@ -1,4 +1,4 @@
-[kakao](../../../index.md) / [com.agoda.kakao.intercept](../../index.md) / [Interceptor](../index.md) / [Configuration](index.md) / [webInterceptor](./web-interceptor.md)
+[kakao](../../../index.md) / [io.github.kakaoandroid.kakao.intercept](../../index.md) / [Interceptor](../index.md) / [Configuration](index.md) / [webInterceptor](./web-interceptor.md)
 
 # webInterceptor
 

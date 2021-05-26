@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.recycler](../index.md) / [RecyclerActions](index.md) / [getSize](./get-size.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.recycler](../index.md) / [RecyclerActions](index.md) / [getSize](./get-size.md)
 
 # getSize
 

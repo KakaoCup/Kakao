@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.recycler](../index.md) / [KEmptyRecyclerItem](./index.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.recycler](../index.md) / [KEmptyRecyclerItem](./index.md)
 
 # KEmptyRecyclerItem
 
@@ -27,7 +27,7 @@ Use this if you want to perform/assert on the root view of view holder
 | Name | Summary |
 |---|---|
 | [root](../-k-recycler-item/root.md) | `open var root: Matcher<Root!>!` |
-| [view](../-k-recycler-item/view.md) | `open val view: `[`ViewInteractionDelegate`](../../com.agoda.kakao.delegate/-view-interaction-delegate/index.md) |
+| [view](../-k-recycler-item/view.md) | `open val view: `[`ViewInteractionDelegate`](../../io.github.kakaoandroid.kakao.delegate/-view-interaction-delegate/index.md) |
 
 ### Inherited Functions
 

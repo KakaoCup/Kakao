@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [ViewBuilder](index.md) / [isEnabled](./is-enabled.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao](../index.md) / [ViewBuilder](index.md) / [isEnabled](./is-enabled.md)
 
 # isEnabled
 

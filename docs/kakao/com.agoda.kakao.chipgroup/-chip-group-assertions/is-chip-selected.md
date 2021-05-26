@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.chipgroup](../index.md) / [ChipGroupAssertions](index.md) / [isChipSelected](./is-chip-selected.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.chipgroup](../index.md) / [ChipGroupAssertions](index.md) / [isChipSelected](./is-chip-selected.md)
 
 # isChipSelected
 

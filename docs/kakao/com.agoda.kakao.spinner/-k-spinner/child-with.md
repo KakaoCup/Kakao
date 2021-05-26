@@ -1,8 +1,8 @@
-[kakao](../../index.md) / [com.agoda.kakao.spinner](../index.md) / [KSpinner](index.md) / [childWith](./child-with.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.spinner](../index.md) / [KSpinner](index.md) / [childWith](./child-with.md)
 
 # childWith
 
-`inline fun <reified T : `[`KAdapterItem`](../../com.agoda.kakao.list/-k-adapter-item/index.md)`<*>> childWith(childMatcher: `[`DataBuilder`](../../com.agoda.kakao.list/-data-builder/index.md)`.() -> `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)`): `[`T`](child-with.md#T)
+`inline fun <reified T : `[`KAdapterItem`](../../io.github.kakaoandroid.kakao.list/-k-adapter-item/index.md)`<*>> childWith(childMatcher: `[`DataBuilder`](../../io.github.kakaoandroid.kakao.list/-data-builder/index.md)`.() -> `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)`): `[`T`](child-with.md#T)
 
 Performs given actions/assertion on child that matches given matcher
 

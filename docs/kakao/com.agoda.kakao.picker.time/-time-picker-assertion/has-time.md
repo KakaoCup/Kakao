@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.picker.time](../index.md) / [TimePickerAssertion](index.md) / [hasTime](./has-time.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.picker.time](../index.md) / [TimePickerAssertion](index.md) / [hasTime](./has-time.md)
 
 # hasTime
 

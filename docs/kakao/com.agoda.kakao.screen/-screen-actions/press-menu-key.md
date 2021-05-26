@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.screen](../index.md) / [ScreenActions](index.md) / [pressMenuKey](./press-menu-key.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.screen](../index.md) / [ScreenActions](index.md) / [pressMenuKey](./press-menu-key.md)
 
 # pressMenuKey
 

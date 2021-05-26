@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.common](../index.md) / [KakaoDslMarker](./index.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.common](../index.md) / [KakaoDslMarker](./index.md)
 
 # KakaoDslMarker
 

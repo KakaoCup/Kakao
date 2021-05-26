@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.common.matchers](../index.md) / [TextInputLayoutHintEnabledMatcher](./index.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.common.matchers](../index.md) / [TextInputLayoutHintEnabledMatcher](./index.md)
 
 # TextInputLayoutHintEnabledMatcher
 

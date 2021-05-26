@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.drawer](../index.md) / [DrawerActions](index.md) / [close](./close.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.drawer](../index.md) / [DrawerActions](index.md) / [close](./close.md)
 
 # close
 

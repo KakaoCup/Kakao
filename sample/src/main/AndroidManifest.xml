@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.agoda.sample">
+    package="io.github.kakaoandroid.sample">
 
   <application android:label="TEST">
     <activity
-        android:name=".ChipGroupActivity"
+        android:name="io.github.kakaoandroid.sample.ChipGroupActivity"
         android:label="ChipGroup Activity"
         android:theme="@style/MaterialAppTheme" />
     <activity
-        android:name=".SpinnerActivity"
+        android:name="io.github.kakaoandroid.sample.SpinnerActivity"
         android:label="Spinner Activity"
         android:theme="@style/AppTheme" />
     <activity
-        android:name=".TestActivity"
+        android:name="io.github.kakaoandroid.sample.TestActivity"
         android:label="Test Activity"
         android:theme="@style/AppTheme">
       <intent-filter>
@@ -22,59 +22,59 @@
       </intent-filter>
     </activity>
     <activity
-        android:name=".MultitypeRecyclerActivity"
+        android:name="io.github.kakaoandroid.sample.MultitypeRecyclerActivity"
         android:label="Recycler Activity"
         android:theme="@style/AppTheme" />
     <activity
-        android:name=".SingleTypeRecyclerActivity"
+        android:name="io.github.kakaoandroid.sample.SingleTypeRecyclerActivity"
         android:label="Recycler Activity"
         android:theme="@style/AppTheme" />
     <activity
-        android:name=".NestedRecyclerActivity"
+        android:name="io.github.kakaoandroid.sample.NestedRecyclerActivity"
         android:label="Nested Recycler Activity"
         android:theme="@style/AppTheme" />
     <activity
-        android:name=".WebActivity"
+        android:name="io.github.kakaoandroid.sample.WebActivity"
         android:label="Web Activity"
         android:theme="@style/AppTheme" />
     <activity
-        android:name=".ListActivity"
+        android:name="io.github.kakaoandroid.sample.ListActivity"
         android:label="List Activity"
         android:theme="@style/AppTheme" />
     <activity
-        android:name=".TextInputLayoutActivity"
+        android:name="io.github.kakaoandroid.sample.TextInputLayoutActivity"
         android:label="TextInputLayout Activity"
         android:theme="@style/AppTheme" />
     <activity
-        android:name=".IntentActivity"
+        android:name="io.github.kakaoandroid.sample.IntentActivity"
         android:label="Intent Activity"
         android:theme="@style/AppTheme" />
     <activity
-        android:name=".AutoCompleteActivity"
+        android:name="io.github.kakaoandroid.sample.AutoCompleteActivity"
         android:label="Autocomplete Activity"
         android:theme="@style/AppTheme" />
     <activity
-        android:name=".DrawableListActivity"
+        android:name="io.github.kakaoandroid.sample.DrawableListActivity"
         android:label="Drawable Activity"
         android:theme="@style/AppTheme" />
     <activity
-        android:name=".DrawableRecyclerActivity"
+        android:name="io.github.kakaoandroid.sample.DrawableRecyclerActivity"
         android:label="Drawable Activity"
         android:theme="@style/AppTheme" />
     <activity
-        android:name=".PickersActivity"
+        android:name="io.github.kakaoandroid.sample.PickersActivity"
         android:label="Pickers Activity"
         android:theme="@style/AppTheme" />
     <activity
-        android:name=".AlertDialogActivity"
+        android:name="io.github.kakaoandroid.sample.AlertDialogActivity"
         android:label="Alert Dialog Activity"
         android:theme="@style/AppTheme" />
     <activity
-        android:name=".ViewPager2Activity"
+        android:name="io.github.kakaoandroid.sample.ViewPager2Activity"
         android:label="Alert Dialog Activity"
         android:theme="@style/AppTheme" />
     <activity
-        android:name=".SliderActivity"
+        android:name="io.github.kakaoandroid.sample.SliderActivity"
         android:label="Slider Activity"
         android:theme="@style/MaterialAppTheme" />
   </application>

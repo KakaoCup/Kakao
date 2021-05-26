@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.common.builders](../index.md) / [ViewBuilder](index.md) / [getViewInteraction](./get-view-interaction.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.common.builders](../index.md) / [ViewBuilder](index.md) / [getViewInteraction](./get-view-interaction.md)
 
 # getViewInteraction
 

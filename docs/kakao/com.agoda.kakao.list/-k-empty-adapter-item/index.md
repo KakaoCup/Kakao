@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.list](../index.md) / [KEmptyAdapterItem](./index.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.list](../index.md) / [KEmptyAdapterItem](./index.md)
 
 # KEmptyAdapterItem
 
@@ -27,7 +27,7 @@ Use this if you want to perform/assert on the root view of adapter item
 | Name | Summary |
 |---|---|
 | [root](../-k-adapter-item/root.md) | `open var root: Matcher<Root!>!` |
-| [view](../-k-adapter-item/view.md) | `open val view: `[`ViewInteractionDelegate`](../../com.agoda.kakao.delegate/-view-interaction-delegate/index.md) |
+| [view](../-k-adapter-item/view.md) | `open val view: `[`ViewInteractionDelegate`](../../io.github.kakaoandroid.kakao.delegate/-view-interaction-delegate/index.md) |
 
 ### Inherited Functions
 

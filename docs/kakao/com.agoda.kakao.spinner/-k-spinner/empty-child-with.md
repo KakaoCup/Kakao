@@ -1,8 +1,8 @@
-[kakao](../../index.md) / [com.agoda.kakao.spinner](../index.md) / [KSpinner](index.md) / [emptyChildWith](./empty-child-with.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.spinner](../index.md) / [KSpinner](index.md) / [emptyChildWith](./empty-child-with.md)
 
 # emptyChildWith
 
-`fun emptyChildWith(builder: `[`DataBuilder`](../../com.agoda.kakao.list/-data-builder/index.md)`.() -> `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)`): `[`KSpinnerItem`](../-k-spinner-item/index.md)
+`fun emptyChildWith(builder: `[`DataBuilder`](../../io.github.kakaoandroid.kakao.list/-data-builder/index.md)`.() -> `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)`): `[`KSpinnerItem`](../-k-spinner-item/index.md)
 
 Calls childWith() on your view with base child
 

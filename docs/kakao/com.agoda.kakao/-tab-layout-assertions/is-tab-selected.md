@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [TabLayoutAssertions](index.md) / [isTabSelected](./is-tab-selected.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao](../index.md) / [TabLayoutAssertions](index.md) / [isTabSelected](./is-tab-selected.md)
 
 # isTabSelected
 

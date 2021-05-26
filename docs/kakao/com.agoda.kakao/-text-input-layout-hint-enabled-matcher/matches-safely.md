@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [TextInputLayoutHintEnabledMatcher](index.md) / [matchesSafely](./matches-safely.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao](../index.md) / [TextInputLayoutHintEnabledMatcher](index.md) / [matchesSafely](./matches-safely.md)
 
 # matchesSafely
 

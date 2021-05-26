@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.intent](../index.md) / [IntentBuilder](index.md) / [hasExtra](./has-extra.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.intent](../index.md) / [IntentBuilder](index.md) / [hasExtra](./has-extra.md)
 
 # hasExtra
 

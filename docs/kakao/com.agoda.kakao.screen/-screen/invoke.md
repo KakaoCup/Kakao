@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.screen](../index.md) / [Screen](index.md) / [invoke](./invoke.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.screen](../index.md) / [Screen](index.md) / [invoke](./invoke.md)
 
 # invoke
 

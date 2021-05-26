@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [EditableActions](./index.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao](../index.md) / [EditableActions](./index.md)
 
 # EditableActions
 

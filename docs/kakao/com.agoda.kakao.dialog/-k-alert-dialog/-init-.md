@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.dialog](../index.md) / [KAlertDialog](index.md) / [&lt;init&gt;](./-init-.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.dialog](../index.md) / [KAlertDialog](index.md) / [&lt;init&gt;](./-init-.md)
 
 # &lt;init&gt;
 

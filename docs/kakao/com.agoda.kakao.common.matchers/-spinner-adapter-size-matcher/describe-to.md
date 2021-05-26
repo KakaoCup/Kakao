@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.common.matchers](../index.md) / [SpinnerAdapterSizeMatcher](index.md) / [describeTo](./describe-to.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.common.matchers](../index.md) / [SpinnerAdapterSizeMatcher](index.md) / [describeTo](./describe-to.md)
 
 # describeTo
 

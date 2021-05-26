@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.list](../index.md) / [KAdapterItem](index.md) / [&lt;init&gt;](./-init-.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.list](../index.md) / [KAdapterItem](index.md) / [&lt;init&gt;](./-init-.md)
 
 # &lt;init&gt;
 

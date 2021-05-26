@@ -1,8 +1,8 @@
-[kakao](../../index.md) / [com.agoda.kakao.common.assertions](../index.md) / [BaseAssertions](index.md) / [isCompletelyLeftOf](./is-completely-left-of.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.common.assertions](../index.md) / [BaseAssertions](index.md) / [isCompletelyLeftOf](./is-completely-left-of.md)
 
 # isCompletelyLeftOf
 
-`open fun isCompletelyLeftOf(function: `[`ViewBuilder`](../../com.agoda.kakao.common.builders/-view-builder/index.md)`.() -> `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+`open fun isCompletelyLeftOf(function: `[`ViewBuilder`](../../io.github.kakaoandroid.kakao.common.builders/-view-builder/index.md)`.() -> `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
 
 Checks if the view displayed is completely right of the view matching the given matcher.
 

@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.intercept](../index.md) / [Interceptor](index.md) / [&lt;init&gt;](./-init-.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.intercept](../index.md) / [Interceptor](index.md) / [&lt;init&gt;](./-init-.md)
 
 # &lt;init&gt;
 
@@ -6,8 +6,8 @@
 
 Base class for intercepting the call chain from Kakao to Espresso.
 
-Interceptors can be provided through [Kakao](../../com.agoda.kakao/-kakao/index.md) runtime,
-different [Screens](../../com.agoda.kakao.screen/-screen/index.md) as well as [KViews](../../com.agoda.kakao.common.views/-k-base-view/index.md).
+Interceptors can be provided through [Kakao](../../io.github.kakaoandroid.kakao/-kakao/index.md) runtime,
+different [Screens](../../io.github.kakaoandroid.kakao.screen/-screen/index.md) as well as [KViews](../../io.github.kakaoandroid.kakao.common.views/-k-base-view/index.md).
 
 Interceptors are stacked during the runtime for any Kakao-Espresso `check` and `perform` operations.
 The stack ordering is following: KView interceptor -&gt; Screen interceptors -&gt; Kakao interceptor.
@@ -32,9 +32,9 @@ onPerform?.invoke()
 
 **See Also**
 
-[com.agoda.kakao.Kakao](../../com.agoda.kakao/-kakao/index.md)
+[io.github.kakaoandroid.kakao.Kakao](../../io.github.kakaoandroid.kakao/-kakao/index.md)
 
-[com.agoda.kakao.screen.Screen](../../com.agoda.kakao.screen/-screen/index.md)
+[io.github.kakaoandroid.kakao.screen.Screen](../../io.github.kakaoandroid.kakao.screen/-screen/index.md)
 
-[com.agoda.kakao.common.views.KBaseView](../../com.agoda.kakao.common.views/-k-base-view/index.md)
+[io.github.kakaoandroid.kakao.common.views.KBaseView](../../io.github.kakaoandroid.kakao.common.views/-k-base-view/index.md)
 

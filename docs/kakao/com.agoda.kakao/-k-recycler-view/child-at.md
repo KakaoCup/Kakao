@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [KRecyclerView](index.md) / [childAt](./child-at.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao](../index.md) / [KRecyclerView](index.md) / [childAt](./child-at.md)
 
 # childAt
 

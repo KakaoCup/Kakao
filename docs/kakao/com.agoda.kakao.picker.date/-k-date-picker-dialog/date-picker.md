@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.picker.date](../index.md) / [KDatePickerDialog](index.md) / [datePicker](./date-picker.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.picker.date](../index.md) / [KDatePickerDialog](index.md) / [datePicker](./date-picker.md)
 
 # datePicker
 

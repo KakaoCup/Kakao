@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.intent](../index.md) / [IntentBuilder](index.md) / [getResult](./get-result.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.intent](../index.md) / [IntentBuilder](index.md) / [getResult](./get-result.md)
 
 # getResult
 

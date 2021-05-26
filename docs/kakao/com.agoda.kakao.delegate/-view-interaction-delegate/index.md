@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.delegate](../index.md) / [ViewInteractionDelegate](./index.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.delegate](../index.md) / [ViewInteractionDelegate](./index.md)
 
 # ViewInteractionDelegate
 
@@ -11,7 +11,7 @@ Wraps all available public calls and intercepts [check](check.md) and [perform](
 
 [Delegate](../-delegate/index.md)
 
-[Interceptor](../../com.agoda.kakao.intercept/-interceptor/index.md)
+[Interceptor](../../io.github.kakaoandroid.kakao.intercept/-interceptor/index.md)
 
 ### Constructors
 
@@ -24,7 +24,7 @@ Wraps all available public calls and intercepts [check](check.md) and [perform](
 | Name | Summary |
 |---|---|
 | [interaction](interaction.md) | `var interaction: ViewInteraction` |
-| [interceptor](interceptor.md) | `var interceptor: `[`Interceptor`](../../com.agoda.kakao.intercept/-interceptor/index.md)`<ViewInteraction, ViewAssertion, ViewAction>?` |
+| [interceptor](interceptor.md) | `var interceptor: `[`Interceptor`](../../io.github.kakaoandroid.kakao.intercept/-interceptor/index.md)`<ViewInteraction, ViewAssertion, ViewAction>?` |
 
 ### Functions
 
@@ -32,10 +32,10 @@ Wraps all available public calls and intercepts [check](check.md) and [perform](
 |---|---|
 | [check](check.md) | `fun check(viewAssert: ViewAssertion): `[`ViewInteractionDelegate`](./index.md) |
 | [inRoot](in-root.md) | `fun inRoot(rootMatcher: Matcher<Root>): `[`ViewInteractionDelegate`](./index.md) |
-| [kakaoInterceptor](kakao-interceptor.md) | `fun kakaoInterceptor(): `[`Interceptor`](../../com.agoda.kakao.intercept/-interceptor/index.md)`<ViewInteraction, ViewAssertion, ViewAction>?` |
+| [kakaoInterceptor](kakao-interceptor.md) | `fun kakaoInterceptor(): `[`Interceptor`](../../io.github.kakaoandroid.kakao.intercept/-interceptor/index.md)`<ViewInteraction, ViewAssertion, ViewAction>?` |
 | [noActivity](no-activity.md) | `fun noActivity(): `[`ViewInteractionDelegate`](./index.md) |
 | [perform](perform.md) | `fun perform(vararg viewActions: ViewAction): `[`ViewInteractionDelegate`](./index.md) |
-| [screenInterceptors](screen-interceptors.md) | `fun screenInterceptors(): `[`Deque`](https://developer.android.com/reference/java/util/Deque.html)`<`[`Interceptor`](../../com.agoda.kakao.intercept/-interceptor/index.md)`<ViewInteraction, ViewAssertion, ViewAction>>` |
+| [screenInterceptors](screen-interceptors.md) | `fun screenInterceptors(): `[`Deque`](https://developer.android.com/reference/java/util/Deque.html)`<`[`Interceptor`](../../io.github.kakaoandroid.kakao.intercept/-interceptor/index.md)`<ViewInteraction, ViewAssertion, ViewAction>>` |
 | [withFailureHandler](with-failure-handler.md) | `fun withFailureHandler(failureHandler: FailureHandler): `[`ViewInteractionDelegate`](./index.md) |
 
 ### Inherited Functions

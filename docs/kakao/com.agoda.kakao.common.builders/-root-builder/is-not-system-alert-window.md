@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.common.builders](../index.md) / [RootBuilder](index.md) / [isNotSystemAlertWindow](./is-not-system-alert-window.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.common.builders](../index.md) / [RootBuilder](index.md) / [isNotSystemAlertWindow](./is-not-system-alert-window.md)
 
 # isNotSystemAlertWindow
 

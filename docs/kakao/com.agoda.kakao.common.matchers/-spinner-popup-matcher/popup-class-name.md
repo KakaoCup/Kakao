@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.common.matchers](../index.md) / [SpinnerPopupMatcher](index.md) / [popupClassName](./popup-class-name.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.common.matchers](../index.md) / [SpinnerPopupMatcher](index.md) / [popupClassName](./popup-class-name.md)
 
 # popupClassName
 

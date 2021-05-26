@@ -1,6 +1,6 @@
-[kakao](../index.md) / [com.agoda.kakao.common.utilities](./index.md)
+[kakao](../index.md) / [io.github.kakaoandroid.kakao.common.utilities](./index.md)
 
-## Package com.agoda.kakao.common.utilities
+## Package io.github.kakaoandroid.kakao.common.utilities
 
 ### Functions
 

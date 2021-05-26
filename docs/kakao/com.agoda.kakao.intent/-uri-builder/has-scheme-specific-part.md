@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.intent](../index.md) / [UriBuilder](index.md) / [hasSchemeSpecificPart](./has-scheme-specific-part.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.intent](../index.md) / [UriBuilder](index.md) / [hasSchemeSpecificPart](./has-scheme-specific-part.md)
 
 # hasSchemeSpecificPart
 

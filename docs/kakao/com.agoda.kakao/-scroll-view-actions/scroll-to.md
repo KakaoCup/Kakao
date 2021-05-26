@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [ScrollViewActions](index.md) / [scrollTo](./scroll-to.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao](../index.md) / [ScrollViewActions](index.md) / [scrollTo](./scroll-to.md)
 
 # scrollTo
 

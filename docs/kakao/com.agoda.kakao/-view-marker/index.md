@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [ViewMarker](./index.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao](../index.md) / [ViewMarker](./index.md)
 
 # ViewMarker
 

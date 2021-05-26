@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.tabs](../index.md) / [TabLayoutActions](index.md) / [selectTab](./select-tab.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.tabs](../index.md) / [TabLayoutActions](index.md) / [selectTab](./select-tab.md)
 
 # selectTab
 

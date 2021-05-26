@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.delegate](../index.md) / [WebInteractionDelegate](index.md) / [&lt;init&gt;](./-init-.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.delegate](../index.md) / [WebInteractionDelegate](index.md) / [&lt;init&gt;](./-init-.md)
 
 # &lt;init&gt;
 
@@ -11,5 +11,5 @@ Wraps all available public calls and intercepts [check](check.md) and [perform](
 
 [Delegate](../-delegate/index.md)
 
-[Interceptor](../../com.agoda.kakao.intercept/-interceptor/index.md)
+[Interceptor](../../io.github.kakaoandroid.kakao.intercept/-interceptor/index.md)
 

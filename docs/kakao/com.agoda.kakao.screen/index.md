@@ -1,6 +1,6 @@
-[kakao](../index.md) / [com.agoda.kakao.screen](./index.md)
+[kakao](../index.md) / [io.github.kakaoandroid.kakao.screen](./index.md)
 
-## Package com.agoda.kakao.screen
+## Package io.github.kakaoandroid.kakao.screen
 
 ### Types
 

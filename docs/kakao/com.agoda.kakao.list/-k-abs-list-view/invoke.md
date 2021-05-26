@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.list](../index.md) / [KAbsListView](index.md) / [invoke](./invoke.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.list](../index.md) / [KAbsListView](index.md) / [invoke](./invoke.md)
 
 # invoke
 

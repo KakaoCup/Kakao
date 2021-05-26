@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.progress](../index.md) / [ProgressBarActions](index.md) / [setProgress](./set-progress.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.progress](../index.md) / [ProgressBarActions](index.md) / [setProgress](./set-progress.md)
 
 # setProgress
 

@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [IndexMatcher](index.md) / [currentIndex](.)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao](../index.md) / [IndexMatcher](index.md) / [currentIndex](.)
 
 # currentIndex
 

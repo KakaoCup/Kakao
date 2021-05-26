@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.common.actions](../index.md) / [ScrollableActions](index.md) / [scrollToEnd](./scroll-to-end.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.common.actions](../index.md) / [ScrollableActions](index.md) / [scrollToEnd](./scroll-to-end.md)
 
 # scrollToEnd
 

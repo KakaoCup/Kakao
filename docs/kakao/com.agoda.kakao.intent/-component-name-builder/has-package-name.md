@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.intent](../index.md) / [ComponentNameBuilder](index.md) / [hasPackageName](./has-package-name.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.intent](../index.md) / [ComponentNameBuilder](index.md) / [hasPackageName](./has-package-name.md)
 
 # hasPackageName
 

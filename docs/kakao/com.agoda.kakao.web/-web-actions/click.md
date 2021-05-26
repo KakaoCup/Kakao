@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.web](../index.md) / [WebActions](index.md) / [click](./click.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.web](../index.md) / [WebActions](index.md) / [click](./click.md)
 
 # click
 

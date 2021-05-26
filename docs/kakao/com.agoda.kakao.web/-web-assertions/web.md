@@ -1,5 +1,5 @@
-[kakao](../../index.md) / [com.agoda.kakao.web](../index.md) / [WebAssertions](index.md) / [web](./web.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.web](../index.md) / [WebAssertions](index.md) / [web](./web.md)
 
 # web
 
-`abstract val web: `[`WebInteractionDelegate`](../../com.agoda.kakao.delegate/-web-interaction-delegate/index.md)
+`abstract val web: `[`WebInteractionDelegate`](../../io.github.kakaoandroid.kakao.delegate/-web-interaction-delegate/index.md)

@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [BaseAssertions](index.md) / [hasNotDescendant](./has-not-descendant.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao](../index.md) / [BaseAssertions](index.md) / [hasNotDescendant](./has-not-descendant.md)
 
 # hasNotDescendant
 

@@ -1,4 +1,4 @@
-[kakao](../index.md) / [com.agoda.kakao](index.md) / [emptyLastChild](./empty-last-child.md)
+[kakao](../index.md) / [io.github.kakaoandroid.kakao](index.md) / [emptyLastChild](./empty-last-child.md)
 
 # emptyLastChild
 

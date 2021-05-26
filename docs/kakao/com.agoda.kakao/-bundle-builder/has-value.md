@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [BundleBuilder](index.md) / [hasValue](./has-value.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao](../index.md) / [BundleBuilder](index.md) / [hasValue](./has-value.md)
 
 # hasValue
 

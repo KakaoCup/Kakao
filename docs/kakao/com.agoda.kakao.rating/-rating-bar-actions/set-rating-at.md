@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.rating](../index.md) / [RatingBarActions](index.md) / [setRatingAt](./set-rating-at.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.rating](../index.md) / [RatingBarActions](index.md) / [setRatingAt](./set-rating-at.md)
 
 # setRatingAt
 

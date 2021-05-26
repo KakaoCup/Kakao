@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.delegate](../index.md) / [WebInteractionDelegate](./index.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.delegate](../index.md) / [WebInteractionDelegate](./index.md)
 
 # WebInteractionDelegate
 
@@ -11,7 +11,7 @@ Wraps all available public calls and intercepts [check](check.md) and [perform](
 
 [Delegate](../-delegate/index.md)
 
-[Interceptor](../../com.agoda.kakao.intercept/-interceptor/index.md)
+[Interceptor](../../io.github.kakaoandroid.kakao.intercept/-interceptor/index.md)
 
 ### Constructors
 
@@ -24,7 +24,7 @@ Wraps all available public calls and intercepts [check](check.md) and [perform](
 | Name | Summary |
 |---|---|
 | [interaction](interaction.md) | `var interaction: WebInteraction<*>` |
-| [interceptor](interceptor.md) | `var interceptor: `[`Interceptor`](../../com.agoda.kakao.intercept/-interceptor/index.md)`<WebInteraction<*>, WebAssertion<*>, Atom<*>>?` |
+| [interceptor](interceptor.md) | `var interceptor: `[`Interceptor`](../../io.github.kakaoandroid.kakao.intercept/-interceptor/index.md)`<WebInteraction<*>, WebAssertion<*>, Atom<*>>?` |
 
 ### Functions
 
@@ -34,10 +34,10 @@ Wraps all available public calls and intercepts [check](check.md) and [perform](
 | [forceJavascriptEnabled](force-javascript-enabled.md) | `fun forceJavascriptEnabled(): `[`WebInteractionDelegate`](./index.md) |
 | [get](get.md) | `fun get(): `[`Any`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |
 | [inWindow](in-window.md) | `fun inWindow(window: WindowReference): `[`WebInteractionDelegate`](./index.md)<br>`fun inWindow(windowPicker: Atom<WindowReference>): `[`WebInteractionDelegate`](./index.md) |
-| [kakaoInterceptor](kakao-interceptor.md) | `fun kakaoInterceptor(): `[`Interceptor`](../../com.agoda.kakao.intercept/-interceptor/index.md)`<WebInteraction<*>, WebAssertion<*>, Atom<*>>?` |
+| [kakaoInterceptor](kakao-interceptor.md) | `fun kakaoInterceptor(): `[`Interceptor`](../../io.github.kakaoandroid.kakao.intercept/-interceptor/index.md)`<WebInteraction<*>, WebAssertion<*>, Atom<*>>?` |
 | [perform](perform.md) | `fun perform(atom: Atom<*>): `[`WebInteractionDelegate`](./index.md) |
 | [reset](reset.md) | `fun reset(): `[`WebInteractionDelegate`](./index.md) |
-| [screenInterceptors](screen-interceptors.md) | `fun screenInterceptors(): `[`Deque`](https://developer.android.com/reference/java/util/Deque.html)`<`[`Interceptor`](../../com.agoda.kakao.intercept/-interceptor/index.md)`<WebInteraction<*>, WebAssertion<*>, Atom<*>>>` |
+| [screenInterceptors](screen-interceptors.md) | `fun screenInterceptors(): `[`Deque`](https://developer.android.com/reference/java/util/Deque.html)`<`[`Interceptor`](../../io.github.kakaoandroid.kakao.intercept/-interceptor/index.md)`<WebInteraction<*>, WebAssertion<*>, Atom<*>>>` |
 | [withContextualElement](with-contextual-element.md) | `fun withContextualElement(elementPicker: Atom<ElementReference>): `[`WebInteractionDelegate`](./index.md) |
 | [withElement](with-element.md) | `fun withElement(element: ElementReference): `[`WebInteractionDelegate`](./index.md)<br>`fun withElement(elementPicker: Atom<ElementReference>): `[`WebInteractionDelegate`](./index.md) |
 | [withNoTimeout](with-no-timeout.md) | `fun withNoTimeout(): `[`WebInteractionDelegate`](./index.md) |

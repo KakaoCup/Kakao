@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.toolbar](../index.md) / [ToolbarViewAssertions](index.md) / [hasTitle](./has-title.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.toolbar](../index.md) / [ToolbarViewAssertions](index.md) / [hasTitle](./has-title.md)
 
 # hasTitle
 

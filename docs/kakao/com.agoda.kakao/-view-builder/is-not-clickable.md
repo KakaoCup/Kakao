@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [ViewBuilder](index.md) / [isNotClickable](./is-not-clickable.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao](../index.md) / [ViewBuilder](index.md) / [isNotClickable](./is-not-clickable.md)
 
 # isNotClickable
 

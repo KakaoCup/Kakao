@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [KAdapterItem](index.md) / [root](./root.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao](../index.md) / [KAdapterItem](index.md) / [root](./root.md)
 
 # root
 

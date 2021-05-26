@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.pager2](../index.md) / [KViewPager2](index.md) / [invoke](./invoke.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.pager2](../index.md) / [KViewPager2](index.md) / [invoke](./invoke.md)
 
 # invoke
 

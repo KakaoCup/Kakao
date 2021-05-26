@@ -1,8 +1,8 @@
-[kakao](../../index.md) / [com.agoda.kakao.pager2](../index.md) / [KViewPager2](index.md) / [&lt;init&gt;](./-init-.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.pager2](../index.md) / [KViewPager2](index.md) / [&lt;init&gt;](./-init-.md)
 
 # &lt;init&gt;
 
-`KViewPager2(builder: `[`ViewBuilder`](../../com.agoda.kakao.common.builders/-view-builder/index.md)`.() -> `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)`, itemTypeBuilder: `[`KViewPagerItemTypeBuilder`](../-k-view-pager-item-type-builder/index.md)`.() -> `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)`)`
+`KViewPager2(builder: `[`ViewBuilder`](../../io.github.kakaoandroid.kakao.common.builders/-view-builder/index.md)`.() -> `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)`, itemTypeBuilder: `[`KViewPagerItemTypeBuilder`](../-k-view-pager-item-type-builder/index.md)`.() -> `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)`)`
 
 Constructs view class with view interaction from given ViewBuilder
 
@@ -14,9 +14,9 @@ Constructs view class with view interaction from given ViewBuilder
 
 **See Also**
 
-[ViewBuilder](../../com.agoda.kakao.common.builders/-view-builder/index.md)
+[ViewBuilder](../../io.github.kakaoandroid.kakao.common.builders/-view-builder/index.md)
 
-`KViewPager2(parent: Matcher<`[`View`](https://developer.android.com/reference/android/view/View.html)`>, builder: `[`ViewBuilder`](../../com.agoda.kakao.common.builders/-view-builder/index.md)`.() -> `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)`, itemTypeBuilder: `[`KViewPagerItemTypeBuilder`](../-k-view-pager-item-type-builder/index.md)`.() -> `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)`)`
+`KViewPager2(parent: Matcher<`[`View`](https://developer.android.com/reference/android/view/View.html)`>, builder: `[`ViewBuilder`](../../io.github.kakaoandroid.kakao.common.builders/-view-builder/index.md)`.() -> `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)`, itemTypeBuilder: `[`KViewPagerItemTypeBuilder`](../-k-view-pager-item-type-builder/index.md)`.() -> `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)`)`
 
 Constructs view class with parent and view interaction from given ViewBuilder
 
@@ -30,9 +30,9 @@ Constructs view class with parent and view interaction from given ViewBuilder
 
 **See Also**
 
-[ViewBuilder](../../com.agoda.kakao.common.builders/-view-builder/index.md)
+[ViewBuilder](../../io.github.kakaoandroid.kakao.common.builders/-view-builder/index.md)
 
-`KViewPager2(parent: DataInteraction, builder: `[`ViewBuilder`](../../com.agoda.kakao.common.builders/-view-builder/index.md)`.() -> `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)`, itemTypeBuilder: `[`KViewPagerItemTypeBuilder`](../-k-view-pager-item-type-builder/index.md)`.() -> `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)`)`
+`KViewPager2(parent: DataInteraction, builder: `[`ViewBuilder`](../../io.github.kakaoandroid.kakao.common.builders/-view-builder/index.md)`.() -> `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)`, itemTypeBuilder: `[`KViewPagerItemTypeBuilder`](../-k-view-pager-item-type-builder/index.md)`.() -> `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)`)`
 
 Constructs view class with parent and view interaction from given ViewBuilder
 
@@ -46,5 +46,5 @@ Constructs view class with parent and view interaction from given ViewBuilder
 
 **See Also**
 
-[ViewBuilder](../../com.agoda.kakao.common.builders/-view-builder/index.md)
+[ViewBuilder](../../io.github.kakaoandroid.kakao.common.builders/-view-builder/index.md)
 

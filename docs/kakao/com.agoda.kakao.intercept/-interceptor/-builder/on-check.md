@@ -1,4 +1,4 @@
-[kakao](../../../index.md) / [com.agoda.kakao.intercept](../../index.md) / [Interceptor](../index.md) / [Builder](index.md) / [onCheck](./on-check.md)
+[kakao](../../../index.md) / [io.github.kakaoandroid.kakao.intercept](../../index.md) / [Interceptor](../index.md) / [Builder](index.md) / [onCheck](./on-check.md)
 
 # onCheck
 

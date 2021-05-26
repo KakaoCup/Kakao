@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.bottomnav](../index.md) / [BottomNavigationViewActions](index.md) / [setSelectedItem](./set-selected-item.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.bottomnav](../index.md) / [BottomNavigationViewActions](index.md) / [setSelectedItem](./set-selected-item.md)
 
 # setSelectedItem
 

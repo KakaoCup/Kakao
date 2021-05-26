@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.rating](../index.md) / [RatingBarAssertions](index.md) / [hasRating](./has-rating.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.rating](../index.md) / [RatingBarAssertions](index.md) / [hasRating](./has-rating.md)
 
 # hasRating
 

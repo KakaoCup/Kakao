@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.spinner](../index.md) / [KSpinner](index.md) / [matcher](./matcher.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.spinner](../index.md) / [KSpinner](index.md) / [matcher](./matcher.md)
 
 # matcher
 

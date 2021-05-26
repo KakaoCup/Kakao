@@ -1,8 +1,8 @@
-[kakao](../../index.md) / [com.agoda.kakao.common.assertions](../index.md) / [BaseAssertions](index.md) / [hasSibling](./has-sibling.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.common.assertions](../index.md) / [BaseAssertions](index.md) / [hasSibling](./has-sibling.md)
 
 # hasSibling
 
-`open fun hasSibling(function: `[`ViewBuilder`](../../com.agoda.kakao.common.builders/-view-builder/index.md)`.() -> `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+`open fun hasSibling(function: `[`ViewBuilder`](../../io.github.kakaoandroid.kakao.common.builders/-view-builder/index.md)`.() -> `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
 
 Checks if the view has given sibling
 
@@ -12,5 +12,5 @@ Checks if the view has given sibling
 
 **See Also**
 
-[ViewBuilder](../../com.agoda.kakao.common.builders/-view-builder/index.md)
+[ViewBuilder](../../io.github.kakaoandroid.kakao.common.builders/-view-builder/index.md)
 

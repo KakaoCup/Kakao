@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.edit](../index.md) / [TextInputLayoutAssertions](index.md) / [isHintDisabled](./is-hint-disabled.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.edit](../index.md) / [TextInputLayoutAssertions](index.md) / [isHintDisabled](./is-hint-disabled.md)
 
 # isHintDisabled
 

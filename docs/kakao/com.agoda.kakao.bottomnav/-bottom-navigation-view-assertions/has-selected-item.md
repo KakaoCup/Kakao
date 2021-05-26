@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.bottomnav](../index.md) / [BottomNavigationViewAssertions](index.md) / [hasSelectedItem](./has-selected-item.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.bottomnav](../index.md) / [BottomNavigationViewAssertions](index.md) / [hasSelectedItem](./has-selected-item.md)
 
 # hasSelectedItem
 

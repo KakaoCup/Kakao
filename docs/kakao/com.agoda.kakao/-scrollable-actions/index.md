@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [ScrollableActions](./index.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao](../index.md) / [ScrollableActions](./index.md)
 
 # ScrollableActions
 

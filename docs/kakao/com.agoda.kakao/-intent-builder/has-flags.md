@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [IntentBuilder](index.md) / [hasFlags](./has-flags.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao](../index.md) / [IntentBuilder](index.md) / [hasFlags](./has-flags.md)
 
 # hasFlags
 

@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [KAdapterItemTypeBuilder](index.md) / [itemType](./item-type.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao](../index.md) / [KAdapterItemTypeBuilder](index.md) / [itemType](./item-type.md)
 
 # itemType
 

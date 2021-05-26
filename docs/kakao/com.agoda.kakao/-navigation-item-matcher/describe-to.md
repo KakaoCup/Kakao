@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [NavigationItemMatcher](index.md) / [describeTo](./describe-to.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao](../index.md) / [NavigationItemMatcher](index.md) / [describeTo](./describe-to.md)
 
 # describeTo
 

@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.list](../index.md) / [DataBuilder](index.md) / [equals](./equals.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.list](../index.md) / [DataBuilder](index.md) / [equals](./equals.md)
 
 # equals
 

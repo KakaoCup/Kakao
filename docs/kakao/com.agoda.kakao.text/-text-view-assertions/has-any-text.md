@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.text](../index.md) / [TextViewAssertions](index.md) / [hasAnyText](./has-any-text.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.text](../index.md) / [TextViewAssertions](index.md) / [hasAnyText](./has-any-text.md)
 
 # hasAnyText
 

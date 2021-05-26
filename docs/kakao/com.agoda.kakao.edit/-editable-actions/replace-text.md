@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.edit](../index.md) / [EditableActions](index.md) / [replaceText](./replace-text.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.edit](../index.md) / [EditableActions](index.md) / [replaceText](./replace-text.md)
 
 # replaceText
 

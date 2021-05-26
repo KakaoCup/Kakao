@@ -1,4 +1,4 @@
-[kakao](../index.md) / [com.agoda.kakao.common.utilities](index.md) / [getResourceColor](./get-resource-color.md)
+[kakao](../index.md) / [io.github.kakaoandroid.kakao.common.utilities](index.md) / [getResourceColor](./get-resource-color.md)
 
 # getResourceColor
 

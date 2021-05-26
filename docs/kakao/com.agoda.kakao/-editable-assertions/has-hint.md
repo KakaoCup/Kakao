@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao](../index.md) / [EditableAssertions](index.md) / [hasHint](./has-hint.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao](../index.md) / [EditableAssertions](index.md) / [hasHint](./has-hint.md)
 
 # hasHint
 

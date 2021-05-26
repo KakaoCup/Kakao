@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.common.matchers](../index.md) / [SpinnerPopupMatcher](index.md) / [matchesSafely](./matches-safely.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.common.matchers](../index.md) / [SpinnerPopupMatcher](index.md) / [matchesSafely](./matches-safely.md)
 
 # matchesSafely
 

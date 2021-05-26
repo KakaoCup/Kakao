@@ -1,4 +1,4 @@
-[kakao](../../index.md) / [com.agoda.kakao.picker.time](../index.md) / [KTimePickerDialog](index.md) / [&lt;init&gt;](./-init-.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.picker.time](../index.md) / [KTimePickerDialog](index.md) / [&lt;init&gt;](./-init-.md)
 
 # &lt;init&gt;
 

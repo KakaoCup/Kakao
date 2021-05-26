@@ -1,10 +1,10 @@
-[kakao](../../index.md) / [com.agoda.kakao.pager2](../index.md) / [ViewPager2Actions](index.md) / [scrollTo](./scroll-to.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.pager2](../index.md) / [ViewPager2Actions](index.md) / [scrollTo](./scroll-to.md)
 
 # scrollTo
 
 `open fun scrollTo(position: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
 
-Overrides [ScrollableActions.scrollTo](../../com.agoda.kakao.common.actions/-scrollable-actions/scroll-to.md)
+Overrides [ScrollableActions.scrollTo](../../io.github.kakaoandroid.kakao.common.actions/-scrollable-actions/scroll-to.md)
 
 Scrolls to the specific position of the view
 

@@ -1,8 +1,8 @@
-[kakao](../../index.md) / [com.agoda.kakao.recycler](../index.md) / [KRecyclerView](index.md) / [childWith](./child-with.md)
+[kakao](../../index.md) / [io.github.kakaoandroid.kakao.recycler](../index.md) / [KRecyclerView](index.md) / [childWith](./child-with.md)
 
 # childWith
 
-`inline fun <reified T : `[`KRecyclerItem`](../-k-recycler-item/index.md)`<*>> childWith(noinline childMatcher: `[`ViewBuilder`](../../com.agoda.kakao.common.builders/-view-builder/index.md)`.() -> `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)`): `[`T`](child-with.md#T)
+`inline fun <reified T : `[`KRecyclerItem`](../-k-recycler-item/index.md)`<*>> childWith(noinline childMatcher: `[`ViewBuilder`](../../io.github.kakaoandroid.kakao.common.builders/-view-builder/index.md)`.() -> `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)`): `[`T`](child-with.md#T)
 
 Performs given actions/assertion on child that matches given matcher
 
