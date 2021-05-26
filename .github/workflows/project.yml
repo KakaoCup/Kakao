@@ -11,4 +11,4 @@ jobs:
           java-version: 1.8
       - name: detekt
         run: |
-          ./gradlew clean detektCheck || true
+          ./gradlew clean detekt

@@ -1,0 +1,106 @@
+complexity:
+  StringLiteralDuplication:
+    active: true
+    excludes: ['**/test/**', '**/*Test.kt', '**/*Spec.kt']
+    threshold: 5
+    ignoreAnnotation: true
+    excludeStringsWithLessThan5Characters: true
+    ignoreStringsRegex: '$^'
+  ComplexInterface:
+    active: true
+    threshold: 10
+    includeStaticDeclarations: false
+    includePrivateDeclarations: false
+  ComplexMethod:
+    active: true
+    ignoreSingleWhenExpression: true
+  LargeClass:
+    active: true
+    excludes: ['**/test/**', '**/*.Test.kt', '**/*.Spec.kt']
+  MethodOverloading:
+    active: true
+
+exceptions:
+  NotImplementedDeclaration:
+    active: true
+  InstanceOfCheckForException:
+    active: true
+  RethrowCaughtException:
+    active: true
+  ReturnFromFinally:
+    active: true
+  ThrowingExceptionFromFinally:
+    active: true
+  ThrowingExceptionsWithoutMessageOrCause:
+    active: true
+  ThrowingNewInstanceOfSameException:
+    active: true
+
+formatting:
+  active: true
+  android: false
+  autoCorrect: true
+  AnnotationSpacing:
+    active: true
+  EnumEntryNameCase:
+    active: true
+  ImportOrdering:
+    active: true
+  Indentation:
+    active: true
+  MaximumLineLength:
+    active: false
+  NoEmptyFirstLineInMethodBlock:
+    active: true
+  ParameterListWrapping:
+    active: false
+  SpacingAroundAngleBrackets:
+    active: true
+  SpacingAroundDoubleColon:
+    active: true
+  SpacingAroundUnaryOperator:
+    active: true
+  SpacingBetweenDeclarationsWithAnnotations:
+    active: true
+  SpacingBetweenDeclarationsWithComments:
+    active: true
+
+potential-bugs:
+  UnsafeCast:
+    active: true
+    excludes: ['**/test/**', '**/*.Test.kt', '**/*.Spec.kt']
+  UselessPostfixExpression:
+    active: true
+
+style:
+  ClassOrdering:
+    active: true
+  CollapsibleIfStatements:
+    active: true
+  ForbiddenComment:
+    active: true
+    values: ['TODO:', 'FIXME:', 'STOPSHIP:', '@author', '@requiresTypeResolution']
+  MaxLineLength:
+    active: true
+    excludes: ['**/test/**', '**/*Test.kt', '**/*Spec.kt']
+    excludeCommentStatements: true
+  MagicNumber:
+    ignorePropertyDeclaration: true
+    ignoreAnnotation: true
+    ignoreEnums: true
+    ignoreNumbers: ['-1', '0', '1', '2', '100', '1000']
+    excludes: [ '**/test/**', '**/*Test.kt', '**/*Spec.kt' ]
+  NestedClassesVisibility:
+    active: true
+  RedundantVisibilityModifierRule:
+    active: true
+  ReturnCount:
+    active: true
+    excludeGuardClauses: true
+  SpacingBetweenPackageAndImports:
+    active: true
+  UnusedPrivateMember:
+    active: true
+    allowedNames: '(_|ignored|expected)'
+  UseCheckOrError:
+    active: true
