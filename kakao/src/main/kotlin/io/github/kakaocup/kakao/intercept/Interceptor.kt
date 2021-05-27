@@ -12,8 +12,8 @@ import io.github.kakaocup.kakao.intercept.Interceptor.Builder
 /**
  * Base class for intercepting the call chain from Kakao to Espresso.
  *
- * Interceptors can be provided through [Kakao][com.agoda.kakao.Kakao] runtime,
- * different [Screens][com.agoda.kakao.screen.Screen] as well as [KViews][com.agoda.kakao.common.views.KBaseView].
+ * Interceptors can be provided through [Kakao][io.github.kakaocup.kakao.Kakao] runtime,
+ * different [Screens][io.github.kakaocup.kakao.screen.Screen] as well as [KViews][io.github.kakaocup.kakao.common.views.KBaseView].
  *
  * Interceptors are stacked during the runtime for any Kakao-Espresso `check` and `perform` operations.
  * The stack ordering is following: KView interceptor -> Screen interceptors -> Kakao interceptor.
@@ -35,9 +35,9 @@ import io.github.kakaocup.kakao.intercept.Interceptor.Builder
  * onPerform?.invoke()
  * ```
  *
- * @see com.agoda.kakao.Kakao
- * @see com.agoda.kakao.screen.Screen
- * @see com.agoda.kakao.common.views.KBaseView
+ * @see io.github.kakaocup.kakao.Kakao
+ * @see io.github.kakaocup.kakao.screen.Screen
+ * @see io.github.kakaocup.kakao.common.views.KBaseView
  */
 class Interceptor<INTERACTION, ASSERTION, ACTION>(
     val onCheck: Interception<(INTERACTION, ASSERTION) -> Unit>?,
@@ -97,10 +97,10 @@ class Interceptor<INTERACTION, ASSERTION, ACTION>(
 
     /**
      * Configuration class that is used for building interceptors on the
-     * [Kakao][com.agoda.kakao.Kakao] runtime and [Screen][com.agoda.kakao.screen.Screen] levels.
+     * [Kakao][io.github.kakaocup.kakao.Kakao] runtime and [Screen][io.github.kakaocup.kakao.screen.Screen] levels.
      *
-     * @see com.agoda.kakao.Kakao
-     * @see com.agoda.kakao.screen.Screen
+     * @see io.github.kakaocup.kakao.Kakao
+     * @see io.github.kakaocup.kakao.screen.Screen
      */
     class Configurator {
         private var viewInterceptor: Interceptor<ViewInteraction, ViewAssertion, ViewAction>? = null

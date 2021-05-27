@@ -20,10 +20,10 @@ import org.hamcrest.Matchers
  *
  * Provides basic assertions that can be performed on any view
  *
- * @see com.agoda.kakao.text.TextViewAssertions
- * @see com.agoda.kakao.check.CheckableAssertions
- * @see com.agoda.kakao.pager.ViewPagerAssertions
- * @see com.agoda.kakao.image.ImageViewAssertions
+ * @see io.github.kakaocup.kakao.text.TextViewAssertions
+ * @see io.github.kakaocup.kakao.check.CheckableAssertions
+ * @see io.github.kakaocup.kakao.pager.ViewPagerAssertions
+ * @see io.github.kakaocup.kakao.image.ImageViewAssertions
  */
 interface BaseAssertions {
     val view: ViewInteractionDelegate

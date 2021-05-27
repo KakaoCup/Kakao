@@ -8,9 +8,9 @@ Provides assertions for view with adapters
 
 **See Also**
 
-[com.agoda.kakao.recycler.RecyclerAdapterAssertions](#)
+[io.github.kakaocup.kakao.recycler.RecyclerAdapterAssertions](../../io.github.kakaocup.kakao.recycler/-recycler-adapter-assertions/index.md)
 
-[com.agoda.kakao.list.AbsListViewAdapterAssertions](#)
+[io.github.kakaocup.kakao.list.AbsListViewAdapterAssertions](../../io.github.kakaocup.kakao.list/-abs-list-view-adapter-assertions/index.md)
 
 ### Properties
 

@@ -258,7 +258,7 @@ For more detailed info please refer to the documentation.
 Maven
 ```xml
 <dependency>
-  <groupId>com.agoda.kakao</groupId>
+  <groupId>io.github.kakaocup.kakao</groupId>
   <artifactId>kakao</artifactId>
   <version><latest version></version>
   <type>pom</type>
@@ -271,7 +271,7 @@ repositories {
 }
 
 dependencies {
-    androidTestImplementation 'com.agoda.kakao:kakao:<latest version>'
+    androidTestImplementation 'io.github.kakaocup.kakao:kakao:<latest version>'
 }
 ```
 
@@ -280,7 +280,7 @@ Default artifact starting from `2.0.0` includes AndroidX libraries to build upon
 old support libraries, please use `2.X.X-support` artifact.
 ```
 dependencies {
-    androidTestImplementation 'com.agoda.kakao:kakao:2.1.0-support'
+    androidTestImplementation 'io.github.kakaocup.kakao:kakao:2.1.0-support'
 }
 ```
 **IMPORTANT:** We stopped the development for the `-support` artifact and version `2.1.0-support` is the

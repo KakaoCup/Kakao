@@ -10,13 +10,13 @@ Provides basic assertions that can be performed on any view
 
 **See Also**
 
-[com.agoda.kakao.text.TextViewAssertions](#)
+[io.github.kakaocup.kakao.text.TextViewAssertions](../../io.github.kakaocup.kakao.text/-text-view-assertions/index.md)
 
-[com.agoda.kakao.check.CheckableAssertions](#)
+[io.github.kakaocup.kakao.check.CheckableAssertions](../../io.github.kakaocup.kakao.check/-checkable-assertions/index.md)
 
-[com.agoda.kakao.pager.ViewPagerAssertions](#)
+[io.github.kakaocup.kakao.pager.ViewPagerAssertions](../../io.github.kakaocup.kakao.pager/-view-pager-assertions/index.md)
 
-[com.agoda.kakao.image.ImageViewAssertions](#)
+[io.github.kakaocup.kakao.image.ImageViewAssertions](../../io.github.kakaocup.kakao.image/-image-view-assertions/index.md)
 
 ### Properties
 

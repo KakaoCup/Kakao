@@ -6,8 +6,8 @@
 
 Base class for intercepting the call chain from Kakao to Espresso.
 
-Interceptors can be provided through [Kakao](#) runtime,
-different [Screens](#) as well as [KViews](#).
+Interceptors can be provided through [Kakao](../../io.github.kakaocup.kakao/-kakao/index.md) runtime,
+different [Screens](../../io.github.kakaocup.kakao.screen/-screen/index.md) as well as [KViews](../../io.github.kakaocup.kakao.common.views/-k-base-view/index.md).
 
 Interceptors are stacked during the runtime for any Kakao-Espresso `check` and `perform` operations.
 The stack ordering is following: KView interceptor -&gt; Screen interceptors -&gt; Kakao interceptor.
@@ -32,11 +32,11 @@ onPerform?.invoke()
 
 **See Also**
 
-[com.agoda.kakao.Kakao](#)
+[io.github.kakaocup.kakao.Kakao](../../io.github.kakaocup.kakao/-kakao/index.md)
 
-[com.agoda.kakao.screen.Screen](#)
+[io.github.kakaocup.kakao.screen.Screen](../../io.github.kakaocup.kakao.screen/-screen/index.md)
 
-[com.agoda.kakao.common.views.KBaseView](#)
+[io.github.kakaocup.kakao.common.views.KBaseView](../../io.github.kakaocup.kakao.common.views/-k-base-view/index.md)
 
 ### Types
 
@@ -44,7 +44,7 @@ onPerform?.invoke()
 |---|---|
 | [Builder](-builder/index.md) | `class Builder<INTERACTION, ASSERTION, ACTION>`<br>Builder class that is used to build a single instance of [Interceptor](./index.md). |
 | [Configuration](-configuration/index.md) | `data class Configuration` |
-| [Configurator](-configurator/index.md) | `class Configurator`<br>Configuration class that is used for building interceptors on the [Kakao](#) runtime and [Screen](#) levels. |
+| [Configurator](-configurator/index.md) | `class Configurator`<br>Configuration class that is used for building interceptors on the [Kakao](../../io.github.kakaocup.kakao/-kakao/index.md) runtime and [Screen](../../io.github.kakaocup.kakao.screen/-screen/index.md) levels. |
 
 ### Constructors
 

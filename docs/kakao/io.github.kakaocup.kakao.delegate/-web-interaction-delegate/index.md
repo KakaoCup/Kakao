@@ -4,7 +4,7 @@
 
 `class WebInteractionDelegate : `[`Delegate`](../-delegate/index.md)`<WebInteraction<*>, WebAssertion<*>, Atom<*>>`
 
-Delegation class for [Web.WebInteraction](#).
+Delegation class for [androidx.test.espresso.web.sugar.Web.WebInteraction](#).
 Wraps all available public calls and intercepts [check](check.md) and [perform](perform.md).
 
 **See Also**
@@ -17,7 +17,7 @@ Wraps all available public calls and intercepts [check](check.md) and [perform](
 
 | Name | Summary |
 |---|---|
-| [&lt;init&gt;](-init-.md) | `WebInteractionDelegate(interaction: WebInteraction<*>)`<br>Delegation class for [Web.WebInteraction](#). Wraps all available public calls and intercepts [check](check.md) and [perform](perform.md). |
+| [&lt;init&gt;](-init-.md) | `WebInteractionDelegate(interaction: WebInteraction<*>)`<br>Delegation class for [androidx.test.espresso.web.sugar.Web.WebInteraction](#). Wraps all available public calls and intercepts [check](check.md) and [perform](perform.md). |
 
 ### Properties
 

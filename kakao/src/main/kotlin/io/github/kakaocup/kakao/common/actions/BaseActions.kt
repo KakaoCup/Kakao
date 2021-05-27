@@ -21,10 +21,10 @@ import org.hamcrest.Matcher
  *
  * Provides a lot of basic action methods, such as click(), scrollTo(), etc.
  *
- * @see com.agoda.kakao.edit.EditableActions
- * @see com.agoda.kakao.common.actions.SwipeableActions
- * @see com.agoda.kakao.common.actions.ScrollableActions
- * @see com.agoda.kakao.check.CheckableActions
+ * @see io.github.kakaocup.kakao.edit.EditableActions
+ * @see io.github.kakaocup.kakao.common.actions.SwipeableActions
+ * @see io.github.kakaocup.kakao.common.actions.ScrollableActions
+ * @see io.github.kakaocup.kakao.check.CheckableActions
  */
 interface BaseActions {
     val view: ViewInteractionDelegate

@@ -10,9 +10,9 @@ Important: does not hold any implementation
 
 **See Also**
 
-[com.agoda.kakao.recycler.RecyclerActions](#)
+[io.github.kakaocup.kakao.recycler.RecyclerActions](../../io.github.kakaocup.kakao.recycler/-recycler-actions/index.md)
 
-[com.agoda.kakao.scroll.ScrollViewActions](#)
+[io.github.kakaocup.kakao.scroll.ScrollViewActions](../../io.github.kakaocup.kakao.scroll/-scroll-view-actions/index.md)
 
 ### Inherited Properties
 

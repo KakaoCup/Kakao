@@ -11,7 +11,7 @@ import org.hamcrest.Matcher
 /**
  * View with BaseActions and ImageViewAssertions
  *
- * @see com.agoda.kakao.common.actions.BaseActions
+ * @see io.github.kakaocup.kakao.common.actions.BaseActions
  * @see ImageViewAssertions
  */
 class KImageView : KBaseView<KImageView>, ImageViewAssertions {
