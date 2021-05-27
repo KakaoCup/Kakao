@@ -15,7 +15,8 @@ ext.versions = [
         espresso_rules : '1.3.0',
         espresso_runner: '1.3.0',
         junit          : '4.12',
-        junit_ext      : '1.1.2'
+        junit_ext      : '1.1.2',
+        gradle_versions: '0.39.0'
 ]
 ext.libraries = [
         kotlin          : "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin",
@@ -38,7 +39,8 @@ ext.libraries = [
         espresso_contrib: "androidx.test.espresso:espresso-contrib:$versions.espresso",
         espresso_intents: "androidx.test.espresso:espresso-intents:$versions.espresso",
         junit           : "junit:junit:$versions.junit",
-        junit_ext       :  "androidx.test.ext:junit:$versions.junit_ext"
+        junit_ext       : "androidx.test.ext:junit:$versions.junit_ext",
+        gradle_versions : "com.github.ben-manes:gradle-versions-plugin:$versions.gradle_versions"
 ]
 
 def kakaoVersion = new File('buildsystem/version').text.trim()
