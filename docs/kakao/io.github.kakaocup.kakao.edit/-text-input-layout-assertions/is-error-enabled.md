@@ -1,5 +1,11 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.edit](../index.md) / [TextInputLayoutAssertions](index.md) / [isErrorEnabled](./is-error-enabled.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.edit](../index.md)/[TextInputLayoutAssertions](index.md)/[isErrorEnabled](is-error-enabled.md)
 
-# isErrorEnabled
 
-`open fun isErrorEnabled(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# isErrorEnabled  
+[androidJvm]  
+Content  
+open fun [isErrorEnabled](is-error-enabled.md)()  
+
+
+

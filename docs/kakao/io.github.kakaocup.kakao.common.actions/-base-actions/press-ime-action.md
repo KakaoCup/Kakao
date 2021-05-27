@@ -1,8 +1,17 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.common.actions](../index.md) / [BaseActions](index.md) / [pressImeAction](./press-ime-action.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.common.actions](../index.md)/[BaseActions](index.md)/[pressImeAction](press-ime-action.md)
 
-# pressImeAction
 
-`open fun pressImeAction(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# pressImeAction  
+[androidJvm]  
+Content  
+open fun [pressImeAction](press-ime-action.md)()  
+More info  
+
 
 Presses IME action, if supported view is in focus
+
+  
+
+
 

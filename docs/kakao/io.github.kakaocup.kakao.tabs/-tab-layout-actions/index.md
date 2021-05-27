@@ -1,39 +1,41 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.tabs](../index.md) / [TabLayoutActions](./index.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.tabs](../index.md)/[TabLayoutActions](index.md)
 
-# TabLayoutActions
 
-`interface TabLayoutActions : `[`BaseActions`](../../io.github.kakaocup.kakao.common.actions/-base-actions/index.md)
+
+# TabLayoutActions  
+ [androidJvm] interface [TabLayoutActions](index.md) : [BaseActions](../../io.github.kakaocup.kakao.common.actions/-base-actions/index.md)
 
 Provides action for TabLayout
 
-### Inherited Properties
+   
 
-| Name | Summary |
+
+## Functions  
+  
+|  Name |  Summary | 
 |---|---|
-| [view](../../io.github.kakaocup.kakao.common.actions/-base-actions/view.md) | `abstract val view: `[`ViewInteractionDelegate`](../../io.github.kakaocup.kakao.delegate/-view-interaction-delegate/index.md) |
+| <a name="io.github.kakaocup.kakao.common.actions/BaseActions/act/#kotlin.Function0[androidx.test.espresso.ViewAction]/PointingToDeclaration/"></a>[act](../../io.github.kakaocup.kakao.common.actions/-base-actions/act.md)| <a name="io.github.kakaocup.kakao.common.actions/BaseActions/act/#kotlin.Function0[androidx.test.espresso.ViewAction]/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun [act](../../io.github.kakaocup.kakao.common.actions/-base-actions/act.md)(function: () -> ViewAction)  <br>More info  <br>Performs custom action on a view  <br><br><br>|
+| <a name="io.github.kakaocup.kakao.common.actions/BaseActions/click/#androidx.test.espresso.action.GeneralLocation/PointingToDeclaration/"></a>[click](../../io.github.kakaocup.kakao.common.actions/-base-actions/click.md)| <a name="io.github.kakaocup.kakao.common.actions/BaseActions/click/#androidx.test.espresso.action.GeneralLocation/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun [click](../../io.github.kakaocup.kakao.common.actions/-base-actions/click.md)(location: GeneralLocation = GeneralLocation.VISIBLE_CENTER)  <br>More info  <br>Performs click on view  <br><br><br>|
+| <a name="io.github.kakaocup.kakao.common.actions/BaseActions/doubleClick/#androidx.test.espresso.action.GeneralLocation/PointingToDeclaration/"></a>[doubleClick](../../io.github.kakaocup.kakao.common.actions/-base-actions/double-click.md)| <a name="io.github.kakaocup.kakao.common.actions/BaseActions/doubleClick/#androidx.test.espresso.action.GeneralLocation/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun [doubleClick](../../io.github.kakaocup.kakao.common.actions/-base-actions/double-click.md)(location: GeneralLocation = GeneralLocation.VISIBLE_CENTER)  <br>More info  <br>Performs double click on view  <br><br><br>|
+| <a name="io.github.kakaocup.kakao.tabs/TabLayoutActions/getSelectedItem/#/PointingToDeclaration/"></a>[getSelectedItem](get-selected-item.md)| <a name="io.github.kakaocup.kakao.tabs/TabLayoutActions/getSelectedItem/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun [getSelectedItem](get-selected-item.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  <br>More info  <br>Returns the currently selected item id  <br><br><br>|
+| <a name="io.github.kakaocup.kakao.common.actions/BaseActions/longClick/#androidx.test.espresso.action.GeneralLocation/PointingToDeclaration/"></a>[longClick](../../io.github.kakaocup.kakao.common.actions/-base-actions/long-click.md)| <a name="io.github.kakaocup.kakao.common.actions/BaseActions/longClick/#androidx.test.espresso.action.GeneralLocation/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun [longClick](../../io.github.kakaocup.kakao.common.actions/-base-actions/long-click.md)(location: GeneralLocation = GeneralLocation.VISIBLE_CENTER)  <br>More info  <br>Performs long click on view  <br><br><br>|
+| <a name="io.github.kakaocup.kakao.common.actions/BaseActions/onFailure/#kotlin.Function2[kotlin.Throwable,org.hamcrest.Matcher[android.view.View],kotlin.Unit]/PointingToDeclaration/"></a>[onFailure](../../io.github.kakaocup.kakao.common.actions/-base-actions/on-failure.md)| <a name="io.github.kakaocup.kakao.common.actions/BaseActions/onFailure/#kotlin.Function2[kotlin.Throwable,org.hamcrest.Matcher[android.view.View],kotlin.Unit]/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun [onFailure](../../io.github.kakaocup.kakao.common.actions/-base-actions/on-failure.md)(function: (error: [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html), matcher: Matcher<[View](https://developer.android.com/reference/kotlin/android/view/View.html)>) -> [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html))  <br>More info  <br>Adds failure handler to the view  <br><br><br>|
+| <a name="io.github.kakaocup.kakao.common.actions/BaseActions/pressImeAction/#/PointingToDeclaration/"></a>[pressImeAction](../../io.github.kakaocup.kakao.common.actions/-base-actions/press-ime-action.md)| <a name="io.github.kakaocup.kakao.common.actions/BaseActions/pressImeAction/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun [pressImeAction](../../io.github.kakaocup.kakao.common.actions/-base-actions/press-ime-action.md)()  <br>More info  <br>Presses IME action, if supported view is in focus  <br><br><br>|
+| <a name="io.github.kakaocup.kakao.common.actions/BaseActions/repeatUntil/#kotlin.Int#kotlin.Function0[androidx.test.espresso.ViewAction]#kotlin.Function1[io.github.kakaocup.kakao.common.builders.ViewBuilder,kotlin.Unit]/PointingToDeclaration/"></a>[repeatUntil](../../io.github.kakaocup.kakao.common.actions/-base-actions/repeat-until.md)| <a name="io.github.kakaocup.kakao.common.actions/BaseActions/repeatUntil/#kotlin.Int#kotlin.Function0[androidx.test.espresso.ViewAction]#kotlin.Function1[io.github.kakaocup.kakao.common.builders.ViewBuilder,kotlin.Unit]/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun [repeatUntil](../../io.github.kakaocup.kakao.common.actions/-base-actions/repeat-until.md)(maxAttempts: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) = 1, action: () -> ViewAction, matcher: [ViewBuilder](../../io.github.kakaocup.kakao.common.builders/-view-builder/index.md).() -> [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html))  <br>More info  <br>Repeats given action on the view until this view will match the given matcher  <br><br><br>|
+| <a name="io.github.kakaocup.kakao.common.actions/BaseActions/scrollTo/#/PointingToDeclaration/"></a>[scrollTo](../../io.github.kakaocup.kakao.common.actions/-base-actions/scroll-to.md)| <a name="io.github.kakaocup.kakao.common.actions/BaseActions/scrollTo/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun [scrollTo](../../io.github.kakaocup.kakao.common.actions/-base-actions/scroll-to.md)()  <br>More info  <br>Scrolls to the view, if possible  <br><br><br>|
+| <a name="io.github.kakaocup.kakao.tabs/TabLayoutActions/selectTab/#kotlin.Int/PointingToDeclaration/"></a>[selectTab](select-tab.md)| <a name="io.github.kakaocup.kakao.tabs/TabLayoutActions/selectTab/#kotlin.Int/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun [selectTab](select-tab.md)(index: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))  <br>More info  <br>Selects tab at given index  <br><br><br>|
 
-### Functions
 
-| Name | Summary |
+## Properties  
+  
+|  Name |  Summary | 
 |---|---|
-| [getSelectedItem](get-selected-item.md) | `open fun getSelectedItem(): `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)<br>Returns the currently selected item id |
-| [selectTab](select-tab.md) | `open fun selectTab(index: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)<br>Selects tab at given index |
+| <a name="io.github.kakaocup.kakao.tabs/TabLayoutActions/view/#/PointingToDeclaration/"></a>[view](index.md#-1865512451%2FProperties%2F34310170)| <a name="io.github.kakaocup.kakao.tabs/TabLayoutActions/view/#/PointingToDeclaration/"></a> [androidJvm] abstract val [view](index.md#-1865512451%2FProperties%2F34310170): [ViewInteractionDelegate](../../io.github.kakaocup.kakao.delegate/-view-interaction-delegate/index.md)   <br>|
 
-### Inherited Functions
 
-| Name | Summary |
-|---|---|
-| [act](../../io.github.kakaocup.kakao.common.actions/-base-actions/act.md) | `open fun act(function: () -> ViewAction): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)<br>Performs custom action on a view |
-| [click](../../io.github.kakaocup.kakao.common.actions/-base-actions/click.md) | `open fun click(location: GeneralLocation = GeneralLocation.VISIBLE_CENTER): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)<br>Performs click on view |
-| [doubleClick](../../io.github.kakaocup.kakao.common.actions/-base-actions/double-click.md) | `open fun doubleClick(location: GeneralLocation = GeneralLocation.VISIBLE_CENTER): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)<br>Performs double click on view |
-| [longClick](../../io.github.kakaocup.kakao.common.actions/-base-actions/long-click.md) | `open fun longClick(location: GeneralLocation = GeneralLocation.VISIBLE_CENTER): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)<br>Performs long click on view |
-| [onFailure](../../io.github.kakaocup.kakao.common.actions/-base-actions/on-failure.md) | `open fun onFailure(function: (error: `[`Throwable`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)`, matcher: Matcher<`[`View`](https://developer.android.com/reference/android/view/View.html)`>) -> `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)<br>Adds failure handler to the view |
-| [pressImeAction](../../io.github.kakaocup.kakao.common.actions/-base-actions/press-ime-action.md) | `open fun pressImeAction(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)<br>Presses IME action, if supported view is in focus |
-| [repeatUntil](../../io.github.kakaocup.kakao.common.actions/-base-actions/repeat-until.md) | `open fun repeatUntil(maxAttempts: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` = 1, action: () -> ViewAction, matcher: `[`ViewBuilder`](../../io.github.kakaocup.kakao.common.builders/-view-builder/index.md)`.() -> `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)<br>Repeats given action on the view until this view will match the given matcher |
-| [scrollTo](../../io.github.kakaocup.kakao.common.actions/-base-actions/scroll-to.md) | `open fun scrollTo(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)<br>Scrolls to the view, if possible |
+## Inheritors  
+  
+|  Name | 
+|---|
+| <a name="io.github.kakaocup.kakao.tabs/KTabLayout///PointingToDeclaration/"></a>[KTabLayout](../-k-tab-layout/index.md)|
 
-### Inheritors
-
-| Name | Summary |
-|---|---|
-| [KTabLayout](../-k-tab-layout/index.md) | `class KTabLayout : `[`KBaseView`](../../io.github.kakaocup.kakao.common.views/-k-base-view/index.md)`<`[`KTabLayout`](../-k-tab-layout/index.md)`>, `[`TabLayoutActions`](./index.md)`, `[`TabLayoutAssertions`](../-tab-layout-assertions/index.md)<br>View with TabLayoutActions and TabLayoutAssertions |

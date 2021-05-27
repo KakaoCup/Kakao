@@ -1,8 +1,17 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.common.builders](../index.md) / [ViewBuilder](index.md) / [isInvisible](./is-invisible.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.common.builders](../index.md)/[ViewBuilder](index.md)/[isInvisible](is-invisible.md)
 
-# isInvisible
 
-`fun isInvisible(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# isInvisible  
+[androidJvm]  
+Content  
+fun [isInvisible](is-invisible.md)()  
+More info  
+
 
 Matches the view with INVISIBLE visibility
+
+  
+
+
 

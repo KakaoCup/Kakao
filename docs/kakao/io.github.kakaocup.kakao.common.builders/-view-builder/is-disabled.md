@@ -1,8 +1,17 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.common.builders](../index.md) / [ViewBuilder](index.md) / [isDisabled](./is-disabled.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.common.builders](../index.md)/[ViewBuilder](index.md)/[isDisabled](is-disabled.md)
 
-# isDisabled
 
-`fun isDisabled(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# isDisabled  
+[androidJvm]  
+Content  
+fun [isDisabled](is-disabled.md)()  
+More info  
+
 
 Matches the view if it is not in ENABLED state
+
+  
+
+
 

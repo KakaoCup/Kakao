@@ -1,8 +1,6 @@
-apply plugin: 'org.jetbrains.dokka-android'
+apply plugin: 'org.jetbrains.dokka'
 
-dokka {
+tasks.dokkaGfm.configure {
     moduleName = 'kakao'
-    outputFormat = 'gfm'
-    jdkVersion = 6
-    outputDirectory = "$rootDir/docs/"
+    outputDirectory.set(new File("$rootDir/docs"))
 }

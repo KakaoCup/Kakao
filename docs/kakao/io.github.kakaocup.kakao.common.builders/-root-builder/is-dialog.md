@@ -1,8 +1,17 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.common.builders](../index.md) / [RootBuilder](index.md) / [isDialog](./is-dialog.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.common.builders](../index.md)/[RootBuilder](index.md)/[isDialog](is-dialog.md)
 
-# isDialog
 
-`fun isDialog(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# isDialog  
+[androidJvm]  
+Content  
+fun [isDialog](is-dialog.md)()  
+More info  
+
 
 Matches root that is dialog
+
+  
+
+
 

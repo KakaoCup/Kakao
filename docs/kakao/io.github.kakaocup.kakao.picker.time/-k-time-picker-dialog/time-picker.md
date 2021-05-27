@@ -1,5 +1,11 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.picker.time](../index.md) / [KTimePickerDialog](index.md) / [timePicker](./time-picker.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.picker.time](../index.md)/[KTimePickerDialog](index.md)/[timePicker](time-picker.md)
 
-# timePicker
 
-`val timePicker: <ERROR CLASS>`
+
+# timePicker  
+[androidJvm]  
+Content  
+val [timePicker](time-picker.md): [KTimePicker](../-k-time-picker/index.md)  
+
+
+

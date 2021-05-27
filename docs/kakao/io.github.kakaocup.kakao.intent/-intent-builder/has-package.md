@@ -1,17 +1,48 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.intent](../index.md) / [IntentBuilder](index.md) / [hasPackage](./has-package.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.intent](../index.md)/[IntentBuilder](index.md)/[hasPackage](has-package.md)
 
-# hasPackage
 
-`fun hasPackage(packageName: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# hasPackage  
+[androidJvm]  
+Content  
+fun [hasPackage](has-package.md)(packageName: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))  
+More info  
+
 
 Matches intent with given package
 
-### Parameters
 
-`packageName` - Package name to match`fun hasPackage(packageName: Matcher<`[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`>): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+## Parameters  
+  
+androidJvm  
+  
+| | |
+|---|---|
+| <a name="io.github.kakaocup.kakao.intent/IntentBuilder/hasPackage/#kotlin.String/PointingToDeclaration/"></a>packageName| <a name="io.github.kakaocup.kakao.intent/IntentBuilder/hasPackage/#kotlin.String/PointingToDeclaration/"></a><br><br>Package name to match<br><br>|
+  
+  
+
+
+[androidJvm]  
+Content  
+fun [hasPackage](has-package.md)(packageName: Matcher<[String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)>)  
+More info  
+
 
 Matches intent with given package
 
-### Parameters
 
-`packageName` - Matcher for a package name
+
+## Parameters  
+  
+androidJvm  
+  
+| | |
+|---|---|
+| <a name="io.github.kakaocup.kakao.intent/IntentBuilder/hasPackage/#org.hamcrest.Matcher[kotlin.String]/PointingToDeclaration/"></a>packageName| <a name="io.github.kakaocup.kakao.intent/IntentBuilder/hasPackage/#org.hamcrest.Matcher[kotlin.String]/PointingToDeclaration/"></a><br><br>Matcher for a package name<br><br>|
+  
+  
+
+
+

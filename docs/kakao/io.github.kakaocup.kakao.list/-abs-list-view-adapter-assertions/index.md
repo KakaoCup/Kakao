@@ -1,25 +1,32 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.list](../index.md) / [AbsListViewAdapterAssertions](./index.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.list](../index.md)/[AbsListViewAdapterAssertions](index.md)
 
-# AbsListViewAdapterAssertions
 
-`interface AbsListViewAdapterAssertions : `[`AdapterAssertions`](../../io.github.kakaocup.kakao.common.assertions/-adapter-assertions/index.md)
+
+# AbsListViewAdapterAssertions  
+ [androidJvm] interface [AbsListViewAdapterAssertions](index.md) : [AdapterAssertions](../../io.github.kakaocup.kakao.common.assertions/-adapter-assertions/index.md)
 
 Provides assertions for AbsListView adapter
 
-### Inherited Properties
+   
 
-| Name | Summary |
+
+## Functions  
+  
+|  Name |  Summary | 
 |---|---|
-| [view](../../io.github.kakaocup.kakao.common.assertions/-adapter-assertions/view.md) | `abstract val view: `[`ViewInteractionDelegate`](../../io.github.kakaocup.kakao.delegate/-view-interaction-delegate/index.md) |
+| <a name="io.github.kakaocup.kakao.list/AbsListViewAdapterAssertions/hasSize/#kotlin.Int/PointingToDeclaration/"></a>[hasSize](has-size.md)| <a name="io.github.kakaocup.kakao.list/AbsListViewAdapterAssertions/hasSize/#kotlin.Int/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun [hasSize](has-size.md)(size: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))  <br>More info  <br>Check size of AbsListView  <br><br><br>|
 
-### Functions
 
-| Name | Summary |
+## Properties  
+  
+|  Name |  Summary | 
 |---|---|
-| [hasSize](has-size.md) | `open fun hasSize(size: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)<br>Check size of AbsListView |
+| <a name="io.github.kakaocup.kakao.list/AbsListViewAdapterAssertions/view/#/PointingToDeclaration/"></a>[view](index.md#-514505174%2FProperties%2F34310170)| <a name="io.github.kakaocup.kakao.list/AbsListViewAdapterAssertions/view/#/PointingToDeclaration/"></a> [androidJvm] abstract val [view](index.md#-514505174%2FProperties%2F34310170): [ViewInteractionDelegate](../../io.github.kakaocup.kakao.delegate/-view-interaction-delegate/index.md)   <br>|
 
-### Inheritors
 
-| Name | Summary |
-|---|---|
-| [KAbsListView](../-k-abs-list-view/index.md) | `class KAbsListView : `[`ScrollViewActions`](../../io.github.kakaocup.kakao.scroll/-scroll-view-actions/index.md)`, `[`AbsListViewAdapterActions`](../-abs-list-view-adapter-actions/index.md)`, `[`BaseAssertions`](../../io.github.kakaocup.kakao.common.assertions/-base-assertions/index.md)`, `[`AbsListViewAdapterAssertions`](./index.md)<br>View with ScrollViewActions and BaseAssertions. Gives access to it's children |
+## Inheritors  
+  
+|  Name | 
+|---|
+| <a name="io.github.kakaocup.kakao.list/KAbsListView///PointingToDeclaration/"></a>[KAbsListView](../-k-abs-list-view/index.md)|
+

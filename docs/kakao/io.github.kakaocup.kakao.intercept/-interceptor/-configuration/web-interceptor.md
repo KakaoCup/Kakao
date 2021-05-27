@@ -1,5 +1,11 @@
-[kakao](../../../index.md) / [io.github.kakaocup.kakao.intercept](../../index.md) / [Interceptor](../index.md) / [Configuration](index.md) / [webInterceptor](./web-interceptor.md)
+//[kakao](../../../../index.md)/[io.github.kakaocup.kakao.intercept](../../index.md)/[Interceptor](../index.md)/[Configuration](index.md)/[webInterceptor](web-interceptor.md)
 
-# webInterceptor
 
-`val webInterceptor: `[`Interceptor`](../index.md)`<WebInteraction<*>, WebAssertion<*>, Atom<*>>?`
+
+# webInterceptor  
+[androidJvm]  
+Content  
+val [webInterceptor](web-interceptor.md): [Interceptor](../index.md)<Web.WebInteraction<*>, WebAssertion<*>, Atom<*>>?  
+
+
+

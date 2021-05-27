@@ -1,8 +1,17 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.common.assertions](../index.md) / [BaseAssertions](index.md) / [isFocusable](./is-focusable.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.common.assertions](../index.md)/[BaseAssertions](index.md)/[isFocusable](is-focusable.md)
 
-# isFocusable
 
-`open fun isFocusable(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# isFocusable  
+[androidJvm]  
+Content  
+open fun [isFocusable](is-focusable.md)()  
+More info  
+
 
 Checks if the view is focusable
+
+  
+
+
 

@@ -1,5 +1,13 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.delegate](../index.md) / [ViewInteractionDelegate](index.md) / [perform](./perform.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.delegate](../index.md)/[ViewInteractionDelegate](index.md)/[perform](perform.md)
 
-# perform
 
-`@Contract("_->this") fun perform(vararg viewActions: ViewAction): <ERROR CLASS>`
+
+# perform  
+[androidJvm]  
+Content  
+@Contract(value = _->this)  
+  
+fun [perform](perform.md)(vararg viewActions: ViewAction): [ViewInteractionDelegate](index.md)  
+
+
+

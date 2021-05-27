@@ -13,11 +13,14 @@ buildscript {
         classpath libraries.android_gradle
         classpath libraries.kotlin
         classpath libraries.maven
-        classpath libraries.dokka
         classpath libraries.oss
         classpath libraries.detekt
         classpath libraries.gradle_versions
     }
+}
+
+plugins {
+    id("org.jetbrains.dokka") version "1.4.32"
 }
 
 apply plugin: 'io.gitlab.arturbosch.detekt'
@@ -35,7 +38,6 @@ detekt {
         xml.enabled = true
     }
 }
-
 
 allprojects {
     repositories {

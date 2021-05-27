@@ -1,24 +1,39 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.common.matchers](../index.md) / [SpinnerAdapterSizeMatcher](./index.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.common.matchers](../index.md)/[SpinnerAdapterSizeMatcher](index.md)
 
-# SpinnerAdapterSizeMatcher
 
-`class SpinnerAdapterSizeMatcher : BoundedMatcher<`[`View`](https://developer.android.com/reference/android/view/View.html)`, `[`Spinner`](https://developer.android.com/reference/android/widget/Spinner.html)`>`
+
+# SpinnerAdapterSizeMatcher  
+ [androidJvm] class [SpinnerAdapterSizeMatcher](index.md)(**size**: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)) : BoundedMatcher<[View](https://developer.android.com/reference/kotlin/android/view/View.html), [Spinner](https://developer.android.com/reference/kotlin/android/widget/Spinner.html)> 
 
 Matches Spinner with count of children
 
-### Parameters
+   
 
-`size` - of children count in Spinner
 
-### Constructors
-
-| Name | Summary |
+## Parameters  
+  
+androidJvm  
+  
+| | |
 |---|---|
-| [&lt;init&gt;](-init-.md) | `SpinnerAdapterSizeMatcher(size: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)`<br>Matches Spinner with count of children |
+| <a name="io.github.kakaocup.kakao.common.matchers/SpinnerAdapterSizeMatcher///PointingToDeclaration/"></a>size| <a name="io.github.kakaocup.kakao.common.matchers/SpinnerAdapterSizeMatcher///PointingToDeclaration/"></a><br><br>of children count in Spinner<br><br>|
+  
 
-### Functions
 
-| Name | Summary |
+## Constructors  
+  
+| | |
 |---|---|
-| [describeTo](describe-to.md) | `fun describeTo(description: Description): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) |
-| [matchesSafely](matches-safely.md) | `fun matchesSafely(view: `[`Spinner`](https://developer.android.com/reference/android/widget/Spinner.html)`): <ERROR CLASS>` |
+| <a name="io.github.kakaocup.kakao.common.matchers/SpinnerAdapterSizeMatcher/SpinnerAdapterSizeMatcher/#kotlin.Int/PointingToDeclaration/"></a>[SpinnerAdapterSizeMatcher](-spinner-adapter-size-matcher.md)| <a name="io.github.kakaocup.kakao.common.matchers/SpinnerAdapterSizeMatcher/SpinnerAdapterSizeMatcher/#kotlin.Int/PointingToDeclaration/"></a> [androidJvm] fun [SpinnerAdapterSizeMatcher](-spinner-adapter-size-matcher.md)(size: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))of children count in Spinner   <br>|
+
+
+## Functions  
+  
+|  Name |  Summary | 
+|---|---|
+| <a name="org.hamcrest/BaseMatcher/_dont_implement_Matcher___instead_extend_BaseMatcher_/#/PointingToDeclaration/"></a>[_dont_implement_Matcher___instead_extend_BaseMatcher_](../-view-pager2-adapter-size-matcher/index.md#1188943711%2FFunctions%2F34310170)| <a name="org.hamcrest/BaseMatcher/_dont_implement_Matcher___instead_extend_BaseMatcher_/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>~~override~~ ~~fun~~ [~~_dont_implement_Matcher___instead_extend_BaseMatcher_~~](../-view-pager2-adapter-size-matcher/index.md#1188943711%2FFunctions%2F34310170)~~(~~~~)~~  <br><br><br>|
+| <a name="org.hamcrest/BaseMatcher/describeMismatch/#kotlin.Any#org.hamcrest.Description/PointingToDeclaration/"></a>[describeMismatch](../-view-pager2-adapter-size-matcher/index.md#-1115992721%2FFunctions%2F34310170)| <a name="org.hamcrest/BaseMatcher/describeMismatch/#kotlin.Any#org.hamcrest.Description/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open override fun [describeMismatch](../-view-pager2-adapter-size-matcher/index.md#-1115992721%2FFunctions%2F34310170)(p0: [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html), p1: Description)  <br><br><br>|
+| <a name="io.github.kakaocup.kakao.common.matchers/SpinnerAdapterSizeMatcher/describeTo/#org.hamcrest.Description/PointingToDeclaration/"></a>[describeTo](describe-to.md)| <a name="io.github.kakaocup.kakao.common.matchers/SpinnerAdapterSizeMatcher/describeTo/#org.hamcrest.Description/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open override fun [describeTo](describe-to.md)(description: Description)  <br><br><br>|
+| <a name="androidx.test.espresso.matcher/BoundedMatcher/matches/#kotlin.Any/PointingToDeclaration/"></a>[matches](../-view-pager2-adapter-size-matcher/index.md#1400972491%2FFunctions%2F34310170)| <a name="androidx.test.espresso.matcher/BoundedMatcher/matches/#kotlin.Any/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>override fun [matches](../-view-pager2-adapter-size-matcher/index.md#1400972491%2FFunctions%2F34310170)(p0: [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  <br><br><br>|
+| <a name="org.hamcrest/BaseMatcher/toString/#/PointingToDeclaration/"></a>[toString](../-view-pager2-adapter-size-matcher/index.md#-908184799%2FFunctions%2F34310170)| <a name="org.hamcrest/BaseMatcher/toString/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open override fun [toString](../-view-pager2-adapter-size-matcher/index.md#-908184799%2FFunctions%2F34310170)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  <br><br><br>|
+

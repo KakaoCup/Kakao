@@ -1,8 +1,17 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.common.actions](../index.md) / [SwipeableActions](index.md) / [swipeDown](./swipe-down.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.common.actions](../index.md)/[SwipeableActions](index.md)/[swipeDown](swipe-down.md)
 
-# swipeDown
 
-`open fun swipeDown(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# swipeDown  
+[androidJvm]  
+Content  
+open fun [swipeDown](swipe-down.md)()  
+More info  
+
 
 Swipes down on the view
+
+  
+
+
 

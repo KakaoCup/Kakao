@@ -31,7 +31,7 @@ class AlertDialogTest {
                 }
 
                 icon {
-                    hasDrawable(R.drawable.abc_ic_star_black_36dp)
+                    hasDrawable(R.drawable.ic_android_black_24dp)
                 }
 
                 positiveButton {

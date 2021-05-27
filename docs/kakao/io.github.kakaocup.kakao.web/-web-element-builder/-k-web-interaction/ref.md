@@ -1,10 +1,11 @@
-[kakao](../../../index.md) / [io.github.kakaocup.kakao.web](../../index.md) / [WebElementBuilder](../index.md) / [KWebInteraction](index.md) / [ref](./ref.md)
+//[kakao](../../../../index.md)/[io.github.kakaocup.kakao.web](../../index.md)/[WebElementBuilder](../index.md)/[KWebInteraction](index.md)/[ref](ref.md)
 
-# ref
 
-`val ref: Atom<ElementReference>`
 
-Overrides [WebActions.ref](../../-web-actions/ref.md)
+# ref  
+[androidJvm]  
+Content  
+open override val [ref](ref.md): Atom<ElementReference>  
 
-Overrides [WebAssertions.ref](../../-web-assertions/ref.md)
+
 

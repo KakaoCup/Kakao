@@ -1,5 +1,11 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.delegate](../index.md) / [DataInteractionDelegate](index.md) / [perform](./perform.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.delegate](../index.md)/[DataInteractionDelegate](index.md)/[perform](perform.md)
 
-# perform
 
-`fun perform(vararg viewActions: ViewAction): `[`ViewInteractionDelegate`](../-view-interaction-delegate/index.md)
+
+# perform  
+[androidJvm]  
+Content  
+fun [perform](perform.md)(vararg viewActions: ViewAction): [ViewInteractionDelegate](../-view-interaction-delegate/index.md)  
+
+
+

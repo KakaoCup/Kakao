@@ -1,5 +1,13 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.delegate](../index.md) / [ViewInteractionDelegate](index.md) / [withFailureHandler](./with-failure-handler.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.delegate](../index.md)/[ViewInteractionDelegate](index.md)/[withFailureHandler](with-failure-handler.md)
 
-# withFailureHandler
 
-`@Contract("_->this") fun withFailureHandler(failureHandler: FailureHandler): <ERROR CLASS>`
+
+# withFailureHandler  
+[androidJvm]  
+Content  
+@Contract(value = _->this)  
+  
+fun [withFailureHandler](with-failure-handler.md)(failureHandler: FailureHandler): [ViewInteractionDelegate](index.md)  
+
+
+

@@ -1,5 +1,11 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.edit](../index.md) / [TextInputLayoutAssertions](index.md) / [hasCounterMaxLength](./has-counter-max-length.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.edit](../index.md)/[TextInputLayoutAssertions](index.md)/[hasCounterMaxLength](has-counter-max-length.md)
 
-# hasCounterMaxLength
 
-`open fun hasCounterMaxLength(length: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# hasCounterMaxLength  
+[androidJvm]  
+Content  
+open fun [hasCounterMaxLength](has-counter-max-length.md)(length: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))  
+
+
+

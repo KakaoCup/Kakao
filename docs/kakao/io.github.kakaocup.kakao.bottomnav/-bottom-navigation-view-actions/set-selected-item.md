@@ -1,11 +1,27 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.bottomnav](../index.md) / [BottomNavigationViewActions](index.md) / [setSelectedItem](./set-selected-item.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.bottomnav](../index.md)/[BottomNavigationViewActions](index.md)/[setSelectedItem](set-selected-item.md)
 
-# setSelectedItem
 
-`open fun setSelectedItem(id: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# setSelectedItem  
+[androidJvm]  
+Content  
+open fun [setSelectedItem](set-selected-item.md)(id: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))  
+More info  
+
 
 Sets the given item id as selected
 
-### Parameters
 
-`id` - menu item id to be set
+
+## Parameters  
+  
+androidJvm  
+  
+| | |
+|---|---|
+| <a name="io.github.kakaocup.kakao.bottomnav/BottomNavigationViewActions/setSelectedItem/#kotlin.Int/PointingToDeclaration/"></a>id| <a name="io.github.kakaocup.kakao.bottomnav/BottomNavigationViewActions/setSelectedItem/#kotlin.Int/PointingToDeclaration/"></a><br><br>menu item id to be set<br><br>|
+  
+  
+
+
+

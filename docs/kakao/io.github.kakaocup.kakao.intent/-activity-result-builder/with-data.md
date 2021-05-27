@@ -1,11 +1,27 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.intent](../index.md) / [ActivityResultBuilder](index.md) / [withData](./with-data.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.intent](../index.md)/[ActivityResultBuilder](index.md)/[withData](with-data.md)
 
-# withData
 
-`fun withData(data: `[`Intent`](https://developer.android.com/reference/android/content/Intent.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# withData  
+[androidJvm]  
+Content  
+fun [withData](with-data.md)(data: [Intent](https://developer.android.com/reference/kotlin/android/content/Intent.html))  
+More info  
+
 
 Sets given result data
 
-### Parameters
 
-`data` - Result data to be saved
+
+## Parameters  
+  
+androidJvm  
+  
+| | |
+|---|---|
+| <a name="io.github.kakaocup.kakao.intent/ActivityResultBuilder/withData/#android.content.Intent/PointingToDeclaration/"></a>data| <a name="io.github.kakaocup.kakao.intent/ActivityResultBuilder/withData/#android.content.Intent/PointingToDeclaration/"></a><br><br>Result data to be saved<br><br>|
+  
+  
+
+
+

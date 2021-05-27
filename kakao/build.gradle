@@ -36,50 +36,7 @@ dependencies {
     implementation libraries.espresso_web
     implementation libraries.espresso_intents
     implementation libraries.espresso_contrib
+    dokkaHtmlPlugin("org.jetbrains.dokka:kotlin-as-java-plugin:1.4.32")
 }
-
-apply plugin: 'com.github.dcendents.android-maven'
 
 group = kakao.group
-
-install {
-    repositories.mavenInstaller {
-        pom.project {
-            packaging 'aar'
-            groupId kakao.group
-            artifactId kakao.artifact
-
-            name kakao.name
-            description kakao.description
-            url kakao.site
-
-            licenses {
-                license {
-                    name 'The Apache Software License, Version 2.0'
-                    url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-                }
-            }
-
-            scm {
-                connection kakao.github
-                developerConnection kakao.github
-                url kakao.site
-            }
-        }
-    }
-}
-
-task sourcesJar(type: Jar) {
-    classifier = 'sources'
-    from android.sourceSets.main.java.srcDirs
-}
-
-task javadocJar(type: Jar, dependsOn: dokka) {
-    classifier = 'javadoc'
-    from dokka.outputDirectory
-}
-
-artifacts {
-    archives javadocJar
-    archives sourcesJar
-}

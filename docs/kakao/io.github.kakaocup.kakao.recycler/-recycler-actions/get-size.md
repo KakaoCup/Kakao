@@ -1,15 +1,34 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.recycler](../index.md) / [RecyclerActions](index.md) / [getSize](./get-size.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.recycler](../index.md)/[RecyclerActions](index.md)/[getSize](get-size.md)
 
-# getSize
 
-`open fun getSize(): `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
+
+# getSize  
+[androidJvm]  
+Content  
+open fun [getSize](get-size.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  
+More info  
+
 
 Returns the size of RecyclerView
 
-**Return**
+
+
+#### Return  
+
+
 size of adapter
 
-**See Also**
 
-[RecyclerView](#)
+
+## See also  
+  
+androidJvm  
+  
+| | |
+|---|---|
+| <a name="io.github.kakaocup.kakao.recycler/RecyclerActions/getSize/#/PointingToDeclaration/"></a>[androidx.recyclerview.widget.RecyclerView](https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/RecyclerView.html)| <a name="io.github.kakaocup.kakao.recycler/RecyclerActions/getSize/#/PointingToDeclaration/"></a>|
+  
+  
+
+
 

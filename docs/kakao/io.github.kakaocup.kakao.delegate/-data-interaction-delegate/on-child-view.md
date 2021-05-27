@@ -1,5 +1,13 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.delegate](../index.md) / [DataInteractionDelegate](index.md) / [onChildView](./on-child-view.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.delegate](../index.md)/[DataInteractionDelegate](index.md)/[onChildView](on-child-view.md)
 
-# onChildView
 
-`@Contract("_->this") fun onChildView(childMatcher: Matcher<`[`View`](https://developer.android.com/reference/android/view/View.html)`>): <ERROR CLASS>`
+
+# onChildView  
+[androidJvm]  
+Content  
+@Contract(value = _->this)  
+  
+fun [onChildView](on-child-view.md)(childMatcher: Matcher<[View](https://developer.android.com/reference/kotlin/android/view/View.html)>): [DataInteractionDelegate](index.md)  
+
+
+

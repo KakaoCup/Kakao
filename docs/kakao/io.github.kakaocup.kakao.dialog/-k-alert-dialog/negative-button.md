@@ -1,5 +1,11 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.dialog](../index.md) / [KAlertDialog](index.md) / [negativeButton](./negative-button.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.dialog](../index.md)/[KAlertDialog](index.md)/[negativeButton](negative-button.md)
 
-# negativeButton
 
-`val negativeButton: <ERROR CLASS>`
+
+# negativeButton  
+[androidJvm]  
+Content  
+val [negativeButton](negative-button.md): [KButton](../../io.github.kakaocup.kakao.text/-k-button/index.md)  
+
+
+

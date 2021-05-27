@@ -1,5 +1,11 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.common.assertions](../index.md) / [BaseAssertions](index.md) / [root](./root.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.common.assertions](../index.md)/[BaseAssertions](index.md)/[root](root.md)
 
-# root
 
-`abstract var root: Matcher<Root>`
+
+# root  
+[androidJvm]  
+Content  
+abstract var [root](root.md): Matcher<Root>  
+
+
+

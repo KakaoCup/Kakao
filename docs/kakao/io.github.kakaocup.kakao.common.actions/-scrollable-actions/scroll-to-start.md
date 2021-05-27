@@ -1,8 +1,17 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.common.actions](../index.md) / [ScrollableActions](index.md) / [scrollToStart](./scroll-to-start.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.common.actions](../index.md)/[ScrollableActions](index.md)/[scrollToStart](scroll-to-start.md)
 
-# scrollToStart
 
-`abstract fun scrollToStart(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# scrollToStart  
+[androidJvm]  
+Content  
+abstract fun [scrollToStart](scroll-to-start.md)()  
+More info  
+
 
 Scrolls to the starting position of the view
+
+  
+
+
 

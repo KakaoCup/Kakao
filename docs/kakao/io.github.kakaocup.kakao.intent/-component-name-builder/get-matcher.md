@@ -1,5 +1,11 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.intent](../index.md) / [ComponentNameBuilder](index.md) / [getMatcher](./get-matcher.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.intent](../index.md)/[ComponentNameBuilder](index.md)/[getMatcher](get-matcher.md)
 
-# getMatcher
 
-`fun getMatcher(): Matcher<`[`ComponentName`](https://developer.android.com/reference/android/content/ComponentName.html)`>`
+
+# getMatcher  
+[androidJvm]  
+Content  
+fun [getMatcher](get-matcher.md)(): Matcher<[ComponentName](https://developer.android.com/reference/kotlin/android/content/ComponentName.html)>  
+
+
+

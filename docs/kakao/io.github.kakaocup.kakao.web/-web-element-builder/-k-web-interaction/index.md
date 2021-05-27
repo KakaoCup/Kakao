@@ -1,30 +1,28 @@
-[kakao](../../../index.md) / [io.github.kakaocup.kakao.web](../../index.md) / [WebElementBuilder](../index.md) / [KWebInteraction](./index.md)
+//[kakao](../../../../index.md)/[io.github.kakaocup.kakao.web](../../index.md)/[WebElementBuilder](../index.md)/[KWebInteraction](index.md)
 
-# KWebInteraction
 
-`inner class KWebInteraction : `[`WebActions`](../../-web-actions/index.md)`, `[`WebAssertions`](../../-web-assertions/index.md)
 
-### Constructors
+# KWebInteraction  
+ [androidJvm] inner class [KWebInteraction](index.md)(**web**: [WebInteractionDelegate](../../../io.github.kakaocup.kakao.delegate/-web-interaction-delegate/index.md), **ref**: Atom<ElementReference>) : [WebActions](../../-web-actions/index.md), [WebAssertions](../../-web-assertions/index.md)   
 
-| Name | Summary |
+
+## Functions  
+  
+|  Name |  Summary | 
 |---|---|
-| [&lt;init&gt;](-init-.md) | `KWebInteraction(web: `[`WebInteractionDelegate`](../../../io.github.kakaocup.kakao.delegate/-web-interaction-delegate/index.md)`, ref: Atom<ElementReference>)` |
+| <a name="io.github.kakaocup.kakao.web/WebActions/clear/#/PointingToDeclaration/"></a>[clear](../../-web-actions/clear.md)| <a name="io.github.kakaocup.kakao.web/WebActions/clear/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun [clear](../../-web-actions/clear.md)()  <br>More info  <br>Clears the element  <br><br><br>|
+| <a name="io.github.kakaocup.kakao.web/WebActions/click/#/PointingToDeclaration/"></a>[click](../../-web-actions/click.md)| <a name="io.github.kakaocup.kakao.web/WebActions/click/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun [click](../../-web-actions/click.md)()  <br>More info  <br>Clicks on element  <br><br><br>|
+| <a name="io.github.kakaocup.kakao.web/WebAssertions/containsText/#kotlin.String/PointingToDeclaration/"></a>[containsText](../../-web-assertions/contains-text.md)| <a name="io.github.kakaocup.kakao.web/WebAssertions/containsText/#kotlin.String/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun [containsText](../../-web-assertions/contains-text.md)(text: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))  <br>More info  <br>Checks if element contains given text  <br><br><br>|
+| <a name="io.github.kakaocup.kakao.web/WebAssertions/hasText/#kotlin.String/PointingToDeclaration/"></a>[hasText](../../-web-assertions/has-text.md)| <a name="io.github.kakaocup.kakao.web/WebAssertions/hasText/#kotlin.String/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun [hasText](../../-web-assertions/has-text.md)(text: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))  <br>More info  <br>Checks if element has given text  <br><br><br>|
+| <a name="io.github.kakaocup.kakao.web/WebActions/keys/#kotlin.String/PointingToDeclaration/"></a>[keys](../../-web-actions/keys.md)| <a name="io.github.kakaocup.kakao.web/WebActions/keys/#kotlin.String/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun [keys](../../-web-actions/keys.md)(text: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))  <br>More info  <br>Input keys with element in focus  <br><br><br>|
+| <a name="io.github.kakaocup.kakao.web/WebAssertions/matches/#androidx.test.espresso.web.model.Atom[TypeParam(bounds=[kotlin.Any?])]#org.hamcrest.Matcher[TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/"></a>[matches](../../-web-assertions/matches.md)| <a name="io.github.kakaocup.kakao.web/WebAssertions/matches/#androidx.test.espresso.web.model.Atom[TypeParam(bounds=[kotlin.Any?])]#org.hamcrest.Matcher[TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun <[T](../../-web-assertions/matches.md)> [matches](../../-web-assertions/matches.md)(value: Atom<[T](../../-web-assertions/matches.md)>, matcher: Matcher<[T](../../-web-assertions/matches.md)>)  <br>More info  <br>Checks if element matches given matcher  <br><br><br>|
+| <a name="io.github.kakaocup.kakao.web/WebActions/scroll/#/PointingToDeclaration/"></a>[scroll](../../-web-actions/scroll.md)| <a name="io.github.kakaocup.kakao.web/WebActions/scroll/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun [scroll](../../-web-actions/scroll.md)()  <br>More info  <br>Scrolls to the element inside WebView  <br><br><br>|
 
-### Properties
 
-| Name | Summary |
+## Properties  
+  
+|  Name |  Summary | 
 |---|---|
-| [ref](ref.md) | `val ref: Atom<ElementReference>` |
-| [web](web.md) | `val web: `[`WebInteractionDelegate`](../../../io.github.kakaocup.kakao.delegate/-web-interaction-delegate/index.md) |
+| <a name="io.github.kakaocup.kakao.web/WebElementBuilder.KWebInteraction/ref/#/PointingToDeclaration/"></a>[ref](ref.md)| <a name="io.github.kakaocup.kakao.web/WebElementBuilder.KWebInteraction/ref/#/PointingToDeclaration/"></a> [androidJvm] open override val [ref](ref.md): Atom<ElementReference>   <br>|
+| <a name="io.github.kakaocup.kakao.web/WebElementBuilder.KWebInteraction/web/#/PointingToDeclaration/"></a>[web](web.md)| <a name="io.github.kakaocup.kakao.web/WebElementBuilder.KWebInteraction/web/#/PointingToDeclaration/"></a> [androidJvm] open override val [web](web.md): [WebInteractionDelegate](../../../io.github.kakaocup.kakao.delegate/-web-interaction-delegate/index.md)   <br>|
 
-### Inherited Functions
-
-| Name | Summary |
-|---|---|
-| [clear](../../-web-actions/clear.md) | `open fun clear(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)<br>Clears the element |
-| [click](../../-web-actions/click.md) | `open fun click(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)<br>Clicks on element |
-| [containsText](../../-web-assertions/contains-text.md) | `open fun containsText(text: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)<br>Checks if element contains given text |
-| [hasText](../../-web-assertions/has-text.md) | `open fun hasText(text: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)<br>Checks if element has given text |
-| [keys](../../-web-actions/keys.md) | `open fun keys(text: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)<br>Input keys with element in focus |
-| [matches](../../-web-assertions/matches.md) | `open fun <T> matches(value: Atom<`[`T`](../../-web-assertions/matches.md#T)`>, matcher: Matcher<`[`T`](../../-web-assertions/matches.md#T)`>): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)<br>Checks if element matches given matcher |
-| [scroll](../../-web-actions/scroll.md) | `open fun scroll(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)<br>Scrolls to the element inside WebView |

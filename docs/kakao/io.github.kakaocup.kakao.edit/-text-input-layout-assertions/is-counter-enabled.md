@@ -1,5 +1,11 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.edit](../index.md) / [TextInputLayoutAssertions](index.md) / [isCounterEnabled](./is-counter-enabled.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.edit](../index.md)/[TextInputLayoutAssertions](index.md)/[isCounterEnabled](is-counter-enabled.md)
 
-# isCounterEnabled
 
-`open fun isCounterEnabled(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# isCounterEnabled  
+[androidJvm]  
+Content  
+open fun [isCounterEnabled](is-counter-enabled.md)()  
+
+
+

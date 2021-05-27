@@ -1,8 +1,17 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.common.builders](../index.md) / [ViewBuilder](index.md) / [isClickable](./is-clickable.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.common.builders](../index.md)/[ViewBuilder](index.md)/[isClickable](is-clickable.md)
 
-# isClickable
 
-`fun isClickable(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# isClickable  
+[androidJvm]  
+Content  
+fun [isClickable](is-clickable.md)()  
+More info  
+
 
 Matches the view that is clickable
+
+  
+
+
 

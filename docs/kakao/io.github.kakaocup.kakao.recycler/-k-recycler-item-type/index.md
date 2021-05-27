@@ -1,21 +1,29 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.recycler](../index.md) / [KRecyclerItemType](./index.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.recycler](../index.md)/[KRecyclerItemType](index.md)
 
-# KRecyclerItemType
 
-`class KRecyclerItemType<out T : `[`KRecyclerItem`](../-k-recycler-item/index.md)`<*>>`
+
+# KRecyclerItemType  
+ [androidJvm] class [KRecyclerItemType](index.md)<out [T](index.md) : [KRecyclerItem](../-k-recycler-item/index.md)<*>>(**provideItem**: (Matcher<[View](https://developer.android.com/reference/kotlin/android/view/View.html)>) -> [T](index.md))
 
 For internal use. Don't use manually.
 
+
+
 Holds type and corresponding provider function
 
-### Constructors
+   
 
-| Name | Summary |
+
+## Constructors  
+  
+| | |
 |---|---|
-| [&lt;init&gt;](-init-.md) | `KRecyclerItemType(provideItem: (Matcher<`[`View`](https://developer.android.com/reference/android/view/View.html)`>) -> `[`T`](index.md#T)`)`<br>For internal use. Don't use manually. |
+| <a name="io.github.kakaocup.kakao.recycler/KRecyclerItemType/KRecyclerItemType/#kotlin.Function1[org.hamcrest.Matcher[android.view.View],TypeParam(bounds=[io.github.kakaocup.kakao.recycler.KRecyclerItem[*]])]/PointingToDeclaration/"></a>[KRecyclerItemType](-k-recycler-item-type.md)| <a name="io.github.kakaocup.kakao.recycler/KRecyclerItemType/KRecyclerItemType/#kotlin.Function1[org.hamcrest.Matcher[android.view.View],TypeParam(bounds=[io.github.kakaocup.kakao.recycler.KRecyclerItem[*]])]/PointingToDeclaration/"></a> [androidJvm] fun <out [T](index.md) : [KRecyclerItem](../-k-recycler-item/index.md)<*>> [KRecyclerItemType](-k-recycler-item-type.md)(provideItem: (Matcher<[View](https://developer.android.com/reference/kotlin/android/view/View.html)>) -> [T](index.md))   <br>|
 
-### Properties
 
-| Name | Summary |
+## Properties  
+  
+|  Name |  Summary | 
 |---|---|
-| [provideItem](provide-item.md) | `val provideItem: (Matcher<`[`View`](https://developer.android.com/reference/android/view/View.html)`>) -> `[`T`](index.md#T) |
+| <a name="io.github.kakaocup.kakao.recycler/KRecyclerItemType/provideItem/#/PointingToDeclaration/"></a>[provideItem](provide-item.md)| <a name="io.github.kakaocup.kakao.recycler/KRecyclerItemType/provideItem/#/PointingToDeclaration/"></a> [androidJvm] val [provideItem](provide-item.md): (Matcher<[View](https://developer.android.com/reference/kotlin/android/view/View.html)>) -> [T](index.md)   <br>|
+

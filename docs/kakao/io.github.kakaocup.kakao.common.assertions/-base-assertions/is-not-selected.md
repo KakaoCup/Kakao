@@ -1,8 +1,17 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.common.assertions](../index.md) / [BaseAssertions](index.md) / [isNotSelected](./is-not-selected.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.common.assertions](../index.md)/[BaseAssertions](index.md)/[isNotSelected](is-not-selected.md)
 
-# isNotSelected
 
-`open fun isNotSelected(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# isNotSelected  
+[androidJvm]  
+Content  
+open fun [isNotSelected](is-not-selected.md)()  
+More info  
+
 
 Checks if the view is not selected
+
+  
+
+
 

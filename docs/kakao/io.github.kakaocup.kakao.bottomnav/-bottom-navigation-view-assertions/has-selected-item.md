@@ -1,11 +1,27 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.bottomnav](../index.md) / [BottomNavigationViewAssertions](index.md) / [hasSelectedItem](./has-selected-item.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.bottomnav](../index.md)/[BottomNavigationViewAssertions](index.md)/[hasSelectedItem](has-selected-item.md)
 
-# hasSelectedItem
 
-`open fun hasSelectedItem(id: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# hasSelectedItem  
+[androidJvm]  
+Content  
+open fun [hasSelectedItem](has-selected-item.md)(id: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))  
+More info  
+
 
 Checks if the view's selected item id matches given one
 
-### Parameters
 
-`id` - Menu item id to be checked
+
+## Parameters  
+  
+androidJvm  
+  
+| | |
+|---|---|
+| <a name="io.github.kakaocup.kakao.bottomnav/BottomNavigationViewAssertions/hasSelectedItem/#kotlin.Int/PointingToDeclaration/"></a>id| <a name="io.github.kakaocup.kakao.bottomnav/BottomNavigationViewAssertions/hasSelectedItem/#kotlin.Int/PointingToDeclaration/"></a><br><br>Menu item id to be checked<br><br>|
+  
+  
+
+
+

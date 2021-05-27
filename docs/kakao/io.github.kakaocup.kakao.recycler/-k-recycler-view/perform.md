@@ -1,19 +1,38 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.recycler](../index.md) / [KRecyclerView](index.md) / [perform](./perform.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.recycler](../index.md)/[KRecyclerView](index.md)/[perform](perform.md)
 
-# perform
 
-`infix fun perform(function: `[`KRecyclerView`](index.md)`.() -> `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)`): `[`KRecyclerView`](index.md)
+
+# perform  
+[androidJvm]  
+Content  
+infix fun [perform](perform.md)(function: [KRecyclerView](index.md).() -> [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)): [KRecyclerView](index.md)  
+More info  
+
 
 Infix function for invoking lambda on your view
 
-Sometimes instance of view is a result of a function or constructor.
-In this specific case you can't call invoke() since it will be considered as
-tail lambda of your fun/constructor. In such cases please use this function.
 
-### Parameters
 
-`function` - Tail lambda with receiver which is your view
+Sometimes instance of view is a result of a function or constructor. In this specific case you can't call invoke() since it will be considered as tail lambda of your fun/constructor. In such cases please use this function.
 
-**Return**
+
+
+#### Return  
+
+
 This object
+
+
+
+## Parameters  
+  
+androidJvm  
+  
+| | |
+|---|---|
+| <a name="io.github.kakaocup.kakao.recycler/KRecyclerView/perform/#kotlin.Function1[io.github.kakaocup.kakao.recycler.KRecyclerView,kotlin.Unit]/PointingToDeclaration/"></a>function| <a name="io.github.kakaocup.kakao.recycler/KRecyclerView/perform/#kotlin.Function1[io.github.kakaocup.kakao.recycler.KRecyclerView,kotlin.Unit]/PointingToDeclaration/"></a><br><br>Tail lambda with receiver which is your view<br><br>|
+  
+  
+
+
 

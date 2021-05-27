@@ -1,11 +1,27 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.recycler](../index.md) / [KRecyclerItem](index.md) / [invoke](./invoke.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.recycler](../index.md)/[KRecyclerItem](index.md)/[invoke](invoke.md)
 
-# invoke
 
-`operator fun invoke(function: `[`T`](index.md#T)`.() -> `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# invoke  
+[androidJvm]  
+Content  
+operator fun [invoke](invoke.md)(function: [T](index.md).() -> [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html))  
+More info  
+
 
 Operator that allows usage of DSL style
 
-### Parameters
 
-`function` - Tail lambda with receiver which is your view
+
+## Parameters  
+  
+androidJvm  
+  
+| | |
+|---|---|
+| <a name="io.github.kakaocup.kakao.recycler/KRecyclerItem/invoke/#kotlin.Function1[TypeParam(bounds=[kotlin.Any?]),kotlin.Unit]/PointingToDeclaration/"></a>function| <a name="io.github.kakaocup.kakao.recycler/KRecyclerItem/invoke/#kotlin.Function1[TypeParam(bounds=[kotlin.Any?]),kotlin.Unit]/PointingToDeclaration/"></a><br><br>Tail lambda with receiver which is your view<br><br>|
+  
+  
+
+
+

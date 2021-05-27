@@ -1,8 +1,17 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.common.builders](../index.md) / [RootBuilder](index.md) / [isNotTouchable](./is-not-touchable.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.common.builders](../index.md)/[RootBuilder](index.md)/[isNotTouchable](is-not-touchable.md)
 
-# isNotTouchable
 
-`fun isNotTouchable(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# isNotTouchable  
+[androidJvm]  
+Content  
+fun [isNotTouchable](is-not-touchable.md)()  
+More info  
+
 
 Matches root that is not touchable
+
+  
+
+
 

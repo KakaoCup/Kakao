@@ -1,11 +1,27 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.text](../index.md) / [TextViewAssertions](index.md) / [hasTextColor](./has-text-color.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.text](../index.md)/[TextViewAssertions](index.md)/[hasTextColor](has-text-color.md)
 
-# hasTextColor
 
-`open fun hasTextColor(@ColorRes resId: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# hasTextColor  
+[androidJvm]  
+Content  
+open fun [hasTextColor](has-text-color.md)(@[ColorRes](https://developer.android.com/reference/kotlin/androidx/annotation/ColorRes.html)()resId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))  
+More info  
+
 
 Checks if the view has given text color
 
-### Parameters
 
-`resId` - Color resource to be matched
+
+## Parameters  
+  
+androidJvm  
+  
+| | |
+|---|---|
+| <a name="io.github.kakaocup.kakao.text/TextViewAssertions/hasTextColor/#kotlin.Int/PointingToDeclaration/"></a>resId| <a name="io.github.kakaocup.kakao.text/TextViewAssertions/hasTextColor/#kotlin.Int/PointingToDeclaration/"></a><br><br>Color resource to be matched<br><br>|
+  
+  
+
+
+

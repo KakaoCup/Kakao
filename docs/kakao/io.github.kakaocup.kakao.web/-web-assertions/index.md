@@ -1,28 +1,35 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.web](../index.md) / [WebAssertions](./index.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.web](../index.md)/[WebAssertions](index.md)
 
-# WebAssertions
 
-`interface WebAssertions`
+
+# WebAssertions  
+ [androidJvm] interface [WebAssertions](index.md)
 
 Interface that provides assertions for WebViews
 
-### Properties
+   
 
-| Name | Summary |
+
+## Functions  
+  
+|  Name |  Summary | 
 |---|---|
-| [ref](ref.md) | `abstract val ref: Atom<ElementReference>` |
-| [web](web.md) | `abstract val web: `[`WebInteractionDelegate`](../../io.github.kakaocup.kakao.delegate/-web-interaction-delegate/index.md) |
+| <a name="io.github.kakaocup.kakao.web/WebAssertions/containsText/#kotlin.String/PointingToDeclaration/"></a>[containsText](contains-text.md)| <a name="io.github.kakaocup.kakao.web/WebAssertions/containsText/#kotlin.String/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun [containsText](contains-text.md)(text: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))  <br>More info  <br>Checks if element contains given text  <br><br><br>|
+| <a name="io.github.kakaocup.kakao.web/WebAssertions/hasText/#kotlin.String/PointingToDeclaration/"></a>[hasText](has-text.md)| <a name="io.github.kakaocup.kakao.web/WebAssertions/hasText/#kotlin.String/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun [hasText](has-text.md)(text: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))  <br>More info  <br>Checks if element has given text  <br><br><br>|
+| <a name="io.github.kakaocup.kakao.web/WebAssertions/matches/#androidx.test.espresso.web.model.Atom[TypeParam(bounds=[kotlin.Any?])]#org.hamcrest.Matcher[TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/"></a>[matches](matches.md)| <a name="io.github.kakaocup.kakao.web/WebAssertions/matches/#androidx.test.espresso.web.model.Atom[TypeParam(bounds=[kotlin.Any?])]#org.hamcrest.Matcher[TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun <[T](matches.md)> [matches](matches.md)(value: Atom<[T](matches.md)>, matcher: Matcher<[T](matches.md)>)  <br>More info  <br>Checks if element matches given matcher  <br><br><br>|
 
-### Functions
 
-| Name | Summary |
+## Properties  
+  
+|  Name |  Summary | 
 |---|---|
-| [containsText](contains-text.md) | `open fun containsText(text: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)<br>Checks if element contains given text |
-| [hasText](has-text.md) | `open fun hasText(text: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)<br>Checks if element has given text |
-| [matches](matches.md) | `open fun <T> matches(value: Atom<`[`T`](matches.md#T)`>, matcher: Matcher<`[`T`](matches.md#T)`>): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)<br>Checks if element matches given matcher |
+| <a name="io.github.kakaocup.kakao.web/WebAssertions/ref/#/PointingToDeclaration/"></a>[ref](ref.md)| <a name="io.github.kakaocup.kakao.web/WebAssertions/ref/#/PointingToDeclaration/"></a> [androidJvm] abstract val [ref](ref.md): Atom<ElementReference>   <br>|
+| <a name="io.github.kakaocup.kakao.web/WebAssertions/web/#/PointingToDeclaration/"></a>[web](web.md)| <a name="io.github.kakaocup.kakao.web/WebAssertions/web/#/PointingToDeclaration/"></a> [androidJvm] abstract val [web](web.md): [WebInteractionDelegate](../../io.github.kakaocup.kakao.delegate/-web-interaction-delegate/index.md)   <br>|
 
-### Inheritors
 
-| Name | Summary |
-|---|---|
-| [KWebInteraction](../-web-element-builder/-k-web-interaction/index.md) | `inner class KWebInteraction : `[`WebActions`](../-web-actions/index.md)`, `[`WebAssertions`](./index.md) |
+## Inheritors  
+  
+|  Name | 
+|---|
+| <a name="io.github.kakaocup.kakao.web/WebElementBuilder.KWebInteraction///PointingToDeclaration/"></a>[WebElementBuilder](../-web-element-builder/-k-web-interaction/index.md)|
+

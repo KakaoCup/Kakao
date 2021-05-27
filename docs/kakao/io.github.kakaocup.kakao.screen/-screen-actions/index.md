@@ -1,30 +1,39 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.screen](../index.md) / [ScreenActions](./index.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.screen](../index.md)/[ScreenActions](index.md)
 
-# ScreenActions
 
-`interface ScreenActions`
+
+# ScreenActions  
+ [androidJvm] interface [ScreenActions](index.md)
 
 Interface with common actions for all screens
 
+
+
 Provides basic actions that can be performed on each and every screen
 
-### Properties
+   
 
-| Name | Summary |
+
+## Functions  
+  
+|  Name |  Summary | 
 |---|---|
-| [view](view.md) | `abstract val view: `[`ViewInteractionDelegate`](../../io.github.kakaocup.kakao.delegate/-view-interaction-delegate/index.md)<br>ViewInteractionDelegate on which all actions are performed (root view by default) |
+| <a name="io.github.kakaocup.kakao.screen/ScreenActions/closeSoftKeyboard/#/PointingToDeclaration/"></a>[closeSoftKeyboard](close-soft-keyboard.md)| <a name="io.github.kakaocup.kakao.screen/ScreenActions/closeSoftKeyboard/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun [closeSoftKeyboard](close-soft-keyboard.md)()  <br>More info  <br>Closes soft keyboard, if opened  <br><br><br>|
+| <a name="io.github.kakaocup.kakao.screen/ScreenActions/pressBack/#/PointingToDeclaration/"></a>[pressBack](press-back.md)| <a name="io.github.kakaocup.kakao.screen/ScreenActions/pressBack/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun [pressBack](press-back.md)()  <br>More info  <br>Performs click on device's back button  <br><br><br>|
+| <a name="io.github.kakaocup.kakao.screen/ScreenActions/pressKey/#androidx.test.espresso.action.EspressoKey/PointingToDeclaration/"></a>[pressKey](press-key.md)| <a name="io.github.kakaocup.kakao.screen/ScreenActions/pressKey/#androidx.test.espresso.action.EspressoKey/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun [pressKey](press-key.md)(key: EspressoKey)  <br>More info  <br>Presses a key with correspondingKeyCode and modifiers  <br><br><br>[androidJvm]  <br>Content  <br>open fun [pressKey](press-key.md)(keyCode: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))  <br>More info  <br>Presses a key with corresponding KeyCode  <br><br><br>|
+| <a name="io.github.kakaocup.kakao.screen/ScreenActions/pressMenuKey/#/PointingToDeclaration/"></a>[pressMenuKey](press-menu-key.md)| <a name="io.github.kakaocup.kakao.screen/ScreenActions/pressMenuKey/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun [pressMenuKey](press-menu-key.md)()  <br>More info  <br>Presses the hardware menu key  <br><br><br>|
 
-### Functions
 
-| Name | Summary |
+## Properties  
+  
+|  Name |  Summary | 
 |---|---|
-| [closeSoftKeyboard](close-soft-keyboard.md) | `open fun closeSoftKeyboard(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)<br>Closes soft keyboard, if opened |
-| [pressBack](press-back.md) | `open fun pressBack(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)<br>Performs click on device's back button |
-| [pressKey](press-key.md) | `open fun pressKey(keyCode: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)<br>Presses a key with corresponding KeyCode`open fun pressKey(key: EspressoKey): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)<br>Presses a key with correspondingKeyCode and modifiers |
-| [pressMenuKey](press-menu-key.md) | `open fun pressMenuKey(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)<br>Presses the hardware menu key |
+| <a name="io.github.kakaocup.kakao.screen/ScreenActions/view/#/PointingToDeclaration/"></a>[view](view.md)| <a name="io.github.kakaocup.kakao.screen/ScreenActions/view/#/PointingToDeclaration/"></a> [androidJvm] abstract val [view](view.md): [ViewInteractionDelegate](../../io.github.kakaocup.kakao.delegate/-view-interaction-delegate/index.md)ViewInteractionDelegate on which all actions are performed (root view by default)   <br>|
 
-### Inheritors
 
-| Name | Summary |
-|---|---|
-| [Screen](../-screen/index.md) | `open class Screen<out T : `[`Screen`](../-screen/index.md)`<`[`T`](../-screen/index.md#T)`>> : `[`ScreenActions`](./index.md)<br>Container class for UI elements. |
+## Inheritors  
+  
+|  Name | 
+|---|
+| <a name="io.github.kakaocup.kakao.screen/Screen///PointingToDeclaration/"></a>[Screen](../-screen/index.md)|
+

@@ -1,5 +1,11 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.common.matchers](../index.md) / [ToolbarNavigationMatcher](index.md) / [drawable](./drawable.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.common.matchers](../index.md)/[ToolbarNavigationMatcher](index.md)/[drawable](drawable.md)
 
-# drawable
 
-`var drawable: `[`Drawable`](https://developer.android.com/reference/android/graphics/drawable/Drawable.html)`?`
+
+# drawable  
+[androidJvm]  
+Content  
+var [drawable](drawable.md): [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html)? = null  
+
+
+

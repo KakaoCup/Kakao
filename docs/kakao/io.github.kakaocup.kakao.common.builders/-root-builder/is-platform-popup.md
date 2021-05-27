@@ -1,8 +1,17 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.common.builders](../index.md) / [RootBuilder](index.md) / [isPlatformPopup](./is-platform-popup.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.common.builders](../index.md)/[RootBuilder](index.md)/[isPlatformPopup](is-platform-popup.md)
 
-# isPlatformPopup
 
-`fun isPlatformPopup(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# isPlatformPopup  
+[androidJvm]  
+Content  
+fun [isPlatformPopup](is-platform-popup.md)()  
+More info  
+
 
 Matches root that is platform popup
+
+  
+
+
 

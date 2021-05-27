@@ -1,8 +1,11 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.delegate](../index.md) / [DataInteractionDelegate](index.md) / [interaction](./interaction.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.delegate](../index.md)/[DataInteractionDelegate](index.md)/[interaction](interaction.md)
 
-# interaction
 
-`var interaction: DataInteraction`
 
-Overrides [Delegate.interaction](../-delegate/interaction.md)
+# interaction  
+[androidJvm]  
+Content  
+open override var [interaction](interaction.md): DataInteraction  
+
+
 

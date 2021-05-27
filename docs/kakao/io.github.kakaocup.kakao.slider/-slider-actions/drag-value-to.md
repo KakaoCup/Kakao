@@ -1,19 +1,37 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.slider](../index.md) / [SliderActions](index.md) / [dragValueTo](./drag-value-to.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.slider](../index.md)/[SliderActions](index.md)/[dragValueTo](drag-value-to.md)
 
-# dragValueTo
 
-`open fun dragValueTo(value: `[`Float`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
 
-Drags slider to defined position.
-Please note that this dragging is emulated via Espresso's swipe action
-and might not be accurate, if progress max value is too high or device's
-density is too low.
+# dragValueTo  
+[androidJvm]  
+Content  
+open fun [dragValueTo](drag-value-to.md)(value: [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html))  
+More info  
 
-### Parameters
 
-`value` - of slider to drag to
+Drags slider to defined position. Please note that this dragging is emulated via Espresso's swipe action and might not be accurate, if progress max value is too high or device's density is too low.
 
-**See Also**
 
-[GeneralSwipeAction](#)
+
+## See also  
+  
+androidJvm  
+  
+| | |
+|---|---|
+| <a name="io.github.kakaocup.kakao.slider/SliderActions/dragValueTo/#kotlin.Float/PointingToDeclaration/"></a>androidx.test.espresso.action.GeneralSwipeAction| <a name="io.github.kakaocup.kakao.slider/SliderActions/dragValueTo/#kotlin.Float/PointingToDeclaration/"></a>|
+  
+
+
+## Parameters  
+  
+androidJvm  
+  
+| | |
+|---|---|
+| <a name="io.github.kakaocup.kakao.slider/SliderActions/dragValueTo/#kotlin.Float/PointingToDeclaration/"></a>value| <a name="io.github.kakaocup.kakao.slider/SliderActions/dragValueTo/#kotlin.Float/PointingToDeclaration/"></a><br><br>of slider to drag to<br><br>|
+  
+  
+
+
 

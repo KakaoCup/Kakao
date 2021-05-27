@@ -1,19 +1,16 @@
-[kakao](../../../index.md) / [io.github.kakaocup.kakao.intercept](../../index.md) / [Interceptor](../index.md) / [Configuration](./index.md)
+//[kakao](../../../../index.md)/[io.github.kakaocup.kakao.intercept](../../index.md)/[Interceptor](../index.md)/[Configuration](index.md)
 
-# Configuration
 
-`data class Configuration`
 
-### Constructors
+# Configuration  
+ [androidJvm] data class [Configuration](index.md)(**viewInterceptor**: [Interceptor](../index.md)<ViewInteraction, ViewAssertion, ViewAction>?, **dataInterceptor**: [Interceptor](../index.md)<DataInteraction, ViewAssertion, ViewAction>?, **webInterceptor**: [Interceptor](../index.md)<Web.WebInteraction<*>, WebAssertion<*>, Atom<*>>?)   
 
-| Name | Summary |
+
+## Properties  
+  
+|  Name |  Summary | 
 |---|---|
-| [&lt;init&gt;](-init-.md) | `Configuration(viewInterceptor: `[`Interceptor`](../index.md)`<ViewInteraction, ViewAssertion, ViewAction>?, dataInterceptor: `[`Interceptor`](../index.md)`<DataInteraction, ViewAssertion, ViewAction>?, webInterceptor: `[`Interceptor`](../index.md)`<WebInteraction<*>, WebAssertion<*>, Atom<*>>?)` |
+| <a name="io.github.kakaocup.kakao.intercept/Interceptor.Configuration/dataInterceptor/#/PointingToDeclaration/"></a>[dataInterceptor](data-interceptor.md)| <a name="io.github.kakaocup.kakao.intercept/Interceptor.Configuration/dataInterceptor/#/PointingToDeclaration/"></a> [androidJvm] val [dataInterceptor](data-interceptor.md): [Interceptor](../index.md)<DataInteraction, ViewAssertion, ViewAction>?   <br>|
+| <a name="io.github.kakaocup.kakao.intercept/Interceptor.Configuration/viewInterceptor/#/PointingToDeclaration/"></a>[viewInterceptor](view-interceptor.md)| <a name="io.github.kakaocup.kakao.intercept/Interceptor.Configuration/viewInterceptor/#/PointingToDeclaration/"></a> [androidJvm] val [viewInterceptor](view-interceptor.md): [Interceptor](../index.md)<ViewInteraction, ViewAssertion, ViewAction>?   <br>|
+| <a name="io.github.kakaocup.kakao.intercept/Interceptor.Configuration/webInterceptor/#/PointingToDeclaration/"></a>[webInterceptor](web-interceptor.md)| <a name="io.github.kakaocup.kakao.intercept/Interceptor.Configuration/webInterceptor/#/PointingToDeclaration/"></a> [androidJvm] val [webInterceptor](web-interceptor.md): [Interceptor](../index.md)<Web.WebInteraction<*>, WebAssertion<*>, Atom<*>>?   <br>|
 
-### Properties
-
-| Name | Summary |
-|---|---|
-| [dataInterceptor](data-interceptor.md) | `val dataInterceptor: `[`Interceptor`](../index.md)`<DataInteraction, ViewAssertion, ViewAction>?` |
-| [viewInterceptor](view-interceptor.md) | `val viewInterceptor: `[`Interceptor`](../index.md)`<ViewInteraction, ViewAssertion, ViewAction>?` |
-| [webInterceptor](web-interceptor.md) | `val webInterceptor: `[`Interceptor`](../index.md)`<WebInteraction<*>, WebAssertion<*>, Atom<*>>?` |

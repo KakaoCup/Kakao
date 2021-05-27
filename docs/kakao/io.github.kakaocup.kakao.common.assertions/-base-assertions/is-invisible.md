@@ -1,8 +1,17 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.common.assertions](../index.md) / [BaseAssertions](index.md) / [isInvisible](./is-invisible.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.common.assertions](../index.md)/[BaseAssertions](index.md)/[isInvisible](is-invisible.md)
 
-# isInvisible
 
-`open fun isInvisible(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# isInvisible  
+[androidJvm]  
+Content  
+open fun [isInvisible](is-invisible.md)()  
+More info  
+
 
 Checks if the view has INVISIBLE visibility
+
+  
+
+
 

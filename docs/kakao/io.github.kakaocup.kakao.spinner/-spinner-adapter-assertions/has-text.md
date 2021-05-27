@@ -1,11 +1,27 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.spinner](../index.md) / [SpinnerAdapterAssertions](index.md) / [hasText](./has-text.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.spinner](../index.md)/[SpinnerAdapterAssertions](index.md)/[hasText](has-text.md)
 
-# hasText
 
-`open fun hasText(text: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# hasText  
+[androidJvm]  
+Content  
+open fun [hasText](has-text.md)(text: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))  
+More info  
+
 
 Check selected text
 
-### Parameters
 
-`text` - expected selected text in Spinner
+
+## Parameters  
+  
+androidJvm  
+  
+| | |
+|---|---|
+| <a name="io.github.kakaocup.kakao.spinner/SpinnerAdapterAssertions/hasText/#kotlin.String/PointingToDeclaration/"></a>text| <a name="io.github.kakaocup.kakao.spinner/SpinnerAdapterAssertions/hasText/#kotlin.String/PointingToDeclaration/"></a><br><br>expected selected text in Spinner<br><br>|
+  
+  
+
+
+

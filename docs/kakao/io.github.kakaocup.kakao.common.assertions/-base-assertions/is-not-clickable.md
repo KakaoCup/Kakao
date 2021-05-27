@@ -1,8 +1,17 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.common.assertions](../index.md) / [BaseAssertions](index.md) / [isNotClickable](./is-not-clickable.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.common.assertions](../index.md)/[BaseAssertions](index.md)/[isNotClickable](is-not-clickable.md)
 
-# isNotClickable
 
-`open fun isNotClickable(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# isNotClickable  
+[androidJvm]  
+Content  
+open fun [isNotClickable](is-not-clickable.md)()  
+More info  
+
 
 Checks if the view is not clickable
+
+  
+
+
 
