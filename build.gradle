@@ -1,10 +1,12 @@
+import com.github.benmanes.gradle.versions.VersionsPlugin
+
 buildscript {
     apply from: "$rootDir/buildsystem/dependencies.gradle"
 
     repositories {
-        jcenter()
         mavenCentral()
         google()
+        gradlePluginPortal()
     }
 
     dependencies {
@@ -14,6 +16,7 @@ buildscript {
         classpath libraries.dokka
         classpath libraries.oss
         classpath libraries.detekt
+        classpath libraries.gradle_versions
     }
 }
 
@@ -37,5 +40,16 @@ detekt {
 allprojects {
     repositories {
         jcenter()
+    }
+    apply plugin: VersionsPlugin
+
+    def isNonStable = { String version ->
+        def stableKeyword = ['RELEASE', 'FINAL', 'GA'].any {  version.toUpperCase().contains(it) }
+        def regex = /^[0-9,.v-]+(-r)?$/
+        return !stableKeyword && !(version ==~ regex)
+    }
+
+    tasks.named("dependencyUpdates").configure {
+        rejectVersionIf {isNonStable(it.candidate.version)}
     }
 }

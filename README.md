@@ -266,10 +266,6 @@ Maven
 ```
 or Gradle:
 ```groovy
-repositories {
-    jcenter()
-}
-
 dependencies {
     androidTestImplementation 'io.github.kakaocup.kakao:kakao:<latest version>'
 }
