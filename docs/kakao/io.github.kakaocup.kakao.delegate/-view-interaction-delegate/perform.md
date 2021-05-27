@@ -2,4 +2,4 @@
 
 # perform
 
-`@Contract("_->this") fun perform(vararg viewActions: ViewAction): `[`ViewInteractionDelegate`](index.md)
+`@Contract("_->this") fun perform(vararg viewActions: ViewAction): <ERROR CLASS>`

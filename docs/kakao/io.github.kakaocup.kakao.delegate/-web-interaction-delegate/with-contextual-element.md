@@ -2,4 +2,4 @@
 
 # withContextualElement
 
-`fun withContextualElement(elementPicker: Atom<ElementReference>): `[`WebInteractionDelegate`](index.md)
+`fun withContextualElement(elementPicker: Atom<ElementReference>): <ERROR CLASS>`

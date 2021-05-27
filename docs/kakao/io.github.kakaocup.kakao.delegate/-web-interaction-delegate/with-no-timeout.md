@@ -2,4 +2,4 @@
 
 # withNoTimeout
 
-`fun withNoTimeout(): `[`WebInteractionDelegate`](index.md)
+`fun withNoTimeout(): <ERROR CLASS>`

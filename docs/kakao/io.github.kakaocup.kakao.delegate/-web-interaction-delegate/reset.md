@@ -2,4 +2,4 @@
 
 # reset
 
-`fun reset(): `[`WebInteractionDelegate`](index.md)
+`fun reset(): <ERROR CLASS>`

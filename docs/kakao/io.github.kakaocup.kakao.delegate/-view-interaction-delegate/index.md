@@ -30,13 +30,13 @@ Wraps all available public calls and intercepts [check](check.md) and [perform](
 
 | Name | Summary |
 |---|---|
-| [check](check.md) | `fun check(viewAssert: ViewAssertion): `[`ViewInteractionDelegate`](./index.md) |
-| [inRoot](in-root.md) | `fun inRoot(rootMatcher: Matcher<Root>): `[`ViewInteractionDelegate`](./index.md) |
+| [check](check.md) | `fun check(viewAssert: ViewAssertion): <ERROR CLASS>` |
+| [inRoot](in-root.md) | `fun inRoot(rootMatcher: Matcher<Root>): <ERROR CLASS>` |
 | [kakaoInterceptor](kakao-interceptor.md) | `fun kakaoInterceptor(): `[`Interceptor`](../../io.github.kakaocup.kakao.intercept/-interceptor/index.md)`<ViewInteraction, ViewAssertion, ViewAction>?` |
-| [noActivity](no-activity.md) | `fun noActivity(): `[`ViewInteractionDelegate`](./index.md) |
-| [perform](perform.md) | `fun perform(vararg viewActions: ViewAction): `[`ViewInteractionDelegate`](./index.md) |
+| [noActivity](no-activity.md) | `fun noActivity(): <ERROR CLASS>` |
+| [perform](perform.md) | `fun perform(vararg viewActions: ViewAction): <ERROR CLASS>` |
 | [screenInterceptors](screen-interceptors.md) | `fun screenInterceptors(): `[`Deque`](https://developer.android.com/reference/java/util/Deque.html)`<`[`Interceptor`](../../io.github.kakaocup.kakao.intercept/-interceptor/index.md)`<ViewInteraction, ViewAssertion, ViewAction>>` |
-| [withFailureHandler](with-failure-handler.md) | `fun withFailureHandler(failureHandler: FailureHandler): `[`ViewInteractionDelegate`](./index.md) |
+| [withFailureHandler](with-failure-handler.md) | `fun withFailureHandler(failureHandler: FailureHandler): <ERROR CLASS>` |
 
 ### Inherited Functions
 

@@ -8,7 +8,7 @@ View with BaseActions and TextViewAssertions
 
 **See Also**
 
-[com.agoda.kakao.common.actions.BaseActions](#)
+[io.github.kakaocup.kakao.common.actions.BaseActions](../../io.github.kakaocup.kakao.common.actions/-base-actions/index.md)
 
 [TextViewAssertions](../-text-view-assertions/index.md)
 

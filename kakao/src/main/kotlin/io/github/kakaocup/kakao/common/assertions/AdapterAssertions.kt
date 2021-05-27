@@ -7,8 +7,8 @@ import io.github.kakaocup.kakao.delegate.ViewInteractionDelegate
 /**
  * Provides assertions for view with adapters
  *
- * @see com.agoda.kakao.recycler.RecyclerAdapterAssertions
- * @see com.agoda.kakao.list.AbsListViewAdapterAssertions
+ * @see io.github.kakaocup.kakao.recycler.RecyclerAdapterAssertions
+ * @see io.github.kakaocup.kakao.list.AbsListViewAdapterAssertions
  */
 interface AdapterAssertions {
     val view: ViewInteractionDelegate

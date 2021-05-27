@@ -2,5 +2,5 @@
 
 # withElement
 
-`fun withElement(element: ElementReference): `[`WebInteractionDelegate`](index.md)
-`fun withElement(elementPicker: Atom<ElementReference>): `[`WebInteractionDelegate`](index.md)
+`fun withElement(element: ElementReference): <ERROR CLASS>`
+`fun withElement(elementPicker: Atom<ElementReference>): <ERROR CLASS>`

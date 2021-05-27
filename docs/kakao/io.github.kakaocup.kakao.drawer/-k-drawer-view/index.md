@@ -10,7 +10,7 @@ View with DrawerActions and BaseAssertions
 
 [DrawerActions](../-drawer-actions/index.md)
 
-[com.agoda.kakao.common.assertions.BaseAssertions](#)
+[io.github.kakaocup.kakao.common.assertions.BaseAssertions](../../io.github.kakaocup.kakao.common.assertions/-base-assertions/index.md)
 
 ### Constructors
 

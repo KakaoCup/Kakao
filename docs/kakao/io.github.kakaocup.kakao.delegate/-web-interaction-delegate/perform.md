@@ -2,4 +2,4 @@
 
 # perform
 
-`fun perform(atom: Atom<*>): `[`WebInteractionDelegate`](index.md)
+`fun perform(atom: Atom<*>): <ERROR CLASS>`

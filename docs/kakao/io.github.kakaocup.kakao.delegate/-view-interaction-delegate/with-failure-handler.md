@@ -2,4 +2,4 @@
 
 # withFailureHandler
 
-`@Contract("_->this") fun withFailureHandler(failureHandler: FailureHandler): `[`ViewInteractionDelegate`](index.md)
+`@Contract("_->this") fun withFailureHandler(failureHandler: FailureHandler): <ERROR CLASS>`

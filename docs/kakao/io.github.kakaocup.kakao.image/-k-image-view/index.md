@@ -8,7 +8,7 @@ View with BaseActions and ImageViewAssertions
 
 **See Also**
 
-[com.agoda.kakao.common.actions.BaseActions](#)
+[io.github.kakaocup.kakao.common.actions.BaseActions](../../io.github.kakaocup.kakao.common.actions/-base-actions/index.md)
 
 [ImageViewAssertions](../-image-view-assertions/index.md)
 

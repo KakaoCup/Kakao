@@ -5,11 +5,11 @@
 `Configurator()`
 
 Configuration class that is used for building interceptors on the
-[Kakao](#) runtime and [Screen](#) levels.
+[Kakao](../../../io.github.kakaocup.kakao/-kakao/index.md) runtime and [Screen](../../../io.github.kakaocup.kakao.screen/-screen/index.md) levels.
 
 **See Also**
 
-[com.agoda.kakao.Kakao](#)
+[io.github.kakaocup.kakao.Kakao](../../../io.github.kakaocup.kakao/-kakao/index.md)
 
-[com.agoda.kakao.screen.Screen](#)
+[io.github.kakaocup.kakao.screen.Screen](../../../io.github.kakaocup.kakao.screen/-screen/index.md)
 

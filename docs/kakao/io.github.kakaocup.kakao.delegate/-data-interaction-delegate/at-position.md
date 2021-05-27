@@ -2,4 +2,4 @@
 
 # atPosition
 
-`@Contract("_->this") fun atPosition(atPosition: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`): `[`DataInteractionDelegate`](index.md)
+`@Contract("_->this") fun atPosition(atPosition: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`): <ERROR CLASS>`

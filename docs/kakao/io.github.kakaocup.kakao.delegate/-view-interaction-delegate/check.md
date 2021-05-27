@@ -2,4 +2,4 @@
 
 # check
 
-`@Contract("_->this") fun check(viewAssert: ViewAssertion): `[`ViewInteractionDelegate`](index.md)
+`@Contract("_->this") fun check(viewAssert: ViewAssertion): <ERROR CLASS>`

@@ -21,4 +21,4 @@ Matches AbsListView with count of children
 | Name | Summary |
 |---|---|
 | [describeTo](describe-to.md) | `fun describeTo(description: Description): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) |
-| [matchesSafely](matches-safely.md) | `fun matchesSafely(view: `[`AbsListView`](https://developer.android.com/reference/android/widget/AbsListView.html)`): `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) |
+| [matchesSafely](matches-safely.md) | `fun matchesSafely(view: `[`AbsListView`](https://developer.android.com/reference/android/widget/AbsListView.html)`): <ERROR CLASS>` |

@@ -10,13 +10,13 @@ Provides a lot of basic action methods, such as click(), scrollTo(), etc.
 
 **See Also**
 
-[com.agoda.kakao.edit.EditableActions](#)
+[io.github.kakaocup.kakao.edit.EditableActions](../../io.github.kakaocup.kakao.edit/-editable-actions/index.md)
 
-[com.agoda.kakao.common.actions.SwipeableActions](#)
+[io.github.kakaocup.kakao.common.actions.SwipeableActions](../-swipeable-actions/index.md)
 
-[com.agoda.kakao.common.actions.ScrollableActions](#)
+[io.github.kakaocup.kakao.common.actions.ScrollableActions](../-scrollable-actions/index.md)
 
-[com.agoda.kakao.check.CheckableActions](#)
+[io.github.kakaocup.kakao.check.CheckableActions](../../io.github.kakaocup.kakao.check/-checkable-actions/index.md)
 
 ### Properties
 

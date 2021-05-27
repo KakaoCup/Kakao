@@ -2,4 +2,4 @@
 
 # neutralButton
 
-`val neutralButton: `[`KButton`](../../io.github.kakaocup.kakao.text/-k-button/index.md)
+`val neutralButton: <ERROR CLASS>`

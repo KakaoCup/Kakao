@@ -26,7 +26,7 @@ KEmptyAdapterItem is added by default.
 
 | Name | Summary |
 |---|---|
-| [itemTypes](item-types.md) | `val itemTypes: `[`MutableMap`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)`<`[`KClass`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-class/index.html)`<out `[`KAdapterItem`](../-k-adapter-item/index.md)`<*>>, `[`KAdapterItemType`](../-k-adapter-item-type/index.md)`<`[`KAdapterItem`](../-k-adapter-item/index.md)`<*>>>` |
+| [itemTypes](item-types.md) | `val itemTypes: <ERROR CLASS>` |
 
 ### Functions
 

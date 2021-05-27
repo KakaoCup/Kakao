@@ -7,8 +7,8 @@ package io.github.kakaocup.kakao.common.actions
  *
  * Important: does not hold any implementation
  *
- * @see com.agoda.kakao.recycler.RecyclerActions
- * @see com.agoda.kakao.scroll.ScrollViewActions
+ * @see io.github.kakaocup.kakao.recycler.RecyclerActions
+ * @see io.github.kakaocup.kakao.scroll.ScrollViewActions
  */
 interface ScrollableActions : BaseActions {
     /**

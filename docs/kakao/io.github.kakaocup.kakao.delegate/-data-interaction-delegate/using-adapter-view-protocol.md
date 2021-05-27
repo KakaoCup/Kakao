@@ -2,4 +2,4 @@
 
 # usingAdapterViewProtocol
 
-`@Contract("_->this") fun usingAdapterViewProtocol(adapterViewProtocol: AdapterViewProtocol): `[`DataInteractionDelegate`](index.md)
+`@Contract("_->this") fun usingAdapterViewProtocol(adapterViewProtocol: AdapterViewProtocol): <ERROR CLASS>`
