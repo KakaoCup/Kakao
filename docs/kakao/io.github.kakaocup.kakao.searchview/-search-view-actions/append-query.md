@@ -1,5 +1,11 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.searchview](../index.md) / [SearchViewActions](index.md) / [appendQuery](./append-query.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.searchview](../index.md)/[SearchViewActions](index.md)/[appendQuery](append-query.md)
 
-# appendQuery
 
-`open fun appendQuery(query: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# appendQuery  
+[androidJvm]  
+Content  
+open fun [appendQuery](append-query.md)(query: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))  
+
+
+

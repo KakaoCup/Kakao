@@ -1,5 +1,11 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.common.matchers](../index.md) / [ToolbarSubtitleMatcher](index.md) / [resId](./res-id.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.common.matchers](../index.md)/[ToolbarSubtitleMatcher](index.md)/[resId](res-id.md)
 
-# resId
 
-`var resId: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`?`
+
+# resId  
+[androidJvm]  
+Content  
+var [resId](res-id.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)? = null  
+
+
+

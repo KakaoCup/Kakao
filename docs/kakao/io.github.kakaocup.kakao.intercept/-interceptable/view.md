@@ -1,5 +1,11 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.intercept](../index.md) / [Interceptable](index.md) / [view](./view.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.intercept](../index.md)/[Interceptable](index.md)/[view](view.md)
 
-# view
 
-`abstract val view: `[`Delegate`](../../io.github.kakaocup.kakao.delegate/-delegate/index.md)`<`[`INTERACTION`](index.md#INTERACTION)`, `[`ASSERTION`](index.md#ASSERTION)`, `[`ACTION`](index.md#ACTION)`>`
+
+# view  
+[androidJvm]  
+Content  
+abstract val [view](view.md): [Delegate](../../io.github.kakaocup.kakao.delegate/-delegate/index.md)<[INTERACTION](index.md), [ASSERTION](index.md), [ACTION](index.md)>  
+
+
+

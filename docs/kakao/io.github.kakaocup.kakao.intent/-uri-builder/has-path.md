@@ -1,17 +1,48 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.intent](../index.md) / [UriBuilder](index.md) / [hasPath](./has-path.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.intent](../index.md)/[UriBuilder](index.md)/[hasPath](has-path.md)
 
-# hasPath
 
-`fun hasPath(path: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# hasPath  
+[androidJvm]  
+Content  
+fun [hasPath](has-path.md)(path: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))  
+More info  
+
 
 Matches uri with given path
 
-### Parameters
 
-`path` - Path to be matched`fun hasPath(path: Matcher<`[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`>): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+## Parameters  
+  
+androidJvm  
+  
+| | |
+|---|---|
+| <a name="io.github.kakaocup.kakao.intent/UriBuilder/hasPath/#kotlin.String/PointingToDeclaration/"></a>path| <a name="io.github.kakaocup.kakao.intent/UriBuilder/hasPath/#kotlin.String/PointingToDeclaration/"></a><br><br>Path to be matched<br><br>|
+  
+  
+
+
+[androidJvm]  
+Content  
+fun [hasPath](has-path.md)(path: Matcher<[String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)>)  
+More info  
+
 
 Matches uri with given path
 
-### Parameters
 
-`path` - Matcher for a path
+
+## Parameters  
+  
+androidJvm  
+  
+| | |
+|---|---|
+| <a name="io.github.kakaocup.kakao.intent/UriBuilder/hasPath/#org.hamcrest.Matcher[kotlin.String]/PointingToDeclaration/"></a>path| <a name="io.github.kakaocup.kakao.intent/UriBuilder/hasPath/#org.hamcrest.Matcher[kotlin.String]/PointingToDeclaration/"></a><br><br>Matcher for a path<br><br>|
+  
+  
+
+
+

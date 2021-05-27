@@ -1,11 +1,9 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.common](../index.md) / [KakaoDslMarker](./index.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.common](../index.md)/[KakaoDslMarker](index.md)
 
-# KakaoDslMarker
 
-`@DslMarker annotation class KakaoDslMarker`
 
-### Constructors
+# KakaoDslMarker  
+ [androidJvm] @[DslMarker](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-dsl-marker/index.html)()  
+  
+annotation class [KakaoDslMarker](index.md)   
 
-| Name | Summary |
-|---|---|
-| [&lt;init&gt;](-init-.md) | `KakaoDslMarker()` |

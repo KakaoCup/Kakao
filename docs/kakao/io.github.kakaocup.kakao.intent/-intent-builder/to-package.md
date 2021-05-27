@@ -1,11 +1,27 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.intent](../index.md) / [IntentBuilder](index.md) / [toPackage](./to-package.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.intent](../index.md)/[IntentBuilder](index.md)/[toPackage](to-package.md)
 
-# toPackage
 
-`fun toPackage(packageName: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# toPackage  
+[androidJvm]  
+Content  
+fun [toPackage](to-package.md)(packageName: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))  
+More info  
+
 
 Matches intent which addresses to given package
 
-### Parameters
 
-`packageName` - Package name to match
+
+## Parameters  
+  
+androidJvm  
+  
+| | |
+|---|---|
+| <a name="io.github.kakaocup.kakao.intent/IntentBuilder/toPackage/#kotlin.String/PointingToDeclaration/"></a>packageName| <a name="io.github.kakaocup.kakao.intent/IntentBuilder/toPackage/#kotlin.String/PointingToDeclaration/"></a><br><br>Package name to match<br><br>|
+  
+  
+
+
+

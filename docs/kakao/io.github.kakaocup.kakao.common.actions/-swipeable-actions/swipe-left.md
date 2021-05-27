@@ -1,8 +1,17 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.common.actions](../index.md) / [SwipeableActions](index.md) / [swipeLeft](./swipe-left.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.common.actions](../index.md)/[SwipeableActions](index.md)/[swipeLeft](swipe-left.md)
 
-# swipeLeft
 
-`open fun swipeLeft(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# swipeLeft  
+[androidJvm]  
+Content  
+open fun [swipeLeft](swipe-left.md)()  
+More info  
+
 
 Swipes left on the view
+
+  
+
+
 

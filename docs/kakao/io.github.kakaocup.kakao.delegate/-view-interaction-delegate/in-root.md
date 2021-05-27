@@ -1,5 +1,13 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.delegate](../index.md) / [ViewInteractionDelegate](index.md) / [inRoot](./in-root.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.delegate](../index.md)/[ViewInteractionDelegate](index.md)/[inRoot](in-root.md)
 
-# inRoot
 
-`@Contract("_->this") fun inRoot(rootMatcher: Matcher<Root>): <ERROR CLASS>`
+
+# inRoot  
+[androidJvm]  
+Content  
+@Contract(value = _->this)  
+  
+fun [inRoot](in-root.md)(rootMatcher: Matcher<Root>): [ViewInteractionDelegate](index.md)  
+
+
+

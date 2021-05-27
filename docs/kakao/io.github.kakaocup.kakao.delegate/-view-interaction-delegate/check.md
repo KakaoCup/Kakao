@@ -1,5 +1,13 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.delegate](../index.md) / [ViewInteractionDelegate](index.md) / [check](./check.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.delegate](../index.md)/[ViewInteractionDelegate](index.md)/[check](check.md)
 
-# check
 
-`@Contract("_->this") fun check(viewAssert: ViewAssertion): <ERROR CLASS>`
+
+# check  
+[androidJvm]  
+Content  
+@Contract(value = _->this)  
+  
+fun [check](check.md)(viewAssert: ViewAssertion): [ViewInteractionDelegate](index.md)  
+
+
+

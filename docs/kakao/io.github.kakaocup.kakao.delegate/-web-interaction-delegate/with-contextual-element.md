@@ -1,5 +1,11 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.delegate](../index.md) / [WebInteractionDelegate](index.md) / [withContextualElement](./with-contextual-element.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.delegate](../index.md)/[WebInteractionDelegate](index.md)/[withContextualElement](with-contextual-element.md)
 
-# withContextualElement
 
-`fun withContextualElement(elementPicker: Atom<ElementReference>): <ERROR CLASS>`
+
+# withContextualElement  
+[androidJvm]  
+Content  
+fun [withContextualElement](with-contextual-element.md)(elementPicker: Atom<ElementReference>): [WebInteractionDelegate](index.md)  
+
+
+

@@ -1,8 +1,17 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.screen](../index.md) / [ScreenActions](index.md) / [pressBack](./press-back.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.screen](../index.md)/[ScreenActions](index.md)/[pressBack](press-back.md)
 
-# pressBack
 
-`open fun pressBack(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# pressBack  
+[androidJvm]  
+Content  
+open fun [pressBack](press-back.md)()  
+More info  
+
 
 Performs click on device's back button
+
+  
+
+
 

@@ -1,12 +1,28 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.screen](../index.md) / [ScreenActions](index.md) / [pressKey](./press-key.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.screen](../index.md)/[ScreenActions](index.md)/[pressKey](press-key.md)
 
-# pressKey
 
-`open fun pressKey(keyCode: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# pressKey  
+[androidJvm]  
+Content  
+open fun [pressKey](press-key.md)(keyCode: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))  
+More info  
+
 
 Presses a key with corresponding KeyCode
 
-`open fun pressKey(key: EspressoKey): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+  
+
+
+[androidJvm]  
+Content  
+open fun [pressKey](press-key.md)(key: EspressoKey)  
+More info  
+
 
 Presses a key with correspondingKeyCode and modifiers
+
+  
+
+
 

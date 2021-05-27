@@ -1,8 +1,17 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.common.builders](../index.md) / [RootBuilder](index.md) / [isNotSystemAlertWindow](./is-not-system-alert-window.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.common.builders](../index.md)/[RootBuilder](index.md)/[isNotSystemAlertWindow](is-not-system-alert-window.md)
 
-# isNotSystemAlertWindow
 
-`fun isNotSystemAlertWindow(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# isNotSystemAlertWindow  
+[androidJvm]  
+Content  
+fun [isNotSystemAlertWindow](is-not-system-alert-window.md)()  
+More info  
+
 
 Matches root that is not system alert window
+
+  
+
+
 

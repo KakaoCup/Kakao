@@ -1,8 +1,17 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.web](../index.md) / [WebActions](index.md) / [clear](./clear.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.web](../index.md)/[WebActions](index.md)/[clear](clear.md)
 
-# clear
 
-`open fun clear(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# clear  
+[androidJvm]  
+Content  
+open fun [clear](clear.md)()  
+More info  
+
 
 Clears the element
+
+  
+
+
 

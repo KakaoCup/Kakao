@@ -1,23 +1,28 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.list](../index.md) / [AbsListViewAdapterActions](./index.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.list](../index.md)/[AbsListViewAdapterActions](index.md)
 
-# AbsListViewAdapterActions
 
-`interface AbsListViewAdapterActions`
 
-### Properties
+# AbsListViewAdapterActions  
+ [androidJvm] interface [AbsListViewAdapterActions](index.md)   
 
-| Name | Summary |
+
+## Functions  
+  
+|  Name |  Summary | 
 |---|---|
-| [view](view.md) | `abstract val view: `[`ViewInteractionDelegate`](../../io.github.kakaocup.kakao.delegate/-view-interaction-delegate/index.md) |
+| <a name="io.github.kakaocup.kakao.list/AbsListViewAdapterActions/getSize/#/PointingToDeclaration/"></a>[getSize](get-size.md)| <a name="io.github.kakaocup.kakao.list/AbsListViewAdapterActions/getSize/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun [getSize](get-size.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  <br>More info  <br>Returns the size of ScrollView  <br><br><br>|
 
-### Functions
 
-| Name | Summary |
+## Properties  
+  
+|  Name |  Summary | 
 |---|---|
-| [getSize](get-size.md) | `open fun getSize(): `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)<br>Returns the size of ScrollView |
+| <a name="io.github.kakaocup.kakao.list/AbsListViewAdapterActions/view/#/PointingToDeclaration/"></a>[view](view.md)| <a name="io.github.kakaocup.kakao.list/AbsListViewAdapterActions/view/#/PointingToDeclaration/"></a> [androidJvm] abstract val [view](view.md): [ViewInteractionDelegate](../../io.github.kakaocup.kakao.delegate/-view-interaction-delegate/index.md)   <br>|
 
-### Inheritors
 
-| Name | Summary |
-|---|---|
-| [KAbsListView](../-k-abs-list-view/index.md) | `class KAbsListView : `[`ScrollViewActions`](../../io.github.kakaocup.kakao.scroll/-scroll-view-actions/index.md)`, `[`AbsListViewAdapterActions`](./index.md)`, `[`BaseAssertions`](../../io.github.kakaocup.kakao.common.assertions/-base-assertions/index.md)`, `[`AbsListViewAdapterAssertions`](../-abs-list-view-adapter-assertions/index.md)<br>View with ScrollViewActions and BaseAssertions. Gives access to it's children |
+## Inheritors  
+  
+|  Name | 
+|---|
+| <a name="io.github.kakaocup.kakao.list/KAbsListView///PointingToDeclaration/"></a>[KAbsListView](../-k-abs-list-view/index.md)|
+

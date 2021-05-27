@@ -1,14 +1,28 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao](../index.md) / [Kakao](index.md) / [reset](./reset.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao](../index.md)/[Kakao](index.md)/[reset](reset.md)
 
-# reset
 
-`fun reset(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# reset  
+[androidJvm]  
+Content  
+fun [reset](reset.md)()  
+More info  
+
 
 Removes the interceptors from the Kakao runtime.
 
-**See Also**
 
-[intercept](intercept.md)
 
-[Interceptor](../../io.github.kakaocup.kakao.intercept/-interceptor/index.md)
+## See also  
+  
+androidJvm  
+  
+| | |
+|---|---|
+| <a name="io.github.kakaocup.kakao/Kakao/reset/#/PointingToDeclaration/"></a>[io.github.kakaocup.kakao.Kakao](intercept.md)| <a name="io.github.kakaocup.kakao/Kakao/reset/#/PointingToDeclaration/"></a>|
+| <a name="io.github.kakaocup.kakao/Kakao/reset/#/PointingToDeclaration/"></a>[io.github.kakaocup.kakao.intercept.Interceptor](../../io.github.kakaocup.kakao.intercept/-interceptor/index.md)| <a name="io.github.kakaocup.kakao/Kakao/reset/#/PointingToDeclaration/"></a>|
+  
+  
+
+
 

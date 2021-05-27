@@ -1,11 +1,27 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.web](../index.md) / [WebActions](index.md) / [keys](./keys.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.web](../index.md)/[WebActions](index.md)/[keys](keys.md)
 
-# keys
 
-`open fun keys(text: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# keys  
+[androidJvm]  
+Content  
+open fun [keys](keys.md)(text: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))  
+More info  
+
 
 Input keys with element in focus
 
-### Parameters
 
-`text` - Text to input
+
+## Parameters  
+  
+androidJvm  
+  
+| | |
+|---|---|
+| <a name="io.github.kakaocup.kakao.web/WebActions/keys/#kotlin.String/PointingToDeclaration/"></a>text| <a name="io.github.kakaocup.kakao.web/WebActions/keys/#kotlin.String/PointingToDeclaration/"></a><br><br>Text to input<br><br>|
+  
+  
+
+
+

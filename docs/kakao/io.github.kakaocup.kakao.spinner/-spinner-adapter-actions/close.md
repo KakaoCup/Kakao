@@ -1,8 +1,17 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.spinner](../index.md) / [SpinnerAdapterActions](index.md) / [close](./close.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.spinner](../index.md)/[SpinnerAdapterActions](index.md)/[close](close.md)
 
-# close
 
-`abstract fun close(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# close  
+[androidJvm]  
+Content  
+abstract fun [close](close.md)()  
+More info  
+
 
 Closes the spinner
+
+  
+
+
 

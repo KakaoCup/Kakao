@@ -1,11 +1,27 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.picker.time](../index.md) / [TimePickerAssertion](index.md) / [hasHour](./has-hour.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.picker.time](../index.md)/[TimePickerAssertion](index.md)/[hasHour](has-hour.md)
 
-# hasHour
 
-`open fun hasHour(hour: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# hasHour  
+[androidJvm]  
+Content  
+open fun [hasHour](has-hour.md)(hour: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))  
+More info  
+
 
 Check if picker dialog contain selected hour
 
-### Parameters
 
-`hour` - hour
+
+## Parameters  
+  
+androidJvm  
+  
+| | |
+|---|---|
+| <a name="io.github.kakaocup.kakao.picker.time/TimePickerAssertion/hasHour/#kotlin.Int/PointingToDeclaration/"></a>hour| <a name="io.github.kakaocup.kakao.picker.time/TimePickerAssertion/hasHour/#kotlin.Int/PointingToDeclaration/"></a><br><br>hour<br><br>|
+  
+  
+
+
+

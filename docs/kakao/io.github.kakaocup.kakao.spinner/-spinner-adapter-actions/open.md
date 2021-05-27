@@ -1,8 +1,17 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.spinner](../index.md) / [SpinnerAdapterActions](index.md) / [open](./open.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.spinner](../index.md)/[SpinnerAdapterActions](index.md)/[open](open.md)
 
-# open
 
-`abstract fun open(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# open  
+[androidJvm]  
+Content  
+abstract fun [open](open.md)()  
+More info  
+
 
 Opens the spinner to display it's items
+
+  
+
+
 

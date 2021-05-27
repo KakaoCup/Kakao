@@ -1,11 +1,27 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.swiperefresh](../index.md) / [SwipeRefreshLayoutActions](index.md) / [setRefreshing](./set-refreshing.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.swiperefresh](../index.md)/[SwipeRefreshLayoutActions](index.md)/[setRefreshing](set-refreshing.md)
 
-# setRefreshing
 
-`open fun setRefreshing(refreshing: `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# setRefreshing  
+[androidJvm]  
+Content  
+open fun [setRefreshing](set-refreshing.md)(refreshing: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html))  
+More info  
+
 
 Sets the refreshing state of SwipeRefreshLayout
 
-### Parameters
 
-`refreshing` - state to be set
+
+## Parameters  
+  
+androidJvm  
+  
+| | |
+|---|---|
+| <a name="io.github.kakaocup.kakao.swiperefresh/SwipeRefreshLayoutActions/setRefreshing/#kotlin.Boolean/PointingToDeclaration/"></a>refreshing| <a name="io.github.kakaocup.kakao.swiperefresh/SwipeRefreshLayoutActions/setRefreshing/#kotlin.Boolean/PointingToDeclaration/"></a><br><br>state to be set<br><br>|
+  
+  
+
+
+

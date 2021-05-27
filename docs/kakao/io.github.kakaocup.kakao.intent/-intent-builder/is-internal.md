@@ -1,8 +1,17 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.intent](../index.md) / [IntentBuilder](index.md) / [isInternal](./is-internal.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.intent](../index.md)/[IntentBuilder](index.md)/[isInternal](is-internal.md)
 
-# isInternal
 
-`fun isInternal(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# isInternal  
+[androidJvm]  
+Content  
+fun [isInternal](is-internal.md)()  
+More info  
+
 
 Matches any internal intent
+
+  
+
+
 

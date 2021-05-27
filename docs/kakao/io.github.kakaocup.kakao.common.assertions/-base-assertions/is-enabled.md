@@ -1,8 +1,17 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.common.assertions](../index.md) / [BaseAssertions](index.md) / [isEnabled](./is-enabled.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.common.assertions](../index.md)/[BaseAssertions](index.md)/[isEnabled](is-enabled.md)
 
-# isEnabled
 
-`open fun isEnabled(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# isEnabled  
+[androidJvm]  
+Content  
+open fun [isEnabled](is-enabled.md)()  
+More info  
+
 
 Checks if the view is enabled
+
+  
+
+
 

@@ -1,11 +1,27 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.intent](../index.md) / [KIntent](index.md) / [intended](./intended.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.intent](../index.md)/[KIntent](index.md)/[intended](intended.md)
 
-# intended
 
-`fun intended(verificationMode: VerificationMode? = null): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# intended  
+[androidJvm]  
+Content  
+fun [intended](intended.md)(verificationMode: VerificationMode? = null)  
+More info  
+
 
 Checks if this intent has been sent previously
 
-### Parameters
 
-`verificationMode` - Verification mode for this intent. null by default
+
+## Parameters  
+  
+androidJvm  
+  
+| | |
+|---|---|
+| <a name="io.github.kakaocup.kakao.intent/KIntent/intended/#androidx.test.espresso.intent.VerificationMode?/PointingToDeclaration/"></a>verificationMode| <a name="io.github.kakaocup.kakao.intent/KIntent/intended/#androidx.test.espresso.intent.VerificationMode?/PointingToDeclaration/"></a><br><br>Verification mode for this intent. null by default<br><br>|
+  
+  
+
+
+

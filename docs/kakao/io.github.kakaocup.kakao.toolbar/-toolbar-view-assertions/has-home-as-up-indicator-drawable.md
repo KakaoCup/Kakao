@@ -1,17 +1,48 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.toolbar](../index.md) / [ToolbarViewAssertions](index.md) / [hasHomeAsUpIndicatorDrawable](./has-home-as-up-indicator-drawable.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.toolbar](../index.md)/[ToolbarViewAssertions](index.md)/[hasHomeAsUpIndicatorDrawable](has-home-as-up-indicator-drawable.md)
 
-# hasHomeAsUpIndicatorDrawable
 
-`open fun hasHomeAsUpIndicatorDrawable(@DrawableRes resId: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# hasHomeAsUpIndicatorDrawable  
+[androidJvm]  
+Content  
+open fun [hasHomeAsUpIndicatorDrawable](has-home-as-up-indicator-drawable.md)(@[DrawableRes](https://developer.android.com/reference/kotlin/androidx/annotation/DrawableRes.html)()resId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))  
+More info  
+
 
 Checks if Toolbar has navigation icon
 
-### Parameters
 
-`resId` - expected drawable resource id`open fun hasHomeAsUpIndicatorDrawable(drawable: `[`Drawable`](https://developer.android.com/reference/android/graphics/drawable/Drawable.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+## Parameters  
+  
+androidJvm  
+  
+| | |
+|---|---|
+| <a name="io.github.kakaocup.kakao.toolbar/ToolbarViewAssertions/hasHomeAsUpIndicatorDrawable/#kotlin.Int/PointingToDeclaration/"></a>resId| <a name="io.github.kakaocup.kakao.toolbar/ToolbarViewAssertions/hasHomeAsUpIndicatorDrawable/#kotlin.Int/PointingToDeclaration/"></a><br><br>expected drawable resource id<br><br>|
+  
+  
+
+
+[androidJvm]  
+Content  
+open fun [hasHomeAsUpIndicatorDrawable](has-home-as-up-indicator-drawable.md)(drawable: [Drawable](https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html))  
+More info  
+
 
 Checks if Toolbar has navigation icon
 
-### Parameters
 
-`drawable` - expected drawable
+
+## Parameters  
+  
+androidJvm  
+  
+| | |
+|---|---|
+| <a name="io.github.kakaocup.kakao.toolbar/ToolbarViewAssertions/hasHomeAsUpIndicatorDrawable/#android.graphics.drawable.Drawable/PointingToDeclaration/"></a>drawable| <a name="io.github.kakaocup.kakao.toolbar/ToolbarViewAssertions/hasHomeAsUpIndicatorDrawable/#android.graphics.drawable.Drawable/PointingToDeclaration/"></a><br><br>expected drawable<br><br>|
+  
+  
+
+
+

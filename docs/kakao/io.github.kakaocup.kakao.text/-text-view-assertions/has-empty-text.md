@@ -1,8 +1,17 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.text](../index.md) / [TextViewAssertions](index.md) / [hasEmptyText](./has-empty-text.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.text](../index.md)/[TextViewAssertions](index.md)/[hasEmptyText](has-empty-text.md)
 
-# hasEmptyText
 
-`open fun hasEmptyText(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# hasEmptyText  
+[androidJvm]  
+Content  
+open fun [hasEmptyText](has-empty-text.md)()  
+More info  
+
 
 Checks if the view have not any text
+
+  
+
+
 

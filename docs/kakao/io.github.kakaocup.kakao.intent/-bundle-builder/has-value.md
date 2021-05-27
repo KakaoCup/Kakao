@@ -1,17 +1,48 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.intent](../index.md) / [BundleBuilder](index.md) / [hasValue](./has-value.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.intent](../index.md)/[BundleBuilder](index.md)/[hasValue](has-value.md)
 
-# hasValue
 
-`fun hasValue(value: `[`Any`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# hasValue  
+[androidJvm]  
+Content  
+fun [hasValue](has-value.md)(value: [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html))  
+More info  
+
 
 Matches bundle with given value
 
-### Parameters
 
-`value` - Value to be matched`fun hasValue(value: Matcher<`[`Any`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`>): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+## Parameters  
+  
+androidJvm  
+  
+| | |
+|---|---|
+| <a name="io.github.kakaocup.kakao.intent/BundleBuilder/hasValue/#kotlin.Any/PointingToDeclaration/"></a>value| <a name="io.github.kakaocup.kakao.intent/BundleBuilder/hasValue/#kotlin.Any/PointingToDeclaration/"></a><br><br>Value to be matched<br><br>|
+  
+  
+
+
+[androidJvm]  
+Content  
+fun [hasValue](has-value.md)(value: Matcher<[Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)>)  
+More info  
+
 
 Matches bundle with given value
 
-### Parameters
 
-`value` - Matcher for a value
+
+## Parameters  
+  
+androidJvm  
+  
+| | |
+|---|---|
+| <a name="io.github.kakaocup.kakao.intent/BundleBuilder/hasValue/#org.hamcrest.Matcher[kotlin.Any]/PointingToDeclaration/"></a>value| <a name="io.github.kakaocup.kakao.intent/BundleBuilder/hasValue/#org.hamcrest.Matcher[kotlin.Any]/PointingToDeclaration/"></a><br><br>Matcher for a value<br><br>|
+  
+  
+
+
+

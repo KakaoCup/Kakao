@@ -1,17 +1,48 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.intent](../index.md) / [ComponentNameBuilder](index.md) / [hasClassName](./has-class-name.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.intent](../index.md)/[ComponentNameBuilder](index.md)/[hasClassName](has-class-name.md)
 
-# hasClassName
 
-`fun hasClassName(className: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# hasClassName  
+[androidJvm]  
+Content  
+fun [hasClassName](has-class-name.md)(className: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))  
+More info  
+
 
 Matches component name with given class
 
-### Parameters
 
-`className` - Class name to be matched`fun hasClassName(className: Matcher<`[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`>): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+## Parameters  
+  
+androidJvm  
+  
+| | |
+|---|---|
+| <a name="io.github.kakaocup.kakao.intent/ComponentNameBuilder/hasClassName/#kotlin.String/PointingToDeclaration/"></a>className| <a name="io.github.kakaocup.kakao.intent/ComponentNameBuilder/hasClassName/#kotlin.String/PointingToDeclaration/"></a><br><br>Class name to be matched<br><br>|
+  
+  
+
+
+[androidJvm]  
+Content  
+fun [hasClassName](has-class-name.md)(className: Matcher<[String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)>)  
+More info  
+
 
 Matches component name with given class
 
-### Parameters
 
-`className` - Matcher for a class name
+
+## Parameters  
+  
+androidJvm  
+  
+| | |
+|---|---|
+| <a name="io.github.kakaocup.kakao.intent/ComponentNameBuilder/hasClassName/#org.hamcrest.Matcher[kotlin.String]/PointingToDeclaration/"></a>className| <a name="io.github.kakaocup.kakao.intent/ComponentNameBuilder/hasClassName/#org.hamcrest.Matcher[kotlin.String]/PointingToDeclaration/"></a><br><br>Matcher for a class name<br><br>|
+  
+  
+
+
+

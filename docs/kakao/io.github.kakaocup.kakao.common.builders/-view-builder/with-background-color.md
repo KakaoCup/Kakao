@@ -1,17 +1,48 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.common.builders](../index.md) / [ViewBuilder](index.md) / [withBackgroundColor](./with-background-color.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.common.builders](../index.md)/[ViewBuilder](index.md)/[withBackgroundColor](with-background-color.md)
 
-# withBackgroundColor
 
-`fun withBackgroundColor(@ColorRes resId: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# withBackgroundColor  
+[androidJvm]  
+Content  
+fun [withBackgroundColor](with-background-color.md)(@[ColorRes](https://developer.android.com/reference/kotlin/androidx/annotation/ColorRes.html)()resId: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))  
+More info  
+
 
 Matches the view with given background color
 
-### Parameters
 
-`resId` - Color to match`fun withBackgroundColor(colorCode: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+## Parameters  
+  
+androidJvm  
+  
+| | |
+|---|---|
+| <a name="io.github.kakaocup.kakao.common.builders/ViewBuilder/withBackgroundColor/#kotlin.Int/PointingToDeclaration/"></a>resId| <a name="io.github.kakaocup.kakao.common.builders/ViewBuilder/withBackgroundColor/#kotlin.Int/PointingToDeclaration/"></a><br><br>Color to match<br><br>|
+  
+  
+
+
+[androidJvm]  
+Content  
+fun [withBackgroundColor](with-background-color.md)(colorCode: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))  
+More info  
+
 
 Matches the view with given background color code
 
-### Parameters
 
-`colorCode` - Color code to match
+
+## Parameters  
+  
+androidJvm  
+  
+| | |
+|---|---|
+| <a name="io.github.kakaocup.kakao.common.builders/ViewBuilder/withBackgroundColor/#kotlin.String/PointingToDeclaration/"></a>colorCode| <a name="io.github.kakaocup.kakao.common.builders/ViewBuilder/withBackgroundColor/#kotlin.String/PointingToDeclaration/"></a><br><br>Color code to match<br><br>|
+  
+  
+
+
+

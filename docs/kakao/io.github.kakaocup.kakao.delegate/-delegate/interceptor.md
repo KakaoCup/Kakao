@@ -1,5 +1,11 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.delegate](../index.md) / [Delegate](index.md) / [interceptor](./interceptor.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.delegate](../index.md)/[Delegate](index.md)/[interceptor](interceptor.md)
 
-# interceptor
 
-`abstract var interceptor: `[`Interceptor`](../../io.github.kakaocup.kakao.intercept/-interceptor/index.md)`<`[`INTERACTION`](index.md#INTERACTION)`, `[`ASSERTION`](index.md#ASSERTION)`, `[`ACTION`](index.md#ACTION)`>?`
+
+# interceptor  
+[androidJvm]  
+Content  
+abstract var [interceptor](interceptor.md): [Interceptor](../../io.github.kakaocup.kakao.intercept/-interceptor/index.md)<[INTERACTION](index.md), [ASSERTION](index.md), [ACTION](index.md)>?  
+
+
+

@@ -1,8 +1,17 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.edit](../index.md) / [EditableActions](index.md) / [clearText](./clear-text.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.edit](../index.md)/[EditableActions](index.md)/[clearText](clear-text.md)
 
-# clearText
 
-`open fun clearText(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# clearText  
+[androidJvm]  
+Content  
+open fun [clearText](clear-text.md)()  
+More info  
+
 
 Clears current text in the view
+
+  
+
+
 

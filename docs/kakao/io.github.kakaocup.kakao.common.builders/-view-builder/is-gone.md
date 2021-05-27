@@ -1,8 +1,17 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.common.builders](../index.md) / [ViewBuilder](index.md) / [isGone](./is-gone.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.common.builders](../index.md)/[ViewBuilder](index.md)/[isGone](is-gone.md)
 
-# isGone
 
-`fun isGone(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# isGone  
+[androidJvm]  
+Content  
+fun [isGone](is-gone.md)()  
+More info  
+
 
 Matches the view with GONE visibility
+
+  
+
+
 

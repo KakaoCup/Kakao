@@ -1,11 +1,27 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.picker.date](../index.md) / [DatePickerAssertion](index.md) / [hasDay](./has-day.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.picker.date](../index.md)/[DatePickerAssertion](index.md)/[hasDay](has-day.md)
 
-# hasDay
 
-`open fun hasDay(day: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# hasDay  
+[androidJvm]  
+Content  
+open fun [hasDay](has-day.md)(day: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))  
+More info  
+
 
 Check if picker dialog contain selected day
 
-### Parameters
 
-`day` - day
+
+## Parameters  
+  
+androidJvm  
+  
+| | |
+|---|---|
+| <a name="io.github.kakaocup.kakao.picker.date/DatePickerAssertion/hasDay/#kotlin.Int/PointingToDeclaration/"></a>day| <a name="io.github.kakaocup.kakao.picker.date/DatePickerAssertion/hasDay/#kotlin.Int/PointingToDeclaration/"></a><br><br>day<br><br>|
+  
+  
+
+
+

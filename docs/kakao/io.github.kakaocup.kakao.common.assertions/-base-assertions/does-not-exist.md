@@ -1,8 +1,17 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.common.assertions](../index.md) / [BaseAssertions](index.md) / [doesNotExist](./does-not-exist.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.common.assertions](../index.md)/[BaseAssertions](index.md)/[doesNotExist](does-not-exist.md)
 
-# doesNotExist
 
-`open fun doesNotExist(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# doesNotExist  
+[androidJvm]  
+Content  
+open fun [doesNotExist](does-not-exist.md)()  
+More info  
+
 
 Checks if the matched view does not exist
+
+  
+
+
 

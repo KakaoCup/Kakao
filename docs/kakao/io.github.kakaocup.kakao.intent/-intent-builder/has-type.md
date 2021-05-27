@@ -1,17 +1,48 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.intent](../index.md) / [IntentBuilder](index.md) / [hasType](./has-type.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.intent](../index.md)/[IntentBuilder](index.md)/[hasType](has-type.md)
 
-# hasType
 
-`fun hasType(type: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# hasType  
+[androidJvm]  
+Content  
+fun [hasType](has-type.md)(type: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))  
+More info  
+
 
 Matches intent with given type
 
-### Parameters
 
-`type` - Type to match`fun hasType(type: Matcher<`[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`>): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+## Parameters  
+  
+androidJvm  
+  
+| | |
+|---|---|
+| <a name="io.github.kakaocup.kakao.intent/IntentBuilder/hasType/#kotlin.String/PointingToDeclaration/"></a>type| <a name="io.github.kakaocup.kakao.intent/IntentBuilder/hasType/#kotlin.String/PointingToDeclaration/"></a><br><br>Type to match<br><br>|
+  
+  
+
+
+[androidJvm]  
+Content  
+fun [hasType](has-type.md)(type: Matcher<[String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)>)  
+More info  
+
 
 Matches intent with given type
 
-### Parameters
 
-`type` - Matcher for type
+
+## Parameters  
+  
+androidJvm  
+  
+| | |
+|---|---|
+| <a name="io.github.kakaocup.kakao.intent/IntentBuilder/hasType/#org.hamcrest.Matcher[kotlin.String]/PointingToDeclaration/"></a>type| <a name="io.github.kakaocup.kakao.intent/IntentBuilder/hasType/#org.hamcrest.Matcher[kotlin.String]/PointingToDeclaration/"></a><br><br>Matcher for type<br><br>|
+  
+  
+
+
+

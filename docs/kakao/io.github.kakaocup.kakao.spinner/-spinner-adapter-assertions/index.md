@@ -1,26 +1,33 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.spinner](../index.md) / [SpinnerAdapterAssertions](./index.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.spinner](../index.md)/[SpinnerAdapterAssertions](index.md)
 
-# SpinnerAdapterAssertions
 
-`interface SpinnerAdapterAssertions : `[`AdapterAssertions`](../../io.github.kakaocup.kakao.common.assertions/-adapter-assertions/index.md)
+
+# SpinnerAdapterAssertions  
+ [androidJvm] interface [SpinnerAdapterAssertions](index.md) : [AdapterAssertions](../../io.github.kakaocup.kakao.common.assertions/-adapter-assertions/index.md)
 
 Provides assertions for Spinner adapter
 
-### Inherited Properties
+   
 
-| Name | Summary |
+
+## Functions  
+  
+|  Name |  Summary | 
 |---|---|
-| [view](../../io.github.kakaocup.kakao.common.assertions/-adapter-assertions/view.md) | `abstract val view: `[`ViewInteractionDelegate`](../../io.github.kakaocup.kakao.delegate/-view-interaction-delegate/index.md) |
+| <a name="io.github.kakaocup.kakao.spinner/SpinnerAdapterAssertions/hasSize/#kotlin.Int/PointingToDeclaration/"></a>[hasSize](has-size.md)| <a name="io.github.kakaocup.kakao.spinner/SpinnerAdapterAssertions/hasSize/#kotlin.Int/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun [hasSize](has-size.md)(size: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))  <br>More info  <br>Check size of Spinner  <br><br><br>|
+| <a name="io.github.kakaocup.kakao.spinner/SpinnerAdapterAssertions/hasText/#kotlin.String/PointingToDeclaration/"></a>[hasText](has-text.md)| <a name="io.github.kakaocup.kakao.spinner/SpinnerAdapterAssertions/hasText/#kotlin.String/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun [hasText](has-text.md)(text: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))  <br>More info  <br>Check selected text  <br><br><br>|
 
-### Functions
 
-| Name | Summary |
+## Properties  
+  
+|  Name |  Summary | 
 |---|---|
-| [hasSize](has-size.md) | `open fun hasSize(size: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)<br>Check size of Spinner |
-| [hasText](has-text.md) | `open fun hasText(text: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)<br>Check selected text |
+| <a name="io.github.kakaocup.kakao.spinner/SpinnerAdapterAssertions/view/#/PointingToDeclaration/"></a>[view](index.md#128874945%2FProperties%2F34310170)| <a name="io.github.kakaocup.kakao.spinner/SpinnerAdapterAssertions/view/#/PointingToDeclaration/"></a> [androidJvm] abstract val [view](index.md#128874945%2FProperties%2F34310170): [ViewInteractionDelegate](../../io.github.kakaocup.kakao.delegate/-view-interaction-delegate/index.md)   <br>|
 
-### Inheritors
 
-| Name | Summary |
-|---|---|
-| [KSpinner](../-k-spinner/index.md) | `class KSpinner : `[`SpinnerAdapterActions`](../-spinner-adapter-actions/index.md)`, `[`SpinnerAdapterAssertions`](./index.md)`, `[`BaseAssertions`](../../io.github.kakaocup.kakao.common.assertions/-base-assertions/index.md) |
+## Inheritors  
+  
+|  Name | 
+|---|
+| <a name="io.github.kakaocup.kakao.spinner/KSpinner///PointingToDeclaration/"></a>[KSpinner](../-k-spinner/index.md)|
+

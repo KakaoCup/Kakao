@@ -1,25 +1,32 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.pager2](../index.md) / [ViewPager2AdapterAssertions](./index.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.pager2](../index.md)/[ViewPager2AdapterAssertions](index.md)
 
-# ViewPager2AdapterAssertions
 
-`interface ViewPager2AdapterAssertions : `[`AdapterAssertions`](../../io.github.kakaocup.kakao.common.assertions/-adapter-assertions/index.md)
+
+# ViewPager2AdapterAssertions  
+ [androidJvm] interface [ViewPager2AdapterAssertions](index.md) : [AdapterAssertions](../../io.github.kakaocup.kakao.common.assertions/-adapter-assertions/index.md)
 
 Provides assertions for viewpager2 adapter
 
-### Inherited Properties
+   
 
-| Name | Summary |
+
+## Functions  
+  
+|  Name |  Summary | 
 |---|---|
-| [view](../../io.github.kakaocup.kakao.common.assertions/-adapter-assertions/view.md) | `abstract val view: `[`ViewInteractionDelegate`](../../io.github.kakaocup.kakao.delegate/-view-interaction-delegate/index.md) |
+| <a name="io.github.kakaocup.kakao.pager2/ViewPager2AdapterAssertions/hasSize/#kotlin.Int/PointingToDeclaration/"></a>[hasSize](has-size.md)| <a name="io.github.kakaocup.kakao.pager2/ViewPager2AdapterAssertions/hasSize/#kotlin.Int/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun [hasSize](has-size.md)(size: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))  <br>More info  <br>Check size of view pager 2 view  <br><br><br>|
 
-### Functions
 
-| Name | Summary |
+## Properties  
+  
+|  Name |  Summary | 
 |---|---|
-| [hasSize](has-size.md) | `open fun hasSize(size: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)<br>Check size of view pager 2 view |
+| <a name="io.github.kakaocup.kakao.pager2/ViewPager2AdapterAssertions/view/#/PointingToDeclaration/"></a>[view](index.md#-286403152%2FProperties%2F34310170)| <a name="io.github.kakaocup.kakao.pager2/ViewPager2AdapterAssertions/view/#/PointingToDeclaration/"></a> [androidJvm] abstract val [view](index.md#-286403152%2FProperties%2F34310170): [ViewInteractionDelegate](../../io.github.kakaocup.kakao.delegate/-view-interaction-delegate/index.md)   <br>|
 
-### Inheritors
 
-| Name | Summary |
-|---|---|
-| [KViewPager2](../-k-view-pager2/index.md) | `class KViewPager2 : `[`ViewPager2Actions`](../-view-pager2-actions/index.md)`, `[`ViewPager2AdapterAssertions`](./index.md)`, `[`SwipeableActions`](../../io.github.kakaocup.kakao.common.actions/-swipeable-actions/index.md)`, `[`BaseAssertions`](../../io.github.kakaocup.kakao.common.assertions/-base-assertions/index.md)<br>View with SwipeableActions and ViewPager2Assertions |
+## Inheritors  
+  
+|  Name | 
+|---|
+| <a name="io.github.kakaocup.kakao.pager2/KViewPager2///PointingToDeclaration/"></a>[KViewPager2](../-k-view-pager2/index.md)|
+

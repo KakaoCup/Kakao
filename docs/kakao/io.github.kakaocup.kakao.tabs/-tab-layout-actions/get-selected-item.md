@@ -1,11 +1,24 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.tabs](../index.md) / [TabLayoutActions](index.md) / [getSelectedItem](./get-selected-item.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.tabs](../index.md)/[TabLayoutActions](index.md)/[getSelectedItem](get-selected-item.md)
 
-# getSelectedItem
 
-`open fun getSelectedItem(): `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
+
+# getSelectedItem  
+[androidJvm]  
+Content  
+open fun [getSelectedItem](get-selected-item.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  
+More info  
+
 
 Returns the currently selected item id
 
-**Return**
+
+
+#### Return  
+
+
 selected menu item id
+
+  
+
+
 

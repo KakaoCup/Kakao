@@ -1,46 +1,52 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.delegate](../index.md) / [ViewInteractionDelegate](./index.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.delegate](../index.md)/[ViewInteractionDelegate](index.md)
 
-# ViewInteractionDelegate
 
-`class ViewInteractionDelegate : `[`Delegate`](../-delegate/index.md)`<ViewInteraction, ViewAssertion, ViewAction>`
 
-Delegation class for [ViewInteraction](#).
-Wraps all available public calls and intercepts [check](check.md) and [perform](perform.md).
+# ViewInteractionDelegate  
+ [androidJvm] class [ViewInteractionDelegate](index.md)(**interaction**: ViewInteraction) : [Delegate](../-delegate/index.md)<ViewInteraction, ViewAssertion, ViewAction> 
 
-**See Also**
+Delegation class for ViewInteraction. Wraps all available public calls and intercepts [check](check.md) and [perform](perform.md).
 
-[Delegate](../-delegate/index.md)
+   
 
-[Interceptor](../../io.github.kakaocup.kakao.intercept/-interceptor/index.md)
 
-### Constructors
-
-| Name | Summary |
+## See also  
+  
+androidJvm  
+  
+| | |
 |---|---|
-| [&lt;init&gt;](-init-.md) | `ViewInteractionDelegate(interaction: ViewInteraction)`<br>Delegation class for [ViewInteraction](#). Wraps all available public calls and intercepts [check](check.md) and [perform](perform.md). |
+| <a name="io.github.kakaocup.kakao.delegate/ViewInteractionDelegate///PointingToDeclaration/"></a>[io.github.kakaocup.kakao.delegate.Delegate](../-delegate/index.md)| <a name="io.github.kakaocup.kakao.delegate/ViewInteractionDelegate///PointingToDeclaration/"></a>|
+| <a name="io.github.kakaocup.kakao.delegate/ViewInteractionDelegate///PointingToDeclaration/"></a>[io.github.kakaocup.kakao.intercept.Interceptor](../../io.github.kakaocup.kakao.intercept/-interceptor/index.md)| <a name="io.github.kakaocup.kakao.delegate/ViewInteractionDelegate///PointingToDeclaration/"></a>|
+  
 
-### Properties
 
-| Name | Summary |
+## Constructors  
+  
+| | |
 |---|---|
-| [interaction](interaction.md) | `var interaction: ViewInteraction` |
-| [interceptor](interceptor.md) | `var interceptor: `[`Interceptor`](../../io.github.kakaocup.kakao.intercept/-interceptor/index.md)`<ViewInteraction, ViewAssertion, ViewAction>?` |
+| <a name="io.github.kakaocup.kakao.delegate/ViewInteractionDelegate/ViewInteractionDelegate/#androidx.test.espresso.ViewInteraction/PointingToDeclaration/"></a>[ViewInteractionDelegate](-view-interaction-delegate.md)| <a name="io.github.kakaocup.kakao.delegate/ViewInteractionDelegate/ViewInteractionDelegate/#androidx.test.espresso.ViewInteraction/PointingToDeclaration/"></a> [androidJvm] fun [ViewInteractionDelegate](-view-interaction-delegate.md)(interaction: ViewInteraction)   <br>|
 
-### Functions
 
-| Name | Summary |
+## Functions  
+  
+|  Name |  Summary | 
 |---|---|
-| [check](check.md) | `fun check(viewAssert: ViewAssertion): <ERROR CLASS>` |
-| [inRoot](in-root.md) | `fun inRoot(rootMatcher: Matcher<Root>): <ERROR CLASS>` |
-| [kakaoInterceptor](kakao-interceptor.md) | `fun kakaoInterceptor(): `[`Interceptor`](../../io.github.kakaocup.kakao.intercept/-interceptor/index.md)`<ViewInteraction, ViewAssertion, ViewAction>?` |
-| [noActivity](no-activity.md) | `fun noActivity(): <ERROR CLASS>` |
-| [perform](perform.md) | `fun perform(vararg viewActions: ViewAction): <ERROR CLASS>` |
-| [screenInterceptors](screen-interceptors.md) | `fun screenInterceptors(): `[`Deque`](https://developer.android.com/reference/java/util/Deque.html)`<`[`Interceptor`](../../io.github.kakaocup.kakao.intercept/-interceptor/index.md)`<ViewInteraction, ViewAssertion, ViewAction>>` |
-| [withFailureHandler](with-failure-handler.md) | `fun withFailureHandler(failureHandler: FailureHandler): <ERROR CLASS>` |
+| <a name="io.github.kakaocup.kakao.delegate/ViewInteractionDelegate/check/#androidx.test.espresso.ViewAssertion/PointingToDeclaration/"></a>[check](check.md)| <a name="io.github.kakaocup.kakao.delegate/ViewInteractionDelegate/check/#androidx.test.espresso.ViewAssertion/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@Contract(value = _->this)  <br>  <br>fun [check](check.md)(viewAssert: ViewAssertion): [ViewInteractionDelegate](index.md)  <br><br><br>|
+| <a name="io.github.kakaocup.kakao.delegate/ViewInteractionDelegate/inRoot/#org.hamcrest.Matcher[androidx.test.espresso.Root]/PointingToDeclaration/"></a>[inRoot](in-root.md)| <a name="io.github.kakaocup.kakao.delegate/ViewInteractionDelegate/inRoot/#org.hamcrest.Matcher[androidx.test.espresso.Root]/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@Contract(value = _->this)  <br>  <br>fun [inRoot](in-root.md)(rootMatcher: Matcher<Root>): [ViewInteractionDelegate](index.md)  <br><br><br>|
+| <a name="io.github.kakaocup.kakao.delegate/Delegate/interceptCheck/#androidx.test.espresso.ViewAssertion/PointingToDeclaration/"></a>[interceptCheck](index.md#-642599236%2FFunctions%2F34310170)| <a name="io.github.kakaocup.kakao.delegate/Delegate/interceptCheck/#androidx.test.espresso.ViewAssertion/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun [interceptCheck](index.md#-642599236%2FFunctions%2F34310170)(assertion: ViewAssertion): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  <br>More info  <br>Runs the interceptors available for the given delegate during the check operation.  <br><br><br>|
+| <a name="io.github.kakaocup.kakao.delegate/Delegate/interceptPerform/#androidx.test.espresso.ViewAction/PointingToDeclaration/"></a>[interceptPerform](index.md#-96531673%2FFunctions%2F34310170)| <a name="io.github.kakaocup.kakao.delegate/Delegate/interceptPerform/#androidx.test.espresso.ViewAction/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun [interceptPerform](index.md#-96531673%2FFunctions%2F34310170)(action: ViewAction): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  <br>More info  <br>Runs the interceptors available for the given delegate during the perform operation.  <br><br><br>|
+| <a name="io.github.kakaocup.kakao.delegate/ViewInteractionDelegate/kakaoInterceptor/#/PointingToDeclaration/"></a>[kakaoInterceptor](kakao-interceptor.md)| <a name="io.github.kakaocup.kakao.delegate/ViewInteractionDelegate/kakaoInterceptor/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open override fun [kakaoInterceptor](kakao-interceptor.md)(): [Interceptor](../../io.github.kakaocup.kakao.intercept/-interceptor/index.md)<ViewInteraction, ViewAssertion, ViewAction>?  <br><br><br>|
+| <a name="io.github.kakaocup.kakao.delegate/ViewInteractionDelegate/noActivity/#/PointingToDeclaration/"></a>[noActivity](no-activity.md)| <a name="io.github.kakaocup.kakao.delegate/ViewInteractionDelegate/noActivity/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@Contract(value = _->this)  <br>  <br>fun [noActivity](no-activity.md)(): [ViewInteractionDelegate](index.md)  <br><br><br>|
+| <a name="io.github.kakaocup.kakao.delegate/ViewInteractionDelegate/perform/#kotlin.Array[androidx.test.espresso.ViewAction]/PointingToDeclaration/"></a>[perform](perform.md)| <a name="io.github.kakaocup.kakao.delegate/ViewInteractionDelegate/perform/#kotlin.Array[androidx.test.espresso.ViewAction]/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@Contract(value = _->this)  <br>  <br>fun [perform](perform.md)(vararg viewActions: ViewAction): [ViewInteractionDelegate](index.md)  <br><br><br>|
+| <a name="io.github.kakaocup.kakao.delegate/ViewInteractionDelegate/screenInterceptors/#/PointingToDeclaration/"></a>[screenInterceptors](screen-interceptors.md)| <a name="io.github.kakaocup.kakao.delegate/ViewInteractionDelegate/screenInterceptors/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open override fun [screenInterceptors](screen-interceptors.md)(): [Deque](https://developer.android.com/reference/kotlin/java/util/Deque.html)<[Interceptor](../../io.github.kakaocup.kakao.intercept/-interceptor/index.md)<ViewInteraction, ViewAssertion, ViewAction>>  <br><br><br>|
+| <a name="io.github.kakaocup.kakao.delegate/ViewInteractionDelegate/withFailureHandler/#androidx.test.espresso.FailureHandler/PointingToDeclaration/"></a>[withFailureHandler](with-failure-handler.md)| <a name="io.github.kakaocup.kakao.delegate/ViewInteractionDelegate/withFailureHandler/#androidx.test.espresso.FailureHandler/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>@Contract(value = _->this)  <br>  <br>fun [withFailureHandler](with-failure-handler.md)(failureHandler: FailureHandler): [ViewInteractionDelegate](index.md)  <br><br><br>|
 
-### Inherited Functions
 
-| Name | Summary |
+## Properties  
+  
+|  Name |  Summary | 
 |---|---|
-| [interceptCheck](../-delegate/intercept-check.md) | `open fun interceptCheck(assertion: `[`ASSERTION`](../-delegate/index.md#ASSERTION)`): `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)<br>Runs the interceptors available for the given delegate during the `check` operation. |
-| [interceptPerform](../-delegate/intercept-perform.md) | `open fun interceptPerform(action: `[`ACTION`](../-delegate/index.md#ACTION)`): `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)<br>Runs the interceptors available for the given delegate during the `perform` operation. |
+| <a name="io.github.kakaocup.kakao.delegate/ViewInteractionDelegate/interaction/#/PointingToDeclaration/"></a>[interaction](interaction.md)| <a name="io.github.kakaocup.kakao.delegate/ViewInteractionDelegate/interaction/#/PointingToDeclaration/"></a> [androidJvm] open override var [interaction](interaction.md): ViewInteraction   <br>|
+| <a name="io.github.kakaocup.kakao.delegate/ViewInteractionDelegate/interceptor/#/PointingToDeclaration/"></a>[interceptor](interceptor.md)| <a name="io.github.kakaocup.kakao.delegate/ViewInteractionDelegate/interceptor/#/PointingToDeclaration/"></a> [androidJvm] open override var [interceptor](interceptor.md): [Interceptor](../../io.github.kakaocup.kakao.intercept/-interceptor/index.md)<ViewInteraction, ViewAssertion, ViewAction>? = null   <br>|
+

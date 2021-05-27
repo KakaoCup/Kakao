@@ -1,5 +1,11 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.web](../index.md) / [WebAssertions](index.md) / [ref](./ref.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.web](../index.md)/[WebAssertions](index.md)/[ref](ref.md)
 
-# ref
 
-`abstract val ref: Atom<ElementReference>`
+
+# ref  
+[androidJvm]  
+Content  
+abstract val [ref](ref.md): Atom<ElementReference>  
+
+
+

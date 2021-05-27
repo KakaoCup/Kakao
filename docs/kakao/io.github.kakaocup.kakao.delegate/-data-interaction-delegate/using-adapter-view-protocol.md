@@ -1,5 +1,13 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.delegate](../index.md) / [DataInteractionDelegate](index.md) / [usingAdapterViewProtocol](./using-adapter-view-protocol.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.delegate](../index.md)/[DataInteractionDelegate](index.md)/[usingAdapterViewProtocol](using-adapter-view-protocol.md)
 
-# usingAdapterViewProtocol
 
-`@Contract("_->this") fun usingAdapterViewProtocol(adapterViewProtocol: AdapterViewProtocol): <ERROR CLASS>`
+
+# usingAdapterViewProtocol  
+[androidJvm]  
+Content  
+@Contract(value = _->this)  
+  
+fun [usingAdapterViewProtocol](using-adapter-view-protocol.md)(adapterViewProtocol: AdapterViewProtocol): [DataInteractionDelegate](index.md)  
+
+
+

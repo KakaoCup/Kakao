@@ -1,11 +1,27 @@
-[kakao](../../index.md) / [io.github.kakaocup.kakao.common.builders](../index.md) / [ViewBuilder](index.md) / [isInstanceOf](./is-instance-of.md)
+//[kakao](../../../index.md)/[io.github.kakaocup.kakao.common.builders](../index.md)/[ViewBuilder](index.md)/[isInstanceOf](is-instance-of.md)
 
-# isInstanceOf
 
-`fun isInstanceOf(clazz: `[`Class`](https://developer.android.com/reference/java/lang/Class.html)`<*>): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
+
+# isInstanceOf  
+[androidJvm]  
+Content  
+fun [isInstanceOf](is-instance-of.md)(clazz: [Class](https://developer.android.com/reference/kotlin/java/lang/Class.html)<*>)  
+More info  
+
 
 Matches the view by class instance
 
-### Parameters
 
-`clazz` - Class to match
+
+## Parameters  
+  
+androidJvm  
+  
+| | |
+|---|---|
+| <a name="io.github.kakaocup.kakao.common.builders/ViewBuilder/isInstanceOf/#java.lang.Class[*]/PointingToDeclaration/"></a>clazz| <a name="io.github.kakaocup.kakao.common.builders/ViewBuilder/isInstanceOf/#java.lang.Class[*]/PointingToDeclaration/"></a><br><br>Class to match<br><br>|
+  
+  
+
+
+
