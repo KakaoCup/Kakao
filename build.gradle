@@ -4,14 +4,13 @@ buildscript {
     apply from: "$rootDir/buildsystem/dependencies.gradle"
 
     repositories {
-        jcenter()
         mavenCentral()
         google()
         gradlePluginPortal()
     }
 
     dependencies {
-        classpath "com.android.tools.build:gradle:${versions.android_gradle}"
+        classpath libraries.android_gradle
         classpath libraries.kotlin
         classpath libraries.maven
         classpath libraries.dokka
@@ -39,6 +38,9 @@ detekt {
 
 
 allprojects {
+    repositories {
+        jcenter()
+    }
     apply plugin: VersionsPlugin
 
     def isNonStable = { String version ->
@@ -49,8 +51,5 @@ allprojects {
 
     tasks.named("dependencyUpdates").configure {
         rejectVersionIf {isNonStable(it.candidate.version)}
-    }
-    repositories {
-        jcenter()
     }
 }
