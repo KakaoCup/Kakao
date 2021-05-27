@@ -11,7 +11,7 @@ buildscript {
     }
 
     dependencies {
-        classpath libraries.android_gradle
+        classpath "com.android.tools.build:gradle:${versions.android_gradle}"
         classpath libraries.kotlin
         classpath libraries.maven
         classpath libraries.dokka
