@@ -13,7 +13,6 @@ buildscript {
         classpath libraries.android_gradle
         classpath libraries.kotlin
         classpath libraries.maven
-        classpath libraries.dokka
         classpath libraries.oss
         classpath libraries.detekt
         classpath libraries.gradle_versions
