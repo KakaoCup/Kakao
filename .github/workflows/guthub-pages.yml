@@ -3,20 +3,17 @@ name: Build and deploy docs
 on:
   push:
     branches:
-      - master
+      - develop
 
 jobs:
-  publish-current-version: 
-    runs-on: ubuntu-latest
+  github-pages:
+    runs-on: ubuntu-16.04
     steps:
-    - uses: actions/checkout@v2
-      with:
-        ref: main
-    - name: Run with dest path
-      uses: helaili/jekyll-build@v2
-      with:
-        jekyll_src: docs
-        target_branch: gh-pages
-        target_path: /
-        keep_history: true
-        token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/checkout@v2
+      - uses: helaili/jekyll-action@2.0.4
+        env:
+          JEKYLL_PAT: ${{ secrets.GH_TOKEN }}
+        with:
+          jekyll_src: docs
+          target_branch: gh-pages
+          gem_src: docs
