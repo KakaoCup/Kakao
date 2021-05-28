@@ -14,12 +14,11 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 1.8
-      - name: detekt
+      - name: dokkaHtml
         run: |
-          ./gradlew clean detekt
+          ./gradlew clean dokkaHtml
       - uses: helaili/jekyll-action@v2
         with:
-          jekyll_src: 'docs'
+          jekyll_src: 'html'
           target_branch: 'gh-pages'
           token: ${{ secrets.GH_TOKEN }}
-
