@@ -6,6 +6,11 @@ buildscript {
     }
 }
 
+repositories {
+    gradlePluginPortal()
+    google()
+}
+
 plugins {
     id("io.gitlab.arturbosch.detekt") version Versions.detekt
 }
