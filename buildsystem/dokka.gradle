@@ -4,3 +4,7 @@ tasks.dokkaGfm.configure {
     moduleName = 'kakao'
     outputDirectory.set(new File("$rootDir/docs"))
 }
+tasks.dokkaHtml.configure {
+    moduleName = 'kakao'
+    outputDirectory.set(new File("$rootDir/html"))
+}
