@@ -1,0 +1,22 @@
+name: Build and deploy docs
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  publish-current-version: 
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        ref: main
+    - name: Run with dest path
+      uses: helaili/jekyll-build@v2
+      with:
+        jekyll_src: docs
+        target_branch: gh-pages
+        target_path: /
+        keep_history: true
+        token: ${{ secrets.GITHUB_TOKEN }}
