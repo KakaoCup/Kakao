@@ -126,7 +126,7 @@ object Deployment {
                 sign(publishing.publications.getByName("default"))
             }
 
-            project.extra.set("signing.keyId", "67A84FB5")
+            project.extra.set("signing.keyId", "0110979F")
             project.extra.set("signing.password", passphrase)
             project.extra.set("signing.secretKeyRingFile", "${project.rootProject.rootDir}/buildsystem/secring.gpg")
         }
