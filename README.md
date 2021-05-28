@@ -258,7 +258,7 @@ For more detailed info please refer to the documentation.
 Maven
 ```xml
 <dependency>
-  <groupId>io.github.kakaocup.kakao</groupId>
+  <groupId>io.github.kakaocup</groupId>
   <artifactId>kakao</artifactId>
   <version><latest version></version>
   <type>pom</type>
@@ -267,7 +267,7 @@ Maven
 or Gradle:
 ```groovy
 dependencies {
-    androidTestImplementation 'io.github.kakaocup.kakao:kakao:<latest version>'
+    androidTestImplementation 'io.github.kakaocup:kakao:<latest version>'
 }
 ```
 
