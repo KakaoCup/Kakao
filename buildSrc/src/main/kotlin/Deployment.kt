@@ -18,8 +18,8 @@ import org.jetbrains.dokka.gradle.DokkaTask
 import java.net.URI
 
 object Deployment {
-    val user = System.getenv("SONATYPE_USERNAME")
-    val password = System.getenv("SONATYPE_PASSWORD")
+    val sonatypeUser = System.getenv("SONATYPE_USERNAME")
+    val sonatypePassword = System.getenv("SONATYPE_PASSWORD")
     var releaseMode: String? = null
     var versionSuffix: String? = null
     var deployUrl: String? = null
@@ -107,8 +107,8 @@ object Deployment {
                 maven {
                     name = "OSSHR"
                     credentials {
-                        username = Deployment.user
-                        password = Deployment.password
+                        username = Deployment.sonatypeUser
+                        password = Deployment.sonatypePassword
                     }
                     url = URI.create(Deployment.deployUrl)
                 }
