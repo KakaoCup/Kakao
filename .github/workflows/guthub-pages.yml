@@ -22,4 +22,3 @@ jobs:
           jekyll_src: 'html'
           target_branch: 'gh-pages'
           token: ${{ secrets.GH_TOKEN }}
-
