@@ -37,7 +37,7 @@ dependencies {
     implementation(Libraries.espresso_web)
     implementation(Libraries.espresso_intents)
     implementation(Libraries.espresso_contrib)
-    dokkaHtmlPlugin("org.jetbrains.dokka:kotlin-as-java-plugin:1.4.32")
+    dokkaHtmlPlugin(Libraries.dokka)
 }
 
 tasks.named("dependencyUpdates", com.github.benmanes.gradle.versions.updates.DependencyUpdatesTask::class).configure {
