@@ -15,6 +15,7 @@ jobs:
       - name: deploy-release
         run: ./gradlew :kakao:publishDefaultPublicationToOSSHRRepository -PreleaseMode=RELEASE
         env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
           SONATYPE_USERNAME: ${{ secrets.SONATYPE_USERNAME }}
           SONATYPE_PASSWORD: ${{ secrets.SONATYPE_PASSWORD }}
           GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
