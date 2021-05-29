@@ -28,6 +28,7 @@ object Libraries {
     val kotlin_stdlib = "org.jetbrains.kotlin:kotlin-stdlib:${Versions.kotlin}"
     val detekt = "io.gitlab.arturbosch.detekt:detekt-gradle-plugin:${Versions.detekt}"
     val dokka = "org.jetbrains.dokka:kotlin-as-java-plugin:${Versions.dokka}"
+    val dokka_gradle = "org.jetbrains.dokka:dokka-gradle-plugin:${Versions.dokka}"
     val android_gradle = "com.android.tools.build:gradle:${Versions.android_gradle}"
     val maven = "com.github.dcendents:android-maven-gradle-plugin:${Versions.maven}"
     val oss = "org.jfrog.buildinfo:build-info-extractor-gradle:${Versions.oss}"
