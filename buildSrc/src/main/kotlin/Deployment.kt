@@ -147,9 +147,14 @@ object Deployment {
 
             developers {
                 developer {
-                    id.set("KakaoCup")
-                    name.set("KakaoCup")
-                    email.set("kakaobrewer@gmail.com")
+                    id.set("Unlimity")
+                    name.set("Ilya Lim")
+                    url.set("https://github.com/Unlimity")
+                }
+                developer {
+                    id.set("Vacxe")
+                    name.set("Konstantin Aksenov")
+                    url.set("https://github.com/Vacxe")
                 }
             }
 
