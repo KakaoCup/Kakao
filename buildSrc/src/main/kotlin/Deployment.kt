@@ -1,8 +1,10 @@
 import com.android.build.gradle.LibraryExtension
+import org.gradle.api.Action
 import org.gradle.api.Project
 import org.gradle.api.plugins.JavaPluginConvention
 import org.gradle.api.publish.PublishingExtension
 import org.gradle.api.publish.maven.MavenPom
+import org.gradle.api.publish.maven.MavenPomContributorSpec
 import org.gradle.api.publish.maven.MavenPublication
 import org.gradle.api.tasks.bundling.Jar
 import org.gradle.kotlin.dsl.configure
@@ -18,6 +20,7 @@ import org.jetbrains.dokka.gradle.DokkaTask
 import java.net.URI
 
 object Deployment {
+    val ghToken = System.getenv("GH_TOKEN")
     val sonatypeUser = System.getenv("SONATYPE_USERNAME")
     val sonatypePassword = System.getenv("SONATYPE_PASSWORD")
     var releaseMode: String? = null
@@ -158,10 +161,23 @@ object Deployment {
                 }
             }
 
+            contributors(findContributors())
+
             scm {
                 url.set("https://github.com/KakaoCup/Kakao.git")
                 connection.set("scm:git:ssh://github.com/KakaoCup/Kakao")
                 developerConnection.set("scm:git:ssh://github.com/KakaoCup/Kakao")
+            }
+        }
+    }
+
+    private fun findContributors() = Action<MavenPomContributorSpec> {
+        if (!ghToken.isNullOrEmpty()) {
+            Github(ghToken).collaborators.forEach {
+                contributor {
+                    name.set(it.name)
+                    url.set(it.url.toString())
+                }
             }
         }
     }
