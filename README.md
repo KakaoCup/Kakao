@@ -286,15 +286,15 @@ latest version available with usage of support libraries. Please consider migrat
 
 **Kakao** is an open source project, and depends on its users to improve it. We are more than happy to find you interested in taking the project forward.
 
-Kindly refer to the [Contribution Guidelines](https://github.com/agoda-com/kakao/blob/master/CONTRIBUTING.md) for detailed information.
+Kindly refer to the [Contribution Guidelines](https://github.com/kakaocupkakao/blob/master/CONTRIBUTING.md) for detailed information.
 
 ### Code of Conduct
 
-Please refer to [Code of Conduct](https://github.com/agoda-com/Kakao/blob/master/CODE_OF_CONDUCT.md) document.
+Please refer to [Code of Conduct](https://github.com/kakaocup/Kakao/blob/master/CODE_OF_CONDUCT.md) document.
 
 ### License
 
-Kakao is open source and available under the [Apache License, Version 2.0](https://github.com/agoda-com/Kakao/blob/master/LICENSE).
+Kakao is open source and available under the [Apache License, Version 2.0](https://github.com/kakaocup/Kakao/blob/master/LICENSE).
 
 ### Thanks to
 
