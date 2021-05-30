@@ -155,6 +155,8 @@ object Deployment {
             developers(findCollaborators())
             contributors(findContributors())
 
+            contributors(findContributors())
+
             scm {
                 url.set("https://github.com/KakaoCup/Kakao.git")
                 connection.set("scm:git:ssh://github.com/KakaoCup/Kakao")
