@@ -13,7 +13,7 @@ jobs:
         run: |
           ./gradlew clean detekt
 
-  sample-app-check:
+  sample-app-automation-assemble:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v1
@@ -21,9 +21,12 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 1.8
-      - name: sample-assemble-debug
+      - name: sample-assembleDebug
         run: |
           ./gradlew sample:assembleDebug
+      - name: sample-assembleAndroidTest
+        run: |
+          ./gradlew sample:assembleAndroidTest
 
   kakao-library-check:
     runs-on: ubuntu-20.04
