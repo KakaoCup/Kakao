@@ -151,10 +151,7 @@ object Deployment {
                 }
             }
 
-
             developers(findCollaborators())
-            contributors(findContributors())
-
             contributors(findContributors())
 
             scm {
@@ -170,8 +167,8 @@ object Deployment {
             Github(ghToken).collaborators.forEach {
                 developer {
                     id.set(it.login)
-                    url.set(it.url.toString())
-                    it.name?.let { name.set(it) }
+                    url.set("https://github.com/${it.login}")
+                    name.set(it.name)
                 }
             }
         }
@@ -179,10 +176,10 @@ object Deployment {
 
     private fun findContributors() = Action<MavenPomContributorSpec> {
         if (!ghToken.isNullOrEmpty()) {
-            Github(ghToken).contributors.forEach {
+            Github(ghToken).contributors.sortedBy { it.login }.forEach {
                 contributor {
                     name.set(it.login)
-                    url.set(it.url.toString())
+                    url.set("https://github.com/${it.login}")
                 }
             }
         }
