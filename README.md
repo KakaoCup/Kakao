@@ -271,17 +271,6 @@ dependencies {
 }
 ```
 
-### AndroidX
-Default artifact starting from `2.0.0` includes AndroidX libraries to build upon. If you're still using
-old support libraries, please use `2.X.X-support` artifact.
-```
-dependencies {
-    androidTestImplementation 'io.github.kakaocup.kakao:kakao:2.1.0-support'
-}
-```
-**IMPORTANT:** We stopped the development for the `-support` artifact and version `2.1.0-support` is the
-latest version available with usage of support libraries. Please consider migrating to AndroidX.
-
 ### Contribution Policy
 
 **Kakao** is an open source project, and depends on its users to improve it. We are more than happy to find you interested in taking the project forward.
