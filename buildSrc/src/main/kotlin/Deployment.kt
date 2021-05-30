@@ -1,8 +1,13 @@
+@file:Suppress("DEPRECATION")
+
 import com.android.build.gradle.LibraryExtension
+import org.gradle.api.Action
 import org.gradle.api.Project
 import org.gradle.api.plugins.JavaPluginConvention
 import org.gradle.api.publish.PublishingExtension
 import org.gradle.api.publish.maven.MavenPom
+import org.gradle.api.publish.maven.MavenPomContributorSpec
+import org.gradle.api.publish.maven.MavenPomDeveloperSpec
 import org.gradle.api.publish.maven.MavenPublication
 import org.gradle.api.tasks.bundling.Jar
 import org.gradle.kotlin.dsl.configure
@@ -18,6 +23,7 @@ import org.jetbrains.dokka.gradle.DokkaTask
 import java.net.URI
 
 object Deployment {
+    val ghToken = System.getenv("GH_TOKEN")
     val sonatypeUser = System.getenv("SONATYPE_USERNAME")
     val sonatypePassword = System.getenv("SONATYPE_PASSWORD")
     var releaseMode: String? = null
@@ -92,7 +98,7 @@ object Deployment {
         project.configure<PublishingExtension> {
             publications {
                 create("default", MavenPublication::class.java) {
-                    Deployment.customizePom(project, pom)
+                    Deployment.customizePom(pom)
                     additionalArtifacts.forEach { it ->
                         artifact(it)
                     }
@@ -132,7 +138,7 @@ object Deployment {
         }
     }
 
-    fun customizePom(project: Project, pom: MavenPom?) {
+    fun customizePom(pom: MavenPom?) {
         pom?.apply {
             name.set("kakao")
             url.set("https://github.com/KakaoCup/Kakao")
@@ -145,23 +151,37 @@ object Deployment {
                 }
             }
 
-            developers {
-                developer {
-                    id.set("Unlimity")
-                    name.set("Ilya Lim")
-                    url.set("https://github.com/Unlimity")
-                }
-                developer {
-                    id.set("Vacxe")
-                    name.set("Konstantin Aksenov")
-                    url.set("https://github.com/Vacxe")
-                }
-            }
+
+            developers(findCollaborators())
+            contributors(findContributors())
 
             scm {
                 url.set("https://github.com/KakaoCup/Kakao.git")
                 connection.set("scm:git:ssh://github.com/KakaoCup/Kakao")
                 developerConnection.set("scm:git:ssh://github.com/KakaoCup/Kakao")
+            }
+        }
+    }
+
+    private fun findCollaborators() = Action<MavenPomDeveloperSpec> {
+        if (!ghToken.isNullOrEmpty()) {
+            Github(ghToken).collaborators.forEach {
+                developer {
+                    id.set(it.login)
+                    url.set(it.url.toString())
+                    it.name?.let { name.set(it) }
+                }
+            }
+        }
+    }
+
+    private fun findContributors() = Action<MavenPomContributorSpec> {
+        if (!ghToken.isNullOrEmpty()) {
+            Github(ghToken).contributors.forEach {
+                contributor {
+                    name.set(it.login)
+                    url.set(it.url.toString())
+                }
             }
         }
     }
