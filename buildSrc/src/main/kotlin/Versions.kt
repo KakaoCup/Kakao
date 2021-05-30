@@ -3,7 +3,7 @@ import java.io.File
 object Versions {
     val kakaoVersion = File("buildsystem/version").readText().trim()
 
-    val kotlin = "1.5.10"
+    val kotlin = "1.4.32"
     val detekt = "1.17.1"
     val dokka = "1.4.32"
     val android_gradle = "4.2.1"
