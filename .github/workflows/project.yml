@@ -13,20 +13,17 @@ jobs:
         run: |
           ./gradlew clean detekt
 
-  sample-app-automation-assemble:
-    runs-on: ubuntu-20.04
+  sample-connectedCheck:
+    runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v1
-      - name: Set up JDK 1.8
-        uses: actions/setup-java@v1
-        with:
-          java-version: 1.8
-      - name: sample-assembleDebug
-        run: |
-          ./gradlew sample:assembleDebug
-      - name: sample-assembleAndroidTest
-        run: |
-          ./gradlew sample:assembleAndroidTest
+    - name: checkout
+      uses: actions/checkout@v2
+
+    - name: connectedCheck
+      uses: reactivecircus/android-emulator-runner@v2
+      with:
+        api-level: 29
+        script: ./gradlew sample:connectedCheck
 
   kakao-library-check:
     runs-on: ubuntu-20.04
