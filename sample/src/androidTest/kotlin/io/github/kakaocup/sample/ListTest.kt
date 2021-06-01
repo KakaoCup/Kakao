@@ -93,7 +93,18 @@ class ListTest {
             }
         }
 
-        assert(dataList == mutableListOf("DATA_ALL", "DATA_CHECK"))
+        assert(
+            dataList == mutableListOf(
+                "DATA_ALL",
+                "DATA_CHECK",
+                "DATA_ALL",
+                "DATA_CHECK",
+                "DATA_ALL",
+                "DATA_CHECK",
+                "DATA_ALL",
+                "DATA_CHECK"
+            )
+        )
         assert(viewList == mutableListOf("ALL", "CHECK", "ALL", "PERFORM"))
     }
 }
