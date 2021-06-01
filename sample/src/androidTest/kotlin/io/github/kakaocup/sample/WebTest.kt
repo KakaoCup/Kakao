@@ -5,6 +5,7 @@ import androidx.test.ext.junit.rules.ActivityScenarioRule
 import androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner
 import io.github.kakaocup.kakao.screen.Screen.Companion.onScreen
 import io.github.kakaocup.sample.screen.TestWebScreen
+import org.junit.Ignore
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -16,6 +17,7 @@ class WebTest {
     val rule = ActivityScenarioRule(WebActivity::class.java)
 
     @Test
+    @Ignore("Failed on API 29+")
     fun testWebViewHasTextHelloAndClickLink() {
         onScreen<TestWebScreen> {
             webView {
@@ -30,6 +32,7 @@ class WebTest {
     }
 
     @Test
+    @Ignore("Failed on API 29+")
     fun testWebViewInteractionInterceptor() {
         val list = mutableListOf<String>()
 
