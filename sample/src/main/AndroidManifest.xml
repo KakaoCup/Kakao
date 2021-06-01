@@ -77,6 +77,10 @@
         android:name="io.github.kakaocup.sample.SliderActivity"
         android:label="Slider Activity"
         android:theme="@style/MaterialAppTheme" />
+    <activity
+        android:name="io.github.kakaocup.sample.TabLayoutActivity"
+        android:label="Tab Layout Activity"
+        android:theme="@style/MaterialAppTheme" />
   </application>
 
 </manifest>
