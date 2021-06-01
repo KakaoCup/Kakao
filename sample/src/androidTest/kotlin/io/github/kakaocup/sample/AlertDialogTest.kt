@@ -31,7 +31,7 @@ class AlertDialogTest {
                 }
 
                 icon {
-                    hasDrawable(R.drawable.ic_android_black_24dp)
+                    hasDrawable(android.R.drawable.arrow_up_float)
                 }
 
                 positiveButton {
