@@ -15,7 +15,7 @@ class AlertDialogActivity : AppCompatActivity() {
             AlertDialog
                 .Builder(this)
                 .setTitle("Title")
-                .setIcon(R.drawable.ic_android_black_24dp)
+                .setIcon(android.R.drawable.arrow_up_float)
                 .setMessage("Message")
                 .setPositiveButton("Positive") { _, _ -> }
                 .setNegativeButton("Negative") { _, _ -> }
