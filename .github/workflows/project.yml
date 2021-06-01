@@ -1,4 +1,4 @@
-name: pr-check
+name: pullrequest-check
 on: [ push, pull_request ]
 jobs:
   detekt:
