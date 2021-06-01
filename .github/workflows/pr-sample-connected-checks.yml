@@ -1,0 +1,50 @@
+name: pull_request-check
+on: [ push, pull_request ]
+jobs:
+  sample-connectedCheck-api21:
+    runs-on: macos-latest
+    steps:
+    - name: checkout
+      uses: actions/checkout@v2
+
+    - name: connectedCheck
+      uses: reactivecircus/android-emulator-runner@v2
+      with:
+        api-level: 21
+        script: ./gradlew sample:connectedCheck
+
+  sample-connectedCheck-api24:
+    runs-on: macos-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+
+      - name: connectedCheck
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 24
+          script: ./gradlew sample:connectedCheck
+
+  sample-connectedCheck-api27:
+    runs-on: macos-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+
+      - name: connectedCheck
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 27
+          script: ./gradlew sample:connectedCheck
+
+  sample-connectedCheck-api30:
+    runs-on: macos-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+
+      - name: connectedCheck
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 30
+          script: ./gradlew sample:connectedCheck
