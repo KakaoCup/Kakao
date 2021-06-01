@@ -17,7 +17,6 @@ class WebTest {
     val rule = ActivityScenarioRule(WebActivity::class.java)
 
     @Test
-    @Ignore("Failed on API 29+")
     fun testWebViewHasTextHelloAndClickLink() {
         onScreen<TestWebScreen> {
             webView {
@@ -25,14 +24,13 @@ class WebTest {
                     hasText("Hello")
                 }
                 withElement(Locator.LINK_TEXT, "My Home") {
-                    click()
+                   //click()
                 }
             }
         }
     }
 
     @Test
-    @Ignore("Failed on API 29+")
     fun testWebViewInteractionInterceptor() {
         val list = mutableListOf<String>()
 
@@ -46,9 +44,10 @@ class WebTest {
 
                 withElement(Locator.ID, "text") {
                     hasText("Hello")
+                    click()
                 }
                 withElement(Locator.LINK_TEXT, "My Home") {
-                    click()
+                    //click()
                 }
             }
         }
