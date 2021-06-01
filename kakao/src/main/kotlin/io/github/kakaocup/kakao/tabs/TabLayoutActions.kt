@@ -33,25 +33,25 @@ interface TabLayoutActions : BaseActions {
     }
 
     /**
-     * Returns the currently selected item id
+     * Returns the currently selected tab position
      *
-     * @return selected menu item id
+     * @return selected tab position
      */
     fun getSelectedItem(): Int {
-        var id = 0
+        var position = 0
 
         view.perform(object : ViewAction {
-            override fun getDescription() = "Gets selected item id"
+            override fun getDescription() = "Gets selected tab position"
 
             override fun getConstraints() = ViewMatchers.isAssignableFrom(TabLayout::class.java)
 
             override fun perform(uiController: UiController, view: View) {
                 if (view is TabLayout) {
-                    id = view.selectedTabPosition
+                    position = view.selectedTabPosition
                 }
             }
         })
 
-        return id
+        return position
     }
 }
