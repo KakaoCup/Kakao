@@ -4,6 +4,7 @@ jobs:
   integration-test:
     runs-on: macOS-10.15
     strategy:
+      fail-fast: false
       matrix:
         api: [ 21, 22, 23, 24, 25, 26, 27, 28, 29, 30 ]
     steps:
