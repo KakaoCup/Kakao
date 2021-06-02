@@ -4,6 +4,7 @@ import androidx.test.ext.junit.rules.ActivityScenarioRule
 import androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner
 import com.google.android.gms.maps.model.LatLng
 import io.github.kakaocup.kakao.screen.Screen
+import io.github.kakaocup.kakao.screen.Screen.Companion.idle
 import io.github.kakaocup.sample.screen.GoogleMapActivityScreen
 import org.junit.Rule
 import org.junit.Test
@@ -18,8 +19,20 @@ class GoogleMapsTest {
     @Test
     fun testMove() {
         Screen.onScreen<GoogleMapActivityScreen> {
+            idle(2000)
             map {
-                moveCamera(LatLng(-33.914172, 151.265490), 17f)
+                zoomInButton {
+                    click()
+                    click()
+                }
+
+                idle(2000)
+
+                zoomOutButton {
+                    click()
+                    click()
+                }
+                //moveCamera(LatLng(-33.914172, 151.265490), 17f)
             }
         }
     }
