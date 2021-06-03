@@ -1,11 +1,11 @@
 package io.github.kakaocup.sample
 
+
 import androidx.test.espresso.web.webdriver.Locator
 import androidx.test.ext.junit.rules.ActivityScenarioRule
 import androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner
 import io.github.kakaocup.kakao.screen.Screen.Companion.onScreen
 import io.github.kakaocup.sample.screen.TestWebScreen
-import org.junit.Ignore
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -24,7 +24,7 @@ class WebTest {
                     hasText("Hello")
                 }
                 withElement(Locator.LINK_TEXT, "My Home") {
-                   //click()
+                   click()
                 }
             }
         }
@@ -44,10 +44,9 @@ class WebTest {
 
                 withElement(Locator.ID, "text") {
                     hasText("Hello")
-                    click()
                 }
                 withElement(Locator.LINK_TEXT, "My Home") {
-                    //click()
+                    click()
                 }
             }
         }

@@ -18,7 +18,7 @@ class WebActivity : AppCompatActivity() {
             <body>
 
             <p id="text">Hello</p>
-            <a href="#">My Home</a>
+            <a href="kakaocup.github.io/kakao/">My Home</a>
 
             </body>
             </html>
