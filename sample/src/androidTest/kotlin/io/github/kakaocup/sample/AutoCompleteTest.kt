@@ -24,7 +24,7 @@ class AutoCompleteTest {
 
             list {
                 inRoot {
-                    isPlatformPopup()
+                    //isPlatformPopup()
                 }
 
                 isVisible()
