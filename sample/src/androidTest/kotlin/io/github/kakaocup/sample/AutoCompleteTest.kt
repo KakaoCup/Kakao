@@ -2,6 +2,7 @@ package io.github.kakaocup.sample
 
 import androidx.test.ext.junit.rules.ActivityScenarioRule
 import androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner
+import io.github.kakaocup.kakao.common.matchers.SpinnerPopupMatcher
 import io.github.kakaocup.kakao.screen.Screen.Companion.onScreen
 import io.github.kakaocup.sample.screen.AutoCompleteActivityScreen
 import org.junit.Rule
@@ -23,11 +24,9 @@ class AutoCompleteTest {
             }
 
             list {
-                /*
                 inRoot {
-                    /isPlatformPopup()
+                    withMatcher(SpinnerPopupMatcher())
                 }
-                */
 
                 isVisible()
                 hasSize(10)
