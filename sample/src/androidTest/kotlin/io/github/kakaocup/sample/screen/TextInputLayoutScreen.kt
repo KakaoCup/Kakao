@@ -10,6 +10,7 @@ class TextInputLayoutScreen : Screen<TextInputLayoutScreen>() {
     val toggleCounter = KButton { withId(R.id.toggle_counter) }
     val toggleHint = KButton { withId(R.id.toggle_hint) }
     val toggleError = KButton { withId(R.id.toggle_error) }
+    val cleanError = KButton { withId(R.id.clean_error) }
 
     init {
         rootView = inputLayout

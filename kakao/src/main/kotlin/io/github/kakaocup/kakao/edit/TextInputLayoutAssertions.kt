@@ -67,6 +67,20 @@ interface TextInputLayoutAssertions : BaseAssertions {
         })
     }
 
+    fun hasNoError() {
+        view.check(ViewAssertion { view, notFoundException ->
+            if (view is TextInputLayout) {
+                if (!view.error.isNullOrEmpty()) {
+                    throw AssertionError(
+                        "Expected no error but actual is ${view.error}"
+                    )
+                }
+            } else {
+                notFoundException?.let { throw AssertionError(it) }
+            }
+        })
+    }
+
     fun isErrorEnabled() {
         view.check(ViewAssertions.matches(TextInputLayoutErrorEnabledMatcher(true)))
     }

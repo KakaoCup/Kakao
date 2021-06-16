@@ -28,6 +28,12 @@ class TextInputLayoutTest {
                 isErrorEnabled()
             }
 
+            cleanError { click() }
+
+            inputLayout {
+                hasNoError()
+            }
+
             toggleCounter { click() }
             toggleHint { click() }
             toggleError { click() }
