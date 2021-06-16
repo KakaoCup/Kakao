@@ -30,5 +30,9 @@ class TextInputLayoutActivity : AppCompatActivity() {
         findViewById<Button>(R.id.toggle_error).setOnClickListener {
             layout.isErrorEnabled = !layout.isErrorEnabled
         }
+
+        findViewById<Button>(R.id.clean_error).setOnClickListener {
+            layout.error = null
+        }
     }
 }
