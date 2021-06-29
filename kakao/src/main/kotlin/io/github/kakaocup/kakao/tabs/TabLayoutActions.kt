@@ -7,7 +7,6 @@ import androidx.test.espresso.UiController
 import androidx.test.espresso.ViewAction
 import androidx.test.espresso.matcher.ViewMatchers
 import io.github.kakaocup.kakao.common.actions.BaseActions
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.tabs.TabLayout
 
 /**
@@ -34,25 +33,25 @@ interface TabLayoutActions : BaseActions {
     }
 
     /**
-     * Returns the currently selected item id
+     * Returns the currently selected tab position
      *
-     * @return selected menu item id
+     * @return selected tab position
      */
     fun getSelectedItem(): Int {
-        var id = 0
+        var position = 0
 
         view.perform(object : ViewAction {
-            override fun getDescription() = "Gets selected item id"
+            override fun getDescription() = "Gets selected tab position"
 
-            override fun getConstraints() = ViewMatchers.isAssignableFrom(BottomNavigationView::class.java)
+            override fun getConstraints() = ViewMatchers.isAssignableFrom(TabLayout::class.java)
 
             override fun perform(uiController: UiController, view: View) {
-                if (view is BottomNavigationView) {
-                    id = view.selectedItemId
+                if (view is TabLayout) {
+                    position = view.selectedTabPosition
                 }
             }
         })
 
-        return id
+        return position
     }
 }

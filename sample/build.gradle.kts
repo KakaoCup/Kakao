@@ -15,6 +15,10 @@ android {
         testInstrumentationRunner("androidx.test.runner.AndroidJUnitRunner")
     }
 
+    testOptions {
+        animationsDisabled = true
+    }
+
     sourceSets {
         getByName("main") {
             java.srcDir("src/main/kotlin")
