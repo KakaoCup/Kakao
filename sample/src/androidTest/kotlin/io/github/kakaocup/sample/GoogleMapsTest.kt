@@ -19,7 +19,7 @@ class GoogleMapsTest {
     fun testMoveCamera() {
         MapScreen.onScreen<GoogleMapActivityScreen>(rule) {
             map {                
-                moveCamera(LatLng(0.0, 0.0), 2f)
+                moveCamera(LatLng(0.0, 0.0), 19f)
                 
                 hasTarget(LatLng(0.0, 0.0))
                 hasZoom(2.0f)
