@@ -34,6 +34,8 @@ dependencies {
     implementation(Libraries.espresso_web)
     implementation(Libraries.espresso_intents)
     implementation(Libraries.espresso_contrib)
+    implementation(Libraries.junit_ext)
+
     dokkaHtmlPlugin(Libraries.dokka)
     dokkaHtmlPlugin(Libraries.dokka)
 }

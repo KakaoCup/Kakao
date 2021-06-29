@@ -2,14 +2,12 @@
 
 package io.github.kakaocup.kakao.googlemaps
 
-import android.R
-import android.view.View
-import android.widget.ImageView
-import androidx.test.espresso.DataInteraction
-import io.github.kakaocup.kakao.common.builders.ViewBuilder
-import io.github.kakaocup.kakao.common.views.KBaseView
-import io.github.kakaocup.kakao.image.KImageView
-import org.hamcrest.Matcher
+import androidx.test.espresso.Espresso
+import androidx.test.espresso.IdlingRegistry
+import androidx.test.espresso.idling.CountingIdlingResource
+import com.google.android.gms.maps.GoogleMap
+import com.google.android.gms.maps.SupportMapFragment
+
 
 /**
  * View for acting and asserting on Google Maps
@@ -17,51 +15,45 @@ import org.hamcrest.Matcher
  * @see GoogleMapsActions
  * @see GoogleMapsAssertions
  */
-class KGoogleMaps : KBaseView<KGoogleMaps>,
-    GoogleMapsActions, GoogleMapsAssertions {
+class KGoogleMaps(mapScreen: MapScreen<*, *>, fragmentId: Int) : GoogleMapsActions, GoogleMapsAssertions {
 
-    val zoomInButton: KImageView
-    val zoomOutButton: KImageView
+    override lateinit var map: GoogleMap
+    private val countingIdlingResource = CountingIdlingResource("MapReady: $fragmentId")
 
-    constructor(function: ViewBuilder.() -> Unit) : super(function) {
-        zoomInButton = KImageView {
-            isDescendantOfA(function)
-            isAssignableFrom(ImageView::class.java)
-            withTag("GoogleMapZoomInButton")
-        }
+    init {
+        IdlingRegistry.getInstance().register(countingIdlingResource)
+        countingIdlingResource.increment()
+        mapScreen.activityRule.scenario.onActivity { fragmentActivity ->
+            (fragmentActivity.supportFragmentManager.findFragmentById(fragmentId) as SupportMapFragment).getMapAsync {
+                map = it
 
-        zoomOutButton = KImageView {
-            isDescendantOfA(function)
-            isAssignableFrom(ImageView::class.java)
-            withTag("GoogleMapZoomOutButton")
+                countingIdlingResource.decrement()
+                IdlingRegistry.getInstance().unregister(countingIdlingResource)
+            }
         }
     }
 
-    constructor(parent: Matcher<View>, function: ViewBuilder.() -> Unit) : super(parent, function) {
-        zoomInButton = KImageView {
-            isDescendantOfA(function)
-            isAssignableFrom(ImageView::class.java)
-            withTag("GoogleMapZoomInButton")
-        }
-
-        zoomOutButton = KImageView {
-            isDescendantOfA(function)
-            isAssignableFrom(ImageView::class.java)
-            withTag("GoogleMapZoomOutButton")
-        }
+    /**
+     * Operator that allows usage of DSL style
+     *
+     * @param function Tail lambda with receiver which is your view
+     */
+    operator fun invoke(function: KGoogleMaps.() -> Unit) {
+        function(this)
     }
 
-    constructor(parent: DataInteraction, function: ViewBuilder.() -> Unit) : super(parent, function) {
-        zoomInButton = KImageView {
-            isDescendantOfA(function)
-            isAssignableFrom(ImageView::class.java)
-            withTag("GoogleMapZoomInButton")
-        }
-
-        zoomOutButton = KImageView {
-            isDescendantOfA(function)
-            isAssignableFrom(ImageView::class.java)
-            withTag("GoogleMapZoomOutButton")
-        }
+    /**
+     * Infix function for invoking lambda on your view
+     *
+     * Sometimes instance of view is a result of a function or constructor.
+     * In this specific case you can't call invoke() since it will be considered as
+     * tail lambda of your fun/constructor. In such cases please use this function.
+     *
+     * @param function Tail lambda with receiver which is your view
+     * @return This object
+     */
+    infix fun perform(function: KGoogleMaps.() -> Unit): KGoogleMaps {
+        function(this)
+        return this
     }
 }

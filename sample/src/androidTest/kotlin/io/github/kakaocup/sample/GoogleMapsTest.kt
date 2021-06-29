@@ -21,19 +21,9 @@ class GoogleMapsTest {
         Screen.onScreen<GoogleMapActivityScreen> {
             idle(2000)
             map {
-                zoomInButton {
-                    click()
-                    click()
-                }
-
-                idle(2000)
-
-                zoomOutButton {
-                    click()
-                    click()
-                }
-                //moveCamera(LatLng(-33.914172, 151.265490), 17f)
+                moveCamera(LatLng(-33.914172, 151.265490), 17f)
             }
+            idle(2000)
         }
     }
 }

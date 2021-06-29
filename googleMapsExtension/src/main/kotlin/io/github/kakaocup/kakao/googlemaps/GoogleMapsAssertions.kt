@@ -2,11 +2,12 @@
 
 package io.github.kakaocup.kakao.googlemaps
 
-import io.github.kakaocup.kakao.common.assertions.BaseAssertions
+import com.google.android.gms.maps.GoogleMap
 
 /**
  * Provides assertion for Google Maps
  */
-interface GoogleMapsAssertions : BaseAssertions {
+interface GoogleMapsAssertions {
+    val map: GoogleMap
 
 }
