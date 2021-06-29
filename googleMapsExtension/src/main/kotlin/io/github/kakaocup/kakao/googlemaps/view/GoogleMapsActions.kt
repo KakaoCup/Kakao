@@ -1,6 +1,6 @@
 @file:Suppress("unused")
 
-package io.github.kakaocup.kakao.googlemaps
+package io.github.kakaocup.kakao.googlemaps.view
 
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
@@ -9,10 +9,10 @@ import com.google.android.gms.maps.model.LatLng
 /**
  * Provides actions for Google Maps
  */
-interface GoogleMapsActions  {
+interface GoogleMapsActions : UiThread {
     val map: GoogleMap
 
-    fun moveCamera(latLng: LatLng, zoom: Float? = null) {
+    fun moveCamera(latLng: LatLng, zoom: Float? = null) = runOnUiThread {
         zoom?.let {
             map.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, zoom))
         } ?: kotlin.run {
@@ -20,7 +20,7 @@ interface GoogleMapsActions  {
         }
     }
 
-    fun animateCamera(latLng: LatLng, zoom: Float? = null) {
+    fun animateCamera(latLng: LatLng, zoom: Float? = null) = runOnUiThread {
         zoom?.let {
             map.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, zoom))
         } ?: kotlin.run {

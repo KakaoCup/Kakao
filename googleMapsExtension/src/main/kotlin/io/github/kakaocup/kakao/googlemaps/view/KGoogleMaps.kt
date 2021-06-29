@@ -1,13 +1,13 @@
 @file:Suppress("unused")
 
-package io.github.kakaocup.kakao.googlemaps
+package io.github.kakaocup.kakao.googlemaps.view
 
-import androidx.test.espresso.Espresso
+import androidx.test.core.app.ActivityScenario
 import androidx.test.espresso.IdlingRegistry
 import androidx.test.espresso.idling.CountingIdlingResource
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.SupportMapFragment
-
+import io.github.kakaocup.kakao.googlemaps.screen.MapScreen
 
 /**
  * View for acting and asserting on Google Maps
@@ -18,6 +18,8 @@ import com.google.android.gms.maps.SupportMapFragment
 class KGoogleMaps(mapScreen: MapScreen<*, *>, fragmentId: Int) : GoogleMapsActions, GoogleMapsAssertions {
 
     override lateinit var map: GoogleMap
+    override val scenario: ActivityScenario<*> = mapScreen.activityRule.scenario
+
     private val countingIdlingResource = CountingIdlingResource("MapReady: $fragmentId")
 
     init {
