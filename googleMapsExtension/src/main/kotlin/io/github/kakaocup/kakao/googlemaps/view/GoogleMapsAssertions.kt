@@ -10,21 +10,30 @@ import java.math.RoundingMode
  * Provides assertion for Google Maps
  */
 interface GoogleMapsAssertions : UiThread {
-    companion object {
-        const val thresholdLatLng = 6
-    }
-
     val map: GoogleMap
 
-    fun hasTarget(target: LatLng) = runOnUiThread { assertEquals(target.normalize(), map.cameraPosition.target.normalize()) }
+    fun hasTarget(target: LatLng) = runOnUiThread {
+        assertEquals(target.normalize(), map.cameraPosition.target.normalize())
+    }
 
-    fun hasZoom(zoom: Float) = runOnUiThread { assertEquals(zoom, map.cameraPosition.zoom) }
+    fun hasZoom(zoom: Float) = runOnUiThread {
+        assertEquals(zoom, map.cameraPosition.zoom)
+    }
 
-    fun hasTilt(tilt: Float) = runOnUiThread { assertEquals(tilt, map.cameraPosition.tilt) }
+    fun hasTilt(tilt: Float) = runOnUiThread {
+        assertEquals(tilt, map.cameraPosition.tilt)
+    }
 
-    fun hasBearing(bearing: Float) = runOnUiThread { assertEquals(bearing, map.cameraPosition.bearing) }
+    fun hasBearing(bearing: Float) = runOnUiThread {
+        assertEquals(bearing, map.cameraPosition.bearing)
+    }
 
-    private fun LatLng.normalize() = LatLng(BigDecimal(latitude).setScale(thresholdLatLng, RoundingMode.HALF_EVEN).toDouble(),
-                                            BigDecimal(longitude).setScale(thresholdLatLng, RoundingMode.HALF_EVEN).toDouble())
+    private fun LatLng.normalize() = LatLng(
+        BigDecimal(latitude).setScale(thresholdLatLng, RoundingMode.HALF_EVEN).toDouble(),
+        BigDecimal(longitude).setScale(thresholdLatLng, RoundingMode.HALF_EVEN).toDouble()
+    )
 
+    private companion object {
+        const val thresholdLatLng = 6
+    }
 }
