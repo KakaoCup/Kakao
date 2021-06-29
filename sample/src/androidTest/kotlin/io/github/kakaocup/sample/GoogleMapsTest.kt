@@ -16,7 +16,7 @@ class GoogleMapsTest {
     val rule = ActivityScenarioRule(GoogleMapActivity::class.java)
 
     @Test
-    fun testMove() {
+    fun testMoveCamera() {
         MapScreen.onScreen<GoogleMapActivityScreen>(rule) {
             map {
                 hasTarget(LatLng(0.0, 0.0))
