@@ -22,7 +22,7 @@ class GoogleMapsTest {
                 moveCamera(LatLng(0.0, 0.0), 19f)
                 
                 hasTarget(LatLng(0.0, 0.0))
-                hasZoom(2.0f)
+                hasZoom(19.0f)
                 hasTilt(0f)
                 hasBearing(0f)
 
