@@ -21,6 +21,7 @@ object Versions {
     val junit = "4.13.2"
     val junit_ext = "1.1.2"
     val gradle_versions = "0.39.0"
+    val goodle_maps = "17.0.1"
 }
 
 object Libraries {
@@ -33,6 +34,7 @@ object Libraries {
     val maven = "com.github.dcendents:android-maven-gradle-plugin:${Versions.maven}"
     val oss = "org.jfrog.buildinfo:build-info-extractor-gradle:${Versions.oss}"
     val appcompat = "androidx.appcompat:appcompat:${Versions.appcompat}"
+    val googleMaps = "com.google.android.gms:play-services-maps:${Versions.goodle_maps}"
     val recyclerview = "androidx.recyclerview:recyclerview:${Versions.recyclerview}"
     val viewpager2 = "androidx.viewpager2:viewpager2:${Versions.viewpager2}"
     val swiperefresh = "androidx.swiperefreshlayout:swiperefreshlayout:${Versions.swiperefresh}"

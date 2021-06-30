@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="io.github.kakaocup.sample">
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission
+      android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
   <application android:label="TEST">
+
     <activity
         android:name="io.github.kakaocup.sample.ChipGroupActivity"
         android:label="ChipGroup Activity"
@@ -81,6 +86,14 @@
         android:name="io.github.kakaocup.sample.TabLayoutActivity"
         android:label="Tab Layout Activity"
         android:theme="@style/MaterialAppTheme" />
+    <activity
+        android:name="io.github.kakaocup.sample.GoogleMapActivity"
+        android:label="Google Maps Activity"
+        android:theme="@style/MaterialAppTheme" />
+
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="@string/google_map_key" />
   </application>
 
 </manifest>

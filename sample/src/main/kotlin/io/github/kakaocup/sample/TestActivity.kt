@@ -38,6 +38,7 @@ class TestActivity : AppCompatActivity() {
         addRoute(R.id.alert_dialog_button, AlertDialogActivity::class.java)
         addRoute(R.id.view_pager_2, ViewPager2Activity::class.java)
         addRoute(R.id.slider_button, SliderActivity::class.java)
+        addRoute(R.id.google_maps, GoogleMapActivity::class.java)
         addRoute(R.id.text_input_layout, TextInputLayoutActivity::class.java)
 
         findViewById<Button>(R.id.snackbar_button).setOnClickListener {

@@ -36,10 +36,13 @@ dependencies {
     implementation(Libraries.recyclerview)
     implementation(Libraries.design)
     implementation(Libraries.viewpager2)
+    implementation(Libraries.googleMaps)
 
     testImplementation(Libraries.junit)
 
     androidTestImplementation(project(":kakao"))
+    androidTestImplementation(project(":googleMapsExtension"))
+
     androidTestImplementation(Libraries.annotation)
     androidTestImplementation(Libraries.espresso_runner)
     androidTestImplementation(Libraries.espresso_rules)

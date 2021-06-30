@@ -130,6 +130,12 @@
           android:text="SLIDER" />
 
       <Button
+          android:id="@+id/google_maps"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="GOOGLE MAPS" />
+
+      <Button
           android:id="@+id/text_input_layout"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
