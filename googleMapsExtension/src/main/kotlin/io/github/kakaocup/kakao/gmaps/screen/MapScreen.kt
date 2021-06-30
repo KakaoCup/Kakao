@@ -1,4 +1,4 @@
-package io.github.kakaocup.kakao.googlemaps.screen
+package io.github.kakaocup.kakao.gmaps.screen
 
 import androidx.fragment.app.FragmentActivity
 import androidx.test.ext.junit.rules.ActivityScenarioRule

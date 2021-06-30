@@ -1,13 +1,13 @@
 @file:Suppress("unused")
 
-package io.github.kakaocup.kakao.googlemaps.view
+package io.github.kakaocup.kakao.gmaps.view
 
 import androidx.test.core.app.ActivityScenario
 import androidx.test.espresso.IdlingRegistry
 import androidx.test.espresso.idling.CountingIdlingResource
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.SupportMapFragment
-import io.github.kakaocup.kakao.googlemaps.screen.MapScreen
+import io.github.kakaocup.kakao.gmaps.screen.MapScreen
 
 /**
  * View for acting and asserting on Google Maps

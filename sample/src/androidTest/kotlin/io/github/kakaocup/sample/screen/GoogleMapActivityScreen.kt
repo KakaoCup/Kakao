@@ -1,8 +1,8 @@
 package io.github.kakaocup.sample.screen
 
 import androidx.test.ext.junit.rules.ActivityScenarioRule
-import io.github.kakaocup.kakao.googlemaps.view.KGoogleMaps
-import io.github.kakaocup.kakao.googlemaps.screen.MapScreen
+import io.github.kakaocup.kakao.gmaps.view.KGoogleMaps
+import io.github.kakaocup.kakao.gmaps.screen.MapScreen
 import io.github.kakaocup.sample.GoogleMapActivity
 import io.github.kakaocup.sample.R
 

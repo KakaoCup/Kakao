@@ -1,6 +1,6 @@
 @file:Suppress("unused")
 
-package io.github.kakaocup.kakao.googlemaps.view
+package io.github.kakaocup.kakao.gmaps.view
 
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap

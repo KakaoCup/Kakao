@@ -1,4 +1,4 @@
-package io.github.kakaocup.kakao.googlemaps.view
+package io.github.kakaocup.kakao.gmaps.view
 
 import androidx.test.core.app.ActivityScenario
 

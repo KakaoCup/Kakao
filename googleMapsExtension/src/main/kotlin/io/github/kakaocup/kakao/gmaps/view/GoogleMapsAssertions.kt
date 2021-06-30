@@ -1,4 +1,4 @@
-package io.github.kakaocup.kakao.googlemaps.view
+package io.github.kakaocup.kakao.gmaps.view
 
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.model.LatLng
@@ -12,8 +12,8 @@ import java.math.RoundingMode
 interface GoogleMapsAssertions : UiThread {
     val map: GoogleMap
 
-    fun hasTarget(target: LatLng) = runOnUiThread {
-        assertEquals(target.normalize(), map.cameraPosition.target.normalize())
+    fun hasTarget(target: LatLng, accuracy: Accuracy = Accuracy.NORMAL) = runOnUiThread {
+        assertEquals(target.normalize(accuracy), map.cameraPosition.target.normalize(accuracy))
     }
 
     fun hasZoom(zoom: Float) = runOnUiThread {
@@ -28,12 +28,18 @@ interface GoogleMapsAssertions : UiThread {
         assertEquals(bearing, map.cameraPosition.bearing)
     }
 
-    private fun LatLng.normalize() = LatLng(
-        BigDecimal(latitude).setScale(thresholdLatLng, RoundingMode.HALF_EVEN).toDouble(),
-        BigDecimal(longitude).setScale(thresholdLatLng, RoundingMode.HALF_EVEN).toDouble()
+    private fun LatLng.normalize(accuracy: Accuracy) = LatLng(
+        BigDecimal(latitude).setScale(accuracy.commaDigits, RoundingMode.HALF_EVEN).toDouble(),
+        BigDecimal(longitude).setScale(accuracy.commaDigits, RoundingMode.HALF_EVEN).toDouble()
     )
 
     private companion object {
         const val thresholdLatLng = 6
+    }
+    
+    enum class Accuracy(val commaDigits: Int){
+        FINE(6),
+        NORMAL(4),
+        APPROXIMATE(2)
     }
 }
