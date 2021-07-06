@@ -12,7 +12,7 @@ android {
         minSdkVersion(14)
         targetSdkVersion(30)
         versionCode(2)
-        versionName(Versions.kakaoVersion)
+        versionName(Versions.gmapsVersion)
     }
 
     sourceSets {

@@ -29,9 +29,8 @@ import org.hamcrest.Matchers
  *
  * @param T Type of your custom view. Needs to be defined to enable invoke() and perform() for descendants
  */
-@Suppress("UNCHECKED_CAST")
 @KakaoDslMarker
-open class KBaseView<out T> : BaseActions, BaseAssertions, Interceptable<ViewInteraction, ViewAssertion, ViewAction> {
+open class KBaseView<T> : KDSLView<T>, BaseActions, BaseAssertions, Interceptable<ViewInteraction, ViewAssertion, ViewAction> {
     override val view: ViewInteractionDelegate
     override var root: Matcher<Root> = RootMatchers.DEFAULT
 
@@ -72,29 +71,5 @@ open class KBaseView<out T> : BaseActions, BaseAssertions, Interceptable<ViewInt
         view = DataInteractionDelegate(parent)
             .onChildView(ViewBuilder().apply(function).getViewMatcher())
             .check(ViewAssertions.matches(Matchers.anything()))
-    }
-
-    /**
-     * Operator that allows usage of DSL style
-     *
-     * @param function Tail lambda with receiver which is your view
-     */
-    operator fun invoke(function: T.() -> Unit) {
-        function(this as T)
-    }
-
-    /**
-     * Infix function for invoking lambda on your view
-     *
-     * Sometimes instance of view is a result of a function or constructor.
-     * In this specific case you can't call invoke() since it will be considered as
-     * tail lambda of your fun/constructor. In such cases please use this function.
-     *
-     * @param function Tail lambda with receiver which is your view
-     * @return This object
-     */
-    infix fun perform(function: T.() -> Unit): T {
-        function(this as T)
-        return this
     }
 }

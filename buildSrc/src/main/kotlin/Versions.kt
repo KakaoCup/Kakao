@@ -2,6 +2,8 @@ import java.io.File
 
 object Versions {
     val kakaoVersion = File("buildsystem/version").readText().trim()
+    val gmapsVersion = File("buildsystem/gmapsversion").readText().trim()
+
 
     val kotlin = "1.4.32"
     val detekt = "1.17.1"
@@ -21,7 +23,8 @@ object Versions {
     val junit = "4.13.2"
     val junit_ext = "1.1.2"
     val gradle_versions = "0.39.0"
-    val goodle_maps = "17.0.1"
+    val google_maps = "17.0.1"
+    val google_maps_utils = "2.3.0"
 }
 
 object Libraries {
@@ -34,7 +37,8 @@ object Libraries {
     val maven = "com.github.dcendents:android-maven-gradle-plugin:${Versions.maven}"
     val oss = "org.jfrog.buildinfo:build-info-extractor-gradle:${Versions.oss}"
     val appcompat = "androidx.appcompat:appcompat:${Versions.appcompat}"
-    val googleMaps = "com.google.android.gms:play-services-maps:${Versions.goodle_maps}"
+    val googleMaps = "com.google.android.gms:play-services-maps:${Versions.google_maps}"
+    val googleMapsUtils = "com.google.maps.android:maps-utils-ktx:${Versions.google_maps_utils}"
     val recyclerview = "androidx.recyclerview:recyclerview:${Versions.recyclerview}"
     val viewpager2 = "androidx.viewpager2:viewpager2:${Versions.viewpager2}"
     val swiperefresh = "androidx.swiperefreshlayout:swiperefreshlayout:${Versions.swiperefresh}"

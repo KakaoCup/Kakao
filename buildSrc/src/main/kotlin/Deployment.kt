@@ -44,9 +44,9 @@ object Deployment {
 
         Deployment.releaseMode = releaseMode
         Deployment.versionSuffix = versionSuffix
-        Deployment.deployUrl = when (releaseMode) {
-            "RELEASE" -> Deployment.releaseDeployUrl
-            else -> Deployment.snapshotDeployUrl
+        deployUrl = when (releaseMode) {
+            "RELEASE" -> releaseDeployUrl
+            else -> snapshotDeployUrl
         }
 
         initializePublishing(project)
@@ -113,10 +113,10 @@ object Deployment {
                 maven {
                     name = "OSSHR"
                     credentials {
-                        username = Deployment.sonatypeUser
-                        password = Deployment.sonatypePassword
+                        username = sonatypeUser
+                        password = sonatypePassword
                     }
-                    url = URI.create(Deployment.deployUrl)
+                    url = URI.create(deployUrl)
                 }
             }
         }

@@ -18,9 +18,9 @@ class GoogleMapsTest {
     @Test
     fun testMoveCamera() {
         MapScreen.onScreen<GoogleMapActivityScreen>(rule) {
-            map {                
+            map {
                 moveCamera(LatLng(0.0, 0.0), 19f)
-                
+
                 hasTarget(LatLng(0.0, 0.0))
                 hasZoom(19.0f)
                 hasTilt(0f)
@@ -30,6 +30,31 @@ class GoogleMapsTest {
 
                 hasTarget(LatLng(-33.914172, 151.265490))
                 hasZoom(17f)
+
+            }
+        }
+    }
+
+    @Test
+    fun testMarkerInteraction() {
+        MapScreen.onScreen<GoogleMapActivityScreen>(rule) {
+            map {
+                moveCamera(LatLng(0.0, 0.0), 17f)
+
+                cozyPlaceMarker {
+                    isNotDisplayed()
+
+                    moveCameraTo(17f)
+                    isDisplayed()
+
+                    isInfoWindowNotShown()
+                    showInfoWindow()
+                    isInfoWindowShown()
+
+                    hasText("Cozy Place")
+
+                    hasRotation(0f)
+                }
             }
         }
     }
