@@ -40,21 +40,66 @@ class GoogleMapsTest {
         MapScreen.onScreen<GoogleMapActivityScreen>(rule) {
             map {
                 moveCamera(LatLng(0.0, 0.0), 17f)
+            }
 
-                cozyPlaceMarker {
-                    isNotDisplayed()
+            cozyPlaceMarker {
+                isNotDisplayed()
 
-                    moveCameraTo(17f)
-                    isDisplayed()
+                moveCameraTo(17f)
+                isDisplayed()
 
-                    isInfoWindowNotShown()
-                    showInfoWindow()
-                    isInfoWindowShown()
+                isInfoWindowNotShown()
+                showInfoWindow()
+                isInfoWindowShown()
 
-                    hasText("Cozy Place")
+                hasText("Cozy Place")
 
-                    hasRotation(0f)
-                }
+                hasRotation(0f)
+            }
+        }
+    }
+
+    @Test
+    fun testPolylineInteraction() {
+        MapScreen.onScreen<GoogleMapActivityScreen>(rule) {
+            map {
+                moveCamera(LatLng(0.0, 0.0), 17f)
+            }
+
+            crossTuggerah {
+                isNotDisplayed()
+                moveCameraTo(50)
+                isDisplayed()
+            }
+        }
+    }
+
+    @Test
+    fun testPolygonInteraction() {
+        MapScreen.onScreen<GoogleMapActivityScreen>(rule) {
+            map {
+                moveCamera(LatLng(0.0, 0.0), 17f)
+            }
+
+            tuggerahBounds {
+                isNotDisplayed()
+                moveCameraTo(50)
+                isDisplayed()
+            }
+        }
+    }
+
+    @Test
+    fun testCircleInteraction() {
+        MapScreen.onScreen<GoogleMapActivityScreen>(rule) {
+            map {
+                moveCamera(LatLng(0.0, 0.0), 17f)
+            }
+
+            circle {
+                isNotDisplayed()
+                moveCameraTo()
+                isDisplayed()
             }
         }
     }

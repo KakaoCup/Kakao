@@ -18,10 +18,15 @@ interface MarkerActions : UiThread {
         }
     }
 
-    fun moveCameraTo(zoom: Float = googleMap.map.cameraPosition.zoom) = runOnUiThread{
+    fun moveCameraTo() = runOnUiThread{
+        delegate.run {
+            googleMap.moveCamera(position, googleMap.map.cameraPosition.zoom)
+        }
+    }
+
+    fun moveCameraTo(zoom: Float) = runOnUiThread{
         delegate.run {
             googleMap.moveCamera(position, zoom)
-
         }
     }
 }
