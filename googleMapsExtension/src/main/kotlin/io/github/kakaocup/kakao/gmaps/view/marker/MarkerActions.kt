@@ -3,7 +3,6 @@ package io.github.kakaocup.kakao.gmaps.view.marker
 import com.google.android.gms.maps.model.Marker
 import io.github.kakaocup.kakao.gmaps.view.UiThread
 import io.github.kakaocup.kakao.gmaps.view.gmap.KGoogleMaps
-import org.junit.Assert
 
 /**
  * Provides actions for Google Map Marker
@@ -18,15 +17,13 @@ interface MarkerActions : UiThread {
         }
     }
 
-    fun moveCameraTo() = runOnUiThread{
-        delegate.run {
-            googleMap.moveCamera(position, googleMap.map.cameraPosition.zoom)
-        }
-    }
-
-    fun moveCameraTo(zoom: Float) = runOnUiThread{
+    fun moveCameraTo(zoom: Float) = runOnUiThread {
         delegate.run {
             googleMap.moveCamera(position, zoom)
         }
+    }
+
+    fun moveCameraTo() = runOnUiThread {
+        moveCameraTo(googleMap.map.cameraPosition.zoom)
     }
 }

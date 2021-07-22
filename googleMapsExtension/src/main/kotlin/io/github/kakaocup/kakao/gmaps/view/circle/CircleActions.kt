@@ -11,15 +11,13 @@ interface CircleActions : UiThread {
     val googleMap: KGoogleMaps
     val delegate: Circle
 
-    fun moveCameraTo() = runOnUiThread {
-        delegate.run {
-            googleMap.moveCamera(center, googleMap.map.cameraPosition.zoom)
-        }
-    }
-
-    fun moveCameraTo(zoom: Float) = runOnUiThread{
+    fun moveCameraTo(zoom: Float) = runOnUiThread {
         delegate.run {
             googleMap.moveCamera(center, zoom)
         }
+    }
+
+    fun moveCameraTo() = runOnUiThread {
+        moveCameraTo(googleMap.map.cameraPosition.zoom)
     }
 }
