@@ -31,15 +31,15 @@ interface GoogleMapsActions : UiThread {
         map.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, zoom))
     }
 
-    fun newCameraPosition(cameraPosition: CameraPosition) = runOnUiThread {
+    fun animateCamera(cameraPosition: CameraPosition) = runOnUiThread {
         map.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition))
     }
 
-    fun newCameraPosition(latLngBounds: LatLngBounds, padding: Int) = runOnUiThread {
+    fun animateCamera(latLngBounds: LatLngBounds, padding: Int) = runOnUiThread {
         map.animateCamera(CameraUpdateFactory.newLatLngBounds(latLngBounds, padding))
     }
 
-    fun newCameraPosition(latLngBounds: LatLngBounds, width: Int, height: Int, padding: Int) = runOnUiThread {
+    fun animateCamera(latLngBounds: LatLngBounds, width: Int, height: Int, padding: Int) = runOnUiThread {
         map.animateCamera(CameraUpdateFactory.newLatLngBounds(latLngBounds, width, height, padding))
     }
 }

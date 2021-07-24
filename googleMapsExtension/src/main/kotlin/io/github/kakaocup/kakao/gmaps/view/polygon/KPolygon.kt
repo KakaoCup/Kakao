@@ -1,13 +1,13 @@
-package io.github.kakaocup.kakao.gmaps.view.marker
+package io.github.kakaocup.kakao.gmaps.view.polygon
 
 import androidx.fragment.app.FragmentActivity
-import com.google.android.gms.maps.model.Marker
+import com.google.android.gms.maps.model.Polygon
 import io.github.kakaocup.kakao.gmaps.screen.MapScreen
 import io.github.kakaocup.kakao.gmaps.view.KDelegateView
 import io.github.kakaocup.kakao.gmaps.view.gmap.KGoogleMaps
 
-class KMarker<ACTIVITY : FragmentActivity>(
+class KPolygon<ACTIVITY : FragmentActivity>(
     mapScreen: MapScreen<*, ACTIVITY>,
     override val googleMap: KGoogleMaps,
-    matcher: ACTIVITY.() -> Marker?
-) : KDelegateView<ACTIVITY, Marker, KMarker<ACTIVITY>>(mapScreen, matcher), MarkerAssertions, MarkerActions
+    matcher: ACTIVITY.() -> Polygon?
+) : KDelegateView<ACTIVITY, Polygon, KPolygon<ACTIVITY>>(mapScreen, matcher), PolygonAssertions, PolygonActions

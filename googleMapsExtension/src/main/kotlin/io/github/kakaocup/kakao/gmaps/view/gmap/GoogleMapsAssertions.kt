@@ -6,10 +6,9 @@ import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.LatLngBounds
 import io.github.kakaocup.kakao.gmaps.utils.IdleResource
 import io.github.kakaocup.kakao.gmaps.view.UiThread
+import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
-import org.junit.Assert.assertEquals
-
 import java.math.BigDecimal
 import java.math.RoundingMode
 
@@ -94,8 +93,8 @@ interface GoogleMapsAssertions : UiThread {
         BigDecimal(latitude).setScale(accuracy.commaDigits, RoundingMode.HALF_EVEN).toDouble(),
         BigDecimal(longitude).setScale(accuracy.commaDigits, RoundingMode.HALF_EVEN).toDouble()
     )
-    
-    enum class Accuracy(val commaDigits: Int){
+
+    enum class Accuracy(val commaDigits: Int) {
         FINE(6),
         NORMAL(4),
         APPROXIMATE(2)
