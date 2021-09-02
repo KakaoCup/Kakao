@@ -57,7 +57,3 @@ tasks.dokkaHtml.configure {
     moduleName.set("googleMapExtension")
     outputDirectory.set(File("$rootDir/html"))
 }
-
-afterEvaluate {
-    Deployment.initialize(project)
-}
