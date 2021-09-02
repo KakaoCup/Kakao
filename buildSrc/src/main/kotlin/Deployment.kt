@@ -152,7 +152,7 @@ object Deployment {
             }
 
             developers(findCollaborators())
-            contributors(findContributors())
+            //contributors(findContributors()) Failing
 
             scm {
                 url.set("https://github.com/KakaoCup/Kakao.git")
