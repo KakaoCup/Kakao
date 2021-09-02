@@ -7,6 +7,7 @@ import io.github.kakaocup.sample.R
 
 open class AlertDialogActivityScreen : Screen<AlertDialogActivityScreen>() {
     val showAlertDialogButton = KView { withId(R.id.show_alert_dialog) }
+    val showMultiChoiceAlertDialogButton = KView { withId(R.id.show_multi_choice_dialog) }
 
     val alertDialog = KAlertDialog()
 }

@@ -63,4 +63,28 @@ class AlertDialogTest {
             }
         }
     }
+
+    @Test
+    fun testMultiChoiceAlertDialog() {
+        Screen.onScreen<AlertDialogActivityScreen> {
+            showMultiChoiceAlertDialogButton {
+                click()
+            }
+
+            alertDialog {
+                hasChoiceItems("First", "Second", "Third")
+
+                onChoiceItem("First") {
+                    isChecked()
+                }
+
+                onChoiceItem("Second") {
+                    isDisplayed()
+                    isNotChecked()
+                    click()
+                    isChecked()
+                }
+            }
+        }
+    }
 }
