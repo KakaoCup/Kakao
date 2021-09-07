@@ -15,7 +15,7 @@ class GoogleMapsTest {
     @JvmField
     val rule = ActivityScenarioRule(GoogleMapActivity::class.java)
 
-    @Test
+    //@Test
     fun testMoveCamera() {
         MapScreen.onScreen<GoogleMapActivityScreen>(rule) {
             map {
@@ -35,7 +35,7 @@ class GoogleMapsTest {
         }
     }
 
-    @Test
+    //@Test
     fun testMarkerInteraction() {
         MapScreen.onScreen<GoogleMapActivityScreen>(rule) {
             map {
@@ -59,7 +59,7 @@ class GoogleMapsTest {
         }
     }
 
-    @Test
+    //@Test
     fun testPolylineInteraction() {
         MapScreen.onScreen<GoogleMapActivityScreen>(rule) {
             map {
@@ -74,7 +74,7 @@ class GoogleMapsTest {
         }
     }
 
-    @Test
+    //@Test
     fun testPolygonInteraction() {
         MapScreen.onScreen<GoogleMapActivityScreen>(rule) {
             map {
@@ -89,7 +89,7 @@ class GoogleMapsTest {
         }
     }
 
-    @Test
+    //@Test
     fun testCircleInteraction() {
         MapScreen.onScreen<GoogleMapActivityScreen>(rule) {
             map {
