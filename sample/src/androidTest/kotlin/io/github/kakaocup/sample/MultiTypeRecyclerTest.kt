@@ -30,12 +30,25 @@ class MultiTypeRecyclerTest {
                     isVisible()
                     title { hasText("Final Title") }
                 }
+            }
+        }
+    }
 
+    @Test
+    fun testFirstLevelItemTypeRecyclerView() {
+        onScreen<TestRecyclerScreen> {
+            recycler {
                 childWith<TestRecyclerScreen.CheckBoxItem> { withText("CheckBox 2") } perform {
                     checkbox {
                         isNotChecked()
                         click()
                         isChecked()
+                    }
+                }
+
+                childAt<TestRecyclerScreen.CheckBoxItem>(4) {
+                    checkbox {
+                        hasText("CheckBox 0")
                     }
                 }
             }
