@@ -13,6 +13,7 @@ android {
         targetSdkVersion(30)
         versionCode(2)
         versionName(Versions.gmapsVersion)
+        multiDexEnabled = true
     }
 
     sourceSets {
@@ -36,6 +37,7 @@ dependencies {
     implementation(Libraries.espresso_contrib)
     implementation(Libraries.junit_ext)
     implementation(Libraries.junit)
+    implementation(Libraries.multidex)
 
     dokkaHtmlPlugin(Libraries.dokka)
     dokkaHtmlPlugin(Libraries.dokka)

@@ -18,6 +18,7 @@
         android:theme="@style/AppTheme" />
     <activity
         android:name="io.github.kakaocup.sample.TestActivity"
+        android:exported="true"
         android:label="Test Activity"
         android:theme="@style/AppTheme">
       <intent-filter>
