@@ -13,6 +13,7 @@ android {
         versionCode(1)
         versionName("1.0.0")
         testInstrumentationRunner("androidx.test.runner.AndroidJUnitRunner")
+        multiDexEnabled = true
     }
 
     testOptions {
@@ -37,6 +38,7 @@ dependencies {
     implementation(Libraries.design)
     implementation(Libraries.viewpager2)
     implementation(Libraries.googleMaps)
+    implementation(Libraries.multidex)
 
     testImplementation(Libraries.junit)
 

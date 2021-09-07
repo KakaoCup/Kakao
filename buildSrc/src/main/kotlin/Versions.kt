@@ -25,6 +25,7 @@ object Versions {
     val gradle_versions = "0.39.0"
     val google_maps = "17.0.1"
     val google_maps_utils = "2.3.0"
+    val multidex = "2.0.1"
 }
 
 object Libraries {
@@ -53,6 +54,7 @@ object Libraries {
     val junit = "junit:junit:${Versions.junit}"
     val junit_ext = "androidx.test.ext:junit:${Versions.junit_ext}"
     val gradle_versions = "com.github.ben-manes:gradle-versions-plugin:${Versions.gradle_versions}"
+    val multidex = "androidx.multidex:multidex:${Versions.multidex}"
 }
 
 object Description {

@@ -6,24 +6,21 @@
   <uses-permission
       android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
-  <application android:label="TEST"
-      android:allowBackup="false">
+  <application android:label="TEST">
 
     <activity
         android:name="io.github.kakaocup.sample.ChipGroupActivity"
-        android:exported="false"
         android:label="ChipGroup Activity"
         android:theme="@style/MaterialAppTheme" />
     <activity
         android:name="io.github.kakaocup.sample.SpinnerActivity"
-        android:exported="false"
         android:label="Spinner Activity"
         android:theme="@style/AppTheme" />
     <activity
         android:name="io.github.kakaocup.sample.TestActivity"
+        android:exported="true"
         android:label="Test Activity"
-        android:theme="@style/AppTheme"
-        android:exported="true">
+        android:theme="@style/AppTheme">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
 
@@ -32,82 +29,66 @@
     </activity>
     <activity
         android:name="io.github.kakaocup.sample.MultitypeRecyclerActivity"
-        android:exported="false"
         android:label="Recycler Activity"
         android:theme="@style/AppTheme" />
     <activity
         android:name="io.github.kakaocup.sample.SingleTypeRecyclerActivity"
-        android:exported="false"
         android:label="Recycler Activity"
         android:theme="@style/AppTheme" />
     <activity
         android:name="io.github.kakaocup.sample.NestedRecyclerActivity"
-        android:exported="false"
         android:label="Nested Recycler Activity"
         android:theme="@style/AppTheme" />
     <activity
         android:name="io.github.kakaocup.sample.WebActivity"
-        android:exported="false"
         android:label="Web Activity"
         android:theme="@style/AppTheme" />
     <activity
         android:name="io.github.kakaocup.sample.ListActivity"
-        android:exported="false"
         android:label="List Activity"
         android:theme="@style/AppTheme" />
     <activity
         android:name="io.github.kakaocup.sample.TextInputLayoutActivity"
-        android:exported="false"
         android:label="TextInputLayout Activity"
         android:theme="@style/AppTheme" />
     <activity
         android:name="io.github.kakaocup.sample.IntentActivity"
-        android:exported="false"
         android:label="Intent Activity"
         android:theme="@style/AppTheme" />
     <activity
         android:name="io.github.kakaocup.sample.AutoCompleteActivity"
-        android:exported="false"
         android:label="Autocomplete Activity"
         android:theme="@style/AppTheme" />
     <activity
         android:name="io.github.kakaocup.sample.DrawableListActivity"
-        android:exported="false"
         android:label="Drawable Activity"
         android:theme="@style/AppTheme" />
     <activity
         android:name="io.github.kakaocup.sample.DrawableRecyclerActivity"
-        android:exported="false"
         android:label="Drawable Activity"
         android:theme="@style/AppTheme" />
     <activity
         android:name="io.github.kakaocup.sample.PickersActivity"
-        android:exported="false"
         android:label="Pickers Activity"
         android:theme="@style/AppTheme" />
     <activity
         android:name="io.github.kakaocup.sample.AlertDialogActivity"
-        android:exported="false"
         android:label="Alert Dialog Activity"
         android:theme="@style/AppTheme" />
     <activity
         android:name="io.github.kakaocup.sample.ViewPager2Activity"
-        android:exported="false"
         android:label="Alert Dialog Activity"
         android:theme="@style/AppTheme" />
     <activity
         android:name="io.github.kakaocup.sample.SliderActivity"
-        android:exported="false"
         android:label="Slider Activity"
         android:theme="@style/MaterialAppTheme" />
     <activity
         android:name="io.github.kakaocup.sample.TabLayoutActivity"
-        android:exported="false"
         android:label="Tab Layout Activity"
         android:theme="@style/MaterialAppTheme" />
     <activity
         android:name="io.github.kakaocup.sample.GoogleMapActivity"
-        android:exported="false"
         android:label="Google Maps Activity"
         android:theme="@style/MaterialAppTheme" />
 
