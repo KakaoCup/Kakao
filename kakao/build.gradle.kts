@@ -13,6 +13,7 @@ android {
         targetSdkVersion(30)
         versionCode(2)
         versionName(Versions.kakaoVersion)
+        multiDexEnabled = true
     }
 
     sourceSets {
@@ -37,6 +38,8 @@ dependencies {
     implementation(Libraries.espresso_web)
     implementation(Libraries.espresso_intents)
     implementation(Libraries.espresso_contrib)
+    implementation(Libraries.multidex)
+
     dokkaHtmlPlugin(Libraries.dokka)
 }
 
