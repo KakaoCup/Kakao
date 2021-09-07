@@ -18,7 +18,11 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           SONATYPE_USERNAME: ${{ secrets.SONATYPE_USERNAME }}
           SONATYPE_PASSWORD: ${{ secrets.SONATYPE_PASSWORD }}
-          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}          
+          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }} 
+  notify:
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:      
       - uses: actions/checkout@master
       - name: Send Telegram Release message
         uses: ./
