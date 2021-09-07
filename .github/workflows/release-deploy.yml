@@ -25,8 +25,9 @@ jobs:
     steps:      
       - uses: actions/checkout@master
       - name: Send Telegram Release message
-        uses: ./
+        uses: appleboy/telegram-action@master
         with:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
-          args: New Kakao Version has been released https://github.com/KakaoCup/Kakao/releases/
+          message: |
+            New Kakao Version has been released https://github.com/KakaoCup/Kakao/releases/
