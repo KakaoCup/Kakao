@@ -7,6 +7,7 @@ import io.github.kakaocup.kakao.gmaps.screen.MapScreen
 import io.github.kakaocup.sample.screen.GoogleMapActivityScreen
 import org.junit.Rule
 import org.junit.Test
+import org.junit.Ignore
 import org.junit.runner.RunWith
 
 @RunWith(AndroidJUnit4ClassRunner::class)
@@ -15,7 +16,8 @@ class GoogleMapsTest {
     @JvmField
     val rule = ActivityScenarioRule(GoogleMapActivity::class.java)
 
-    //@Test
+    @Ignore("API 30")
+    @Test
     fun testMoveCamera() {
         MapScreen.onScreen<GoogleMapActivityScreen>(rule) {
             map {
@@ -35,7 +37,8 @@ class GoogleMapsTest {
         }
     }
 
-    //@Test
+    @Ignore("API 30")
+    @Test
     fun testMarkerInteraction() {
         MapScreen.onScreen<GoogleMapActivityScreen>(rule) {
             map {
@@ -59,7 +62,8 @@ class GoogleMapsTest {
         }
     }
 
-    //@Test
+    @Ignore("API 30")
+    @Test
     fun testPolylineInteraction() {
         MapScreen.onScreen<GoogleMapActivityScreen>(rule) {
             map {
@@ -74,7 +78,8 @@ class GoogleMapsTest {
         }
     }
 
-    //@Test
+    @Ignore("API 30")
+    @Test
     fun testPolygonInteraction() {
         MapScreen.onScreen<GoogleMapActivityScreen>(rule) {
             map {
@@ -89,7 +94,8 @@ class GoogleMapsTest {
         }
     }
 
-    //@Test
+    @Ignore("API 30")
+    @Test
     fun testCircleInteraction() {
         MapScreen.onScreen<GoogleMapActivityScreen>(rule) {
             map {
