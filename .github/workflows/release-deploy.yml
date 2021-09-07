@@ -25,5 +25,4 @@ jobs:
         with:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
-          message: |
-            New Kakao Version has been released https://github.com/KakaoCup/Kakao/releases/
+          args: New Kakao Version has been released https://github.com/KakaoCup/Kakao/releases/
