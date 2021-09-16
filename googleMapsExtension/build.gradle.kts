@@ -1,7 +1,6 @@
 plugins {
     id("com.android.library")
     id("kotlin-android")
-    id("org.jetbrains.dokka")
     id("com.github.ben-manes.versions") version Versions.gradle_versions
 }
 
@@ -38,9 +37,6 @@ dependencies {
     implementation(Libraries.junit_ext)
     implementation(Libraries.junit)
     implementation(Libraries.multidex)
-
-    dokkaHtmlPlugin(Libraries.dokka)
-    dokkaHtmlPlugin(Libraries.dokka)
 }
 
 tasks.named("dependencyUpdates", com.github.benmanes.gradle.versions.updates.DependencyUpdatesTask::class).configure {
@@ -49,13 +45,4 @@ tasks.named("dependencyUpdates", com.github.benmanes.gradle.versions.updates.Dep
         val regex = "/^[0-9,.v-]+(-r)?$/".toRegex()
         !stableKeyword && !(regex.matches(currentVersion))
     }
-}
-
-tasks.dokkaGfm {
-    moduleName.set("googleMapExtension")
-    outputDirectory.set(File("$rootDir/docs"))
-}
-tasks.dokkaHtml.configure {
-    moduleName.set("googleMapExtension")
-    outputDirectory.set(File("$rootDir/html"))
 }
