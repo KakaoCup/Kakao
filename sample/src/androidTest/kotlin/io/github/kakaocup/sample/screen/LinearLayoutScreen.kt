@@ -19,8 +19,6 @@ open class LinearLayoutScreen : Screen<LinearLayoutScreen>() {
         withParent {
             withId(R.id.linear_layout)
         }
-        withIndex(1) {
-            withTag("matchTag")
-        }
+        onPosition(1)
     }
 }
