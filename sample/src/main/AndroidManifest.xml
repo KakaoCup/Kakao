@@ -92,6 +92,11 @@
         android:label="Google Maps Activity"
         android:theme="@style/MaterialAppTheme" />
 
+    <activity
+        android:name="io.github.kakaocup.sample.LinearLayoutActivity"
+        android:label="Linear Layout activity"
+        android:theme="@style/MaterialAppTheme" />
+
     <meta-data
         android:name="com.google.android.geo.API_KEY"
         android:value="@string/google_map_key" />
