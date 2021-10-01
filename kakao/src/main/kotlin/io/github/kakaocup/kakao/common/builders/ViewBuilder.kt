@@ -16,6 +16,7 @@ import io.github.kakaocup.kakao.common.matchers.BackgroundColorMatcher
 import io.github.kakaocup.kakao.common.matchers.DrawableMatcher
 import io.github.kakaocup.kakao.common.matchers.FirstViewMatcher
 import io.github.kakaocup.kakao.common.matchers.IndexMatcher
+import io.github.kakaocup.kakao.common.matchers.ViewGroupPositionMatcher
 import io.github.kakaocup.kakao.common.matchers.RatingBarMatcher
 import io.github.kakaocup.kakao.delegate.ViewInteractionDelegate
 import org.hamcrest.CoreMatchers
@@ -44,6 +45,15 @@ class ViewBuilder {
     */
     fun withIndex(index: Int, function: ViewBuilder.() -> Unit) {
         viewMatchers.add(IndexMatcher(ViewBuilder().apply(function).getViewMatcher(), index))
+    }
+
+    /**
+     * Matches view at given [position] in ViewGroup
+     *
+     * @param position position in ViewGroup
+     */
+    fun onPosition(position: Int) {
+        viewMatchers.add(ViewGroupPositionMatcher(position))
     }
 
     /**
