@@ -47,6 +47,11 @@ class TestActivityTest {
                 }
             }
 
+            textViewHint {
+                isVisible()
+                hasHint("hint")
+            }
+
             buttonViewLeft {
                 isVisible()
                 hasText("left")

@@ -29,6 +29,10 @@ open class TestActivityScreen : Screen<TestActivityScreen>() {
         withId(R.id.text_view_small)
     }
 
+    val textViewHint: KTextView = KTextView {
+        withHint("hint")
+    }
+
     val buttonViewLeft: KButton = KButton {
         withId(R.id.button_view_left)
     }

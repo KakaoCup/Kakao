@@ -27,6 +27,12 @@
           android:layout_height="wrap_content"
           android:text="small" />
 
+      <TextView
+          android:id="@+id/text_view_hint"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:hint="hint" />
+
       <LinearLayout
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
