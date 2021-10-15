@@ -15,6 +15,7 @@ import io.github.kakaocup.kakao.common.matchers.AnyTextMatcher
 import io.github.kakaocup.kakao.common.matchers.BackgroundColorMatcher
 import io.github.kakaocup.kakao.common.matchers.DrawableMatcher
 import io.github.kakaocup.kakao.common.matchers.FirstViewMatcher
+import io.github.kakaocup.kakao.common.matchers.HintMatcher
 import io.github.kakaocup.kakao.common.matchers.IndexMatcher
 import io.github.kakaocup.kakao.common.matchers.ViewGroupPositionMatcher
 import io.github.kakaocup.kakao.common.matchers.RatingBarMatcher
@@ -156,6 +157,15 @@ class ViewBuilder {
      */
     fun containsText(text: String) {
         viewMatchers.add(ViewMatchers.withText(Matchers.containsString(text)))
+    }
+
+    /**
+     * Matches the view which contain given hint
+     *
+     * @param hint text of hint
+     */
+    fun withHint(hint: String) {
+        viewMatchers.add(HintMatcher(hint))
     }
 
     /**
