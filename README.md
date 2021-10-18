@@ -277,7 +277,7 @@ dependencies {
 
 **Kakao** is an open source project, and depends on its users to improve it. We are more than happy to find you interested in taking the project forward.
 
-Kindly refer to the [Contribution Guidelines](https://github.com/kakaocupkakao/blob/master/CONTRIBUTING.md) for detailed information.
+Kindly refer to the [Contribution Guidelines](https://github.com/kakaocup/Kakao/blob/master/CONTRIBUTING.md) for detailed information.
 
 ### Code of Conduct
 
