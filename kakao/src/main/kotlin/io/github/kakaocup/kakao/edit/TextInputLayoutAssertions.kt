@@ -24,7 +24,7 @@ interface TextInputLayoutAssertions : BaseAssertions {
     fun hasHint(hint: String) {
         view.check(ViewAssertion { view, notFoundException ->
             if (view is TextInputLayout) {
-                if (hint != view.hint) {
+                if (hint != view.hint.toString()) {
                     throw AssertionError(
                         "Expected hint is $hint," +
                                 " but actual is ${view.hint}"
@@ -55,7 +55,7 @@ interface TextInputLayoutAssertions : BaseAssertions {
     fun hasError(error: String) {
         view.check(ViewAssertion { view, notFoundException ->
             if (view is TextInputLayout) {
-                if (error != view.error) {
+                if (error != view.error.toString()) {
                     throw AssertionError(
                         "Expected error is $error," +
                                 " but actual is ${view.error}"

@@ -1,10 +1,15 @@
 package io.github.kakaocup.sample
 
+import android.graphics.Color
 import android.os.Bundle
+import android.text.Spannable
+import android.text.SpannableString
+import android.text.style.ForegroundColorSpan
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.textfield.TextInputLayout
 
+@SuppressWarnings("MagicNumber")
 class TextInputLayoutActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -15,8 +20,8 @@ class TextInputLayoutActivity : AppCompatActivity() {
             isHintEnabled = true
             isErrorEnabled = true
             counterMaxLength = 50
-            hint = resources.getString(R.string.hint)
-            error = resources.getString(R.string.error)
+            hint = getSpannableHint()
+            error = getSpannableError()
         }
 
         findViewById<Button>(R.id.toggle_counter).setOnClickListener {
@@ -33,6 +38,18 @@ class TextInputLayoutActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.clean_error).setOnClickListener {
             layout.error = null
+        }
+    }
+
+    private fun getSpannableHint(): Spannable {
+        return SpannableString(resources.getString(R.string.hint)).apply {
+            setSpan(ForegroundColorSpan(Color.RED), 12, 16, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
+        }
+    }
+
+    private fun getSpannableError(): Spannable {
+        return SpannableString(resources.getString(R.string.error)).apply {
+            setSpan(ForegroundColorSpan(Color.GREEN), 12, 17, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
         }
     }
 }
