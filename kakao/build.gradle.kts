@@ -34,7 +34,7 @@ dependencies {
     implementation(Libraries.viewpager2)
     implementation(Libraries.swiperefresh)
     implementation(Libraries.design)
-    implementation(Libraries.espresso_core)
+    api(Libraries.espresso_core)
     implementation(Libraries.espresso_web)
     implementation(Libraries.espresso_intents)
     implementation(Libraries.espresso_contrib)
