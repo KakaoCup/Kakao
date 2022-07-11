@@ -6,6 +6,7 @@ import android.view.View
 import org.hamcrest.Description
 import org.hamcrest.Matcher
 import org.hamcrest.TypeSafeMatcher
+import java.lang.ref.WeakReference
 
 /**
  * Matches index'th view that matches given matcher
@@ -15,7 +16,7 @@ import org.hamcrest.TypeSafeMatcher
  */
 class IndexMatcher(private val matcher: Matcher<View>, private val index: Int) : TypeSafeMatcher<View>() {
     private var currentIndex = 0
-    private val seen = mutableSetOf<View>()
+    private var seenProvider: WeakReference<MutableSet<View>>? = null
 
     override fun describeTo(desc: Description) {
         desc.appendText("${index}th view with: ")
@@ -23,6 +24,14 @@ class IndexMatcher(private val matcher: Matcher<View>, private val index: Int) :
     }
 
     public override fun matchesSafely(view: View): Boolean {
+        val seen = if (seenProvider?.get() == null) {
+            val mutableSetOf = mutableSetOf<View>()
+            seenProvider = WeakReference(mutableSetOf)
+            mutableSetOf
+        } else {
+            seenProvider!!.get()!!
+        }
+
         if (seen.contains(view)) {
             currentIndex = 0
             seen.clear()
