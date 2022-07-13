@@ -3,11 +3,13 @@
 package io.github.kakaocup.kakao.text
 
 import androidx.annotation.ColorRes
+import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
 import androidx.test.espresso.assertion.ViewAssertions
 import androidx.test.espresso.matcher.ViewMatchers
 import io.github.kakaocup.kakao.common.assertions.BaseAssertions
 import io.github.kakaocup.kakao.common.matchers.AnyTextMatcher
+import io.github.kakaocup.kakao.common.matchers.CompoundDrawableMatcher
 import org.hamcrest.CoreMatchers
 import org.hamcrest.Matcher
 import org.hamcrest.Matchers
@@ -175,6 +177,26 @@ interface TextViewAssertions : BaseAssertions {
         view.check(
             ViewAssertions.matches(
                 ViewMatchers.withHint(resId)
+            )
+        )
+    }
+
+    /**
+     * Checks if the view have compound drawables
+     * @param left left compound drawable resId
+     * @param top top compound drawable resId
+     * @param right right compound drawable resId
+     * @param bottom bottom compound drawable resId      \
+     */
+    fun hasCompoundDrawable(
+        @DrawableRes left: Int? = null,
+        @DrawableRes top: Int? = null,
+        @DrawableRes right: Int? = null,
+        @DrawableRes bottom: Int? = null
+    ) {
+        view.check(
+            ViewAssertions.matches(
+                CompoundDrawableMatcher(left, top, right, bottom)
             )
         )
     }

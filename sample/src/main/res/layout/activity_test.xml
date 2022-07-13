@@ -147,6 +147,12 @@
           android:layout_height="wrap_content"
           android:text="TEXT INPUT LAYOUT" />
 
+      <Button
+          android:id="@+id/text_activity"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="TEXT VIEWS" />
+
       <RatingBar
           android:id="@+id/rating_bar"
           android:layout_width="wrap_content"
