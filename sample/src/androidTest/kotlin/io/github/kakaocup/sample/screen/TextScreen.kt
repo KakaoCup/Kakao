@@ -10,4 +10,24 @@ class TextScreen : Screen<TextScreen>() {
     val textViewWithRightDrawable = KTextView { withId(R.id.text_view_drawable_right) }
     val textViewWithTopDrawable = KTextView { withId(R.id.text_view_drawable_top) }
     val textViewWithBottomDrawable = KTextView { withId(R.id.text_view_drawable_bottom) }
+
+    val textViewCentered = KTextView { withId(R.id.text_view_gravity_center) }
+    val textViewOnStart = KTextView { withId(R.id.text_view_gravity_start) }
+    val textViewOnEnd = KTextView { withId(R.id.text_view_gravity_end) }
+    val textViewOnTop = KTextView { withId(R.id.text_view_gravity_top) }
+    val textViewOnBottom = KTextView { withId(R.id.text_view_gravity_bottom) }
+    val textViewOnTopLeft = KTextView { withId(R.id.text_view_gravity_top_left) }
+    val textViewOnBottomRight = KTextView { withId(R.id.text_view_gravity_bottom_right) }
+    val textViewHorizontalCenteredTop = KTextView { withId(R.id.text_view_gravity_horizontal_center_top) }
+    val textViewVerticalCenteredEnd = KTextView { withId(R.id.text_view_gravity_vertical_center_end) }
+
+    val textViewSize14Sp = KTextView { withId(R.id.text_view_size_14sp) }
+    val textViewSize19Sp = KTextView { withId(R.id.text_view_size_19sp) }
+    val textViewSize32Sp = KTextView { withId(R.id.text_view_size_32sp) }
+
+    val textViewTypefaceNormal = KTextView { withId(R.id.text_view_typeface_normal) }
+    val textViewTypefaceMonospace = KTextView { withId(R.id.text_view_typeface_monospace) }
+    val textViewTypefaceNormalBold = KTextView { withId(R.id.text_view_typeface_normal_bold) }
+    val textViewTypefaceSansItalic = KTextView { withId(R.id.text_view_typeface_sans_italic) }
+    val textViewTypefaceSerifBoldItalic = KTextView { withId(R.id.text_view_typeface_serif_bold_italic) }
 }
