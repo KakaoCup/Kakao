@@ -2,6 +2,7 @@
 
 package io.github.kakaocup.kakao.text
 
+import android.graphics.Typeface
 import androidx.annotation.ColorRes
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
@@ -10,6 +11,9 @@ import androidx.test.espresso.matcher.ViewMatchers
 import io.github.kakaocup.kakao.common.assertions.BaseAssertions
 import io.github.kakaocup.kakao.common.matchers.AnyTextMatcher
 import io.github.kakaocup.kakao.common.matchers.CompoundDrawableMatcher
+import io.github.kakaocup.kakao.common.matchers.TextSizeMatcher
+import io.github.kakaocup.kakao.common.matchers.TextViewGravityMatcher
+import io.github.kakaocup.kakao.common.matchers.TypefaceMatcher
 import org.hamcrest.CoreMatchers
 import org.hamcrest.Matcher
 import org.hamcrest.Matchers
@@ -197,6 +201,46 @@ interface TextViewAssertions : BaseAssertions {
         view.check(
             ViewAssertions.matches(
                 CompoundDrawableMatcher(left, top, right, bottom)
+            )
+        )
+    }
+
+    /**
+     * Checks if the view has given gravity
+     *
+     * @param horizontalGravity relative horizontal gravity values to be matched
+     * @param verticalGravity vertical gravity values to be matched
+     */
+    fun hasGravity(horizontalGravity: Int? = null, verticalGravity: Int? = null) {
+        view.check(
+            ViewAssertions.matches(
+                TextViewGravityMatcher(horizontalGravity, verticalGravity)
+            )
+        )
+    }
+
+    /**
+     * Checks if the view has text size in sp
+     *
+     * @param sp Text size in sp to be matched
+     */
+    fun hasTextSize(sp: Int) {
+        view.check(
+            ViewAssertions.matches(
+                TextSizeMatcher(sp)
+            )
+        )
+    }
+
+    /**
+     * Checks if the view has given typeface
+     *
+     * @param typeface TextView typeface to be matched
+     */
+    fun hasTypeface(typeface: Typeface) {
+        view.check(
+            ViewAssertions.matches(
+                TypefaceMatcher(typeface)
             )
         )
     }

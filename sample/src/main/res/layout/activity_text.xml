@@ -1,41 +1,178 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-  <TextView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="Just a text"
-      android:id="@+id/plain_text_view"/>
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
 
-  <TextView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="Drawable left"
-      android:drawableLeft="@drawable/ic_android_black_24dp"
-      android:id="@+id/text_view_drawable_left"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-  <TextView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="Drawable right"
-      android:drawableRight="@drawable/ic_android_black_24dp"
-      android:id="@+id/text_view_drawable_right"/>
+      <TextView
+          android:id="@+id/plain_text_view"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Just a text" />
 
-  <TextView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="Drawable top"
-      android:drawableTop="@drawable/ic_android_black_24dp"
-      android:id="@+id/text_view_drawable_top"/>
+      <TextView
+          android:id="@+id/text_view_drawable_left"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:drawableLeft="@drawable/ic_android_black_24dp"
+          android:text="Drawable left" />
 
-  <TextView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="Drawable bottom"
-      android:drawableBottom="@drawable/ic_android_black_24dp"
-      android:id="@+id/text_view_drawable_bottom"/>
+      <TextView
+          android:id="@+id/text_view_drawable_right"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:drawableRight="@drawable/ic_android_black_24dp"
+          android:text="Drawable right" />
 
-</LinearLayout>
+      <TextView
+          android:id="@+id/text_view_drawable_top"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:drawableTop="@drawable/ic_android_black_24dp"
+          android:text="Drawable top" />
+
+      <TextView
+          android:id="@+id/text_view_drawable_bottom"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:drawableBottom="@drawable/ic_android_black_24dp"
+          android:text="Drawable bottom" />
+
+      <TextView
+          android:id="@+id/text_view_gravity_center"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:text="Text centered" />
+
+      <TextView
+          android:id="@+id/text_view_gravity_start"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="start"
+          android:text="Text on start" />
+
+      <TextView
+          android:id="@+id/text_view_gravity_end"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="end"
+          android:text="Text on end" />
+
+      <TextView
+          android:id="@+id/text_view_gravity_top"
+          android:layout_width="wrap_content"
+          android:layout_height="40dp"
+          android:background="@color/background_color"
+          android:gravity="top"
+          android:text="Text on top" />
+
+      <TextView
+          android:id="@+id/text_view_gravity_bottom"
+          android:layout_width="wrap_content"
+          android:layout_height="40dp"
+          android:background="@color/background_color"
+          android:gravity="bottom"
+          android:text="Text on bottom" />
+
+      <TextView
+          android:id="@+id/text_view_gravity_top_left"
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:background="@color/background_color"
+          android:gravity="top|start"
+          android:text="Text on top left" />
+
+      <TextView
+          android:id="@+id/text_view_gravity_bottom_right"
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:background="@color/background_color"
+          android:gravity="bottom|end"
+          android:text="Text on bottom right" />
+
+      <TextView
+          android:id="@+id/text_view_gravity_horizontal_center_top"
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:background="@color/background_color"
+          android:gravity="center_horizontal|top"
+          android:text="Text on horizontal_center | top" />
+
+      <TextView
+          android:id="@+id/text_view_gravity_vertical_center_end"
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:background="@color/background_color"
+          android:gravity="center_vertical|end"
+          android:text="Text on vertical_center | end" />
+
+      <TextView
+          android:id="@+id/text_view_size_14sp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Text 14sp"
+          android:textSize="14sp" />
+
+      <TextView
+          android:id="@+id/text_view_size_19sp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Text 19sp"
+          android:textSize="19sp" />
+
+      <TextView
+          android:id="@+id/text_view_size_32sp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Text 32sp"
+          android:textSize="32sp" />
+
+      <TextView
+          android:id="@+id/text_view_typeface_normal"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Text normal typeface"
+          android:typeface="normal" />
+
+      <TextView
+          android:id="@+id/text_view_typeface_monospace"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Text monospace typeface"
+          android:typeface="monospace" />
+
+      <TextView
+          android:id="@+id/text_view_typeface_normal_bold"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Text normal &amp; bold typeface"
+          android:textStyle="bold"
+          android:typeface="normal" />
+
+      <TextView
+          android:id="@+id/text_view_typeface_sans_italic"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Text sans &amp; italic typeface"
+          android:textStyle="italic"
+          android:typeface="sans" />
+
+      <TextView
+          android:id="@+id/text_view_typeface_serif_bold_italic"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Text serif &amp; bold &amp; italic typeface"
+          android:textStyle="bold|italic"
+          android:typeface="serif" />
+    </LinearLayout>
+  </ScrollView>
+</merge>
