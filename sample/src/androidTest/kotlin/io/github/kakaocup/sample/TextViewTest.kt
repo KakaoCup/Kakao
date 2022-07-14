@@ -2,7 +2,6 @@ package io.github.kakaocup.sample
 
 import android.graphics.Typeface
 import android.view.Gravity.BOTTOM
-import android.view.Gravity.CENTER
 import android.view.Gravity.CENTER_HORIZONTAL
 import android.view.Gravity.CENTER_VERTICAL
 import android.view.Gravity.END
@@ -23,7 +22,7 @@ class TextViewTest {
     val rule = ActivityScenarioRule(TextActivity::class.java)
 
     @Test
-    fun textCompoundDrawables() {
+    fun testCompoundDrawables() {
         Screen.onScreen<TextScreen> {
             textViewWithLeftDrawable.hasCompoundDrawable(left = R.drawable.ic_android_black_24dp)
             textViewWithRightDrawable.hasCompoundDrawable(right = R.drawable.ic_android_black_24dp)
@@ -34,7 +33,7 @@ class TextViewTest {
     }
 
     @Test
-    fun textTextGravity() {
+    fun testTextGravity() {
         Screen.onScreen<TextScreen> {
             textViewCentered.hasGravity(horizontalGravity = CENTER_HORIZONTAL)
             textViewOnStart.hasGravity(horizontalGravity = START)
@@ -49,7 +48,7 @@ class TextViewTest {
     }
 
     @Test
-    fun textTextSize() {
+    fun testTextSize() {
         Screen.onScreen<TextScreen> {
             textViewSize14Sp.hasTextSize(14)
             textViewSize19Sp.hasTextSize(19)
@@ -58,13 +57,33 @@ class TextViewTest {
     }
 
     @Test
-    fun textTextTypeface() {
+    fun testTextTypeface() {
         Screen.onScreen<TextScreen> {
             textViewTypefaceNormal.hasTypeface(Typeface.DEFAULT)
             textViewTypefaceMonospace.hasTypeface(Typeface.MONOSPACE)
             textViewTypefaceNormalBold.hasTypeface(Typeface.DEFAULT_BOLD)
             textViewTypefaceSansItalic.hasTypeface(Typeface.create("sans", Typeface.ITALIC))
             textViewTypefaceSerifBoldItalic.hasTypeface(Typeface.create("serif", Typeface.BOLD_ITALIC))
+        }
+    }
+
+    @Test
+    fun testBoldStyle() {
+        Screen.onScreen<TextScreen> {
+            textViewTypefaceNormal.isNotBold()
+            textViewTypefaceNormalBold.isBold()
+            textViewTypefaceSansItalic.isNotBold()
+            textViewTypefaceSerifBoldItalic.isBold()
+        }
+    }
+
+    @Test
+    fun testItalicStyle() {
+        Screen.onScreen<TextScreen> {
+            textViewTypefaceNormal.isNotItalic()
+            textViewTypefaceNormalBold.isNotItalic()
+            textViewTypefaceSansItalic.isItalic()
+            textViewTypefaceSerifBoldItalic.isItalic()
         }
     }
 }

@@ -13,8 +13,8 @@ class TextSizeMatcher(private val textSizeInSp: Int) : BoundedMatcher<View, Text
         description.appendText("Text size doesn't match")
     }
 
-    override fun matchesSafely(item: TextView): Boolean =
-        item.textSize.roundToInt() == spToPx(item.context, textSizeInSp)
+    override fun matchesSafely(textView: TextView): Boolean =
+        textView.textSize.roundToInt() == spToPx(textView.context, textSizeInSp)
 
     private fun spToPx(context: Context, sp: Int): Int =
         TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, sp.toFloat(), context.resources.displayMetrics)
