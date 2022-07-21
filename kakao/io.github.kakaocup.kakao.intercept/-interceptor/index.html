@@ -1,0 +1,204 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Interceptor</title>
+<link href="../../../../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script><script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script><link href="../../../styles/style.css" rel="Stylesheet"><link href="../../../styles/logo-styles.css" rel="Stylesheet"><link href="../../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../../styles/main.css" rel="Stylesheet"><script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script><script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script><script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script><script type="text/javascript" src="../../../scripts/main.js" async="async"></script>  </head>
+  <body>
+    <div id="container">
+      <div id="leftColumn"><a href="../../../index.html">
+          <div id="logo"></div>
+        </a>
+        <div id="paneSearch"></div>
+        <div id="sideMenu"></div>
+      </div>
+      <div id="main">
+        <div id="leftToggler"><span class="icon-toggler"></span></div>
+<script type="text/javascript" src="../../../scripts/main.js"></script>        <div class="main-content" id="content" pageIds="kakao::io.github.kakaocup.kakao.intercept/Interceptor///PointingToDeclaration//-222259485">
+          <div class="navigation-wrapper" id="navigation-wrapper">
+            <div class="breadcrumbs"><a href="../../../index.html">kakao</a>/<a href="../index.html">io.github.kakaocup.kakao.intercept</a>/<a href="index.html">Interceptor</a></div>
+            <div class="pull-right d-flex">
+              <div id="searchBar"></div>
+            </div>
+          </div>
+          <div class="cover ">
+            <h1 class="cover"><span>Interceptor</span></h1>
+            <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace">public final class <a href="index.html">Interceptor</a>&lt;INTERACTION extends <a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a>, ASSERTION extends <a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a>, ACTION extends <a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Base class for intercepting the call chain from Kakao to Espresso.</p><p class="paragraph">Interceptors can be provided through <a href="../../io.github.kakaocup.kakao/-kakao/index.html">Kakao</a> runtime, different <a href="../../io.github.kakaocup.kakao.screen/-screen/index.html">Screens</a> as well as <a href="../../io.github.kakaocup.kakao.common.views/-k-base-view/index.html">KViews</a>.</p><p class="paragraph">Interceptors are stacked during the runtime for any Kakao-Espresso <code>check</code> and <code>perform</code> operations. The stack ordering is following: KView interceptor -&gt; Screen interceptors -&gt; Kakao interceptor.</p><p class="paragraph">Any of the interceptors in the chain can break the chain call by setting <code>isOverride</code> to true in <a href="-builder/on-check.html">onCheck</a>, <a href="-builder/on-perform.html">onPerform</a> or <a href="-builder/on-all.html">onAll</a> interception functions during the configuration. Doing this will not only prevent underlying interceptors from being invoked, but prevents Kakao from executing the operation. In that case, responsibility for actually making Espresso call lies on developer.</p><p class="paragraph">For each operation the interceptor invocation cycle will be as follows:</p><div class="sample-container"><code class="" theme="idea"><pre>// For check operation<br>onAll?.invoke()<br>onCheck?.invoke()<br><br>// For perform operation<br>onAll?.invoke()<br>onPerform?.invoke()</pre></code></div></div></div>
+          </div>
+          <div class="tabbedcontent">
+            <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Types">Types</button><button class="section-tab" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button><button class="section-tab" data-togglable="See also">See also</button></div>
+            <div class="tabs-section-body">
+              <h2 class="">See also</h2>
+              <div data-togglable="See also">
+                <div class="platform-hinted WithExtraAttributes" data-platform-hinted="data-platform-hinted" data-togglable="See also"><div class="content sourceset-depenent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div data-togglable="See also"><div class="table" data-togglable="See also"><div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release"><div class="main-subrow keyValue WithExtraAttributes RowTitle"><div class=""><span class="inline-flex"><a href="../../io.github.kakaocup.kakao/-kakao/index.html">io.github.kakaocup.kakao.Kakao</a></span><span class="inline-flex"><div data-togglable="See also"></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release"><div class="main-subrow keyValue WithExtraAttributes RowTitle"><div class=""><span class="inline-flex"><a href="../../io.github.kakaocup.kakao.screen/-screen/index.html">io.github.kakaocup.kakao.screen.Screen</a></span><span class="inline-flex"><div data-togglable="See also"></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release"><div class="main-subrow keyValue WithExtraAttributes RowTitle"><div class=""><span class="inline-flex"><a href="../../io.github.kakaocup.kakao.common.views/-k-base-view/index.html">io.github.kakaocup.kakao.common.views.KBaseView</a></span><span class="inline-flex"><div data-togglable="See also"></div></span></div><div></div></div></div></div></div></div></div>
+              </div>
+              <h2 class="tabbedcontent">Constructors</h2>
+              <div class="table" data-togglable="Constructors"><a data-name="-1427490101%2FConstructors%2F-222259485" anchor-label="Interceptor" id="-1427490101%2FConstructors%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+                  <div class="main-subrow keyValue TabbedContent">
+                    <div class=""><span class="inline-flex"><a href="-interceptor.html">Interceptor</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1427490101%2FConstructors%2F-222259485"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace block"><a href="index.html">Interceptor</a>&lt;<a href="index.html">INTERACTION</a>, <a href="index.html">ASSERTION</a>, <a href="index.html">ACTION</a>&gt; <a href="-interceptor.html">Interceptor</a>&lt;INTERACTION extends <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>, ASSERTION extends <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>, ACTION extends <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>&gt;(<a href="../-interception/index.html">Interception</a>&lt;<span data-unresolved-link="kotlin.jvm.functions/Function2///PointingToDeclaration/">Function2</span>&lt;<a href="index.html">INTERACTION</a>, <a href="index.html">ASSERTION</a>, <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>&gt;&gt; onCheck, <a href="../-interception/index.html">Interception</a>&lt;<span data-unresolved-link="kotlin.jvm.functions/Function2///PointingToDeclaration/">Function2</span>&lt;<a href="index.html">INTERACTION</a>, <a href="index.html">ACTION</a>, <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>&gt;&gt; onPerform, <a href="../-interception/index.html">Interception</a>&lt;<span data-unresolved-link="kotlin.jvm.functions/Function1///PointingToDeclaration/">Function1</span>&lt;<a href="index.html">INTERACTION</a>, <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>&gt;&gt; onAll)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="">Types</h2>
+              <div class="table" data-togglable="Types"><a data-name="870761479%2FClasslikes%2F-222259485" anchor-label="Builder" id="870761479%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="-builder/index.html">Builder</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="870761479%2FClasslikes%2F-222259485"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace">public final class <a href="-builder/index.html">Builder</a>&lt;INTERACTION extends <a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a>, ASSERTION extends <a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a>, ACTION extends <a href="https://developer.android.com/reference/kotlin/java/lang/Object.html">Object</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="870761479%2FClasslikes%2F-222259485" anchor-label="Builder" id="870761479%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a><div class="brief "><a data-name="870761479%2FClasslikes%2F-222259485" anchor-label="Builder" id="870761479%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>Builder class that is used to build a single instance of <a href="index.html">Interceptor</a>.</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="1217305164%2FClasslikes%2F-222259485" anchor-label="Configuration" id="1217305164%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="-configuration/index.html">Configuration</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1217305164%2FClasslikes%2F-222259485"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace">public final class <a href="-configuration/index.html">Configuration</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-324998613%2FClasslikes%2F-222259485" anchor-label="Configurator" id="-324998613%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="-configurator/index.html">Configurator</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-324998613%2FClasslikes%2F-222259485"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace">public final class <a href="-configurator/index.html">Configurator</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="-324998613%2FClasslikes%2F-222259485" anchor-label="Configurator" id="-324998613%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a><div class="brief "><a data-name="-324998613%2FClasslikes%2F-222259485" anchor-label="Configurator" id="-324998613%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>Configuration class that is used for building interceptors on the <a href="../../io.github.kakaocup.kakao/-kakao/index.html">Kakao</a> runtime and <a href="../../io.github.kakaocup.kakao.screen/-screen/index.html">Screen</a> levels.</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="">Functions</h2>
+              <div class="table" data-togglable="Functions"><a data-name="-1952015105%2FFunctions%2F-222259485" anchor-label="getOnAll" id="-1952015105%2FFunctions%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-on-all.html">getOnAll</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1952015105%2FFunctions%2F-222259485"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace block">final <a href="../-interception/index.html">Interception</a>&lt;<span data-unresolved-link="kotlin.jvm.functions/Function1///PointingToDeclaration/">Function1</span>&lt;<a href="index.html">INTERACTION</a>, <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>&gt;&gt; <a href="get-on-all.html">getOnAll</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="174005944%2FFunctions%2F-222259485" anchor-label="getOnCheck" id="174005944%2FFunctions%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-on-check.html">getOnCheck</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="174005944%2FFunctions%2F-222259485"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace block">final <a href="../-interception/index.html">Interception</a>&lt;<span data-unresolved-link="kotlin.jvm.functions/Function2///PointingToDeclaration/">Function2</span>&lt;<a href="index.html">INTERACTION</a>, <a href="index.html">ASSERTION</a>, <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>&gt;&gt; <a href="get-on-check.html">getOnCheck</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="1237290431%2FFunctions%2F-222259485" anchor-label="getOnPerform" id="1237290431%2FFunctions%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-on-perform.html">getOnPerform</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1237290431%2FFunctions%2F-222259485"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace block">final <a href="../-interception/index.html">Interception</a>&lt;<span data-unresolved-link="kotlin.jvm.functions/Function2///PointingToDeclaration/">Function2</span>&lt;<a href="index.html">INTERACTION</a>, <a href="index.html">ACTION</a>, <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>&gt;&gt; <a href="get-on-perform.html">getOnPerform</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="">Properties</h2>
+              <div class="table" data-togglable="Properties"><a data-name="-1894337491%2FProperties%2F-222259485" anchor-label="onAll" id="-1894337491%2FProperties%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="index.html#-1894337491%2FProperties%2F-222259485">onAll</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1894337491%2FProperties%2F-222259485"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><a data-name="-1894337491%2FProperties%2F-222259485" anchor-label="onAll" id="-1894337491%2FProperties%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a><div class="symbol monospace block">private final <a href="../-interception/index.html">Interception</a>&lt;<span data-unresolved-link="kotlin.jvm.functions/Function1///PointingToDeclaration/">Function1</span>&lt;<a href="index.html">INTERACTION</a>, <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>&gt;&gt; <a href="index.html#-1894337491%2FProperties%2F-222259485">onAll</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-232381850%2FProperties%2F-222259485" anchor-label="onCheck" id="-232381850%2FProperties%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="index.html#-232381850%2FProperties%2F-222259485">onCheck</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-232381850%2FProperties%2F-222259485"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><a data-name="-232381850%2FProperties%2F-222259485" anchor-label="onCheck" id="-232381850%2FProperties%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a><div class="symbol monospace block">private final <a href="../-interception/index.html">Interception</a>&lt;<span data-unresolved-link="kotlin.jvm.functions/Function2///PointingToDeclaration/">Function2</span>&lt;<a href="index.html">INTERACTION</a>, <a href="index.html">ASSERTION</a>, <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>&gt;&gt; <a href="index.html#-232381850%2FProperties%2F-222259485">onCheck</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="1540644333%2FProperties%2F-222259485" anchor-label="onPerform" id="1540644333%2FProperties%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="index.html#1540644333%2FProperties%2F-222259485">onPerform</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1540644333%2FProperties%2F-222259485"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><a data-name="1540644333%2FProperties%2F-222259485" anchor-label="onPerform" id="1540644333%2FProperties%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a><div class="symbol monospace block">private final <a href="../-interception/index.html">Interception</a>&lt;<span data-unresolved-link="kotlin.jvm.functions/Function2///PointingToDeclaration/">Function2</span>&lt;<a href="index.html">INTERACTION</a>, <a href="index.html">ACTION</a>, <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>&gt;&gt; <a href="index.html#1540644333%2FProperties%2F-222259485">onPerform</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer"><span class="go-to-top-icon"><a href="#content"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
+      </div>
+    </div>
+  </body>
+</html>
+
