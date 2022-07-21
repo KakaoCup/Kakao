@@ -15,13 +15,13 @@ class TextViewGravityMatcher(
         description.appendText("Gravity doesn't match")
     }
 
-    override fun matchesSafely(item: TextView): Boolean {
+    override fun matchesSafely(textView: TextView): Boolean {
         var compareResult = true
         if (horizontalGravity != null) {
-            compareResult = compareResult && item.gravity and Gravity.RELATIVE_HORIZONTAL_GRAVITY_MASK == horizontalGravity
+            compareResult = compareResult && textView.gravity and Gravity.RELATIVE_HORIZONTAL_GRAVITY_MASK == horizontalGravity
         }
         if (verticalGravity != null) {
-            compareResult = compareResult && item.gravity and Gravity.VERTICAL_GRAVITY_MASK == verticalGravity
+            compareResult = compareResult && textView.gravity and Gravity.VERTICAL_GRAVITY_MASK == verticalGravity
         }
         return compareResult
     }

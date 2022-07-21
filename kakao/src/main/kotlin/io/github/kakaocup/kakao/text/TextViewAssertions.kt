@@ -10,7 +10,9 @@ import androidx.test.espresso.assertion.ViewAssertions
 import androidx.test.espresso.matcher.ViewMatchers
 import io.github.kakaocup.kakao.common.assertions.BaseAssertions
 import io.github.kakaocup.kakao.common.matchers.AnyTextMatcher
+import io.github.kakaocup.kakao.common.matchers.BoldStyleMatcher
 import io.github.kakaocup.kakao.common.matchers.CompoundDrawableMatcher
+import io.github.kakaocup.kakao.common.matchers.ItalicStyleMatcher
 import io.github.kakaocup.kakao.common.matchers.TextSizeMatcher
 import io.github.kakaocup.kakao.common.matchers.TextViewGravityMatcher
 import io.github.kakaocup.kakao.common.matchers.TypefaceMatcher
@@ -241,6 +243,50 @@ interface TextViewAssertions : BaseAssertions {
         view.check(
             ViewAssertions.matches(
                 TypefaceMatcher(typeface)
+            )
+        )
+    }
+
+    /**
+     * Checks if the text view is bold
+     */
+    fun isBold() {
+        view.check(
+            ViewAssertions.matches(
+                BoldStyleMatcher()
+            )
+        )
+    }
+
+    /**
+     * Checks if the text view is not bold
+     */
+    fun isNotBold() {
+        view.check(
+            ViewAssertions.matches(
+                Matchers.not(BoldStyleMatcher())
+            )
+        )
+    }
+
+    /**
+     * Checks if the text view is italic
+     */
+    fun isItalic() {
+        view.check(
+            ViewAssertions.matches(
+                ItalicStyleMatcher()
+            )
+        )
+    }
+
+    /**
+     * Checks if the text view is not italic
+     */
+    fun isNotItalic() {
+        view.check(
+            ViewAssertions.matches(
+                Matchers.not(ItalicStyleMatcher())
             )
         )
     }
