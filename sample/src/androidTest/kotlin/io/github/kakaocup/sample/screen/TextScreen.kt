@@ -30,4 +30,6 @@ class TextScreen : Screen<TextScreen>() {
     val textViewTypefaceNormalBold = KTextView { withId(R.id.text_view_typeface_normal_bold) }
     val textViewTypefaceSansItalic = KTextView { withId(R.id.text_view_typeface_sans_italic) }
     val textViewTypefaceSerifBoldItalic = KTextView { withId(R.id.text_view_typeface_serif_bold_italic) }
+
+    val textViewMultipleClickableSpans = KTextView { withId(R.id.text_view_multiple_clickable_spans) }
 }
