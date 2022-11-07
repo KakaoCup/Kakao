@@ -173,6 +173,11 @@
           android:text="Text serif &amp; bold &amp; italic typeface"
           android:textStyle="bold|italic"
           android:typeface="serif" />
+
+      <TextView
+          android:id="@+id/text_view_multiple_clickable_spans"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
     </LinearLayout>
   </ScrollView>
 </merge>

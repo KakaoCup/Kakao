@@ -1,6 +1,7 @@
 package io.github.kakaocup.sample
 
 import android.graphics.Typeface
+import android.text.style.ClickableSpan
 import android.view.Gravity.BOTTOM
 import android.view.Gravity.CENTER_HORIZONTAL
 import android.view.Gravity.CENTER_VERTICAL
@@ -84,6 +85,15 @@ class TextViewTest {
             textViewTypefaceNormalBold.isNotItalic()
             textViewTypefaceSansItalic.isItalic()
             textViewTypefaceSerifBoldItalic.isItalic()
+        }
+    }
+
+    @Test
+    fun testSpanClick() {
+        Screen.onScreen<TextScreen> {
+            textViewMultipleClickableSpans.scrollTo()
+            textViewMultipleClickableSpans.clickSpanWithText("First span")
+            textViewMultipleClickableSpans.clickSpanWithText("last span")
         }
     }
 }
