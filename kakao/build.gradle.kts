@@ -10,6 +10,7 @@ android {
     defaultConfig {
         minSdk = 14
         targetSdk = 33
+        multiDexEnabled = true
     }
 
     sourceSets {
