@@ -4,11 +4,9 @@ object Versions {
     val kakaoVersion = File("buildsystem/version").readText().trim()
     val gmapsVersion = File("buildsystem/gmapsversion").readText().trim()
 
-
-    val kotlin = "1.4.32"
+    val kotlin = "1.7.21"
     val detekt = "1.17.1"
-    val dokka = "1.4.32"
-    val android_gradle = "4.2.1"
+    val dokka = "1.7.21"
     val maven = "1.5"
     val oss = "4.5.4"
     val appcompat = "1.3.0"
@@ -17,7 +15,7 @@ object Versions {
     val swiperefresh = "1.1.0"
     val annotation = "1.2.0"
     val design = "1.3.0"
-    val espresso = "3.4.0"
+    val espresso = "3.5.0"
     val espresso_rules = "1.4.0"
     val espresso_runner = "1.4.0"
     val junit = "4.13.2"
@@ -34,7 +32,6 @@ object Libraries {
     val detekt = "io.gitlab.arturbosch.detekt:detekt-gradle-plugin:${Versions.detekt}"
     val dokka = "org.jetbrains.dokka:kotlin-as-java-plugin:${Versions.dokka}"
     val dokka_gradle = "org.jetbrains.dokka:dokka-gradle-plugin:${Versions.dokka}"
-    val android_gradle = "com.android.tools.build:gradle:${Versions.android_gradle}"
     val maven = "com.github.dcendents:android-maven-gradle-plugin:${Versions.maven}"
     val oss = "org.jfrog.buildinfo:build-info-extractor-gradle:${Versions.oss}"
     val appcompat = "androidx.appcompat:appcompat:${Versions.appcompat}"

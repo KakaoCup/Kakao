@@ -5,14 +5,10 @@ plugins {
 }
 
 android {
-    compileSdkVersion(30)
-
+    compileSdk = 33
     defaultConfig {
-        minSdkVersion(14)
-        targetSdkVersion(30)
-        versionCode(2)
-        versionName(Versions.gmapsVersion)
-        multiDexEnabled = true
+        minSdk = 21
+        targetSdk = 33
     }
 
     sourceSets {
