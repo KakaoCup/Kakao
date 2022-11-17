@@ -16,7 +16,7 @@ class ToolbarNavigationMatcher(
     private val toBitmap: ((drawable: Drawable) -> Bitmap)? = null
 ) : BoundedMatcher<View, Toolbar>(Toolbar::class.java) {
     @DrawableRes
-    var resId: Int = -1
+    var resId: Int? = null
     var drawable: Drawable? = null
 
     constructor(drawable: Drawable) : this() {
@@ -32,11 +32,11 @@ class ToolbarNavigationMatcher(
     }
 
     override fun matchesSafely(view: Toolbar): Boolean {
-        if (resId < 0 && drawable == null) {
+        if (resId == null && drawable == null) {
             return false
         }
 
-        var expectedDrawable: Drawable? = drawable ?: getResourceDrawable(resId)
+        var expectedDrawable: Drawable? = drawable ?: resId?.let { getResourceDrawable(it) }
 
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP && expectedDrawable != null) {
             expectedDrawable = DrawableCompat.wrap(expectedDrawable).mutate()

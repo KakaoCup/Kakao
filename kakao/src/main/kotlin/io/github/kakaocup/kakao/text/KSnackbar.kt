@@ -2,6 +2,7 @@
 
 package io.github.kakaocup.kakao.text
 
+import android.annotation.SuppressLint
 import io.github.kakaocup.kakao.common.views.KBaseView
 import com.google.android.material.snackbar.Snackbar
 
@@ -10,6 +11,7 @@ import com.google.android.material.snackbar.Snackbar
  *
  * @see Snackbar
  */
+@SuppressLint("RestrictedApi")
 class KSnackbar : KBaseView<KSnackbar>({ isInstanceOf(Snackbar.SnackbarLayout::class.java) }) {
     val text = KTextView {
         isDescendantOfA { isInstanceOf(Snackbar.SnackbarLayout::class.java) }

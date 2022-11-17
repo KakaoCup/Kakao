@@ -87,10 +87,6 @@
         android:name="io.github.kakaocup.sample.TabLayoutActivity"
         android:label="Tab Layout Activity"
         android:theme="@style/MaterialAppTheme" />
-    <activity
-        android:name="io.github.kakaocup.sample.GoogleMapActivity"
-        android:label="Google Maps Activity"
-        android:theme="@style/MaterialAppTheme" />
 
     <activity
         android:name="io.github.kakaocup.sample.LinearLayoutActivity"
@@ -106,10 +102,6 @@
         android:name="io.github.kakaocup.sample.ImageViewActivity"
         android:label="Text activity"
         android:theme="@style/MaterialAppTheme" />
-
-    <meta-data
-        android:name="com.google.android.geo.API_KEY"
-        android:value="@string/google_map_key" />
   </application>
 
 </manifest>

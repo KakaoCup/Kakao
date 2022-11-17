@@ -5,17 +5,16 @@ plugins {
 }
 
 android {
-    compileSdkVersion(31)
-
+    compileSdk = 33
     defaultConfig {
-        minSdkVersion(14)
-        targetSdkVersion(31)
-        versionCode(1)
-        versionName("1.0.0")
-        testInstrumentationRunner("androidx.test.runner.AndroidJUnitRunner")
+        minSdk = 21
+        targetSdk = 33
+        targetSdk = 33
+        versionCode = 1
+        versionName = "1.0.0"
         multiDexEnabled = true
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
-
     testOptions {
         animationsDisabled = true
     }
@@ -43,7 +42,6 @@ dependencies {
     testImplementation(Libraries.junit)
 
     androidTestImplementation(project(":kakao"))
-    androidTestImplementation(project(":googleMapsExtension"))
 
     androidTestImplementation(Libraries.annotation)
     androidTestImplementation(Libraries.espresso_runner)
