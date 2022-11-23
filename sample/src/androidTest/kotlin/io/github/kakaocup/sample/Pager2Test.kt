@@ -36,4 +36,62 @@ class Pager2Test {
           }
         }
     }
+
+    @Test
+    fun testViewPager2Scroll() {
+        Screen.onScreen<Pager2Screen> {
+            pager {
+                hasDescendant {
+                    withText("0")
+                    isCompletelyDisplayed()
+                }
+                scrollForward()
+                hasDescendant {
+                    withText("1")
+                    isCompletelyDisplayed()
+                }
+                scrollBackward()
+                hasDescendant {
+                    withText("0")
+                    isCompletelyDisplayed()
+                }
+            }
+        }
+    }
+
+    @Test
+    fun testViewPager2ScrollOverStartEdge() {
+        Screen.onScreen<Pager2Screen> {
+            pager {
+                scrollToStart()
+                hasDescendant {
+                    withText("0")
+                    isCompletelyDisplayed()
+                }
+                scrollBackward()
+                hasDescendant {
+                    withText("0")
+                    isCompletelyDisplayed()
+                }
+            }
+        }
+    }
+
+    @Test
+    fun testViewPager2ScrollOverEndEdge() {
+        Screen.onScreen<Pager2Screen> {
+            pager {
+                scrollToEnd()
+                hasDescendant {
+                    withText("5")
+                    isCompletelyDisplayed()
+                }
+                scrollForward()
+                hasDescendant {
+                    withText("5")
+                    isCompletelyDisplayed()
+                }
+            }
+        }
+    }
 }

@@ -51,6 +51,44 @@ interface ViewPager2Actions : ScrollableActions, SwipeableActions {
         })
     }
 
+    /**
+     * Scrolls to the next position of the view
+     */
+    fun scrollForward() {
+        view.perform(object : ViewAction {
+            override fun getDescription() = "Scroll view pager 2 forward"
+
+            override fun getConstraints() = ViewMatchers.isAssignableFrom(ViewPager2::class.java)
+
+            override fun perform(controller: UiController, view: View) {
+                if (view is ViewPager2) {
+                    val currentItem = view.currentItem
+                    view.setCurrentItem(currentItem + 1, false)
+                    controller.loopMainThreadUntilIdle()
+                }
+            }
+        })
+    }
+
+    /**
+     * Scrolls to the previous position of the view
+     */
+    fun scrollBackward() {
+        view.perform(object : ViewAction {
+            override fun getDescription() = "Scroll view pager 2 backward"
+
+            override fun getConstraints() = ViewMatchers.isAssignableFrom(ViewPager2::class.java)
+
+            override fun perform(controller: UiController, view: View) {
+                if (view is ViewPager2) {
+                    val currentItem = view.currentItem
+                    view.setCurrentItem(currentItem - 1, false)
+                    controller.loopMainThreadUntilIdle()
+                }
+            }
+        })
+    }
+
     override fun scrollTo(position: Int) {
         view.perform(object : ViewAction {
             override fun getDescription() = "Scroll view pager 2 to specific position"

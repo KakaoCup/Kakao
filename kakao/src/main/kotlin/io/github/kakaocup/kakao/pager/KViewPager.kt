@@ -15,7 +15,7 @@ import org.hamcrest.Matcher
  * @see SwipeableActions
  * @see ViewPagerAssertions
  */
-class KViewPager : KBaseView<KViewPager>, SwipeableActions, ViewPagerAssertions {
+class KViewPager : KBaseView<KViewPager>, ViewPagerActions, ViewPagerAssertions {
     constructor(function: ViewBuilder.() -> Unit) : super(function)
     constructor(parent: Matcher<View>, function: ViewBuilder.() -> Unit) : super(parent, function)
     constructor(parent: DataInteraction, function: ViewBuilder.() -> Unit) : super(parent, function)
