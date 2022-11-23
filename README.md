@@ -2,6 +2,7 @@
 [![Kotlin version badge](https://img.shields.io/badge/kotlin-1.4.32-blue.svg)](http://kotlinlang.org/)
 [![Telegram](https://img.shields.io/static/v1?label=Telegram&message=RU&color=0088CC)](https://t.me/kaspresso)
 [![Telegram](https://img.shields.io/static/v1?label=Telegram&message=EN&color=0088CC)](https://t.me/kaspresso_en)
+[![master-documentation](https://github.com/KakaoCup/Kakao/actions/workflows/master-guthub-pages.yml/badge.svg)](https://github.com/KakaoCup/Kakao/actions/workflows/master-guthub-pages.yml)
 
 Nice and simple DSL for Espresso in Kotlin
 
