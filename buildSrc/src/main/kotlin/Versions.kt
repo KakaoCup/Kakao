@@ -6,7 +6,7 @@ object Versions {
 
     val kotlin = "1.7.21"
     val detekt = "1.17.1"
-    val dokka = "1.7.21"
+    val dokka = "1.7.20"
     val maven = "1.5"
     val oss = "4.5.4"
     val appcompat = "1.3.0"
