@@ -2,16 +2,28 @@
 
 package io.github.kakaocup.kakao.common.assertions
 
+import android.os.Build
+import android.view.View
+import android.widget.TextView
 import androidx.annotation.ColorRes
+import androidx.annotation.RequiresApi
 import androidx.test.espresso.Root
 import androidx.test.espresso.ViewAssertion
 import androidx.test.espresso.assertion.PositionAssertions
 import androidx.test.espresso.assertion.ViewAssertions
+import androidx.test.espresso.matcher.BoundedMatcher
 import androidx.test.espresso.matcher.ViewMatchers
 import io.github.kakaocup.kakao.common.builders.RootBuilder
 import io.github.kakaocup.kakao.common.builders.ViewBuilder
+import io.github.kakaocup.kakao.common.matchers.ActivatedViewMatcher
+import io.github.kakaocup.kakao.common.matchers.AutoHandwritingEnabledMatcher
 import io.github.kakaocup.kakao.common.matchers.BackgroundColorMatcher
+import io.github.kakaocup.kakao.common.matchers.DirtyViewMatcher
+import io.github.kakaocup.kakao.common.matchers.ForceDarkAllowedViewMatcher
+import io.github.kakaocup.kakao.common.matchers.HapticFeedbackEnabledMatcher
+import io.github.kakaocup.kakao.common.matchers.HoveredViewMatcher
 import io.github.kakaocup.kakao.delegate.ViewInteractionDelegate
+import org.hamcrest.Description
 import org.hamcrest.Matcher
 import org.hamcrest.Matchers
 
@@ -418,7 +430,6 @@ interface BaseAssertions {
         view.check(PositionAssertions.isCompletelyLeftOf(ViewBuilder().apply(function).getViewMatcher()))
     }
 
-
     /**
      *  Checks if the view displayed is completely right of the view matching the given matcher.
      *
@@ -427,5 +438,61 @@ interface BaseAssertions {
      */
     fun isCompletelyRightOf(function: ViewBuilder.() -> Unit) {
         view.check(PositionAssertions.isCompletelyRightOf(ViewBuilder().apply(function).getViewMatcher()))
+    }
+
+    /**
+     * Checks if the view is activated
+     */
+    fun isActivated() {
+        view.check(
+            ViewAssertions.matches(ActivatedViewMatcher())
+        )
+    }
+
+    /**
+     * Checks if the view is dirty
+     */
+    fun isDirty() {
+        view.check(
+            ViewAssertions.matches(DirtyViewMatcher())
+        )
+    }
+
+    /**
+     * Checks if the view is hovered
+     */
+    fun isHovered() {
+        view.check(
+            ViewAssertions.matches(HoveredViewMatcher())
+        )
+    }
+
+    /**
+     * Checks if the view is force dark allowed
+     */
+    @RequiresApi(Build.VERSION_CODES.Q)
+    fun isForceDarkAllowed () {
+        view.check(
+            ViewAssertions.matches(ForceDarkAllowedViewMatcher())
+        )
+    }
+
+    /**
+     * Checks if the view is haptic feedback enabled
+     */
+    fun isHapticFeedbackEnabled () {
+        view.check(
+            ViewAssertions.matches(HapticFeedbackEnabledMatcher())
+        )
+    }
+
+    /**
+     * Checks if the view is auto handwriting enabled
+     */
+    @RequiresApi(Build.VERSION_CODES.TIRAMISU)
+    fun isAutoHandwritingEnabledMatcher () {
+        view.check(
+            ViewAssertions.matches(AutoHandwritingEnabledMatcher())
+        )
     }
 }
