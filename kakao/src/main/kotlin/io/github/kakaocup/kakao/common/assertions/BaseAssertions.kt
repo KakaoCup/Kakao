@@ -490,7 +490,7 @@ interface BaseAssertions {
      * Checks if the view is auto handwriting enabled
      */
     @RequiresApi(Build.VERSION_CODES.TIRAMISU)
-    fun isAutoHandwritingEnabledMatcher () {
+    fun isAutoHandwritingEnabled () {
         view.check(
             ViewAssertions.matches(AutoHandwritingEnabledMatcher())
         )
