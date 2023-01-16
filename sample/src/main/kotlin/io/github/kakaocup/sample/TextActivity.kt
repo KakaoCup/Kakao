@@ -4,18 +4,25 @@ import android.os.Bundle
 import android.text.Spannable
 import android.text.SpannableStringBuilder
 import android.text.style.ClickableSpan
+import android.text.style.ImageSpan
 import android.view.View
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.res.ResourcesCompat
 
 class TextActivity : AppCompatActivity() {
 
     private val clickableSpansTextView: TextView by lazy { findViewById(R.id.text_view_multiple_clickable_spans) }
 
+    private val leftDrawableSpanTextView: TextView by lazy { findViewById(R.id.text_view_drawable_span_left) }
+    private val rightDrawableSpanTextView: TextView by lazy { findViewById(R.id.text_view_drawable_span_right) }
+    private val multipleDrawableSpansTextView: TextView by lazy { findViewById(R.id.text_view_drawable_span_multiple) }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_text)
         buildClickableSpanString()
+        buildDrawableSpanStrings()
     }
 
     @SuppressWarnings("MagicNumber")
@@ -31,6 +38,35 @@ class TextActivity : AppCompatActivity() {
         clickableSpansTextView.text = with(SpannableStringBuilder(text)) {
             setSpan(DummyClickableSpan(), 0, 10, Spannable.SPAN_INCLUSIVE_EXCLUSIVE)
             setSpan(DummyClickableSpan(), 21, 30, Spannable.SPAN_INCLUSIVE_EXCLUSIVE)
+            this
+        }
+    }
+
+    private fun buildDrawableSpanStrings() {
+        val text = "$ String with drawable span $"
+
+        val imageAndroid = ResourcesCompat.getDrawable(baseContext.resources, R.drawable.ic_android_black_24dp, baseContext.theme)!!
+        imageAndroid.setBounds(0, 0, imageAndroid.intrinsicWidth, imageAndroid.intrinsicHeight)
+        val imageAndroidSpan = ImageSpan(imageAndroid, ImageSpan.ALIGN_BOTTOM)
+
+        val imageSentiment = ResourcesCompat.getDrawable(baseContext.resources, R.drawable.ic_sentiment_very_satisfied_black_24dp, baseContext.theme)!!
+        imageSentiment.setTint(resources.getColor(R.color.red))
+        imageSentiment.setBounds(0, 0, imageSentiment.intrinsicWidth, imageSentiment.intrinsicHeight);
+        val imageSentimentSpan = ImageSpan(imageSentiment, ImageSpan.ALIGN_BOTTOM)
+
+        leftDrawableSpanTextView.text = with(SpannableStringBuilder(text)) {
+            setSpan(imageAndroidSpan, 0, 1, Spannable.SPAN_INCLUSIVE_EXCLUSIVE)
+            this
+        }
+
+        rightDrawableSpanTextView.text = with(SpannableStringBuilder(text)) {
+            setSpan(imageSentimentSpan, 28, 29, Spannable.SPAN_INCLUSIVE_EXCLUSIVE)
+            this
+        }
+
+        multipleDrawableSpansTextView.text = with(SpannableStringBuilder(text)) {
+            setSpan(imageAndroidSpan, 0, 1, Spannable.SPAN_INCLUSIVE_EXCLUSIVE)
+            setSpan(imageSentimentSpan, 28, 29, Spannable.SPAN_INCLUSIVE_EXCLUSIVE)
             this
         }
     }

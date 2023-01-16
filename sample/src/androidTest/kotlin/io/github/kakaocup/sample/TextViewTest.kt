@@ -1,13 +1,15 @@
 package io.github.kakaocup.sample
 
+import android.app.Activity
+import android.content.Context
 import android.graphics.Typeface
-import android.text.style.ClickableSpan
 import android.view.Gravity.BOTTOM
 import android.view.Gravity.CENTER_HORIZONTAL
 import android.view.Gravity.CENTER_VERTICAL
 import android.view.Gravity.END
 import android.view.Gravity.START
 import android.view.Gravity.TOP
+import androidx.core.content.res.ResourcesCompat
 import androidx.test.ext.junit.rules.ActivityScenarioRule
 import androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner
 import io.github.kakaocup.kakao.screen.Screen
@@ -21,6 +23,15 @@ class TextViewTest {
     @Rule
     @JvmField
     val rule = ActivityScenarioRule(TextActivity::class.java)
+
+    private val appContext: Context
+        get() {
+            var activity: Activity? = null
+            rule.scenario.onActivity {
+                activity = it
+            }
+            return activity!!.applicationContext
+        }
 
     @Test
     fun testCompoundDrawables() {
@@ -94,6 +105,27 @@ class TextViewTest {
             textViewMultipleClickableSpans.scrollTo()
             textViewMultipleClickableSpans.clickSpanWithText("First span")
             textViewMultipleClickableSpans.clickSpanWithText("last span")
+        }
+    }
+
+    @Test
+    fun testSpanDrawables() {
+        Screen.onScreen<TextScreen> {
+            textViewWithMultipleSpanDrawable.scrollTo()
+            textViewWithLeftSpanDrawable.hasDrawableSpan(queryStart = 0, queryEnd = 1, resId = R.drawable.ic_android_black_24dp)
+            textViewWithRightSpanDrawable.hasDrawableSpanWithTint(
+                queryStart = 28,
+                queryEnd = 29,
+                resId = R.drawable.ic_sentiment_very_satisfied_black_24dp,
+                tintColorId = R.color.red
+            )
+            textViewWithMultipleSpanDrawable.hasDrawableSpan(spanIndex = 0, resId = R.drawable.ic_android_black_24dp)
+            val drawable = ResourcesCompat.getDrawable(
+                appContext.resources,
+                R.drawable.ic_sentiment_very_satisfied_black_24dp,
+                appContext.theme
+            )!!
+            textViewWithMultipleSpanDrawable.hasDrawableSpanWithTint(spanIndex = 1, drawable = drawable, tintColorId = R.color.red)
         }
     }
 }

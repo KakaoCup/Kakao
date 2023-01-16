@@ -2,7 +2,9 @@
 
 package io.github.kakaocup.kakao.text
 
+import android.graphics.Bitmap
 import android.graphics.Typeface
+import android.graphics.drawable.Drawable
 import androidx.annotation.ColorRes
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
@@ -13,6 +15,7 @@ import io.github.kakaocup.kakao.common.matchers.AnyTextMatcher
 import io.github.kakaocup.kakao.common.matchers.BoldStyleMatcher
 import io.github.kakaocup.kakao.common.matchers.CompoundDrawableMatcher
 import io.github.kakaocup.kakao.common.matchers.ItalicStyleMatcher
+import io.github.kakaocup.kakao.common.matchers.SpanDrawableMatcher
 import io.github.kakaocup.kakao.common.matchers.TextSizeMatcher
 import io.github.kakaocup.kakao.common.matchers.TextViewGravityMatcher
 import io.github.kakaocup.kakao.common.matchers.TypefaceMatcher
@@ -287,6 +290,168 @@ interface TextViewAssertions : BaseAssertions {
         view.check(
             ViewAssertions.matches(
                 Matchers.not(ItalicStyleMatcher())
+            )
+        )
+    }
+
+    /**
+     * Checks if the drawable span displayed in the view
+     *
+     * @param queryStart Index of the character that is the beginning of the range of text to which span is attached
+     * @param queryEnd Index of the character that is the end of the range of text to which span is attached
+     * @param resId Drawable resource to be matched
+     * @param toBitmap Lambda with custom Drawable -> Bitmap converter (default is null)
+     */
+    fun hasDrawableSpan(queryStart: Int, queryEnd: Int, @DrawableRes resId: Int, toBitmap: ((drawable: Drawable) -> Bitmap)? = null) {
+        view.check(
+            ViewAssertions.matches(
+                SpanDrawableMatcher(queryStart = queryStart, queryEnd = queryEnd, resId = resId, toBitmap = toBitmap)
+            )
+        )
+    }
+
+    /**
+     * Checks if the drawable span displayed in the view
+     *
+     * @param queryStart Index of the character that is the beginning of the range of text to which span is attached
+     * @param queryEnd Index of the character that is the end of the range of text to which span is attached
+     * @param resId Drawable resource to be matched
+     * @param tintColorId Tint color resource id
+     * @param toBitmap Lambda with custom Drawable -> Bitmap converter (default is null)
+     */
+    fun hasDrawableSpanWithTint(
+        queryStart: Int,
+        queryEnd: Int,
+        @DrawableRes resId: Int,
+        @ColorRes tintColorId: Int,
+        toBitmap: ((drawable: Drawable) -> Bitmap)? = null
+    ) {
+        view.check(
+            ViewAssertions.matches(
+                SpanDrawableMatcher(
+                    queryStart = queryStart,
+                    queryEnd = queryEnd,
+                    resId = resId,
+                    tintColorId = tintColorId,
+                    toBitmap = toBitmap
+                )
+            )
+        )
+    }
+
+    /**
+     * Checks if the drawable span displayed in the view
+     *
+     * @param queryStart Index of the character that is the beginning of the range of text to which span is attached
+     * @param queryEnd Index of the character that is the end of the range of text to which span is attached
+     * @param drawable Drawable to be matched
+     * @param toBitmap Lambda with custom Drawable -> Bitmap converter (default is null)
+     */
+    fun hasDrawableSpan(queryStart: Int, queryEnd: Int, drawable: Drawable, toBitmap: ((drawable: Drawable) -> Bitmap)? = null) {
+        view.check(
+            ViewAssertions.matches(
+                SpanDrawableMatcher(queryStart = queryStart, queryEnd = queryEnd, drawable = drawable, toBitmap = toBitmap)
+            )
+        )
+    }
+
+    /**
+     * Checks if the drawable span displayed in the view
+     *
+     * @param queryStart Index of the character that is the beginning of the range of text to which span is attached
+     * @param queryEnd Index of the character that is the end of the range of text to which span is attached
+     * @param drawable Drawable to be matched
+     * @param tintColorId Tint color resource id
+     * @param toBitmap Lambda with custom Drawable -> Bitmap converter (default is null)
+     */
+    fun hasDrawableSpanWithTint(
+        queryStart: Int,
+        queryEnd: Int,
+        drawable: Drawable,
+        @ColorRes tintColorId: Int,
+        toBitmap: ((drawable: Drawable) -> Bitmap)? = null
+    ) {
+        view.check(
+            ViewAssertions.matches(
+                SpanDrawableMatcher(
+                    queryStart = queryStart,
+                    queryEnd = queryEnd,
+                    tintColorId = tintColorId,
+                    drawable = drawable,
+                    toBitmap = toBitmap
+                )
+            )
+        )
+    }
+
+    /**
+     * Checks if the drawable span displayed in the view
+     *
+     * @param spanIndex Index of span in string's spans array
+     * @param resId Drawable resource to be matched
+     * @param toBitmap Lambda with custom Drawable -> Bitmap converter (default is null)
+     */
+    fun hasDrawableSpan(spanIndex: Int, @DrawableRes resId: Int, toBitmap: ((drawable: Drawable) -> Bitmap)? = null) {
+        view.check(
+            ViewAssertions.matches(
+                SpanDrawableMatcher(spanIndex = spanIndex, resId = resId, toBitmap = toBitmap)
+            )
+        )
+    }
+
+    /**
+     * Checks if the drawable span displayed in the view
+     *
+     * @param spanIndex Index of span in string's spans array
+     * @param resId Drawable resource to be matched
+     * @param tintColorId Tint color resource id
+     * @param toBitmap Lambda with custom Drawable -> Bitmap converter (default is null)
+     */
+    fun hasDrawableSpanWithTint(
+        spanIndex: Int,
+        @DrawableRes resId: Int,
+        @ColorRes tintColorId: Int,
+        toBitmap: ((drawable: Drawable) -> Bitmap)? = null
+    ) {
+        view.check(
+            ViewAssertions.matches(
+                SpanDrawableMatcher(spanIndex = spanIndex, resId = resId, tintColorId = tintColorId, toBitmap = toBitmap)
+            )
+        )
+    }
+
+    /**
+     * Checks if the drawable span displayed in the view
+     *
+     * @param spanIndex Index of span in string's spans array
+     * @param drawable Drawable to be matched
+     * @param toBitmap Lambda with custom Drawable -> Bitmap converter (default is null)
+     */
+    fun hasDrawableSpan(spanIndex: Int, drawable: Drawable, toBitmap: ((drawable: Drawable) -> Bitmap)? = null) {
+        view.check(
+            ViewAssertions.matches(
+                SpanDrawableMatcher(spanIndex = spanIndex, drawable = drawable, toBitmap = toBitmap)
+            )
+        )
+    }
+
+    /**
+     * Checks if the drawable span displayed in the view
+     *
+     * @param spanIndex Index of span in string's spans array
+     * @param drawable Drawable to be matched
+     * @param tintColorId Tint color resource id
+     * @param toBitmap Lambda with custom Drawable -> Bitmap converter (default is null)
+     */
+    fun hasDrawableSpanWithTint(
+        spanIndex: Int,
+        drawable: Drawable,
+        @ColorRes tintColorId: Int,
+        toBitmap: ((drawable: Drawable) -> Bitmap)? = null
+    ) {
+        view.check(
+            ViewAssertions.matches(
+                SpanDrawableMatcher(spanIndex = spanIndex, drawable = drawable, tintColorId = tintColorId, toBitmap = toBitmap)
             )
         )
     }
