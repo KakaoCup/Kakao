@@ -302,7 +302,12 @@ interface TextViewAssertions : BaseAssertions {
      * @param resId Drawable resource to be matched
      * @param toBitmap Lambda with custom Drawable -> Bitmap converter (default is null)
      */
-    fun hasDrawableSpan(queryStart: Int, queryEnd: Int, @DrawableRes resId: Int, toBitmap: ((drawable: Drawable) -> Bitmap)? = null) {
+    fun hasDrawableSpan(
+        queryStart: Int,
+        queryEnd: Int,
+        @DrawableRes resId: Int,
+        toBitmap: ((drawable: Drawable) -> Bitmap)? = null
+    ) {
         view.check(
             ViewAssertions.matches(
                 SpanDrawableMatcher(queryStart = queryStart, queryEnd = queryEnd, resId = resId, toBitmap = toBitmap)
@@ -347,7 +352,11 @@ interface TextViewAssertions : BaseAssertions {
      * @param drawable Drawable to be matched
      * @param toBitmap Lambda with custom Drawable -> Bitmap converter (default is null)
      */
-    fun hasDrawableSpan(queryStart: Int, queryEnd: Int, drawable: Drawable, toBitmap: ((drawable: Drawable) -> Bitmap)? = null) {
+    fun hasDrawableSpan(
+        queryStart: Int,
+        queryEnd: Int,
+        drawable: Drawable,
+        toBitmap: ((drawable: Drawable) -> Bitmap)? = null) {
         view.check(
             ViewAssertions.matches(
                 SpanDrawableMatcher(queryStart = queryStart, queryEnd = queryEnd, drawable = drawable, toBitmap = toBitmap)
@@ -391,7 +400,10 @@ interface TextViewAssertions : BaseAssertions {
      * @param resId Drawable resource to be matched
      * @param toBitmap Lambda with custom Drawable -> Bitmap converter (default is null)
      */
-    fun hasDrawableSpan(spanIndex: Int, @DrawableRes resId: Int, toBitmap: ((drawable: Drawable) -> Bitmap)? = null) {
+    fun hasDrawableSpan(
+        spanIndex: Int,
+        @DrawableRes resId: Int,
+        toBitmap: ((drawable: Drawable) -> Bitmap)? = null) {
         view.check(
             ViewAssertions.matches(
                 SpanDrawableMatcher(spanIndex = spanIndex, resId = resId, toBitmap = toBitmap)
@@ -427,7 +439,10 @@ interface TextViewAssertions : BaseAssertions {
      * @param drawable Drawable to be matched
      * @param toBitmap Lambda with custom Drawable -> Bitmap converter (default is null)
      */
-    fun hasDrawableSpan(spanIndex: Int, drawable: Drawable, toBitmap: ((drawable: Drawable) -> Bitmap)? = null) {
+    fun hasDrawableSpan(
+        spanIndex: Int,
+        drawable: Drawable,
+        toBitmap: ((drawable: Drawable) -> Bitmap)? = null) {
         view.check(
             ViewAssertions.matches(
                 SpanDrawableMatcher(spanIndex = spanIndex, drawable = drawable, toBitmap = toBitmap)

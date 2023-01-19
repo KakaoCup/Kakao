@@ -51,22 +51,27 @@ class TextActivity : AppCompatActivity() {
 
         val imageSentiment = ResourcesCompat.getDrawable(baseContext.resources, R.drawable.ic_sentiment_very_satisfied_black_24dp, baseContext.theme)!!
         imageSentiment.setTint(resources.getColor(R.color.red))
-        imageSentiment.setBounds(0, 0, imageSentiment.intrinsicWidth, imageSentiment.intrinsicHeight);
+        imageSentiment.setBounds(0, 0, imageSentiment.intrinsicWidth, imageSentiment.intrinsicHeight)
         val imageSentimentSpan = ImageSpan(imageSentiment, ImageSpan.ALIGN_BOTTOM)
 
+        val leftSpanStart = 0
+        val leftSpanEnd = leftSpanStart + 1
+        val rightSpanStart = text.lastIndex
+        val rightSpanEnd = rightSpanStart + 1
+
         leftDrawableSpanTextView.text = with(SpannableStringBuilder(text)) {
-            setSpan(imageAndroidSpan, 0, 1, Spannable.SPAN_INCLUSIVE_EXCLUSIVE)
+            setSpan(imageAndroidSpan, leftSpanStart, leftSpanEnd, Spannable.SPAN_INCLUSIVE_EXCLUSIVE)
             this
         }
 
         rightDrawableSpanTextView.text = with(SpannableStringBuilder(text)) {
-            setSpan(imageSentimentSpan, 28, 29, Spannable.SPAN_INCLUSIVE_EXCLUSIVE)
+            setSpan(imageSentimentSpan, rightSpanStart, rightSpanEnd, Spannable.SPAN_INCLUSIVE_EXCLUSIVE)
             this
         }
 
         multipleDrawableSpansTextView.text = with(SpannableStringBuilder(text)) {
-            setSpan(imageAndroidSpan, 0, 1, Spannable.SPAN_INCLUSIVE_EXCLUSIVE)
-            setSpan(imageSentimentSpan, 28, 29, Spannable.SPAN_INCLUSIVE_EXCLUSIVE)
+            setSpan(imageAndroidSpan, leftSpanStart, leftSpanEnd, Spannable.SPAN_INCLUSIVE_EXCLUSIVE)
+            setSpan(imageSentimentSpan, rightSpanStart, rightSpanEnd, Spannable.SPAN_INCLUSIVE_EXCLUSIVE)
             this
         }
     }
