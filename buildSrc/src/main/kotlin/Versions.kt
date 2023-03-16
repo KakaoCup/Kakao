@@ -15,7 +15,7 @@ object Versions {
     val swiperefresh = "1.1.0"
     val annotation = "1.2.0"
     val design = "1.3.0"
-    val espresso = "3.5.0"
+    val espresso = "3.5.1"
     val espresso_rules = "1.4.0"
     val espresso_runner = "1.4.0"
     val junit = "4.13.2"
