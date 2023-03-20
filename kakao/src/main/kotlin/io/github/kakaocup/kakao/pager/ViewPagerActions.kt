@@ -1,8 +1,6 @@
 package io.github.kakaocup.kakao.pager
 
-import androidx.test.espresso.action.ViewActions
 import io.github.kakaocup.kakao.common.actions.BaseActions
-import io.github.kakaocup.kakao.common.actions.SwipeableActions
 import androidx.test.espresso.contrib.ViewPagerActions as EspressoViewPagerActions
 
 interface ViewPagerActions : BaseActions {
@@ -29,44 +27,33 @@ interface ViewPagerActions : BaseActions {
         view.perform(EspressoViewPagerActions.scrollLeft(true))
     }
 
-    /**
-     * Swipes up on the view
-     */
-    @Deprecated("ViewPager doesn't support swipeUp action")
-    fun swipeUp() {
-        view.perform(ViewActions.swipeUp())
-    }
-
-    /**
-     * Swipes down on the view
-     */
-    @Deprecated("ViewPager doesn't support swipeDown action")
-    fun swipeDown() {
-        view.perform(ViewActions.swipeDown())
-    }
-
     /** Moves <code>ViewPager</code> to the left be one page. */
-    fun scrollLeft() {
-        view.perform(EspressoViewPagerActions.scrollLeft())
+    fun scrollLeft(smoothScroll: Boolean = false) {
+        view.perform(EspressoViewPagerActions.scrollLeft(smoothScroll))
     }
 
     /** Moves <code>ViewPager</code> to the right be one page. */
-    fun scrollRight() {
-        view.perform(EspressoViewPagerActions.scrollRight())
+    fun scrollRight(smoothScroll: Boolean = false) {
+        view.perform(EspressoViewPagerActions.scrollRight(smoothScroll))
     }
 
     /** Moves <code>ViewPager</code> to the first page. */
-    fun scrollToFirst() {
-        view.perform(EspressoViewPagerActions.scrollToFirst())
+    fun scrollToFirst(smoothScroll: Boolean = false) {
+        view.perform(EspressoViewPagerActions.scrollToFirst(smoothScroll))
     }
 
     /** Moves <code>ViewPager</code> to the last page. */
-    fun scrollToLast() {
-        view.perform(EspressoViewPagerActions.scrollToLast())
+    fun scrollToLast(smoothScroll: Boolean = false) {
+        view.perform(EspressoViewPagerActions.scrollToLast(smoothScroll))
     }
 
     /** Moves <code>ViewPager</code> to a specific page. */
-    fun scrollToPage(page: Int) {
-        view.perform(EspressoViewPagerActions.scrollToPage(page))
+    fun scrollToPage(page: Int, smoothScroll: Boolean = false) {
+        view.perform(EspressoViewPagerActions.scrollToPage(page, smoothScroll))
+    }
+
+    /** Clicks between two titles in a <code>ViewPager</code> title strip */
+    fun clickBetweenTwoTitles(title1: String, title2: String) {
+        view.perform(EspressoViewPagerActions.clickBetweenTwoTitles(title1, title2))
     }
 }
