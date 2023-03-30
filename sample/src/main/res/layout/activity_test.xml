@@ -153,6 +153,12 @@
           android:layout_height="wrap_content"
           android:text="TEXT VIEWS" />
 
+      <Button
+          android:id="@+id/switchers_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="SWITCHERS"/>
+
       <RatingBar
           android:id="@+id/rating_bar"
           android:layout_width="wrap_content"

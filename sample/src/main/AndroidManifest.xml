@@ -87,7 +87,10 @@
         android:name="io.github.kakaocup.sample.TabLayoutActivity"
         android:label="Tab Layout Activity"
         android:theme="@style/MaterialAppTheme" />
-
+    <activity
+        android:name="io.github.kakaocup.sample.SwitchersActivity"
+        android:label="Text Switcher Activity"
+        android:theme="@style/MaterialAppTheme" />
     <activity
         android:name="io.github.kakaocup.sample.LinearLayoutActivity"
         android:label="Linear Layout activity"
