@@ -17,8 +17,9 @@ import io.github.kakaocup.kakao.common.matchers.DrawableMatcher
 import io.github.kakaocup.kakao.common.matchers.FirstViewMatcher
 import io.github.kakaocup.kakao.common.matchers.HintMatcher
 import io.github.kakaocup.kakao.common.matchers.IndexMatcher
-import io.github.kakaocup.kakao.common.matchers.ViewGroupPositionMatcher
+import io.github.kakaocup.kakao.common.matchers.NonCachingCharSequenceMatcher
 import io.github.kakaocup.kakao.common.matchers.RatingBarMatcher
+import io.github.kakaocup.kakao.common.matchers.ViewGroupPositionMatcher
 import io.github.kakaocup.kakao.delegate.ViewInteractionDelegate
 import org.hamcrest.CoreMatchers
 import org.hamcrest.Matcher
@@ -111,9 +112,14 @@ class ViewBuilder {
      * Matches the view with given text
      *
      * @param textId String resource to match
+     * @param cacheTextValue whether to cache the text extracted from resources for future checks
      */
-    fun withText(@StringRes textId: Int) {
-        viewMatchers.add(ViewMatchers.withText(textId))
+    fun withText(@StringRes textId: Int, cacheTextValue: Boolean = true) {
+        if (cacheTextValue) {
+            viewMatchers.add(ViewMatchers.withText(textId))
+        } else {
+            viewMatchers.add(NonCachingCharSequenceMatcher(textId))
+        }
     }
 
     /**
@@ -138,9 +144,14 @@ class ViewBuilder {
      * Matches if the view does not have a given text
      *
      * @param resId String resource to be matched
+     * @param cacheTextValue whether to cache the text extracted from resources for future checks
      */
-    fun withoutText(@StringRes resId: Int) {
-        viewMatchers.add(CoreMatchers.not(ViewMatchers.withText(resId)))
+    fun withoutText(@StringRes resId: Int, cacheTextValue: Boolean = true) {
+        if (cacheTextValue) {
+            viewMatchers.add(CoreMatchers.not(ViewMatchers.withText(resId)))
+        } else {
+            viewMatchers.add(CoreMatchers.not(NonCachingCharSequenceMatcher(resId)))
+        }
     }
 
     /**
