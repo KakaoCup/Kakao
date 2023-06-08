@@ -46,6 +46,39 @@
           android:drawableBottom="@drawable/ic_android_black_24dp"
           android:text="Drawable bottom" />
 
+
+      <TextView
+          android:id="@+id/text_view_drawable_tinted_left"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:drawableLeft="@drawable/ic_android_black_24dp"
+          android:drawableTint="@color/red"
+          android:text="Drawable Tinted left" />
+
+      <TextView
+          android:id="@+id/text_view_drawable_tinted_right"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:drawableRight="@drawable/ic_android_black_24dp"
+          android:drawableTint="@color/red"
+          android:text="Drawable Tinted right" />
+
+      <TextView
+          android:id="@+id/text_view_drawable_tinted_top"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:drawableTop="@drawable/ic_android_black_24dp"
+          android:drawableTint="@color/red"
+          android:text="Drawable Tinted top" />
+
+      <TextView
+          android:id="@+id/text_view_drawable_tinted_bottom"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:drawableBottom="@drawable/ic_android_black_24dp"
+          android:drawableTint="@color/red"
+          android:text="Drawable Tinted bottom" />
+
       <TextView
           android:id="@+id/text_view_gravity_center"
           android:layout_width="match_parent"

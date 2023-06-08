@@ -195,17 +195,18 @@ interface TextViewAssertions : BaseAssertions {
      * @param left left compound drawable resId
      * @param top top compound drawable resId
      * @param right right compound drawable resId
-     * @param bottom bottom compound drawable resId      \
+     * @param bottom bottom compound drawable resId
      */
     fun hasCompoundDrawable(
         @DrawableRes left: Int? = null,
         @DrawableRes top: Int? = null,
         @DrawableRes right: Int? = null,
-        @DrawableRes bottom: Int? = null
+        @DrawableRes bottom: Int? = null,
+        @ColorRes tintColorId: Int? = null
     ) {
         view.check(
             ViewAssertions.matches(
-                CompoundDrawableMatcher(left, top, right, bottom)
+                CompoundDrawableMatcher(left, top, right, bottom, tintColorId)
             )
         )
     }
