@@ -21,4 +21,3 @@ class ViewGroupPositionMatcher(private val position: Int) : BoundedMatcher<View,
         description.appendText("Can't match view on $position position")
     }
 }
-

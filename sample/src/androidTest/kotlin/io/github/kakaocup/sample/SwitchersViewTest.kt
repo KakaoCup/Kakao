@@ -20,6 +20,12 @@ class SwitchersViewTest {
             textSwitcher {
                 hasText("Counter: 1")
             }
+
+            nextButton.click()
+
+            textSwitcher {
+                hasText("Counter: 2")
+            }
         }
     }
 }
