@@ -45,6 +45,16 @@ class TextViewTest {
     }
 
     @Test
+    fun testTintedCompoundDrawables() {
+        Screen.onScreen<TextScreen> {
+            textViewWithLeftTintedDrawable.hasCompoundDrawable(left = R.drawable.ic_android_black_24dp, tintColorId = R.color.red)
+            textViewWithRightTintedDrawable.hasCompoundDrawable(right = R.drawable.ic_android_black_24dp, tintColorId = R.color.red)
+            textViewWithTopTintedDrawable.hasCompoundDrawable(top = R.drawable.ic_android_black_24dp, tintColorId = R.color.red)
+            textViewWithBottomTintedDrawable.hasCompoundDrawable(bottom = R.drawable.ic_android_black_24dp, tintColorId = R.color.red)
+        }
+    }
+
+    @Test
     fun testTextGravity() {
         Screen.onScreen<TextScreen> {
             textViewCentered.hasGravity(horizontalGravity = CENTER_HORIZONTAL)

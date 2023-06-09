@@ -11,6 +11,11 @@ class TextScreen : Screen<TextScreen>() {
     val textViewWithTopDrawable = KTextView { withId(R.id.text_view_drawable_top) }
     val textViewWithBottomDrawable = KTextView { withId(R.id.text_view_drawable_bottom) }
 
+    val textViewWithLeftTintedDrawable = KTextView { withId(R.id.text_view_drawable_tinted_left) }
+    val textViewWithRightTintedDrawable = KTextView { withId(R.id.text_view_drawable_tinted_right) }
+    val textViewWithTopTintedDrawable = KTextView { withId(R.id.text_view_drawable_tinted_top) }
+    val textViewWithBottomTintedDrawable = KTextView { withId(R.id.text_view_drawable_tinted_bottom) }
+
     val textViewCentered = KTextView { withId(R.id.text_view_gravity_center) }
     val textViewOnStart = KTextView { withId(R.id.text_view_gravity_start) }
     val textViewOnEnd = KTextView { withId(R.id.text_view_gravity_end) }
