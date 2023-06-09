@@ -1,0 +1,25 @@
+name: "Kakao Test"
+outputDir: "reports/marathon"
+vendorConfiguration:
+  type: "Android"
+  applicationApk: "sample/build/outputs/apk/debug/sample-debug.apk"
+  testApplicationApk: "sample/build/outputs/apk/androidTest/debug/sample-debug-androidTest.apk"
+  autoGrantPermission: true
+  applicationPmClear: true
+  testApplicationPmClear: true
+  waitForDevicesTimeoutMillis: 60000
+  timeoutConfiguration:
+     pushFile: "PT5M"
+     install: "PT3M"
+includeSerialRegexes:
+  - "127.0.0.1:5037:emulator-[0-9]{0,4}"
+deviceInitializationTimeoutMillis: 180000
+batchingStrategy:
+  type: "fixed-size"
+  size: 5
+retryStrategy:
+  type: "fixed-quota"
+  totalAllowedRetryQuota: 10
+  retryPerTestQuota: 2
+testOutputTimeoutMillis: 90000
+uncompletedTestRetryQuota: 5
