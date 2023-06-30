@@ -7,7 +7,6 @@ import androidx.test.espresso.ViewInteraction
 import androidx.test.espresso.web.assertion.WebAssertion
 import androidx.test.espresso.web.model.Atom
 import androidx.test.espresso.web.sugar.Web
-import io.github.kakaocup.kakao.common.actions.BaseActions
 import io.github.kakaocup.kakao.common.actions.clicks.ClickAction
 import io.github.kakaocup.kakao.common.actions.clicks.EspressoDoubleClick
 import io.github.kakaocup.kakao.common.actions.clicks.EspressoLongClick
@@ -56,7 +55,7 @@ object Kakao {
         webInterceptor = null
     }
 
-    var clickAction: ClickAction = EspressoSingleClick()
+    var singleClickAction: ClickAction = EspressoSingleClick()
     var doubleClickAction: ClickAction = EspressoDoubleClick()
     var longClickAction: ClickAction = EspressoLongClick()
 }

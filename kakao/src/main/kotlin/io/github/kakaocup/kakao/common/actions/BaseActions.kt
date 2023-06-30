@@ -2,15 +2,10 @@
 
 package io.github.kakaocup.kakao.common.actions
 
-import android.view.InputDevice
-import android.view.MotionEvent
 import android.view.View
 import androidx.test.espresso.FailureHandler
 import androidx.test.espresso.ViewAction
-import androidx.test.espresso.action.GeneralClickAction
 import androidx.test.espresso.action.GeneralLocation
-import androidx.test.espresso.action.Press
-import androidx.test.espresso.action.Tap
 import androidx.test.espresso.action.ViewActions
 import io.github.kakaocup.kakao.Kakao
 import io.github.kakaocup.kakao.common.builders.ViewBuilder
@@ -36,7 +31,7 @@ interface BaseActions {
      * @param location Location of view where it should be clicked (VISIBLE_CENTER by default)
      */
     fun click(location: GeneralLocation = GeneralLocation.VISIBLE_CENTER) {
-        Kakao.clickAction.click(view, location)
+        view.perform(Kakao.singleClickAction.click(location))
     }
 
     /**
@@ -45,7 +40,7 @@ interface BaseActions {
      * @param location Location of view where it should be clicked (VISIBLE_CENTER by default)
      */
     fun doubleClick(location: GeneralLocation = GeneralLocation.VISIBLE_CENTER) {
-        Kakao.doubleClickAction.click(view, location)
+        view.perform(Kakao.doubleClickAction.click(location))
     }
 
     /**
@@ -54,7 +49,7 @@ interface BaseActions {
      * @param location Location of view where it should be clicked (VISIBLE_CENTER by default)
      */
     fun longClick(location: GeneralLocation = GeneralLocation.VISIBLE_CENTER) {
-        Kakao.longClickAction.click(view, location)
+        view.perform(Kakao.longClickAction.click(location))
     }
 
     /**

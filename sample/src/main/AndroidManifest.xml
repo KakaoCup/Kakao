@@ -105,6 +105,10 @@
         android:name="io.github.kakaocup.sample.ImageViewActivity"
         android:label="Text activity"
         android:theme="@style/MaterialAppTheme" />
+    <activity
+        android:name="io.github.kakaocup.sample.ButtonClickActivity"
+        android:label="Text activity"
+        android:theme="@style/MaterialAppTheme" />
   </application>
 
 </manifest>

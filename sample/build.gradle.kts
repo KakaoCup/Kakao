@@ -42,6 +42,7 @@ dependencies {
     testImplementation(Libraries.junit)
 
     androidTestImplementation(project(":kakao"))
+    androidTestImplementation(project(":kakao-ext-clicks"))
 
     androidTestImplementation(Libraries.annotation)
     androidTestImplementation(Libraries.espresso_runner)

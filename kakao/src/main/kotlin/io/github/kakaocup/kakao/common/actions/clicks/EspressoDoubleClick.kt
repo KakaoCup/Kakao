@@ -9,12 +9,8 @@ import androidx.test.espresso.action.Tap
 import io.github.kakaocup.kakao.delegate.ViewInteractionDelegate
 
 class EspressoDoubleClick : ClickAction {
-    override fun click(view: ViewInteractionDelegate, location: GeneralLocation) {
-        view.perform(
-            GeneralClickAction(
-                Tap.DOUBLE, location, Press.FINGER,
-                InputDevice.SOURCE_UNKNOWN, MotionEvent.BUTTON_PRIMARY
-            )
-        )
-    }
+    override fun click(location: GeneralLocation) = GeneralClickAction(
+        Tap.DOUBLE, location, Press.FINGER,
+        InputDevice.SOURCE_UNKNOWN, MotionEvent.BUTTON_PRIMARY
+    )
 }
