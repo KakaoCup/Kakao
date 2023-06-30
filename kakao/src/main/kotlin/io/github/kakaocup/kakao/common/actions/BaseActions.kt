@@ -12,6 +12,7 @@ import androidx.test.espresso.action.GeneralLocation
 import androidx.test.espresso.action.Press
 import androidx.test.espresso.action.Tap
 import androidx.test.espresso.action.ViewActions
+import io.github.kakaocup.kakao.Kakao
 import io.github.kakaocup.kakao.common.builders.ViewBuilder
 import io.github.kakaocup.kakao.delegate.ViewInteractionDelegate
 import org.hamcrest.Matcher
@@ -35,12 +36,7 @@ interface BaseActions {
      * @param location Location of view where it should be clicked (VISIBLE_CENTER by default)
      */
     fun click(location: GeneralLocation = GeneralLocation.VISIBLE_CENTER) {
-        view.perform(
-            GeneralClickAction(
-                Tap.SINGLE, location, Press.FINGER,
-                InputDevice.SOURCE_UNKNOWN, MotionEvent.BUTTON_PRIMARY
-            )
-        )
+        Kakao.clickAction.click(view, location)
     }
 
     /**
@@ -49,12 +45,7 @@ interface BaseActions {
      * @param location Location of view where it should be clicked (VISIBLE_CENTER by default)
      */
     fun doubleClick(location: GeneralLocation = GeneralLocation.VISIBLE_CENTER) {
-        view.perform(
-            GeneralClickAction(
-                Tap.DOUBLE, location, Press.FINGER,
-                InputDevice.SOURCE_UNKNOWN, MotionEvent.BUTTON_PRIMARY
-            )
-        )
+        Kakao.doubleClickAction.click(view, location)
     }
 
     /**
@@ -63,12 +54,7 @@ interface BaseActions {
      * @param location Location of view where it should be clicked (VISIBLE_CENTER by default)
      */
     fun longClick(location: GeneralLocation = GeneralLocation.VISIBLE_CENTER) {
-        view.perform(
-            GeneralClickAction(
-                Tap.LONG, location, Press.FINGER,
-                InputDevice.SOURCE_UNKNOWN, MotionEvent.BUTTON_PRIMARY
-            )
-        )
+        Kakao.longClickAction.click(view, location)
     }
 
     /**
