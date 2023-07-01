@@ -1,16 +1,17 @@
 package io.github.kakaocup.kakao.ext.clicks
 
-import android.view.InputDevice
-import android.view.MotionEvent
-import androidx.test.espresso.action.GeneralClickAction
 import androidx.test.espresso.action.GeneralLocation
 import androidx.test.espresso.action.Press
-import androidx.test.espresso.action.Tap
 import io.github.kakaocup.kakao.common.actions.clicks.ClickAction
+import io.github.kakaocup.kakao.ext.clicks.inprocess.DoubleClickEvent
+import io.github.kakaocup.kakao.ext.clicks.inprocess.InProcessClickAction
+import io.github.kakaocup.kakao.ext.clicks.visualization.VisualClicksConfig
 
-class KakaoDoubleClick : ClickAction {
-    override fun click(location: GeneralLocation) = GeneralClickAction(
-        Tap.DOUBLE, location, Press.FINGER,
-        InputDevice.SOURCE_UNKNOWN, MotionEvent.BUTTON_PRIMARY
+class KakaoDoubleClick(private val visualClicksConfig: VisualClicksConfig? = VisualClicksConfig()) : ClickAction {
+    override fun click(location: GeneralLocation) = InProcessClickAction(
+        clickEvent = DoubleClickEvent(visualClicksConfig),
+        coordinatesProvider = location,
+        precisionDescriber = Press.FINGER,
+        visualClicksConfig = visualClicksConfig
     )
 }

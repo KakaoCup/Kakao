@@ -18,6 +18,10 @@ object Kakao {
     internal var dataInterceptor: Interceptor<DataInteraction, ViewAssertion, ViewAction>? = null
     internal var webInterceptor: Interceptor<Web.WebInteraction<*>, WebAssertion<*>, Atom<*>>? = null
 
+    var singleClickAction: ClickAction = EspressoSingleClick()
+    var doubleClickAction: ClickAction = EspressoDoubleClick()
+    var longClickAction: ClickAction = EspressoLongClick()
+
     /**
      * Operator that allows usage of DSL style
      *
@@ -54,8 +58,4 @@ object Kakao {
         dataInterceptor = null
         webInterceptor = null
     }
-
-    var singleClickAction: ClickAction = EspressoSingleClick()
-    var doubleClickAction: ClickAction = EspressoDoubleClick()
-    var longClickAction: ClickAction = EspressoLongClick()
 }

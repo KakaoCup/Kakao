@@ -2,8 +2,6 @@ package io.github.kakaocup.sample
 
 import android.os.Bundle
 import android.widget.Button
-import android.widget.TextSwitcher
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 class ButtonClickActivity : AppCompatActivity() {

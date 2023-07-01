@@ -20,7 +20,7 @@ class SwitchersActivity : AppCompatActivity() {
         setContentView(R.layout.activity_textswitcher)
         textSwitcher.setFactory {
             val textView = TextView(this)
-            textView.textSize = 24f
+            textView.textSize = TEXT_SIZE
             textView.gravity = Gravity.CENTER_HORIZONTAL
             textView.setTextColor(Color.parseColor("#0F9D58"))
             textView
@@ -34,5 +34,9 @@ class SwitchersActivity : AppCompatActivity() {
     private fun getNextText(): String {
         counter++
         return "Counter: $counter"
+    }
+
+    private companion object {
+        const val TEXT_SIZE = 24f
     }
 }
