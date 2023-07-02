@@ -17,9 +17,8 @@ class KakaoClicksTestRule(private val visualClicksConfig: VisualClicksConfig? = 
             val oldDoubleClickAction = Kakao.doubleClickAction
             val oldLongClickAction = Kakao.longClickAction
 
-            val visualClicksConfig = description.getAnnotation(WithVisualClicks::class.java)
-                ?.let { VisualClicksConfig(it.touchRadius, it.color) }
-                ?: visualClicksConfig
+            val visualClicksConfig = visualClicksConfig
+                ?: description.getAnnotation(WithVisualClicks::class.java)?.let { VisualClicksConfig() }
 
             Kakao.singleClickAction = KakaoSingleClick(visualClicksConfig)
             Kakao.doubleClickAction = KakaoDoubleClick(visualClicksConfig)
