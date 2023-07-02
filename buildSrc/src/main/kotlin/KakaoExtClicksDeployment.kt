@@ -22,7 +22,7 @@ import org.gradle.plugins.signing.SigningExtension
 import org.jetbrains.dokka.gradle.DokkaTask
 import java.net.URI
 
-object Deployment {
+object KakaoExtClicksDeployment {
     val ghToken = System.getenv("GH_TOKEN")
     val sonatypeUser = System.getenv("SONATYPE_USERNAME")
     val sonatypePassword = System.getenv("SONATYPE_PASSWORD")
@@ -42,8 +42,8 @@ object Deployment {
             else -> "-SNAPSHOT"
         }
 
-        Deployment.releaseMode = releaseMode
-        Deployment.versionSuffix = versionSuffix
+        KakaoExtClicksDeployment.releaseMode = releaseMode
+        KakaoExtClicksDeployment.versionSuffix = versionSuffix
         deployUrl = when (releaseMode) {
             "RELEASE" -> releaseDeployUrl
             else -> snapshotDeployUrl
@@ -54,7 +54,7 @@ object Deployment {
     }
 
     private fun initializePublishing(project: Project) {
-        project.version = Versions.kakaoVersion + versionSuffix
+        project.version = Versions.kakaoExtClicksVersion + versionSuffix
 
         project.plugins.apply("maven-publish")
 
@@ -66,14 +66,8 @@ object Deployment {
                     classifier = "sources"
                     from(main.java.srcDirs)
                 }
-                val javadocJar by project.tasks.creating(Jar::class) {
-                    classifier = "javadoc"
-                    val dokka = project.tasks.findByName("dokkaJavadoc") as DokkaTask
-                    from(dokka.outputDirectory)
-                    dependsOn(dokka)
-                }
 
-                Pair(project.components["release"], listOf(sourcesJar, javadocJar))
+                Pair(project.components["release"], listOf(sourcesJar))
             }
             project.the(JavaPluginConvention::class) != null -> {
                 val javaPlugin = project.the(JavaPluginConvention::class)
@@ -82,13 +76,7 @@ object Deployment {
                     classifier = "sources"
                     from(javaPlugin.sourceSets["main"].allSource)
                 }
-                val javadocJar by project.tasks.creating(Jar::class) {
-                    classifier = "javadoc"
-                    from(javaPlugin.docsDir)
-                    dependsOn("javadoc")
-                }
-
-                Pair(project.components["java"], listOf(sourcesJar, javadocJar))
+                Pair(project.components["java"], listOf(sourcesJar))
             }
             else -> {
                 throw RuntimeException("Unknown plugin")
@@ -98,7 +86,7 @@ object Deployment {
         project.configure<PublishingExtension> {
             publications {
                 create("default", MavenPublication::class.java) {
-                    Deployment.customizePom(pom)
+                    KakaoExtClicksDeployment.customizePom(pom)
                     additionalArtifacts.forEach { it ->
                         artifact(it)
                     }
@@ -140,9 +128,9 @@ object Deployment {
 
     fun customizePom(pom: MavenPom?) {
         pom?.apply {
-            name.set("kakao")
-            url.set("https://github.com/KakaoCup/Kakao")
-            description.set("Nice and simple DSL for Espresso in Kotlin")
+            name.set("kakao-ext-clicks")
+            url.set("https://github.com/KakaoCup/Kakao/kakao-ext-clicks")
+            description.set("Clicks extension for Kakao")
 
             licenses {
                 license {
@@ -151,36 +139,10 @@ object Deployment {
                 }
             }
 
-            developers(findCollaborators())
-            //contributors(findContributors()) Failing
-
             scm {
                 url.set("https://github.com/KakaoCup/Kakao.git")
                 connection.set("scm:git:ssh://github.com/KakaoCup/Kakao")
                 developerConnection.set("scm:git:ssh://github.com/KakaoCup/Kakao")
-            }
-        }
-    }
-
-    private fun findCollaborators() = Action<MavenPomDeveloperSpec> {
-        if (!ghToken.isNullOrEmpty()) {
-            Github(ghToken).collaborators.forEach {
-                developer {
-                    id.set(it.login)
-                    url.set("https://github.com/${it.login}")
-                    name.set(it.name)
-                }
-            }
-        }
-    }
-
-    private fun findContributors() = Action<MavenPomContributorSpec> {
-        if (!ghToken.isNullOrEmpty()) {
-            Github(ghToken).contributors.sortedBy { it.login }.forEach {
-                contributor {
-                    name.set(it.login)
-                    url.set("https://github.com/${it.login}")
-                }
             }
         }
     }

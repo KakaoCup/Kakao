@@ -28,3 +28,7 @@ dependencies {
     implementation(Libraries.espresso_core)
     implementation(project(":kakao"))
 }
+
+afterEvaluate {
+    KakaoExtClicksDeployment.initialize(project)
+}
