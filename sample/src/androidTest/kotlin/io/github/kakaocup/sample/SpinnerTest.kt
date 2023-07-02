@@ -5,6 +5,7 @@ import androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner
 import io.github.kakaocup.kakao.screen.Screen.Companion.onScreen
 import io.github.kakaocup.kakao.spinner.KSpinnerItem
 import io.github.kakaocup.sample.screen.SpinnerActivityScreen
+import io.github.kakaocup.sample.tools.applyKakaoClickExtension
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith

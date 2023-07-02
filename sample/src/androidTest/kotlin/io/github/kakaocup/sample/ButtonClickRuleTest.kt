@@ -3,7 +3,7 @@ package io.github.kakaocup.sample
 import androidx.test.ext.junit.rules.ActivityScenarioRule
 import androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner
 import io.github.kakaocup.kakao.Kakao
-import io.github.kakaocup.kakao.ext.clicks.KakaoClicksTestRule
+import io.github.kakaocup.kakao.ext.clicks.testrule.KakaoClicksTestRule
 import io.github.kakaocup.kakao.ext.clicks.KakaoDoubleClick
 import io.github.kakaocup.kakao.ext.clicks.KakaoLongClick
 import io.github.kakaocup.kakao.ext.clicks.KakaoSingleClick
@@ -23,7 +23,7 @@ class ButtonClickRuleTest {
         .around(KakaoClicksTestRule())
 
     @Test
-    fun testEspressoClickAction() {
+    fun testTestRuleKakaoClickAction() {
         Screen.onScreen<ButtonClickScreen> {
             Kakao {
                 assert(singleClickAction is KakaoSingleClick)

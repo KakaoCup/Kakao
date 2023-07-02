@@ -11,6 +11,8 @@ import io.github.kakaocup.kakao.ext.clicks.KakaoLongClick
 import io.github.kakaocup.kakao.ext.clicks.KakaoSingleClick
 import io.github.kakaocup.kakao.screen.Screen
 import io.github.kakaocup.sample.screen.ButtonClickScreen
+import io.github.kakaocup.sample.tools.applyEspressoClickExtension
+import io.github.kakaocup.sample.tools.applyKakaoClickExtension
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -24,12 +26,7 @@ class ButtonClickTest {
     @Test
     fun testEspressoClickAction() {
         Screen.onScreen<ButtonClickScreen> {
-            Kakao {
-                singleClickAction = EspressoSingleClick()
-                doubleClickAction = EspressoDoubleClick()
-                longClickAction = EspressoLongClick()
-            }
-
+            applyEspressoClickExtension()
             button {
                 click()
                 hasText("Single Click")
@@ -42,11 +39,7 @@ class ButtonClickTest {
     @Test
     fun testKakaoClickAction() {
         Screen.onScreen<ButtonClickScreen> {
-            Kakao {
-                singleClickAction = KakaoSingleClick()
-                doubleClickAction = KakaoDoubleClick()
-                longClickAction = KakaoLongClick()
-            }
+            applyEspressoClickExtension()
 
             button {
                 click()
@@ -54,6 +47,8 @@ class ButtonClickTest {
                 longClick()
                 hasText("Long Click")
             }
+
+            applyKakaoClickExtension()
         }
     }
 }
