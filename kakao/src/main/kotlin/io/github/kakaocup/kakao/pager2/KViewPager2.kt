@@ -56,10 +56,11 @@ class KViewPager2 : ViewPager2Actions, ViewPager2AdapterAssertions, SwipeableAct
     constructor(
         parent: Matcher<View>, builder: ViewBuilder.() -> Unit,
         itemTypeBuilder: KViewPagerItemTypeBuilder.() -> Unit
-    ) : this({
-                 isDescendantOfA { withMatcher(parent) }
-                 builder(this)
-             }, itemTypeBuilder)
+    ) : this(
+        {
+            builder(this)
+            isDescendantOfA { withMatcher(parent) }
+        }, itemTypeBuilder)
 
     /**
      * Constructs view class with parent and view interaction from given ViewBuilder
@@ -79,8 +80,8 @@ class KViewPager2 : ViewPager2Actions, ViewPager2AdapterAssertions, SwipeableAct
         val parentMatcher = makeTargetMatcher.invoke(parent)
 
         val vb = ViewBuilder().apply {
-            isDescendantOfA { withMatcher(parentMatcher as Matcher<View>) }
             builder(this)
+            isDescendantOfA { withMatcher(parentMatcher as Matcher<View>) }
         }
 
         matcher = vb.getViewMatcher()
@@ -106,8 +107,8 @@ class KViewPager2 : ViewPager2Actions, ViewPager2AdapterAssertions, SwipeableAct
         }
 
         val vb = ViewBuilder().apply {
-            isDescendantOfA { withMatcher(this@KViewPager2.matcher) }
             isInstanceOf(RecyclerView::class.java)
+            isDescendantOfA { withMatcher(this@KViewPager2.matcher) }
         }
 
         function(provideItem(PositionMatcher(vb.getViewMatcher(), position)) as T)
