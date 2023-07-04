@@ -62,10 +62,11 @@ class KRecyclerView : RecyclerActions, BaseAssertions, RecyclerAdapterAssertions
     constructor(
         parent: Matcher<View>, builder: ViewBuilder.() -> Unit,
         itemTypeBuilder: KRecyclerItemTypeBuilder.() -> Unit
-    ) : this({
-                 isDescendantOfA { withMatcher(parent) }
-                 builder(this)
-             }, itemTypeBuilder)
+    ) : this(
+        {
+            builder(this)
+            isDescendantOfA { withMatcher(parent) }
+        }, itemTypeBuilder)
 
     /**
      * Constructs view class with parent and view interaction from given ViewBuilder
@@ -85,8 +86,8 @@ class KRecyclerView : RecyclerActions, BaseAssertions, RecyclerAdapterAssertions
         val parentMatcher = makeTargetMatcher.invoke(parent)
 
         val vb = ViewBuilder().apply {
-            isDescendantOfA { withMatcher(parentMatcher as Matcher<View>) }
             builder(this)
+            isDescendantOfA { withMatcher(parentMatcher as Matcher<View>) }
         }
 
         matcher = vb.getViewMatcher()
