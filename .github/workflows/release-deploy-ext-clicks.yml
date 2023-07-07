@@ -1,0 +1,30 @@
+name: Deploy to OSS Clicks Extension
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Set up JDK 11
+        uses: actions/setup-java@v1
+        with:
+          java-version: 11
+      - uses: little-core-labs/get-git-tag@v3.0.2
+      - name: deploy-release-ext-clicks
+        run: ./gradlew :kakao-ext-clicks:publishDefaultPublicationToOSSHRRepository -PreleaseMode=RELEASE --stacktrace
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          SONATYPE_USERNAME: ${{ secrets.SONATYPE_USERNAME }}
+          SONATYPE_PASSWORD: ${{ secrets.SONATYPE_PASSWORD }}
+          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }} 
+  notify:
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:      
+      - uses: actions/checkout@master
+      - name: Notify Telegram
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_TO }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: |
+            New extension version has been released: Clicks
