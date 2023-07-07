@@ -7,7 +7,7 @@ import io.github.kakaocup.kakao.screen.Screen
 import io.github.kakaocup.sample.screen.AnimatedButtonClickScreen
 import io.github.kakaocup.sample.tools.applyEspressoClickExtension
 import io.github.kakaocup.sample.tools.applyKakaoClickExtension
-import junit.framework.AssertionFailedError
+import org.junit.Assert.assertThrows
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -18,23 +18,27 @@ class AnimatedButtonClickTest {
     @JvmField
     val rule = ActivityScenarioRule(AnimatedButtonClickActivity::class.java)
 
-    @Test(expected = AssertionFailedError::class)
+    @Test
     fun testEspressoClickAction() {
         Screen.onScreen<AnimatedButtonClickScreen> {
             applyEspressoClickExtension()
 
             animatedView.click()
-            clickIndicator.isVisible()
+            assertThrows(AssertionError::class.java) {
+                clickIndicator.isVisible()
+            }
         }
     }
 
-    @Test(expected = AssertionFailedError::class)
+    @Test
     fun testKakaoClickAction() {
         Screen.onScreen<AnimatedButtonClickScreen> {
             applyKakaoClickExtension()
 
             animatedView.click()
-            clickIndicator.isVisible()
+            assertThrows(AssertionError::class.java) {
+                clickIndicator.isVisible()
+            }
 
             applyEspressoClickExtension()
         }

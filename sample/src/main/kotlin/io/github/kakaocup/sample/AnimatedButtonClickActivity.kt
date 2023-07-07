@@ -11,6 +11,7 @@ class AnimatedButtonClickActivity : AppCompatActivity() {
         setupAnimatedButton()
     }
 
+    @Suppress("MagicNumber")
     private fun setupAnimatedButton() {
         val view = findViewById<View>(R.id.animated_view)
         view.rotation = 45f
