@@ -1,4 +1,4 @@
-name: Deploy to OSS Clicks Extension
+name: Deploy Clicks Extension to Sonatype
 jobs:
   deploy:
     runs-on: ubuntu-latest
