@@ -31,7 +31,10 @@ class InProcessClickAction(
     override fun perform(uiController: UiController, view: View) {
         val rootView = view.rootView
         val precision = precisionDescriber.describePrecision()
-        val coordinates = coordinatesProvider.calculateCoordinates(view)
+
+        val (offsetX, offsetY) = IntArray(2).apply(rootView::getLocationOnScreen)
+        val (viewX, viewY) = coordinatesProvider.calculateCoordinates(view)
+        val coordinates = floatArrayOf(viewX - offsetX, viewY - offsetY)
 
         clickEvent.perform(
             uiController = uiController,

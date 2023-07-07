@@ -2,7 +2,7 @@ import java.io.File
 
 object Versions {
     val kakaoVersion = File("buildsystem/version").readText().trim()
-    val gmapsVersion = File("buildsystem/gmapsversion").readText().trim()
+    val kakaoExtClicksVersion = File("buildsystem/extclickversion").readText().trim()
 
     val kotlin = "1.7.21"
     val detekt = "1.17.1"

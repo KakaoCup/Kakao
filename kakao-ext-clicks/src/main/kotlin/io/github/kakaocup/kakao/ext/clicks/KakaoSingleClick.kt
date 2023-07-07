@@ -7,7 +7,7 @@ import io.github.kakaocup.kakao.ext.clicks.inprocess.SingleClickEvent
 import io.github.kakaocup.kakao.ext.clicks.inprocess.InProcessClickAction
 import io.github.kakaocup.kakao.ext.clicks.visualization.VisualClicksConfig
 
-class KakaoSingleClick(private val visualClicksConfig: VisualClicksConfig? = VisualClicksConfig()) : ClickAction {
+class KakaoSingleClick(private val visualClicksConfig: VisualClicksConfig? = null) : ClickAction {
     override fun click(location: GeneralLocation) = InProcessClickAction(
         clickEvent = SingleClickEvent(visualClicksConfig),
         coordinatesProvider = location,
