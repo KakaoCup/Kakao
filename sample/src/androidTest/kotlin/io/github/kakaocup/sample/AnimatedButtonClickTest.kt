@@ -37,6 +37,7 @@ class AnimatedButtonClickTest {
 
             animatedView.click()
             assertThrows(AssertionError::class.java) {
+                Thread.sleep(5000)
                 clickIndicator.isVisible()
             }
 
