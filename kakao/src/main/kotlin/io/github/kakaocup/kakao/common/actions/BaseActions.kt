@@ -5,6 +5,7 @@ package io.github.kakaocup.kakao.common.actions
 import android.view.View
 import androidx.test.espresso.FailureHandler
 import androidx.test.espresso.ViewAction
+import androidx.test.espresso.action.CoordinatesProvider
 import androidx.test.espresso.action.GeneralLocation
 import androidx.test.espresso.action.ViewActions
 import io.github.kakaocup.kakao.Kakao
@@ -30,7 +31,7 @@ interface BaseActions {
      *
      * @param location Location of view where it should be clicked (VISIBLE_CENTER by default)
      */
-    fun click(location: GeneralLocation = GeneralLocation.VISIBLE_CENTER) {
+    fun click(location: CoordinatesProvider = GeneralLocation.VISIBLE_CENTER) {
         view.perform(Kakao.singleClickAction.click(location))
     }
 
@@ -39,7 +40,7 @@ interface BaseActions {
      *
      * @param location Location of view where it should be clicked (VISIBLE_CENTER by default)
      */
-    fun doubleClick(location: GeneralLocation = GeneralLocation.VISIBLE_CENTER) {
+    fun doubleClick(location: CoordinatesProvider = GeneralLocation.VISIBLE_CENTER) {
         view.perform(Kakao.doubleClickAction.click(location))
     }
 
@@ -48,7 +49,7 @@ interface BaseActions {
      *
      * @param location Location of view where it should be clicked (VISIBLE_CENTER by default)
      */
-    fun longClick(location: GeneralLocation = GeneralLocation.VISIBLE_CENTER) {
+    fun longClick(location: CoordinatesProvider = GeneralLocation.VISIBLE_CENTER) {
         view.perform(Kakao.longClickAction.click(location))
     }
 

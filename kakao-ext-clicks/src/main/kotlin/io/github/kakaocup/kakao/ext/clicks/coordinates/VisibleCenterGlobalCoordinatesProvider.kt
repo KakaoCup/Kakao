@@ -13,7 +13,7 @@ import androidx.test.espresso.action.CoordinatesProvider
  * Known issues:
  * - It can miss in case of clipping when a view is rotated.
  */
-internal class VisibleCenterGlobalCoordinatesProvider : CoordinatesProvider {
+class VisibleCenterGlobalCoordinatesProvider : CoordinatesProvider {
     override fun calculateCoordinates(view: View): FloatArray {
         val rect = Rect()
         view.getGlobalVisibleRect(rect)
