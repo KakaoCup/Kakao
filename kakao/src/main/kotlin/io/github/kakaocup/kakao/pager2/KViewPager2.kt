@@ -60,7 +60,8 @@ class KViewPager2 : ViewPager2Actions, ViewPager2AdapterAssertions, SwipeableAct
         {
             builder(this)
             isDescendantOfA { withMatcher(parent) }
-        }, itemTypeBuilder)
+        }, itemTypeBuilder
+    )
 
     /**
      * Constructs view class with parent and view interaction from given ViewBuilder

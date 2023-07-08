@@ -70,7 +70,7 @@ class TestActivity : AppCompatActivity() {
         return super.onCreateOptionsMenu(menu)
     }
 
-    private fun addRoute(@IdRes id: Int, activity: Class<*>){
+    private fun addRoute(@IdRes id: Int, activity: Class<*>) {
         findViewById<Button>(id).setOnClickListener {
             startActivity(Intent(this, activity))
         }

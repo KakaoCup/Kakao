@@ -43,7 +43,7 @@ class KAlertDialog : KBaseView<KAlertDialog>({ isRoot() }) {
         withId(android.R.id.text1)
     }.also { it.inRoot { isDialog() } }
 
-    fun hasChoiceItems(vararg titles: String){
+    fun hasChoiceItems(vararg titles: String) {
         titles.toList().forEach {
             onChoiceItem(it).isDisplayed()
         }

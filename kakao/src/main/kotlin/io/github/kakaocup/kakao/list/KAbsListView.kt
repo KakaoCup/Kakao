@@ -64,7 +64,8 @@ class KAbsListView : ScrollViewActions, AbsListViewAdapterActions, BaseAssertion
         {
             builder(this)
             isDescendantOfA { withMatcher(parent) }
-        }, itemTypeBuilder)
+        }, itemTypeBuilder
+    )
 
     /**
      * Constructs view class with parent and view interaction from given ViewBuilder

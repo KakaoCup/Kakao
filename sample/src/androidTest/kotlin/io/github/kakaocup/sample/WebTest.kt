@@ -24,7 +24,7 @@ class WebTest {
                     hasText("Hello")
                 }
                 withElement(Locator.LINK_TEXT, "My Home") {
-                   click()
+                    click()
                 }
             }
         }

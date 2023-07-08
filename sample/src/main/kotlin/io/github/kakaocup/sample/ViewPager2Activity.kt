@@ -23,8 +23,8 @@ class ViewPager2Activity : FragmentActivity() {
 
     }
 
-    private inner class ScreenSlidePagerAdapter(fragmentActivity: FragmentActivity, val pages: List<Fragment>)
-        : FragmentStateAdapter(fragmentActivity) {
+    private inner class ScreenSlidePagerAdapter(fragmentActivity: FragmentActivity, val pages: List<Fragment>) :
+        FragmentStateAdapter(fragmentActivity) {
         override fun getItemCount(): Int = pages.size
 
         override fun createFragment(position: Int): Fragment = pages[position]

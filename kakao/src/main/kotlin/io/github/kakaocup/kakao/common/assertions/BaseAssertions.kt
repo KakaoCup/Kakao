@@ -471,7 +471,7 @@ interface BaseAssertions {
      * Checks if the view is force dark allowed
      */
     @RequiresApi(Build.VERSION_CODES.Q)
-    fun isForceDarkAllowed () {
+    fun isForceDarkAllowed() {
         view.check(
             ViewAssertions.matches(ForceDarkAllowedViewMatcher())
         )
@@ -480,7 +480,7 @@ interface BaseAssertions {
     /**
      * Checks if the view is haptic feedback enabled
      */
-    fun isHapticFeedbackEnabled () {
+    fun isHapticFeedbackEnabled() {
         view.check(
             ViewAssertions.matches(HapticFeedbackEnabledMatcher())
         )
@@ -490,7 +490,7 @@ interface BaseAssertions {
      * Checks if the view is auto handwriting enabled
      */
     @RequiresApi(Build.VERSION_CODES.TIRAMISU)
-    fun isAutoHandwritingEnabled () {
+    fun isAutoHandwritingEnabled() {
         view.check(
             ViewAssertions.matches(AutoHandwritingEnabledMatcher())
         )

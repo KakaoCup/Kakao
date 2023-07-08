@@ -1,7 +1,7 @@
 name: release-deploy
 on:
   release:
-    types: [published]
+    types: [ published ]
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -18,11 +18,11 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           SONATYPE_USERNAME: ${{ secrets.SONATYPE_USERNAME }}
           SONATYPE_PASSWORD: ${{ secrets.SONATYPE_PASSWORD }}
-          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }} 
+          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
   notify:
     needs: deploy
     runs-on: ubuntu-latest
-    steps:      
+    steps:
       - uses: actions/checkout@master
       - name: Send Telegram Release message
         uses: appleboy/telegram-action@master

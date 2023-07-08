@@ -53,6 +53,6 @@ interface ImageViewAssertions : BaseAssertions {
      * @param toBitmap Lambda with custom Drawable -> Bitmap converter (default is null)
      */
     fun hasDrawableWithTint(drawable: Drawable, @ColorRes tintColorId: Int, toBitmap: ((drawable: Drawable) -> Bitmap)? = null) {
-        view.check(ViewAssertions.matches(DrawableMatcher(drawable = drawable, tintColorId = tintColorId , toBitmap = toBitmap)))
+        view.check(ViewAssertions.matches(DrawableMatcher(drawable = drawable, tintColorId = tintColorId, toBitmap = toBitmap)))
     }
 }

@@ -24,6 +24,7 @@ class ImageViewTest {
             }
         }
     }
+
     @Test
     fun fromResourceTintedMatchingTest() {
         Screen.onScreen<ImageViewScreen> {
@@ -34,8 +35,11 @@ class ImageViewTest {
     }
 
     @Test
-    fun fromDrawableMatchingTest(){
-        val expectedDrawable = ContextCompat.getDrawable(InstrumentationRegistry.getInstrumentation().targetContext, R.drawable.ic_sentiment_very_satisfied_black_24dp)
+    fun fromDrawableMatchingTest() {
+        val expectedDrawable = ContextCompat.getDrawable(
+            InstrumentationRegistry.getInstrumentation().targetContext,
+            R.drawable.ic_sentiment_very_satisfied_black_24dp
+        )
 
         Screen.onScreen<ImageViewScreen> {
             imageView {
@@ -45,8 +49,11 @@ class ImageViewTest {
     }
 
     @Test
-    fun fromDrawableTintedMatchingTest(){
-        val expectedDrawable = ContextCompat.getDrawable(InstrumentationRegistry.getInstrumentation().targetContext, R.drawable.ic_sentiment_very_satisfied_black_24dp)
+    fun fromDrawableTintedMatchingTest() {
+        val expectedDrawable = ContextCompat.getDrawable(
+            InstrumentationRegistry.getInstrumentation().targetContext,
+            R.drawable.ic_sentiment_very_satisfied_black_24dp
+        )
 
         Screen.onScreen<ImageViewScreen> {
             tintedImageView {

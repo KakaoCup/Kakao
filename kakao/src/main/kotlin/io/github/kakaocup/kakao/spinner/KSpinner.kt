@@ -63,7 +63,8 @@ class KSpinner : SpinnerAdapterActions, SpinnerAdapterAssertions, BaseAssertions
         {
             builder(this)
             isDescendantOfA { withMatcher(parent) }
-        }, itemTypeBuilder)
+        }, itemTypeBuilder
+    )
 
     /**
      * Constructs view class with parent and view interaction from given ViewBuilder

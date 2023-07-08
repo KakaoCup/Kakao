@@ -18,22 +18,22 @@ class Pager2Test {
     @Test
     fun testViewPager2() {
         Screen.onScreen<Pager2Screen> {
-          pager {
-              isVisible()
-              hasSize(6)
+            pager {
+                isVisible()
+                hasSize(6)
 
-              childAt<Pager2Screen.SimpleItem>(0){
-                  text{
-                      hasText("0")
-                  }
-              }
+                childAt<Pager2Screen.SimpleItem>(0) {
+                    text {
+                        hasText("0")
+                    }
+                }
 
-              childAt<Pager2Screen.SimpleItem>(5){
-                  text{
-                      hasText("5")
-                  }
-              }
-          }
+                childAt<Pager2Screen.SimpleItem>(5) {
+                    text {
+                        hasText("5")
+                    }
+                }
+            }
         }
     }
 

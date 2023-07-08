@@ -12,10 +12,10 @@ internal fun Drawable.toBitmap(): Bitmap {
     }
 
     if (this is StateListDrawable && this.getCurrent() is BitmapDrawable) {
-            val bitmapDrawable = this.getCurrent() as BitmapDrawable
-            if (bitmapDrawable.bitmap != null) {
-                return bitmapDrawable.bitmap
-            }
+        val bitmapDrawable = this.getCurrent() as BitmapDrawable
+        if (bitmapDrawable.bitmap != null) {
+            return bitmapDrawable.bitmap
+        }
     }
 
     val bitmap = if (this.intrinsicWidth <= 0 || this.intrinsicHeight <= 0) {

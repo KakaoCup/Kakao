@@ -7,11 +7,12 @@
       android:id="@+id/action_favorite"
       android:icon="@drawable/ic_android_black_24dp"
       android:title="Favorite"
-      app:showAsAction="ifRoom"/>
+      app:showAsAction="ifRoom" />
 
   <!-- Settings, should always be in the overflow -->
-  <item android:id="@+id/action_settings"
+  <item
+      android:id="@+id/action_settings"
       android:title="Settings"
-      app:showAsAction="never"/>
+      app:showAsAction="never" />
 
 </menu>
