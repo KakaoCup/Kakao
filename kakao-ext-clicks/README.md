@@ -1,7 +1,7 @@
 # Kakao custom clicks
 
 Espresso clicks implementation sometimes causes additional problems while devices are unstable.
-It could be a click that was registered and long click. Click that didn't register at all. And so on.
+It could be a click that was registered as long click. Click that is not registered at all. And so on.
 
 From the [androidx.test.espresso.action.GeneralClickAction.perform] comment:
 
@@ -28,8 +28,8 @@ From the [androidx.test.espresso.action.GeneralClickAction.perform] comment:
  'RollBack' ViewAction which when executed will undo the effects of long press.
 ```
 
-If you experience unreliable tap/click in UI tests you can try our naive but more reliable implementation, that dispatches events
-directly on View.
+If you experience unreliable tap/click in UI tests you can try our naive but sometimes more reliable implementation, that dispatches events
+directly to View.
 
 ## How to use
 
@@ -37,7 +37,7 @@ There are multiple ways to apply custom clicks:
 
 ### Apply KakaoClicksTestRule
 
-If you want to apply it directly to single test class, the Rule is an obvious choice.
+If you want to apply it directly to single test class the TestRule is an obvious choice.
 
 For example:
 ```
@@ -69,7 +69,7 @@ Kakao {
 }
 ```
 
-To make a precise change you can implement your own function and execute your test code wrapped in it:
+To make a precise change for single click you can implement your own function and execute your test code wrapped in it:
 
 ```kotlin
 fun withCustomClicks(block: () -> Unit) {
@@ -104,12 +104,14 @@ Click visualization is a useful debug tool. Usually it's enabled with Android op
 adb shell settings put system show_touches 1
 ```
 
-It can be impossible to set or it's can simply not work.
+On different setups it can be impossible to set or it can simply not working.
 
 To enable visual taps programmatically with custom clicks, use custom click constructor:
 
 ```kotlin
 KakaoSingleClick(visualClicksConfig = VisualClicksConfig()) // null is the default argument
+KakaoDoubleClick(visualClicksConfig = VisualClicksConfig())
+KakaoLongClick(visualClicksConfig = VisualClicksConfig())
 ```
 
 or if you are using TestRule:
@@ -118,13 +120,14 @@ or if you are using TestRule:
 KakaoClicksTestRule(visualClicksConfig = VisualClicksConfig())
 ```
 
-`VisualClicksConfig` data class has some customization options, like color and radius of the tap circle.
+to apply config to all types of clicks
+
+`VisualClicksConfig` data class has some customization options: like color and radius of the tap circle.
 
 ## Global Center coordinates
 
 There are some cases when standard espresso coordinates not working. 
-For example clicking on center of the view with applied property animations or transitions.
-
+For example clicking on center of the view  with applied property animations or transitions with help of `GeneralLocation.VISIBLE_CENTER`.
 See explanation on why it happens [here](https://github.com/avito-tech/avito-android/pull/308).
 
 `VisibleCenterGlobalCoordinatesProvider` to the rescue.
