@@ -67,8 +67,8 @@ interface TextViewActions : BaseActions {
             override fun getConstraints(): Matcher<View> {
                 return Matchers.allOf(
                     ViewMatchers.isDisplayed(), ViewMatchers.isAssignableFrom(
-                        TextView::class.java
-                    )
+                    TextView::class.java
+                )
                 )
             }
 

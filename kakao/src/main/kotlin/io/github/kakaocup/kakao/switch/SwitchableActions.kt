@@ -45,7 +45,7 @@ interface SwitchableActions : BaseActions {
 
                                    override fun matchesSafely(view: View) =
                                        Switch::class.java.isAssignableFrom(view.javaClass) or
-                                               SwitchCompat::class.java.isAssignableFrom(view.javaClass)
+                                           SwitchCompat::class.java.isAssignableFrom(view.javaClass)
                                })
 
             @RequiresApi(Build.VERSION_CODES.JELLY_BEAN)

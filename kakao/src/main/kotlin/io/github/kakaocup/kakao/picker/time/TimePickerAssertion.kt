@@ -31,7 +31,7 @@ interface TimePickerAssertion : BaseActions {
                 if (hour != view.currentHour) {
                     throw AssertionError(
                         "Expected hour is $hour," +
-                                " but actual is ${view.currentHour}"
+                            " but actual is ${view.currentHour}"
                     )
                 }
             } else {
@@ -51,7 +51,7 @@ interface TimePickerAssertion : BaseActions {
                 if (minute != view.currentMinute) {
                     throw AssertionError(
                         "Expected minutes is $minute," +
-                                " but actual is ${view.currentMinute}"
+                            " but actual is ${view.currentMinute}"
                     )
                 }
             } else {

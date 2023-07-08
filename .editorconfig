@@ -8,7 +8,7 @@ indent_style = space
 insert_final_newline = true
 max_line_length = 130
 # tab_width = 4
-ij_continuation_indent_size = 8
+ij_continuation_indent_size = 4
 ij_formatter_off_tag = @formatter:off
 ij_formatter_on_tag = @formatter:on
 ij_formatter_tags_enabled = true
@@ -16,8 +16,11 @@ ij_formatter_tags_enabled = true
 # ij_visual_guides = none
 ij_wrap_on_typing = false
 
-[{*.ant,*.fxml,*.jhm,*.jnlp,*.jrxml,*.rng,*.tld,*.wsdl,*.xml,*.xsd,*.xsl,*.xslt,*.xul}]
-# ij_continuation_indent_size = 4
+[*.yml]
+indent_size = 2
+
+[*.xml]
+indent_size = 2
 # ij_xml_align_attributes = false
 # ij_xml_align_text = false
 # ij_xml_attribute_wrap = normal
@@ -43,7 +46,7 @@ ij_wrap_on_typing = false
 # ij_kotlin_align_multiline_extends_list = false
 # ij_kotlin_align_multiline_method_parentheses = false
 # ij_kotlin_align_multiline_parameters = true
-# ij_kotlin_align_multiline_parameters_in_calls = false
+ij_kotlin_align_multiline_parameters_in_calls = true
 # ij_kotlin_allow_trailing_comma = false
 # ij_kotlin_allow_trailing_comma_on_call_site = false
 # ij_kotlin_assignment_wrap = off
