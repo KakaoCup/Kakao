@@ -1,6 +1,7 @@
 # Kakao custom clicks
 
 Espresso clicks implementation sometimes causes additional problems while devices are unstable.
+It could be a click that was registered and long click. Click that didn't register at all. And so on.
 
 From the [androidx.test.espresso.action.GeneralClickAction.perform] comment:
 
@@ -97,7 +98,13 @@ button {
 
 ## Click visualization
 
-Click visualization is a useful debug tool. Usually it's enabled with Android option `Developer Options > Show taps`.
+Click visualization is a useful debug tool. Usually it's enabled with Android option `Developer Options > Show taps`. Or using ADB:
+
+```
+adb shell settings put system show_touches 1
+```
+
+It can be impossible to set or it's can simply not work.
 
 To enable visual taps programmatically with custom clicks, use custom click constructor:
 
@@ -126,6 +133,14 @@ Pass it as a replacement for your click location like that:
 
 ```kotlin
 tranformedView.click(VisibleCenterGlobalCoordinatesProvider())
+```
+
+## Customize emulator
+
+You can also tune emulator a bit that could help with long click registration.
+
+```
+adb shell "settings put secure long_press_timeout 1500" // default can vary but usually it's 400ms
 ```
 
 ## Credits
