@@ -13,7 +13,7 @@ are written with Espresso from Google. Even though Espresso is working really we
 look at some of the examples of how we write the test.
 
 ```Java
-onView(allOf(withId(R.id.price_item), hasDescendant(withText("Standard Rate"))))
+onView(allOf(withId(R.id.price_item),hasDescendant(withText("Standard Rate"))))
         .check(matches(withEffectiveVisibility(Visibility.VISIBLE)));
 ```
 
@@ -82,7 +82,7 @@ by Kakao:
 Like in Espresso you can combine different matchers:
 
 ```Kotlin
-val email = KEditText { 
+val email = KEditText {
     withId(R.id.email)
     withText(R.string.email)
 }
@@ -91,7 +91,7 @@ val email = KEditText {
 And you can use your custom matchers:
 
 ```Kotlin
-val email = KEditText { 
+val email = KEditText {
     withId(R.id.email)
     matches { MyCustomMatcher.matches(position) }
 }
@@ -105,10 +105,10 @@ the actions or assertions like in Espresso:
 ```Kotlin
 onScreen<FormScreen> {
     phone {
-       hasText("971201771")
+        hasText("971201771")
     }
     button {
-       click()
+        click()
     }
 }
 ```
@@ -119,10 +119,10 @@ You can use your custom assertions or your custom actions too:
 ```Kotlin
 onScreen<FormScreen> {
     phone {
-       assert { MyCustomAssertion.isThaiNumber() }
+        assert { MyCustomAssertion.isThaiNumber() }
     }
     button {
-       act { MyCustomAction.clickOnTheCorner() }
+        act { MyCustomAction.clickOnTheCorner() }
     }
 }
 ```
@@ -182,8 +182,8 @@ The `KView` defined in the Item corresponds views used on the Item. You can assi
 
 ```Kotlin
 val recycler: KRecyclerView = KRecyclerView({
-    withId(R.id.recycler_view)
-}, itemTypeBuilder = {
+                                                withId(R.id.recycler_view)
+                                            }, itemTypeBuilder = {
     itemType(::Item)
 })
 ```
@@ -210,8 +210,8 @@ Kakao provides different accessors in the adapter:
 
 ##### Custom KView
 
-If you have custom Views in your tests and you want to create your own `KView`, we have `KBaseView`. Just extend
-this class and implement as much additional Action/Assertion interfaces as you want.
+If you have custom Views in your tests and you want to create your own `KView`, we have `KBaseView`. 
+Just extend this class and implement as much additional Action/Assertion interfaces as you want.
 You also need to override constructors that you need.
 
 ```Kotlin
@@ -259,7 +259,7 @@ class SomeTest {
             }
         }
     }
-    
+
     @Test
     fun test() {
         onScreen<MyScreen> {
@@ -270,7 +270,7 @@ class SomeTest {
                     }
                 }
             }
-            
+
             myView {
                 intercept { // Intercepting ViewInteraction calls on this individual view
                     onPerform(true) { interaction, action -> // Intercept perform() call and overriding the chain 
@@ -293,10 +293,13 @@ For more detailed info please refer to the documentation.
 Maven
 
 ```xml
+
 <dependency>
   <groupId>io.github.kakaocup</groupId>
   <artifactId>kakao</artifactId>
-  <version><latest version></version>
+  <version>
+    <latest version>
+  </version>
   <type>pom</type>
 </dependency>
 ```
