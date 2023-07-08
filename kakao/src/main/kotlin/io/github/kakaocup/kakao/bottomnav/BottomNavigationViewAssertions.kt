@@ -21,7 +21,7 @@ interface BottomNavigationViewAssertions : BaseAssertions {
                 if (view.selectedItemId != id) {
                     throw AssertionError(
                         "Expected selected item id is $id," +
-                            " but actual is ${view.selectedItemId}"
+                                " but actual is ${view.selectedItemId}"
                     )
                 }
             } else {

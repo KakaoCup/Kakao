@@ -27,7 +27,7 @@ interface TextInputLayoutAssertions : BaseAssertions {
                 if (hint != view.hint.toString()) {
                     throw AssertionError(
                         "Expected hint is $hint," +
-                            " but actual is ${view.hint}"
+                                " but actual is ${view.hint}"
                     )
                 }
             } else {
@@ -58,7 +58,7 @@ interface TextInputLayoutAssertions : BaseAssertions {
                 if (error != view.error.toString()) {
                     throw AssertionError(
                         "Expected error is $error," +
-                            " but actual is ${view.error}"
+                                " but actual is ${view.error}"
                     )
                 }
             } else {
@@ -95,7 +95,7 @@ interface TextInputLayoutAssertions : BaseAssertions {
                 if (length != view.counterMaxLength) {
                     throw AssertionError(
                         "Expected counter max length is $length," +
-                            " but actual is ${view.counterMaxLength}"
+                                " but actual is ${view.counterMaxLength}"
                     )
                 }
             } else {

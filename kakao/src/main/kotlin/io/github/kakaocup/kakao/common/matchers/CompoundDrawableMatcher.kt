@@ -41,9 +41,9 @@ class CompoundDrawableMatcher(
         val bottomActual: Drawable? = it.compoundDrawables[3]
 
         compare(leftDrawableResId, tintColorId, leftActual)
-            && compare(topDrawableResId, tintColorId, topActual)
-            && compare(rightDrawableResId, tintColorId, rightActual)
-            && compare(bottomDrawableResId, tintColorId, bottomActual)
+                && compare(topDrawableResId, tintColorId, topActual)
+                && compare(rightDrawableResId, tintColorId, rightActual)
+                && compare(bottomDrawableResId, tintColorId, bottomActual)
 
     } ?: false
 

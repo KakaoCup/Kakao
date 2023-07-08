@@ -29,8 +29,8 @@ interface Delegate<INTERACTION, ASSERTION, ACTION> {
         }
 
         return interceptor?.let { intercept(it) } ?: false ||
-            screenInterceptors().any { intercept(it) } ||
-            kakaoInterceptor()?.let { intercept(it) } ?: false
+                screenInterceptors().any { intercept(it) } ||
+                kakaoInterceptor()?.let { intercept(it) } ?: false
     }
 
     /**
@@ -45,8 +45,8 @@ interface Delegate<INTERACTION, ASSERTION, ACTION> {
         }
 
         return interceptor?.let { intercept(it) } ?: false ||
-            screenInterceptors().any { intercept(it) } ||
-            kakaoInterceptor()?.let { intercept(it) } ?: false
+                screenInterceptors().any { intercept(it) } ||
+                kakaoInterceptor()?.let { intercept(it) } ?: false
     }
 
     private fun interceptOnAll(interceptor: Interceptor<INTERACTION, ASSERTION, ACTION>): Boolean {

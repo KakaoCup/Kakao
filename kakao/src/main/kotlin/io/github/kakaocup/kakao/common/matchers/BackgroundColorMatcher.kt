@@ -34,8 +34,8 @@ class BackgroundColorMatcher(
             }
 
             it.background != null &&
-                it.background.current is ColorDrawable &&
-                (it.background.current as ColorDrawable).color == expectedColor
+                    it.background.current is ColorDrawable &&
+                    (it.background.current as ColorDrawable).color == expectedColor
         } ?: false
     }
 

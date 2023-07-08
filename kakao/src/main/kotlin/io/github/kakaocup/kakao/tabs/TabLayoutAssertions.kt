@@ -21,7 +21,7 @@ interface TabLayoutAssertions : BaseAssertions {
                 if (view.selectedTabPosition != index) {
                     throw AssertionError(
                         "Expected selected item index is $index," +
-                            " but actual is ${view.selectedTabPosition}"
+                                " but actual is ${view.selectedTabPosition}"
                     )
                 }
             } else {

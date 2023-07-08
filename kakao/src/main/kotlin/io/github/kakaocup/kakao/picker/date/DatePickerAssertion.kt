@@ -34,7 +34,7 @@ interface DatePickerAssertion : BaseActions {
                 if (day != view.dayOfMonth) {
                     throw AssertionError(
                         "Expected day is $day," +
-                            " but actual is ${view.dayOfMonth}"
+                                " but actual is ${view.dayOfMonth}"
                     )
                 }
             } else {
@@ -55,7 +55,7 @@ interface DatePickerAssertion : BaseActions {
                 if (normalizedMonthOfYear != view.month) {
                     throw AssertionError(
                         "Expected month is $normalizedMonthOfYear," +
-                            " but actual is ${view.month}"
+                                " but actual is ${view.month}"
                     )
                 }
             } else {
@@ -75,7 +75,7 @@ interface DatePickerAssertion : BaseActions {
                 if (year != view.year) {
                     throw AssertionError(
                         "Expected year is $year," +
-                            " but actual is ${view.year}"
+                                " but actual is ${view.year}"
                     )
                 }
             } else {
