@@ -15,8 +15,7 @@ import androidx.test.espresso.action.CoordinatesProvider
  */
 class VisibleCenterGlobalCoordinatesProvider : CoordinatesProvider {
     override fun calculateCoordinates(view: View): FloatArray {
-        val rect = Rect()
-        view.getGlobalVisibleRect(rect)
+        val rect = Rect().apply(view::getGlobalVisibleRect)
         return floatArrayOf(rect.centerX().toFloat(), rect.centerY().toFloat())
     }
 }
