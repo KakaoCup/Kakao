@@ -19,22 +19,22 @@ class KTextInputLayout : KBaseView<KTextInputLayout>, TextInputLayoutAssertions 
 
     constructor(function: ViewBuilder.() -> Unit) : super(function) {
         edit = KEditText {
-            isDescendantOfA(function)
             isAssignableFrom(EditText::class.java)
+            isDescendantOfA(function)
         }
     }
 
     constructor(parent: Matcher<View>, function: ViewBuilder.() -> Unit) : super(parent, function) {
         edit = KEditText {
-            isDescendantOfA(function)
             isAssignableFrom(EditText::class.java)
+            isDescendantOfA(function)
         }
     }
 
     constructor(parent: DataInteraction, function: ViewBuilder.() -> Unit) : super(parent, function) {
         edit = KEditText {
-            isDescendantOfA(function)
             isAssignableFrom(EditText::class.java)
+            isDescendantOfA(function)
         }
     }
 }
