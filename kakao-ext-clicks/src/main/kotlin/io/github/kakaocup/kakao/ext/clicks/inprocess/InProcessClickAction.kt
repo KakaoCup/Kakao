@@ -7,7 +7,9 @@ import android.webkit.WebView
 import androidx.test.espresso.UiController
 import androidx.test.espresso.ViewAction
 import androidx.test.espresso.action.CoordinatesProvider
+import androidx.test.espresso.action.GeneralLocation
 import androidx.test.espresso.action.PrecisionDescriber
+import io.github.kakaocup.kakao.ext.clicks.coordinates.RelativeCoordinatesProvider
 import io.github.kakaocup.kakao.ext.clicks.visualization.VisualClicksConfig
 import org.hamcrest.Description
 import org.hamcrest.Matcher
@@ -32,15 +34,20 @@ class InProcessClickAction(
         val rootView = view.rootView
         val precision = precisionDescriber.describePrecision()
 
-        val (offsetX, offsetY) = IntArray(2).apply(rootView::getLocationOnScreen)
-        val (viewX, viewY) = coordinatesProvider.calculateCoordinates(view)
-        val coordinates = floatArrayOf(viewX - offsetX, viewY - offsetY)
+        // In the case of custom CoordinatesProvider we expect user to handle relativism
+        // and also opening the room for clicking on non-relative location, see [VisibleCenterGlobalCoordinatesProvider]
+        // [RelativeCoordinatesProvider] is still available in public API to wrap your custom location
+        val coordinatesProvider = if (coordinatesProvider is GeneralLocation) {
+            RelativeCoordinatesProvider(coordinatesProvider)
+        } else {
+            coordinatesProvider
+        }
 
         clickEvent.perform(
             uiController = uiController,
             view = view,
             rootView = rootView,
-            coordinates = coordinates,
+            coordinates = coordinatesProvider.calculateCoordinates(view),
             precision = precision,
         )
 

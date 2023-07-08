@@ -4,39 +4,43 @@ import androidx.test.ext.junit.rules.ActivityScenarioRule
 import androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner
 import io.github.kakaocup.kakao.ext.clicks.coordinates.VisibleCenterGlobalCoordinatesProvider
 import io.github.kakaocup.kakao.screen.Screen
-import io.github.kakaocup.sample.screen.ButtonClickScreen
+import io.github.kakaocup.sample.screen.AnimatedButtonClickScreen
 import io.github.kakaocup.sample.tools.applyEspressoClickExtension
 import io.github.kakaocup.sample.tools.applyKakaoClickExtension
+import org.junit.Assert.assertThrows
+import org.junit.Ignore
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
 
 @RunWith(AndroidJUnit4ClassRunner::class)
-class ButtonDoubleClickTest {
+class AnimatedButtonClickTest {
     @Rule
     @JvmField
-    val rule = ActivityScenarioRule(ButtonDoubleClickActivity::class.java)
+    val rule = ActivityScenarioRule(AnimatedButtonClickActivity::class.java)
 
+    @Ignore("Not failing on CI emulators as expected, passing locally")
     @Test
     fun testEspressoClickAction() {
-        Screen.onScreen<ButtonClickScreen> {
+        Screen.onScreen<AnimatedButtonClickScreen> {
             applyEspressoClickExtension()
 
-            button {
-                doubleClick()
-                hasText("Double click registered")
+            animatedView.click()
+            assertThrows(AssertionError::class.java) {
+                clickIndicator.isVisible()
             }
         }
     }
 
+    @Ignore("Not failing on CI emulators as expected, passing locally")
     @Test
     fun testKakaoClickAction() {
-        Screen.onScreen<ButtonClickScreen> {
+        Screen.onScreen<AnimatedButtonClickScreen> {
             applyKakaoClickExtension()
 
-            button {
-                doubleClick()
-                hasText("Double click registered")
+            animatedView.click()
+            assertThrows(AssertionError::class.java) {
+                clickIndicator.isVisible()
             }
 
             applyEspressoClickExtension()
@@ -45,13 +49,11 @@ class ButtonDoubleClickTest {
 
     @Test
     fun testKakaoClickActionOnGlobalCenter() {
-        Screen.onScreen<ButtonClickScreen> {
+        Screen.onScreen<AnimatedButtonClickScreen> {
             applyKakaoClickExtension()
 
-            button {
-                doubleClick(VisibleCenterGlobalCoordinatesProvider())
-                hasText("Double click registered")
-            }
+            animatedView.click(VisibleCenterGlobalCoordinatesProvider())
+            clickIndicator.isVisible()
 
             applyEspressoClickExtension()
         }
