@@ -57,16 +57,20 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        api: [ 30 ]
+        api: [ 26, 27, 28, 29, 30, 32, 33 ]
     steps:
       - uses: actions/checkout@v1
       - name: Download APKs
         uses: actions/download-artifact@v1
         with:
           name: apk
-      - name: Run tests on Firebase Test Lab for ${{ matrix.api }}
-        uses: asadmansr/Firebase-Test-Lab-Action@v1.0
+      - name: Run tests on Firebase Test Lab for API ${{ matrix.api }}
+        uses: vacxe/firebase-test-lab-action@0.0.5
         with:
-          arg-spec: .github/firebase/devices-specs.yml:api-${{ matrix.api }}
+          app: apk/sample-debug.apk
+          test: apk/sample-debug-androidTest.apk
+          device-id: MediumPhone.arm
+          os-version-id: ${{ matrix.api }}
+          num-flaky-test-attempts: 4
         env:
           SERVICE_ACCOUNT: ${{ secrets.FIREBASE_TESTLAB_JSON }}
