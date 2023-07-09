@@ -33,6 +33,30 @@ directly to View.
 
 ## How to use
 
+Custom clicks distributed as separate artifact:
+
+Maven
+
+```xml
+
+<dependency>
+  <groupId>io.github.kakaocup</groupId>
+  <artifactId>kakao-ext-clicks</artifactId>
+  <version>
+    <latest version>
+  </version>
+  <type>pom</type>
+</dependency>
+```
+
+or Gradle:
+
+```groovy
+dependencies {
+    androidTestImplementation 'io.github.kakaocup:kakao-ext-clicks:<latest version>'
+}
+```
+
 There are multiple ways to apply custom clicks:
 
 ### Apply KakaoClicksTestRule
@@ -40,6 +64,7 @@ There are multiple ways to apply custom clicks:
 If you want to apply it directly to single test class the TestRule is an obvious choice.
 
 For example:
+
 ```
 @Rule
 @JvmField
@@ -49,7 +74,7 @@ var chain: TestRule = RuleChain.outerRule(ActivityScenarioRule(MyActivity::class
 
 ### Override Kakao clicks behaviour
 
-If you need to change it globally, you can override static variables of kakao, like that: 
+If you need to change it globally, you can override static variables of kakao, like that:
 
 ```
 Kakao {
@@ -126,8 +151,8 @@ to apply config to all types of clicks
 
 ## Global Center coordinates
 
-There are some cases when standard espresso coordinates not working. 
-For example clicking on center of the view  with applied property animations or transitions with help of `GeneralLocation.VISIBLE_CENTER`.
+There are some cases when standard espresso coordinates not working.
+For example clicking on center of the view with applied property animations or transitions with help of `GeneralLocation.VISIBLE_CENTER`.
 See explanation on why it happens [here](https://github.com/avito-tech/avito-android/pull/308).
 
 `VisibleCenterGlobalCoordinatesProvider` to the rescue.
