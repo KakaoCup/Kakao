@@ -103,6 +103,7 @@ interface ViewPager2Actions : ScrollableActions, SwipeableActions {
             }
         })
     }
+
     /**
      * Returns the size of ViewPager2
      *

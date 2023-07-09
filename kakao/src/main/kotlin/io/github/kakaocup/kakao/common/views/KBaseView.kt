@@ -58,7 +58,7 @@ open class KBaseView<T> : KDSLView<T>, BaseActions, BaseAssertions, Interceptabl
                 {
                     function(this)
                     isDescendantOfA { withMatcher(parent) }
-                 })
+                })
 
     /**
      * Constructs view class with parent and view interaction from given ViewBuilder

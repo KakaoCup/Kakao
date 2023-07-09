@@ -357,7 +357,8 @@ interface TextViewAssertions : BaseAssertions {
         queryStart: Int,
         queryEnd: Int,
         drawable: Drawable,
-        toBitmap: ((drawable: Drawable) -> Bitmap)? = null) {
+        toBitmap: ((drawable: Drawable) -> Bitmap)? = null
+    ) {
         view.check(
             ViewAssertions.matches(
                 SpanDrawableMatcher(queryStart = queryStart, queryEnd = queryEnd, drawable = drawable, toBitmap = toBitmap)
@@ -404,7 +405,8 @@ interface TextViewAssertions : BaseAssertions {
     fun hasDrawableSpan(
         spanIndex: Int,
         @DrawableRes resId: Int,
-        toBitmap: ((drawable: Drawable) -> Bitmap)? = null) {
+        toBitmap: ((drawable: Drawable) -> Bitmap)? = null
+    ) {
         view.check(
             ViewAssertions.matches(
                 SpanDrawableMatcher(spanIndex = spanIndex, resId = resId, toBitmap = toBitmap)
@@ -443,7 +445,8 @@ interface TextViewAssertions : BaseAssertions {
     fun hasDrawableSpan(
         spanIndex: Int,
         drawable: Drawable,
-        toBitmap: ((drawable: Drawable) -> Bitmap)? = null) {
+        toBitmap: ((drawable: Drawable) -> Bitmap)? = null
+    ) {
         view.check(
             ViewAssertions.matches(
                 SpanDrawableMatcher(spanIndex = spanIndex, drawable = drawable, toBitmap = toBitmap)

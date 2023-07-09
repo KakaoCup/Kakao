@@ -75,6 +75,7 @@ object Deployment {
 
                 Pair(project.components["release"], listOf(sourcesJar, javadocJar))
             }
+
             project.the(JavaPluginConvention::class) != null -> {
                 val javaPlugin = project.the(JavaPluginConvention::class)
 
@@ -90,6 +91,7 @@ object Deployment {
 
                 Pair(project.components["java"], listOf(sourcesJar, javadocJar))
             }
+
             else -> {
                 throw RuntimeException("Unknown plugin")
             }
