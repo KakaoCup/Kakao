@@ -1,0 +1,72 @@
+api-26:
+  type: instrumentation
+  app: sample-debug.apk
+  test: sample-debug-androidTest.apk
+  device:
+    - model: MediumPhone.arm
+      version: 26
+      locale: 'en'
+      orientation: portrait
+api-27:
+  type: instrumentation
+  app: sample-debug.apk
+  test: sample-debug-androidTest.apk
+  device:
+    - model: MediumPhone.arm
+      version: 27
+      locale: 'en'
+      orientation: portrait
+api-28:
+  type: instrumentation
+  app: sample-debug.apk
+  test: sample-debug-androidTest.apk
+  device:
+    - model: MediumPhone.arm
+      version: 28
+      locale: 'en'
+      orientation: portrait
+api-29:
+  type: instrumentation
+  app: sample-debug.apk
+  test: sample-debug-androidTest.apk
+  device:
+    - model: MediumPhone.arm
+      version: 29
+      locale: 'en'
+      orientation: portrait
+api-30:
+  type: instrumentation
+  app: apk/sample-debug.apk
+  test: apk/sample-debug-androidTest.apk
+  device:
+    - model: MediumPhone.arm
+      version: 30
+      locale: 'en'
+      orientation: portrait
+api-31:
+  type: instrumentation
+  app: sample-debug.apk
+  test: sample-debug-androidTest.apk
+  device:
+    - model: MediumPhone.arm
+      version: 31
+      locale: 'en'
+      orientation: portrait
+api-32:
+  type: instrumentation
+  app: sample-debug.apk
+  test: sample-debug-androidTest.apk
+  device:
+    - model: MediumPhone.arm
+      version: 30
+      locale: 'en'
+      orientation: portrait
+api-33:
+  type: instrumentation
+  app: sample-debug.apk
+  test: sample-debug-androidTest.apk
+  device:
+    - model: MediumPhone.arm
+      version: 33
+      locale: 'en'
+      orientation: portrait
