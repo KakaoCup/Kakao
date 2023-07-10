@@ -29,7 +29,7 @@ internal class NonCachingCharSequenceMatcher(
 
     override fun matchesSafely(textView: TextView, mismatchDescription: Description): Boolean {
         expectedText = try {
-             textView.resources.getString(resourceId)
+            textView.resources.getString(resourceId)
         } catch (ignored: Resources.NotFoundException) {
             /* view could be from a context unaware of the resource id. */
             null

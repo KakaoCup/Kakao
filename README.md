@@ -1,4 +1,5 @@
 # Kakao
+
 [![Telegram](https://img.shields.io/static/v1?label=Telegram&message=RU&color=0088CC)](https://t.me/kaspresso)
 [![Telegram](https://img.shields.io/static/v1?label=Telegram&message=EN&color=0088CC)](https://t.me/kaspresso_en)
 [![master-documentation](https://github.com/KakaoCup/Kakao/actions/workflows/master-guthub-pages.yml/badge.svg)](https://github.com/KakaoCup/Kakao/actions/workflows/master-guthub-pages.yml)
@@ -6,31 +7,46 @@
 Nice and simple DSL for Espresso in Kotlin
 
 ### Introduction
-At Agoda, we have more than 1000 automated tests to ensure our application's quality and give our best experience to the user. All of them are written with Espresso from Google. Even though Espresso is working really well with our test, the code readability is quite low. Let's look at some of the examples of how we write the test. 
+
+At Agoda, we have more than 1000 automated tests to ensure our application's quality and give our best experience to the user. All of them
+are written with Espresso from Google. Even though Espresso is working really well with our test, the code readability is quite low. Let's
+look at some of the examples of how we write the test.
+
 ```Java
-onView(allOf(withId(R.id.price_item), hasDescendant(withText("Standard Rate"))))
+onView(allOf(withId(R.id.price_item),hasDescendant(withText("Standard Rate"))))
         .check(matches(withEffectiveVisibility(Visibility.VISIBLE)));
 ```
-This is an example just to check the visibility and you can see that it's not looking that good. As Agoda developers, we want to improve not just our codebase quality, but also our implementation of tests as well. This is why we are introducing Kakao. The library that will make you enjoy writing automated tests like you are drinking a hot chocolate.
+
+This is an example just to check the visibility and you can see that it's not looking that good. As Agoda developers, we want to improve not
+just our codebase quality, but also our implementation of tests as well. This is why we are introducing Kakao. The library that will make
+you enjoy writing automated tests like you are drinking a hot chocolate.
 
 ![coco](https://user-images.githubusercontent.com/2812510/30947310-3825724c-a433-11e7-8a0d-3c3bfe00d584.png)
 
 #### Benefits
+
 - Readability
 - Reusability
 - Extensible DSL
 
 ### How to use it
+
 #### Create Screen
+
 Create your entity `Screen` where you will add the views involved in the interactions of the tests:
+
 ```Kotlin
 class FormScreen : Screen<FormScreen>()
 ```
- `Screen` can represent the whole user interface or a portion of UI.
-If you are using [Page Object pattern](https://martinfowler.com/bliki/PageObject.html) you can put the interactions of Kakao inside the Page Objects.
+
+`Screen` can represent the whole user interface or a portion of UI.
+If you are using [Page Object pattern](https://martinfowler.com/bliki/PageObject.html) you can put the interactions of Kakao inside the Page
+Objects.
 
 #### Create KView
+
 `Screen` contains `KView`, these are the Android Framework views where you want to do the interactions:
+
 ```Kotlin
 class FormScreen : Screen<FormScreen>() {
     val phone = KEditText { withId(R.id.phone) }
@@ -38,7 +54,9 @@ class FormScreen : Screen<FormScreen>() {
     val submit = KButton { withId(R.id.submit) }
 }
 ```
+
 Kakao provides different types depending on the type of view:
+
 * `KView`
 * `KEditText`
 * `KTextView`
@@ -51,7 +69,6 @@ Kakao provides different types depending on the type of view:
 * `KSwitch`
 * <b>and more</b>
 
-
 Every `KView` contains matchers to retrieve the view involved in the `ViewInteraction`. Some examples of matchers provided
 by Kakao:
 
@@ -63,8 +80,9 @@ by Kakao:
 * <b>and more</b>
 
 Like in Espresso you can combine different matchers:
+
 ```Kotlin
-val email = KEditText { 
+val email = KEditText {
     withId(R.id.email)
     withText(R.string.email)
 }
@@ -73,67 +91,75 @@ val email = KEditText {
 And you can use your custom matchers:
 
 ```Kotlin
-val email = KEditText { 
+val email = KEditText {
     withId(R.id.email)
     matches { MyCustomMatcher.matches(position) }
 }
 ```
 
-#### Write the interaction. 
+#### Write the interaction.
 
-The syntax of the test with Kakao is very easy, once you have the `Screen` and the `KView` defined, you only have to apply 
-the actions or assertions like in Espresso: 
+The syntax of the test with Kakao is very easy, once you have the `Screen` and the `KView` defined, you only have to apply
+the actions or assertions like in Espresso:
+
 ```Kotlin
 onScreen<FormScreen> {
     phone {
-       hasText("971201771")
+        hasText("971201771")
     }
     button {
-       click()
+        click()
     }
 }
 ```
-Kakao provides multiple actions/assertions based on Espresso. Furthermore, you can combine them, just like the matchers. 
+
+Kakao provides multiple actions/assertions based on Espresso. Furthermore, you can combine them, just like the matchers.
 You can use your custom assertions or your custom actions too:
+
 ```Kotlin
 onScreen<FormScreen> {
     phone {
-       assert { MyCustomAssertion.isThaiNumber() }
+        assert { MyCustomAssertion.isThaiNumber() }
     }
     button {
-       act { MyCustomAction.clickOnTheCorner() }
+        act { MyCustomAction.clickOnTheCorner() }
     }
 }
 ```
 
-#### Advanced 
+#### Advanced
 
 ##### ListView/RecyclersView
 
 Kakao offers an easy way to interact with your `RecyclerView` and `ListView`
 
-###### Create the KListView/KRecyclerView 
+###### Create the KListView/KRecyclerView
+
 Inside your `Screen` create the KView matching with your view:
 
 For `KListView`:
+
 ```Kotlin
 val list = KListView { builder = { withId(R.id.list) } }
 ```
+
 For `KRecyclerView`:
+
 ```Kotlin
 val recycler = KRecyclerView { builder = { withId(R.id.recycler_view) } }
 ```
 
 You can combine different matchers to retrieve your view.
 
-###### Create KAdapterItem/KRecyclerItem 
+###### Create KAdapterItem/KRecyclerItem
 
-Every adapter contains different Items, Kakao provides an easy way to define the different items of your adapter 
+Every adapter contains different Items, Kakao provides an easy way to define the different items of your adapter
 with `KAdapterItem` and `KRecyclerItem`.
-If your adapter contains multiple Items but your interactions in your tests only work with 
-one is not required to create all of them. 
+If your adapter contains multiple Items but your interactions in your tests only work with
+one is not required to create all of them.
 
 `KAdapterItem`
+
 ```Kotlin
 class Item(i: DataInteraction) : KAdapterItem<Item>(i) {
     val title = KTextView(i) { withId(R.id.title) }
@@ -141,8 +167,9 @@ class Item(i: DataInteraction) : KAdapterItem<Item>(i) {
     val button = KButton(i) { withId(R.id.button) }
 }
 ```
-    
-`KRecyclerItem`    
+
+`KRecyclerItem`
+
 ```Kotlin
 class Item(parent: Matcher<View>) : KRecyclerItem<Item>(parent) {
     val title: KTextView = KTextView(parent) { withId(R.id.title) }
@@ -151,17 +178,18 @@ class Item(parent: Matcher<View>) : KRecyclerItem<Item>(parent) {
 ```
 
 The `KView` defined in the Item corresponds views used on the Item. You can assign the `KItems` to the
- `KListView`/ `KRecyclerView` like:
+`KListView`/ `KRecyclerView` like:
 
 ```Kotlin
 val recycler: KRecyclerView = KRecyclerView({
-    withId(R.id.recycler_view)
-}, itemTypeBuilder = {
+                                                withId(R.id.recycler_view)
+                                            }, itemTypeBuilder = {
     itemType(::Item)
 })
 ```
 
 And finally your final interaction will be:
+
 ```Kotlin
 onScreen<RecyclerScreen> {
     recycler {
@@ -172,7 +200,9 @@ onScreen<RecyclerScreen> {
     }
 }
 ```
+
 Kakao provides different accessors in the adapter:
+
 * `childAt`
 * `firstChild`
 * `lastChild`
@@ -180,8 +210,8 @@ Kakao provides different accessors in the adapter:
 
 ##### Custom KView
 
-If you have custom Views in your tests and you want to create your own `KView`, we have `KBaseView`. Just extend 
-this class and implement as much additional Action/Assertion interfaces as you want. 
+If you have custom Views in your tests and you want to create your own `KView`, we have `KBaseView`. 
+Just extend this class and implement as much additional Action/Assertion interfaces as you want.
 You also need to override constructors that you need.
 
 ```Kotlin
@@ -214,6 +244,7 @@ call**. It means that in such case, the responsibility to actually invoke Espres
 of the developer.
 
 Here's the examples of intercepting configurations:
+
 ```Kotlin
 class SomeTest {
     @Before
@@ -228,7 +259,7 @@ class SomeTest {
             }
         }
     }
-    
+
     @Test
     fun test() {
         onScreen<MyScreen> {
@@ -239,7 +270,7 @@ class SomeTest {
                     }
                 }
             }
-            
+
             myView {
                 intercept { // Intercepting ViewInteraction calls on this individual view
                     onPerform(true) { interaction, action -> // Intercept perform() call and overriding the chain 
@@ -254,19 +285,27 @@ class SomeTest {
     }
 }
 ```
+
 For more detailed info please refer to the documentation.
 
 ### Setup
+
 Maven
+
 ```xml
+
 <dependency>
   <groupId>io.github.kakaocup</groupId>
   <artifactId>kakao</artifactId>
-  <version><latest version></version>
+  <version>
+    <latest version>
+  </version>
   <type>pom</type>
 </dependency>
 ```
+
 or Gradle:
+
 ```groovy
 dependencies {
     androidTestImplementation 'io.github.kakaocup:kakao:<latest version>'
@@ -275,7 +314,8 @@ dependencies {
 
 ### Contribution Policy
 
-**Kakao** is an open source project, and depends on its users to improve it. We are more than happy to find you interested in taking the project forward.
+**Kakao** is an open source project, and depends on its users to improve it. We are more than happy to find you interested in taking the
+project forward.
 
 Kindly refer to the [Contribution Guidelines](https://github.com/kakaocup/Kakao/blob/master/CONTRIBUTING.md) for detailed information.
 
@@ -289,9 +329,9 @@ Kakao is open source and available under the [Apache License, Version 2.0](https
 
 ### Thanks to
 
-* [Unlimity](https://github.com/Unlimity) - **Ilya Lim** 
-* [Vacxe](https://github.com/Vacxe) - **Konstantin Aksenov** 
-* [Сdsap](https://github.com/cdsap) - **Inaki Villar** 
+* [Unlimity](https://github.com/Unlimity) - **Ilya Lim**
+* [Vacxe](https://github.com/Vacxe) - **Konstantin Aksenov**
+* [Сdsap](https://github.com/cdsap) - **Inaki Villar**
 * [VerachadW](https://github.com/VerachadW) - **Verachad Wongsawangtham**
 * [JuDrummer](https://github.com/judrummer) - **Tipatai Puthanukunkit** 
 

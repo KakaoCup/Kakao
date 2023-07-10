@@ -17,13 +17,14 @@ class DrawableListTest {
     @JvmField
     val rule = ActivityScenarioRule(DrawableListActivity::class.java)
 
-    private val appContext : Context get() {
-        var activity: Activity? = null
-        rule.scenario.onActivity {
-            activity = it
+    private val appContext: Context
+        get() {
+            var activity: Activity? = null
+            rule.scenario.onActivity {
+                activity = it
+            }
+            return activity!!.applicationContext
         }
-        return activity!!.applicationContext
-    }
 
     @Test
     fun matchDrawablesInListView() {

@@ -17,14 +17,14 @@ class DrawableRecyclerTest {
     @JvmField
     val rule = ActivityScenarioRule(DrawableRecyclerActivity::class.java)
 
-    private val appContext : Context
+    private val appContext: Context
         get() {
-        var activity: Activity? = null
-        rule.scenario.onActivity {
-            activity = it
+            var activity: Activity? = null
+            rule.scenario.onActivity {
+                activity = it
+            }
+            return activity!!.applicationContext
         }
-        return activity!!.applicationContext
-    }
 
     @Test
     fun matchDrawablesInRecyclerView() {

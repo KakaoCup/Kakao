@@ -35,17 +35,21 @@ class SpinnerPopupMatcher : TypeSafeMatcher<Root>() {
     override fun matchesSafely(item: Root?): Boolean {
         return withDecorView(
             allOf(
-                withClassName(anyOf(
-                    equalTo(popupClassName[0]),
-                    equalTo(popupClassName[1])
-                )),
-                hasDescendant(withClassName(
+                withClassName(
                     anyOf(
-                        equalTo(dropdownClassName[0]),
-                        equalTo(dropdownClassName[1]),
-                        equalTo(dropdownClassName[2])
+                        equalTo(popupClassName[0]),
+                        equalTo(popupClassName[1])
                     )
-                ))
+                ),
+                hasDescendant(
+                    withClassName(
+                        anyOf(
+                            equalTo(dropdownClassName[0]),
+                            equalTo(dropdownClassName[1]),
+                            equalTo(dropdownClassName[2])
+                        )
+                    )
+                )
             )
         ).matches(item)
     }

@@ -12,9 +12,11 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 class DrawableRecyclerActivity : AppCompatActivity() {
-    val drawableIds = listOf(DrawableResource(R.drawable.ic_android_black_24dp),
-                             DrawableResource(R.drawable.ic_sentiment_very_satisfied_black_24dp),
-                             DrawableResource(R.drawable.ic_android_black_24dp, android.R.color.holo_red_dark))
+    val drawableIds = listOf(
+        DrawableResource(R.drawable.ic_android_black_24dp),
+        DrawableResource(R.drawable.ic_sentiment_very_satisfied_black_24dp),
+        DrawableResource(R.drawable.ic_android_black_24dp, android.R.color.holo_red_dark)
+    )
 
     val list: RecyclerView by lazy { findViewById<RecyclerView>(R.id.drawableRecycler) }
 
@@ -23,7 +25,7 @@ class DrawableRecyclerActivity : AppCompatActivity() {
         setContentView(R.layout.activity_drawable_recycler)
 
         list.layoutManager = LinearLayoutManager(this)
-        list.adapter = object: RecyclerView.Adapter<ViewHolder>() {
+        list.adapter = object : RecyclerView.Adapter<ViewHolder>() {
 
             override fun onCreateViewHolder(
                 parent: ViewGroup,
@@ -52,7 +54,7 @@ class DrawableRecyclerActivity : AppCompatActivity() {
         }
     }
 
-    class ViewHolder(val root: View): RecyclerView.ViewHolder(root) {
+    class ViewHolder(val root: View) : RecyclerView.ViewHolder(root) {
         val imageView: ImageView by lazy { root.findViewById<ImageView>(R.id.imgView) }
     }
 

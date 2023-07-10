@@ -40,11 +40,11 @@ class ViewBuilder {
     private val viewMatchers = arrayListOf<Matcher<View>>()
 
     /**
-    * Matches only view at given [index], if there are multiple views that matches
-    *
-    * @param index Index of the view to match
-    * @param function [ViewBuilder] that will result in matcher
-    */
+     * Matches only view at given [index], if there are multiple views that matches
+     *
+     * @param index Index of the view to match
+     * @param function [ViewBuilder] that will result in matcher
+     */
     fun withIndex(index: Int, function: ViewBuilder.() -> Unit) {
         viewMatchers.add(IndexMatcher(ViewBuilder().apply(function).getViewMatcher(), index))
     }

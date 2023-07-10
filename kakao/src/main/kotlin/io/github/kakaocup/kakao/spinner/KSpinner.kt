@@ -59,10 +59,12 @@ class KSpinner : SpinnerAdapterActions, SpinnerAdapterAssertions, BaseAssertions
     constructor(
         parent: Matcher<View>, builder: ViewBuilder.() -> Unit,
         itemTypeBuilder: KAdapterItemTypeBuilder.() -> Unit
-    ) : this({
-                 isDescendantOfA { withMatcher(parent) }
-                 builder(this)
-             }, itemTypeBuilder)
+    ) : this(
+        {
+            builder(this)
+            isDescendantOfA { withMatcher(parent) }
+        }, itemTypeBuilder
+    )
 
     /**
      * Constructs view class with parent and view interaction from given ViewBuilder
@@ -82,8 +84,8 @@ class KSpinner : SpinnerAdapterActions, SpinnerAdapterAssertions, BaseAssertions
         val parentMatcher = makeTargetMatcher.invoke(parent)
 
         val vb = ViewBuilder().apply {
-            isDescendantOfA { withMatcher(parentMatcher as Matcher<View>) }
             builder(this)
+            isDescendantOfA { withMatcher(parentMatcher as Matcher<View>) }
         }
 
         matcher = vb.getViewMatcher()

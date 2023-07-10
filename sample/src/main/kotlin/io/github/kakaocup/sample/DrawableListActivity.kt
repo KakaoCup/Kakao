@@ -11,9 +11,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 
 class DrawableListActivity : AppCompatActivity() {
-    val drawableIds = listOf(DrawableResource(R.drawable.ic_android_black_24dp),
-                             DrawableResource(R.drawable.ic_sentiment_very_satisfied_black_24dp),
-                             DrawableResource(R.drawable.ic_android_black_24dp, android.R.color.holo_red_dark))
+    val drawableIds = listOf(
+        DrawableResource(R.drawable.ic_android_black_24dp),
+        DrawableResource(R.drawable.ic_sentiment_very_satisfied_black_24dp),
+        DrawableResource(R.drawable.ic_android_black_24dp, android.R.color.holo_red_dark)
+    )
 
     val list: ListView by lazy { findViewById<ListView>(R.id.drawableList) }
 
@@ -37,8 +39,9 @@ class DrawableListActivity : AppCompatActivity() {
                     vh.imageView.setImageResource(resId)
                     tint?.let {
                         vh.imageView.setColorFilter(
-                            ContextCompat.getColor(vh.imageView.context,  it),
-                            android.graphics.PorterDuff.Mode.SRC_IN)
+                            ContextCompat.getColor(vh.imageView.context, it),
+                            android.graphics.PorterDuff.Mode.SRC_IN
+                        )
                     }
                 }
 
