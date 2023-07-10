@@ -22,7 +22,7 @@ import org.gradle.plugins.signing.SigningExtension
 import org.jetbrains.dokka.gradle.DokkaTask
 import java.net.URI
 
-object Deployment {
+object KakaoDeployment {
     val ghToken = System.getenv("GH_TOKEN")
     val sonatypeUser = System.getenv("SONATYPE_USERNAME")
     val sonatypePassword = System.getenv("SONATYPE_PASSWORD")
@@ -42,8 +42,8 @@ object Deployment {
             else -> "-SNAPSHOT"
         }
 
-        Deployment.releaseMode = releaseMode
-        Deployment.versionSuffix = versionSuffix
+        KakaoDeployment.releaseMode = releaseMode
+        KakaoDeployment.versionSuffix = versionSuffix
         deployUrl = when (releaseMode) {
             "RELEASE" -> releaseDeployUrl
             else -> snapshotDeployUrl
@@ -100,7 +100,7 @@ object Deployment {
         project.configure<PublishingExtension> {
             publications {
                 create("default", MavenPublication::class.java) {
-                    Deployment.customizePom(pom)
+                    KakaoDeployment.customizePom(pom)
                     additionalArtifacts.forEach { it ->
                         artifact(it)
                     }

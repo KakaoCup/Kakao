@@ -222,6 +222,10 @@ class KMyView : KBaseView<KView>, MyActions, MyAssertions {
 }
 ```
 
+##### Custom clicks
+
+See [Kakao-ext-clicks](kakao-ext-clicks/README.md)
+
 ##### Intercepting
 
 If you need to add custom logic during the `Kakao -> Espresso` call chain (for example, logging) or

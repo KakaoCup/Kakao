@@ -58,5 +58,5 @@ tasks.dokkaHtml.configure {
 }
 
 afterEvaluate {
-    Deployment.initialize(project)
+    KakaoDeployment.initialize(project)
 }

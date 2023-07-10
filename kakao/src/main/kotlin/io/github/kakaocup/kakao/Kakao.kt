@@ -7,12 +7,20 @@ import androidx.test.espresso.ViewInteraction
 import androidx.test.espresso.web.assertion.WebAssertion
 import androidx.test.espresso.web.model.Atom
 import androidx.test.espresso.web.sugar.Web
+import io.github.kakaocup.kakao.common.actions.clicks.ClickAction
+import io.github.kakaocup.kakao.common.actions.clicks.EspressoDoubleClick
+import io.github.kakaocup.kakao.common.actions.clicks.EspressoLongClick
+import io.github.kakaocup.kakao.common.actions.clicks.EspressoSingleClick
 import io.github.kakaocup.kakao.intercept.Interceptor
 
 object Kakao {
     internal var viewInterceptor: Interceptor<ViewInteraction, ViewAssertion, ViewAction>? = null
     internal var dataInterceptor: Interceptor<DataInteraction, ViewAssertion, ViewAction>? = null
     internal var webInterceptor: Interceptor<Web.WebInteraction<*>, WebAssertion<*>, Atom<*>>? = null
+
+    var singleClickAction: ClickAction = EspressoSingleClick()
+    var doubleClickAction: ClickAction = EspressoDoubleClick()
+    var longClickAction: ClickAction = EspressoLongClick()
 
     /**
      * Operator that allows usage of DSL style
