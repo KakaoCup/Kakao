@@ -1,4 +1,6 @@
 name: Deploy Clicks Extension to Sonatype
+on:
+  workflow_dispatch :
 jobs:
   deploy:
     runs-on: ubuntu-latest

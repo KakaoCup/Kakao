@@ -1,4 +1,4 @@
-name: release-deploy
+name: Deploy Kakao to Sonatype
 on:
   release:
     types: [ published ]
