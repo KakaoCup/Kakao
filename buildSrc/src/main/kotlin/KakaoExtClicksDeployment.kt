@@ -139,6 +139,20 @@ object KakaoExtClicksDeployment {
                 }
             }
 
+            developers {
+                developer {
+                    id.set("vacxe")
+                    url.set("https://github.com/vacxe")
+                    name.set("Konstantin Aksenov")
+                }
+
+                developer {
+                    id.set("dsvoronin")
+                    url.set("https://github.com/dsvoronin")
+                    name.set("Dmitriy Voronin")
+                }
+            }
+
             scm {
                 url.set("https://github.com/KakaoCup/Kakao.git")
                 connection.set("scm:git:ssh://github.com/KakaoCup/Kakao")
