@@ -103,15 +103,19 @@
 
     <activity
         android:name="io.github.kakaocup.sample.ImageViewActivity"
-        android:label="Text activity"
+        android:label="Image View Activity"
         android:theme="@style/MaterialAppTheme" />
     <activity
         android:name="io.github.kakaocup.sample.ButtonClickActivity"
-        android:label="Text activity"
+        android:label="Button Click Activity"
         android:theme="@style/MaterialAppTheme" />
     <activity
         android:name="io.github.kakaocup.sample.ButtonDoubleClickActivity"
-        android:label="Text activity"
+        android:label="Button Double Click Activity"
+        android:theme="@style/MaterialAppTheme" />
+    <activity
+        android:name="io.github.kakaocup.sample.AnimatedButtonClickActivity"
+        android:label="Animated Button Clicks Activity"
         android:theme="@style/MaterialAppTheme" />
   </application>
 
