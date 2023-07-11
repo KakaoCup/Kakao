@@ -4,6 +4,11 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+  <!--Firebase API 29 emulator showing "Device is managed by your organization pop-up and overlapping buttons"-->
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="100dp" />
+
   <Button
       android:id="@+id/show_alert_dialog"
       android:layout_width="match_parent"

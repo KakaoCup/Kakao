@@ -31,7 +31,6 @@ class TestActivityTest {
             }
 
             textViewLarge {
-                scrollTo()
                 click()
                 isVisible()
                 hasText("LARGE")
@@ -41,7 +40,6 @@ class TestActivityTest {
             }
 
             textViewSmall {
-                scrollTo()
                 isVisible()
                 hasText("small")
                 isCompletelyBelow {
@@ -50,13 +48,11 @@ class TestActivityTest {
             }
 
             textViewHint {
-                scrollTo()
                 isVisible()
                 hasHint("hint")
             }
 
             buttonViewLeft {
-                scrollTo()
                 isVisible()
                 hasText("left")
                 isCompletelyLeftOf {
@@ -65,7 +61,6 @@ class TestActivityTest {
             }
 
             buttonViewRight {
-                scrollTo()
                 isVisible()
                 hasText("right")
                 isCompletelyRightOf {
@@ -74,7 +69,6 @@ class TestActivityTest {
             }
 
             textViewSmall {
-                scrollTo()
                 isVisible()
                 hasText("small")
                 isCompletelyBelow {
@@ -83,46 +77,38 @@ class TestActivityTest {
             }
 
             textViewColored {
-                scrollTo()
                 hasTextColor(R.color.background_color)
             }
 
             map {
-                scrollTo()
                 click()
                 hasAnyTag("test_tag", "non_test_tag")
             }
 
             multiTypeRecycler {
-                scrollTo()
                 hasText("MULTI TYPE RECYCLER")
             }
 
             singleTypeRecycler {
-                scrollTo()
                 hasText("SINGLE TYPE RECYCLER")
             }
 
             autoComplete {
-                scrollTo()
                 hasText("AUTO_COMPLETE")
             }
 
             ratingbar {
-                scrollTo()
                 hasRating(0f)
                 setRatingAt(3f)
                 hasRating(3f)
             }
 
             snackbarButton {
-                scrollTo()
                 click()
             }
 
             snackbar {
                 isDisplayed()
-
                 text { hasText("This is snackbar!") }
                 action {
                     hasText("DISMISS")
@@ -134,14 +120,12 @@ class TestActivityTest {
             }
 
             seekbar {
-                scrollTo()
                 hasProgress(70)
                 dragProgressTo(30)
                 hasProgress(30)
             }
 
             switch {
-                scrollTo()
                 isChecked()
                 click()
                 isNotChecked()
@@ -156,7 +140,6 @@ class TestActivityTest {
             }
 
             switchCompat {
-                scrollTo()
                 isChecked()
                 click()
                 isNotChecked()
@@ -175,7 +158,6 @@ class TestActivityTest {
             }
 
             searchView {
-                scrollTo()
                 hasHint("This is the HINT!")
                 hasHint(R.string.hint)
                 typeQuery("Hello")
