@@ -19,6 +19,19 @@ android {
         animationsDisabled = true
     }
 
+    signingConfigs {
+        create("kakao") {
+            storeFile = File("${project.rootDir}/buildsystem/debug.keystore")
+            storePassword = "android"
+            keyAlias = "kakaodebugkey"
+            keyPassword = "android"
+        }
+    }
+
+    buildTypes {
+        debug { signingConfig = signingConfigs.getByName("kakao") }
+    }
+
     sourceSets {
         getByName("main") {
             java.srcDir("src/main/kotlin")
