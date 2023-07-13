@@ -2,6 +2,7 @@
 
 package io.github.kakaocup.kakao.tabs
 
+import androidx.annotation.StringRes
 import io.github.kakaocup.kakao.common.assertions.BaseAssertions
 import com.google.android.material.tabs.TabLayout
 
@@ -34,23 +35,44 @@ interface TabLayoutAssertions : BaseAssertions {
      *
      * @param text tab title to be checked
      */
-    @Suppress("ThrowsCount")
-    fun isTabSelected(text: String) {
+
+    fun selectedTabText(text: String) {
         view.check { view, notFoundException ->
             if (view is TabLayout) {
-                val tab = view.getTabAt(view.selectedTabPosition) ?: throw AssertionError(
-                    "Expected selected item text is $text, but tab not selected"
-                )
-
-                if (tab.text != text) {
-                    throw AssertionError(
-                        "Expected selected item text is $text," +
-                            " but actual is ${tab.text ?: ""}"
-                    )
-                }
+                checkSelectedText(view, text)
             } else {
                 notFoundException?.let { throw AssertionError(it) }
             }
+        }
+    }
+
+    /**
+     * Checks if TabLayout have selected tab with given text
+     *
+     * @param text tab title to be checked
+     */
+
+    fun selectedTabText(@StringRes resId: Int) {
+        view.check { view, notFoundException ->
+            if (view is TabLayout) {
+                checkSelectedText(view, view.resources.getText(resId))
+            } else {
+                notFoundException?.let { throw AssertionError(it) }
+            }
+        }
+    }
+
+    @Suppress("ThrowsCount")
+    private fun checkSelectedText(tabLayout: TabLayout, text: CharSequence) {
+        val tab = tabLayout.getTabAt(tabLayout.selectedTabPosition) ?: throw AssertionError(
+            "Expected selected item text is $text, but tab not selected"
+        )
+
+        if (tab.text != text) {
+            throw AssertionError(
+                "Expected selected item text is $text," +
+                    " but actual is ${tab.text ?: ""}"
+            )
         }
     }
 

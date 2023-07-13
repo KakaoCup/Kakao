@@ -29,8 +29,11 @@ class TabLayoutTest {
                 isTabSelected(1)
                 assertEquals(1, getSelectedItem())
 
-                selectTab("Tab3")
-                isTabSelected("Tab3")
+                selectTabByText("Tab3")
+                selectedTabText("Tab3")
+
+                selectTabByText(R.string.tab1)
+                selectedTabText(R.string.tab1)
             }
         }
     }

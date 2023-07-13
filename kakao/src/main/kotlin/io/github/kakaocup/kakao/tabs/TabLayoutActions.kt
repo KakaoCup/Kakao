@@ -3,6 +3,7 @@
 package io.github.kakaocup.kakao.tabs
 
 import android.view.View
+import androidx.annotation.StringRes
 import androidx.test.espresso.PerformException
 import androidx.test.espresso.UiController
 import androidx.test.espresso.ViewAction
@@ -39,7 +40,8 @@ interface TabLayoutActions : BaseActions {
      *
      * @param text to be selected
      */
-    fun selectTab(text: String) {
+    @Suppress("CollapsibleIfStatements")
+    fun selectTabByText(text: String) {
         view.perform(object : ViewAction {
             override fun getDescription() = "Selects the tab with text: $text"
 
@@ -47,25 +49,58 @@ interface TabLayoutActions : BaseActions {
 
             override fun perform(uiController: UiController, view: View) {
                 if (view is TabLayout) {
-                    for (i in 0 until view.tabCount) {
-                        view.getTabAt(i)?.let { tab ->
-                            if (tab.text == text) {
-                                tab.select()
-                                return
-                            }
-                        }
+                    if (!selectTabByText(view, text)) {
+                        throw PerformException.Builder()
+                            .withActionDescription(description)
+                            .withViewDescription(HumanReadables.describe(view))
+                            .withCause(
+                                RuntimeException("Tab with text $text not found")
+                            )
+                            .build()
                     }
-
-                    throw PerformException.Builder()
-                        .withActionDescription(description)
-                        .withViewDescription(HumanReadables.describe(view))
-                        .withCause(
-                            RuntimeException("Tab with text $text not found")
-                        )
-                        .build()
                 }
             }
         })
+    }
+
+    /**
+     * Selects tab at given text
+     *
+     * @param text to be selected
+     */
+    fun selectTabByText(@StringRes resId: Int) {
+        view.perform(object : ViewAction {
+            override fun getDescription() = "Selects the tab with string resId: $resId"
+
+            override fun getConstraints() = ViewMatchers.isAssignableFrom(TabLayout::class.java)
+
+            override fun perform(uiController: UiController, view: View) {
+                if (view is TabLayout) {
+                    val text = view.resources.getText(resId)
+                    if (!selectTabByText(view, text)) {
+                        throw PerformException.Builder()
+                            .withActionDescription(description)
+                            .withViewDescription(HumanReadables.describe(view))
+                            .withCause(
+                                RuntimeException("Tab with text $text not found")
+                            )
+                            .build()
+                    }
+                }
+            }
+        })
+    }
+
+    private fun selectTabByText(tabLayout: TabLayout, tabText: CharSequence): Boolean {
+        for (i in 0 until tabLayout.tabCount) {
+            tabLayout.getTabAt(i)?.let { tab ->
+                if (tab.text == tabText) {
+                    tab.select()
+                    return true
+                }
+            }
+        }
+        return false
     }
 
     /**
