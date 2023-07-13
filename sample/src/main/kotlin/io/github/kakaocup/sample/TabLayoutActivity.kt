@@ -11,7 +11,7 @@ class TabLayoutActivity : AppCompatActivity() {
         setContentView(R.layout.activity_tab_layout)
 
         val tabLayout = findViewById<TabLayout>(R.id.tab_layout)
-        val tabs = listOf("Tab1", "Tab2")
+        val tabs = listOf("Tab1", "Tab2", "Tab3")
         tabs.forEach { tab ->
             tabLayout.addTab(tabLayout.newTab().setText(tab))
         }

@@ -2,7 +2,6 @@
 
 package io.github.kakaocup.kakao.tabs
 
-import androidx.test.espresso.ViewAssertion
 import io.github.kakaocup.kakao.common.assertions.BaseAssertions
 import com.google.android.material.tabs.TabLayout
 
@@ -16,17 +15,62 @@ interface TabLayoutAssertions : BaseAssertions {
      * @param index tab index to be checked
      */
     fun isTabSelected(index: Int) {
-        view.check(ViewAssertion { view, notFoundException ->
+        view.check { view, notFoundException ->
             if (view is TabLayout) {
                 if (view.selectedTabPosition != index) {
                     throw AssertionError(
                         "Expected selected item index is $index," +
-                                " but actual is ${view.selectedTabPosition}"
+                            " but actual is ${view.selectedTabPosition}"
                     )
                 }
             } else {
                 notFoundException?.let { throw AssertionError(it) }
             }
-        })
+        }
+    }
+
+    /**
+     * Checks if TabLayout have selected tab with given text
+     *
+     * @param text tab title to be checked
+     */
+    @Suppress("ThrowsCount")
+    fun isTabSelected(text: String) {
+        view.check { view, notFoundException ->
+            if (view is TabLayout) {
+                val tab = view.getTabAt(view.selectedTabPosition) ?: throw AssertionError(
+                    "Expected selected item text is $text, but tab not selected"
+                )
+
+                if (tab.text != text) {
+                    throw AssertionError(
+                        "Expected selected item text is $text," +
+                            " but actual is ${tab.text ?: ""}"
+                    )
+                }
+            } else {
+                notFoundException?.let { throw AssertionError(it) }
+            }
+        }
+    }
+
+    /**
+     * Checks the number of tabs currently registered with the action bar
+     *
+     * @param count tabs
+     */
+    fun tabCount(count: Int) {
+        view.check { view, notFoundException ->
+            if (view is TabLayout) {
+                if (view.tabCount != count) {
+                    throw AssertionError(
+                        "Expected tabs currently registered with the action bar $count," +
+                            " but actual is ${view.tabCount}"
+                    )
+                }
+            } else {
+                notFoundException?.let { throw AssertionError(it) }
+            }
+        }
     }
 }

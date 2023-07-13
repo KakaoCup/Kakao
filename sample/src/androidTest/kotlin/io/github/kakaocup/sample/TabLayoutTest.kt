@@ -19,6 +19,8 @@ class TabLayoutTest {
     fun testTabLayout() {
         onScreen<TabLayoutActivityScreen> {
             tabLayout {
+                tabCount(3)
+
                 isTabSelected(0)
                 assertEquals(0, getSelectedItem())
 
@@ -26,6 +28,9 @@ class TabLayoutTest {
 
                 isTabSelected(1)
                 assertEquals(1, getSelectedItem())
+
+                selectTab("Tab3")
+                isTabSelected("Tab3")
             }
         }
     }
