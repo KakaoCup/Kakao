@@ -17,6 +17,7 @@ interface TabLayoutAssertions : BaseAssertions {
      */
     fun isTabSelected(index: Int) {
         view.check { view, notFoundException ->
+            notFoundException?.let { throw AssertionError(it) }
             if (view is TabLayout) {
                 if (view.selectedTabPosition != index) {
                     throw AssertionError(
@@ -25,7 +26,7 @@ interface TabLayoutAssertions : BaseAssertions {
                     )
                 }
             } else {
-                notFoundException?.let { throw AssertionError(it) }
+                throw AssertionError("Expected TabLayout, but got $view")
             }
         }
     }
@@ -38,10 +39,11 @@ interface TabLayoutAssertions : BaseAssertions {
 
     fun selectedTabText(text: String) {
         view.check { view, notFoundException ->
+            notFoundException?.let { throw AssertionError(it) }
             if (view is TabLayout) {
                 checkSelectedText(view, text)
             } else {
-                notFoundException?.let { throw AssertionError(it) }
+                throw AssertionError("Expected TabLayout, but got $view")
             }
         }
     }
@@ -54,10 +56,11 @@ interface TabLayoutAssertions : BaseAssertions {
 
     fun selectedTabText(@StringRes resId: Int) {
         view.check { view, notFoundException ->
+            notFoundException?.let { throw AssertionError(it) }
             if (view is TabLayout) {
                 checkSelectedText(view, view.resources.getText(resId))
             } else {
-                notFoundException?.let { throw AssertionError(it) }
+                throw AssertionError("Expected TabLayout, but got $view")
             }
         }
     }
@@ -83,6 +86,7 @@ interface TabLayoutAssertions : BaseAssertions {
      */
     fun tabCount(count: Int) {
         view.check { view, notFoundException ->
+            notFoundException?.let { throw AssertionError(it) }
             if (view is TabLayout) {
                 if (view.tabCount != count) {
                     throw AssertionError(
@@ -91,7 +95,7 @@ interface TabLayoutAssertions : BaseAssertions {
                     )
                 }
             } else {
-                notFoundException?.let { throw AssertionError(it) }
+                throw AssertionError("Expected TabLayout, but got $view")
             }
         }
     }
