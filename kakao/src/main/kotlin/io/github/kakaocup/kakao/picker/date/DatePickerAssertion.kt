@@ -1,7 +1,6 @@
 package io.github.kakaocup.kakao.picker.date
 
 import android.widget.DatePicker
-import androidx.test.espresso.ViewAssertion
 import io.github.kakaocup.kakao.common.actions.BaseActions
 
 /**
@@ -29,18 +28,19 @@ interface DatePickerAssertion : BaseActions {
      * @param day day
      */
     fun hasDay(day: Int) {
-        view.check(ViewAssertion { view, notFoundException ->
+        view.check { view, notFoundException ->
+            notFoundException?.let { throw AssertionError(it) }
             if (view is DatePicker) {
                 if (day != view.dayOfMonth) {
                     throw AssertionError(
                         "Expected day is $day," +
-                                " but actual is ${view.dayOfMonth}"
+                            " but actual is ${view.dayOfMonth}"
                     )
                 }
             } else {
-                notFoundException?.let { throw AssertionError(it) }
+                throw AssertionError("Expected DatePicker, but got $view")
             }
-        })
+        }
     }
 
     /**
@@ -50,18 +50,19 @@ interface DatePickerAssertion : BaseActions {
      */
     fun hasMonth(monthOfYear: Int) {
         val normalizedMonthOfYear = monthOfYear - 1
-        view.check(ViewAssertion { view, notFoundException ->
+        view.check { view, notFoundException ->
+            notFoundException?.let { throw AssertionError(it) }
             if (view is DatePicker) {
                 if (normalizedMonthOfYear != view.month) {
                     throw AssertionError(
                         "Expected month is $normalizedMonthOfYear," +
-                                " but actual is ${view.month}"
+                            " but actual is ${view.month}"
                     )
                 }
             } else {
-                notFoundException?.let { throw AssertionError(it) }
+                throw AssertionError("Expected DatePicker, but got $view")
             }
-        })
+        }
     }
 
     /**
@@ -70,17 +71,18 @@ interface DatePickerAssertion : BaseActions {
      * @param year year
      */
     fun hasYear(year: Int) {
-        view.check(ViewAssertion { view, notFoundException ->
+        view.check { view, notFoundException ->
+            notFoundException?.let { throw AssertionError(it) }
             if (view is DatePicker) {
                 if (year != view.year) {
                     throw AssertionError(
                         "Expected year is $year," +
-                                " but actual is ${view.year}"
+                            " but actual is ${view.year}"
                     )
                 }
             } else {
-                notFoundException?.let { throw AssertionError(it) }
+                throw AssertionError("Expected DatePicker, but got $view")
             }
-        })
+        }
     }
 }

@@ -2,7 +2,6 @@
 
 package io.github.kakaocup.kakao.bottomnav
 
-import androidx.test.espresso.ViewAssertion
 import io.github.kakaocup.kakao.common.assertions.BaseAssertions
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -16,19 +15,18 @@ interface BottomNavigationViewAssertions : BaseAssertions {
      * @param id Menu item id to be checked
      */
     fun hasSelectedItem(id: Int) {
-        view.check(ViewAssertion { view, notFoundException ->
+        view.check { view, notFoundException ->
+            notFoundException?.let { throw AssertionError(it) }
             if (view is BottomNavigationView) {
                 if (view.selectedItemId != id) {
                     throw AssertionError(
                         "Expected selected item id is $id," +
-                                " but actual is ${view.selectedItemId}"
+                            " but actual is ${view.selectedItemId}"
                     )
                 }
             } else {
-                notFoundException?.let {
-                    throw AssertionError(it)
-                }
+                throw AssertionError("Expected BottomNavigationView, but got $view")
             }
-        })
+        }
     }
 }

@@ -1,7 +1,6 @@
 package io.github.kakaocup.kakao.picker.time
 
 import android.widget.TimePicker
-import androidx.test.espresso.ViewAssertion
 import io.github.kakaocup.kakao.common.actions.BaseActions
 
 /**
@@ -26,18 +25,19 @@ interface TimePickerAssertion : BaseActions {
      * @param hour hour
      */
     fun hasHour(hour: Int) {
-        view.check(ViewAssertion { view, notFoundException ->
+        view.check { view, notFoundException ->
+            notFoundException?.let { throw AssertionError(it) }
             if (view is TimePicker) {
                 if (hour != view.currentHour) {
                     throw AssertionError(
                         "Expected hour is $hour," +
-                                " but actual is ${view.currentHour}"
+                            " but actual is ${view.currentHour}"
                     )
                 }
             } else {
-                notFoundException?.let { throw AssertionError(it) }
+                throw AssertionError("Expected TimePicker, but got $view")
             }
-        })
+        }
     }
 
     /**
@@ -46,17 +46,18 @@ interface TimePickerAssertion : BaseActions {
      * @param minute month
      */
     fun hasMinute(minute: Int) {
-        view.check(ViewAssertion { view, notFoundException ->
+        view.check { view, notFoundException ->
+            notFoundException?.let { throw AssertionError(it) }
             if (view is TimePicker) {
                 if (minute != view.currentMinute) {
                     throw AssertionError(
                         "Expected minutes is $minute," +
-                                " but actual is ${view.currentMinute}"
+                            " but actual is ${view.currentMinute}"
                     )
                 }
             } else {
-                notFoundException?.let { throw AssertionError(it) }
+                throw AssertionError("Expected TimePicker, but got $view")
             }
-        })
+        }
     }
 }
