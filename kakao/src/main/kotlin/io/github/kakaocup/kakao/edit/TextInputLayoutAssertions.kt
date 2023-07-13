@@ -22,18 +22,19 @@ interface TextInputLayoutAssertions : BaseAssertions {
      * @param hint - hint text to be checked
      */
     fun hasHint(hint: String) {
-        view.check(ViewAssertion { view, notFoundException ->
+        view.check { view, notFoundException ->
+            notFoundException?.let { throw AssertionError(it) }
             if (view is TextInputLayout) {
                 if (hint != view.hint.toString()) {
                     throw AssertionError(
                         "Expected hint is $hint," +
-                                " but actual is ${view.hint}"
+                            " but actual is ${view.hint}"
                     )
                 }
             } else {
-                notFoundException?.let { throw AssertionError(it) }
+                throw AssertionError("Expected TextInputLayout, but got $view")
             }
-        })
+        }
     }
 
     fun hasHint(@StringRes resId: Int) {
@@ -53,22 +54,24 @@ interface TextInputLayoutAssertions : BaseAssertions {
     }
 
     fun hasError(error: String) {
-        view.check(ViewAssertion { view, notFoundException ->
+        view.check { view, notFoundException ->
+            notFoundException?.let { throw AssertionError(it) }
             if (view is TextInputLayout) {
                 if (error != view.error.toString()) {
                     throw AssertionError(
                         "Expected error is $error," +
-                                " but actual is ${view.error}"
+                            " but actual is ${view.error}"
                     )
                 }
             } else {
-                notFoundException?.let { throw AssertionError(it) }
+                throw AssertionError("Expected TextInputLayout, but got $view")
             }
-        })
+        }
     }
 
     fun hasNoError() {
-        view.check(ViewAssertion { view, notFoundException ->
+        view.check { view, notFoundException ->
+            notFoundException?.let { throw AssertionError(it) }
             if (view is TextInputLayout) {
                 if (!view.error.isNullOrEmpty()) {
                     throw AssertionError(
@@ -76,9 +79,9 @@ interface TextInputLayoutAssertions : BaseAssertions {
                     )
                 }
             } else {
-                notFoundException?.let { throw AssertionError(it) }
+                throw AssertionError("Expected TextInputLayout, but got $view")
             }
-        })
+        }
     }
 
     fun isErrorEnabled() {
@@ -90,18 +93,19 @@ interface TextInputLayoutAssertions : BaseAssertions {
     }
 
     fun hasCounterMaxLength(length: Int) {
-        view.check(ViewAssertion { view, notFoundException ->
+        view.check { view, notFoundException ->
+            notFoundException?.let { throw AssertionError(it) }
             if (view is TextInputLayout) {
                 if (length != view.counterMaxLength) {
                     throw AssertionError(
                         "Expected counter max length is $length," +
-                                " but actual is ${view.counterMaxLength}"
+                            " but actual is ${view.counterMaxLength}"
                     )
                 }
             } else {
-                notFoundException?.let { throw AssertionError(it) }
+                throw AssertionError("Expected TextInputLayout, but got $view")
             }
-        })
+        }
     }
 
     fun isCounterEnabled() {
