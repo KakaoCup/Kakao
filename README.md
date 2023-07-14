@@ -8,16 +8,14 @@ Nice and simple DSL for Espresso in Kotlin
 
 ### Introduction
 
-At Agoda, we have more than 1000 automated tests to ensure our application's quality and give our best experience to the user. All of them
-are written with Espresso from Google. Even though Espresso is working really well with our test, the code readability is quite low. Let's
-look at some of the examples of how we write the test.
+In many projects we have large amount of automated tests to ensure our application's quality and give our best experience to the user. The most famous library for writing automated tests is Espresso from Google. Even though Espresso is working really well with our test, the code readability is quite low. Let's look at some of the examples of how we write the test.
 
 ```Java
 onView(allOf(withId(R.id.price_item),hasDescendant(withText("Standard Rate"))))
         .check(matches(withEffectiveVisibility(Visibility.VISIBLE)));
 ```
 
-This is an example just to check the visibility and you can see that it's not looking that good. As Agoda developers, we want to improve not
+This is an example just to check the visibility and you can see that it's not looking that good. As a developers, we want to improve not
 just our codebase quality, but also our implementation of tests as well. This is why we are introducing Kakao. The library that will make
 you enjoy writing automated tests like you are drinking a hot chocolate.
 
@@ -328,14 +326,16 @@ Kindly refer to the [Contribution Guidelines](https://github.com/kakaocup/Kakao/
 Please refer to [Code of Conduct](https://github.com/kakaocup/Kakao/blob/master/CODE_OF_CONDUCT.md) document.
 
 ### License
+-------
 
-Kakao is open source and available under the [Apache License, Version 2.0](https://github.com/kakaocup/Kakao/blob/master/LICENSE).
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
 
-### Thanks to
+       http://www.apache.org/licenses/LICENSE-2.0
 
-* [Unlimity](https://github.com/Unlimity) - **Ilya Lim**
-* [Vacxe](https://github.com/Vacxe) - **Konstantin Aksenov**
-* [Сdsap](https://github.com/cdsap) - **Inaki Villar**
-* [VerachadW](https://github.com/VerachadW) - **Verachad Wongsawangtham**
-* [JuDrummer](https://github.com/judrummer) - **Tipatai Puthanukunkit** 
-
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
