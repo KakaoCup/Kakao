@@ -1,11 +1,4 @@
 complexity:
-  StringLiteralDuplication:
-    active: true
-    excludes: [ '**/test/**', '**/*Test.kt', '**/*Spec.kt' ]
-    threshold: 5
-    ignoreAnnotation: true
-    excludeStringsWithLessThan5Characters: true
-    ignoreStringsRegex: '$^'
   ComplexMethod:
     active: true
     ignoreSingleWhenExpression: true

@@ -2,4 +2,5 @@
 <resources>
   <string name="hint">This is the HINT!</string>
   <string name="error">This is the ERROR!</string>
+  <string name="tab1">Tab1</string>
 </resources>
