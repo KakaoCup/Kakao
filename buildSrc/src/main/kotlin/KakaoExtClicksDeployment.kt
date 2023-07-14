@@ -69,6 +69,7 @@ object KakaoExtClicksDeployment {
 
                 Pair(project.components["release"], listOf(sourcesJar))
             }
+
             project.the(JavaPluginConvention::class) != null -> {
                 val javaPlugin = project.the(JavaPluginConvention::class)
 
@@ -78,6 +79,7 @@ object KakaoExtClicksDeployment {
                 }
                 Pair(project.components["java"], listOf(sourcesJar))
             }
+
             else -> {
                 throw RuntimeException("Unknown plugin")
             }

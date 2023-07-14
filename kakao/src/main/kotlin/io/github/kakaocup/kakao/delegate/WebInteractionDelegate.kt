@@ -17,7 +17,8 @@ import java.util.concurrent.TimeUnit
  * @see Delegate
  * @see Interceptor
  */
-class WebInteractionDelegate(override var interaction: Web.WebInteraction<*>) : Delegate<Web.WebInteraction<*>, WebAssertion<*>, Atom<*>> {
+class WebInteractionDelegate(override var interaction: Web.WebInteraction<*>) :
+    Delegate<Web.WebInteraction<*>, WebAssertion<*>, Atom<*>> {
     override var interceptor: Interceptor<Web.WebInteraction<*>, WebAssertion<*>, Atom<*>>? = null
 
     fun check(assertion: WebAssertion<*>) = this.also {

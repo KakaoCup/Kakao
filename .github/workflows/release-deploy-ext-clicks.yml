@@ -1,6 +1,6 @@
 name: Deploy Clicks Extension to Sonatype
 on:
-  workflow_dispatch :
+  workflow_dispatch:
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -17,11 +17,11 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           SONATYPE_USERNAME: ${{ secrets.SONATYPE_USERNAME }}
           SONATYPE_PASSWORD: ${{ secrets.SONATYPE_PASSWORD }}
-          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }} 
+          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
   notify:
     needs: deploy
     runs-on: ubuntu-latest
-    steps:      
+    steps:
       - uses: actions/checkout@master
       - name: Notify Telegram
         uses: appleboy/telegram-action@master

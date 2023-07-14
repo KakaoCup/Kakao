@@ -27,16 +27,17 @@ interface SearchViewAssertions : BaseAssertions {
 
     fun hasHint(@StringRes queryHintId: Int): Matcher<View> = hasHint(getResourceString(queryHintId))
 
-    fun hasQuery(query: String): Matcher<View> = object : BoundedMatcher<View, SearchView>(SearchView::class.java), Matcher<View> {
-        var foundQuery: String? = null
+    fun hasQuery(query: String): Matcher<View> =
+        object : BoundedMatcher<View, SearchView>(SearchView::class.java), Matcher<View> {
+            var foundQuery: String? = null
 
-        override fun describeTo(description: Description) {
-            description.appendText("with SearchView query: $query, but was: $foundQuery")
-        }
+            override fun describeTo(description: Description) {
+                description.appendText("with SearchView query: $query, but was: $foundQuery")
+            }
 
-        override fun matchesSafely(item: SearchView): Boolean {
-            foundQuery = item.query.toString()
-            return foundQuery == query
+            override fun matchesSafely(item: SearchView): Boolean {
+                foundQuery = item.query.toString()
+                return foundQuery == query
+            }
         }
-    }
 }

@@ -45,12 +45,17 @@ class TextActivity : AppCompatActivity() {
     private fun buildDrawableSpanStrings() {
         val text = "$ String with drawable span $"
 
-        val imageAndroid = ResourcesCompat.getDrawable(baseContext.resources, R.drawable.ic_android_black_24dp, baseContext.theme)!!
+        val imageAndroid =
+            ResourcesCompat.getDrawable(baseContext.resources, R.drawable.ic_android_black_24dp, baseContext.theme)!!
         imageAndroid.setBounds(0, 0, imageAndroid.intrinsicWidth, imageAndroid.intrinsicHeight)
         val imageAndroidSpan = ImageSpan(imageAndroid, ImageSpan.ALIGN_BOTTOM)
 
         val imageSentiment =
-            ResourcesCompat.getDrawable(baseContext.resources, R.drawable.ic_sentiment_very_satisfied_black_24dp, baseContext.theme)!!
+            ResourcesCompat.getDrawable(
+                baseContext.resources,
+                R.drawable.ic_sentiment_very_satisfied_black_24dp,
+                baseContext.theme
+            )!!
         imageSentiment.setTint(resources.getColor(R.color.red))
         imageSentiment.setBounds(0, 0, imageSentiment.intrinsicWidth, imageSentiment.intrinsicHeight)
         val imageSentimentSpan = ImageSpan(imageSentiment, ImageSpan.ALIGN_BOTTOM)

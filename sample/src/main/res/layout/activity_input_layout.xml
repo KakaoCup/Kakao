@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
 
   <com.google.android.material.textfield.TextInputLayout
       android:id="@+id/input_layout"
@@ -13,7 +13,7 @@
     <com.google.android.material.textfield.TextInputEditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:minWidth="200dp" />
+        android:minWidth="200dp"/>
 
   </com.google.android.material.textfield.TextInputLayout>
 
@@ -21,23 +21,23 @@
       android:id="@+id/toggle_hint"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="Toggle Hint" />
+      android:text="Toggle Hint"/>
 
   <Button
       android:id="@+id/toggle_error"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="Toggle Error" />
+      android:text="Toggle Error"/>
 
   <Button
       android:id="@+id/toggle_counter"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="Toggle Counter" />
+      android:text="Toggle Counter"/>
 
   <Button
       android:id="@+id/clean_error"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="Clean error" />
+      android:text="Clean error"/>
 </LinearLayout>

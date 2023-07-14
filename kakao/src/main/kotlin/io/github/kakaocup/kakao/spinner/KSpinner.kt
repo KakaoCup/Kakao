@@ -238,7 +238,11 @@ class KSpinner : SpinnerAdapterActions, SpinnerAdapterAssertions, BaseAssertions
     override fun open() {
         view.perform(click())
         popupView =
-            ViewInteractionDelegate(onView(allOf(ViewMatchers.isAssignableFrom(AdapterView::class.java))).inRoot(SpinnerPopupMatcher()))
+            ViewInteractionDelegate(
+                onView(allOf(ViewMatchers.isAssignableFrom(AdapterView::class.java))).inRoot(
+                    SpinnerPopupMatcher()
+                )
+            )
     }
 
     override fun close() {

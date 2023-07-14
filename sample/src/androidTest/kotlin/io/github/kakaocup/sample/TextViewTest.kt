@@ -48,9 +48,15 @@ class TextViewTest {
     fun testTintedCompoundDrawables() {
         Screen.onScreen<TextScreen> {
             textViewWithLeftTintedDrawable.hasCompoundDrawable(left = R.drawable.ic_android_black_24dp, tintColorId = R.color.red)
-            textViewWithRightTintedDrawable.hasCompoundDrawable(right = R.drawable.ic_android_black_24dp, tintColorId = R.color.red)
+            textViewWithRightTintedDrawable.hasCompoundDrawable(
+                right = R.drawable.ic_android_black_24dp,
+                tintColorId = R.color.red
+            )
             textViewWithTopTintedDrawable.hasCompoundDrawable(top = R.drawable.ic_android_black_24dp, tintColorId = R.color.red)
-            textViewWithBottomTintedDrawable.hasCompoundDrawable(bottom = R.drawable.ic_android_black_24dp, tintColorId = R.color.red)
+            textViewWithBottomTintedDrawable.hasCompoundDrawable(
+                bottom = R.drawable.ic_android_black_24dp,
+                tintColorId = R.color.red
+            )
         }
     }
 
@@ -135,7 +141,11 @@ class TextViewTest {
                 R.drawable.ic_sentiment_very_satisfied_black_24dp,
                 appContext.theme
             )!!
-            textViewWithMultipleSpanDrawable.hasDrawableSpanWithTint(spanIndex = 1, drawable = drawable, tintColorId = R.color.red)
+            textViewWithMultipleSpanDrawable.hasDrawableSpanWithTint(
+                spanIndex = 1,
+                drawable = drawable,
+                tintColorId = R.color.red
+            )
         }
     }
 }

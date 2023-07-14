@@ -14,7 +14,8 @@ import org.hamcrest.Matcher
  * @param parent Matcher of the recycler view
  * @param item Matcher of the item in adapter
  */
-class ItemMatcher(private val parent: Matcher<View>, private val item: Matcher<View>) : BoundedMatcher<View, View>(View::class.java) {
+class ItemMatcher(private val parent: Matcher<View>, private val item: Matcher<View>) :
+    BoundedMatcher<View, View>(View::class.java) {
 
     var position = -1
 

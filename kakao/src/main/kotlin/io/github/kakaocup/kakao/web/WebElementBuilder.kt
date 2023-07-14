@@ -18,7 +18,8 @@ import io.github.kakaocup.kakao.intercept.Interceptable
  * @param web WebInteraction where elements should be matched
  */
 @KakaoDslMarker
-class WebElementBuilder(override val view: WebInteractionDelegate) : Interceptable<Web.WebInteraction<*>, WebAssertion<*>, Atom<*>> {
+class WebElementBuilder(override val view: WebInteractionDelegate) :
+    Interceptable<Web.WebInteraction<*>, WebAssertion<*>, Atom<*>> {
     /**
      * Looks up web view element and performs actions/assertions on it
      *

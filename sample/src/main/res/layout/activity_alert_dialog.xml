@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
 
   <!--Firebase API 29 emulator showing "Device is managed by your organization pop-up and overlapping buttons"-->
   <View
       android:layout_width="match_parent"
-      android:layout_height="100dp" />
+      android:layout_height="100dp"/>
 
   <Button
       android:id="@+id/show_alert_dialog"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:text="Show alert dialog" />
+      android:text="Show alert dialog"/>
 
   <Button
       android:id="@+id/show_multi_choice_dialog"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:text="Show multi choice dialog" />
+      android:text="Show multi choice dialog"/>
 
 </LinearLayout>

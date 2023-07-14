@@ -3,9 +3,15 @@
   <ManuallySuppressedIssues/>
   <CurrentIssues>
     <ID>ClassOrdering:PreciseSwipe.kt$PreciseSwipe$private fun interpolate(start: FloatArray, end: FloatArray, steps: Int): Array&lt;FloatArray></ID>
-    <ID>ClassOrdering:Screen.kt$Screen.Companion$ inline fun &lt;reified T : Screen&lt;T>> onScreen(noinline function: T.() -> Unit): T</ID>
-    <ID>CollapsibleIfStatements:ChipGroupActions.kt$ChipGroupActions.&lt;no name provided>$if (chip is Chip) { if (chip.text == text) { chip.performClick() } }</ID>
-    <ID>CollapsibleIfStatements:ItemMatcher.kt$ItemMatcher$if (parent.matches(it.parent) &amp;&amp; it.parent is RecyclerView) { if (item.matches(it)) { position = (it.parent as RecyclerView).getChildAdapterPosition(it) return true } }</ID>
+    <ID>ClassOrdering:Screen.kt$Screen.Companion$ inline fun &lt;reified T : Screen&lt;T>> onScreen(noinline function: T.() ->
+      Unit): T
+    </ID>
+    <ID>CollapsibleIfStatements:ChipGroupActions.kt$ChipGroupActions.&lt;no name provided>$if (chip is Chip) { if (chip.text ==
+      text) { chip.performClick() } }
+    </ID>
+    <ID>CollapsibleIfStatements:ItemMatcher.kt$ItemMatcher$if (parent.matches(it.parent) &amp;&amp; it.parent is RecyclerView) {
+      if (item.matches(it)) { position = (it.parent as RecyclerView).getChildAdapterPosition(it) return true } }
+    </ID>
     <ID>ComplexMethod:DrawableMatcher.kt$DrawableMatcher$override fun matchesSafely(view: View?): Boolean</ID>
     <ID>EmptyCatchBlock:KRecyclerView.kt$KRecyclerView${ }</ID>
     <ID>EmptyCatchBlock:KViewPager2.kt$KViewPager2${ }</ID>
@@ -22,9 +28,11 @@
     <ID>MagicNumber:SwitchersActivity.kt$SwitchersActivity$24f</ID>
     <ID>MagicNumber:ViewPager2Activity.kt$ViewPager2Activity$5</ID>
     <ID>NestedBlockDepth:DrawableMatcher.kt$DrawableMatcher$override fun matchesSafely(view: View?): Boolean</ID>
-    <ID>ReturnCount:PreciseSwipe.kt$PreciseSwipe$override fun sendSwipe( uiController: UiController, startCoordinates: FloatArray, endCoordinates: FloatArray, precision: FloatArray ): Swiper.Status</ID>
+    <ID>ReturnCount:PreciseSwipe.kt$PreciseSwipe$override fun sendSwipe( uiController: UiController, startCoordinates: FloatArray,
+      endCoordinates: FloatArray, precision: FloatArray ): Swiper.Status
+    </ID>
     <ID>ReturnCount:ToolbarNavigationMatcher.kt$ToolbarNavigationMatcher$override fun matchesSafely(view: Toolbar): Boolean</ID>
-    <ID>SpacingBetweenPackageAndImports:DrawableMatcher.kt$ </ID>
+    <ID>SpacingBetweenPackageAndImports:DrawableMatcher.kt$</ID>
     <ID>SwallowedException:KRecyclerView.kt$KRecyclerView$catch (error: Throwable) { }</ID>
     <ID>SwallowedException:KViewPager2.kt$KViewPager2$catch (error: Throwable) { }</ID>
     <ID>ThrowingExceptionsWithoutMessageOrCause:BaseDelegatesAdapter.kt$BaseDelegatesAdapter$IllegalArgumentException()</ID>
@@ -32,7 +40,9 @@
     <ID>TooGenericExceptionCaught:KViewPager2.kt$KViewPager2$error: Throwable</ID>
     <ID>TooManyFunctions:BaseAssertions.kt$BaseAssertions</ID>
     <ID>TooManyFunctions:IntentBuilder.kt$IntentBuilder</ID>
-    <ID>TooManyFunctions:KAbsListView.kt$KAbsListView : ScrollViewActionsAbsListViewAdapterActionsBaseAssertionsAbsListViewAdapterAssertions</ID>
+    <ID>TooManyFunctions:KAbsListView.kt$KAbsListView :
+      ScrollViewActionsAbsListViewAdapterActionsBaseAssertionsAbsListViewAdapterAssertions
+    </ID>
     <ID>TooManyFunctions:KRecyclerView.kt$KRecyclerView : RecyclerActionsBaseAssertionsRecyclerAdapterAssertions</ID>
     <ID>TooManyFunctions:KSpinner.kt$KSpinner : SpinnerAdapterActionsSpinnerAdapterAssertionsBaseAssertions</ID>
     <ID>TooManyFunctions:RootBuilder.kt$RootBuilder</ID>

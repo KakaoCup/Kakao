@@ -68,6 +68,7 @@ class InProcessClickAction(
             description.appendText("Click visualization supported only on Android M+ (23+ API)")
         }
 
-        override fun matchesSafely(item: View): Boolean = visualClicksConfig == null || Build.VERSION.SDK_INT >= Build.VERSION_CODES.M
+        override fun matchesSafely(item: View): Boolean =
+            visualClicksConfig == null || Build.VERSION.SDK_INT >= Build.VERSION_CODES.M
     }
 }

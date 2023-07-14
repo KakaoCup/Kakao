@@ -1,122 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="io.github.kakaocup.sample">
+          package="io.github.kakaocup.sample">
 
-  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-  <uses-permission android:name="android.permission.INTERNET" />
-  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
   <application android:label="TEST">
 
     <activity
         android:name="io.github.kakaocup.sample.ChipGroupActivity"
         android:label="ChipGroup Activity"
-        android:theme="@style/MaterialAppTheme" />
+        android:theme="@style/MaterialAppTheme"/>
     <activity
         android:name="io.github.kakaocup.sample.SpinnerActivity"
         android:label="Spinner Activity"
-        android:theme="@style/AppTheme" />
+        android:theme="@style/AppTheme"/>
     <activity
         android:name="io.github.kakaocup.sample.TestActivity"
         android:exported="true"
         android:label="Test Activity"
         android:theme="@style/AppTheme">
       <intent-filter>
-        <action android:name="android.intent.action.MAIN" />
+        <action android:name="android.intent.action.MAIN"/>
 
-        <category android:name="android.intent.category.LAUNCHER" />
+        <category android:name="android.intent.category.LAUNCHER"/>
       </intent-filter>
     </activity>
     <activity
         android:name="io.github.kakaocup.sample.MultitypeRecyclerActivity"
         android:label="Recycler Activity"
-        android:theme="@style/AppTheme" />
+        android:theme="@style/AppTheme"/>
     <activity
         android:name="io.github.kakaocup.sample.SingleTypeRecyclerActivity"
         android:label="Recycler Activity"
-        android:theme="@style/AppTheme" />
+        android:theme="@style/AppTheme"/>
     <activity
         android:name="io.github.kakaocup.sample.NestedRecyclerActivity"
         android:label="Nested Recycler Activity"
-        android:theme="@style/AppTheme" />
+        android:theme="@style/AppTheme"/>
     <activity
         android:name="io.github.kakaocup.sample.WebActivity"
         android:label="Web Activity"
-        android:theme="@style/AppTheme" />
+        android:theme="@style/AppTheme"/>
     <activity
         android:name="io.github.kakaocup.sample.ListActivity"
         android:label="List Activity"
-        android:theme="@style/AppTheme" />
+        android:theme="@style/AppTheme"/>
     <activity
         android:name="io.github.kakaocup.sample.TextInputLayoutActivity"
         android:label="TextInputLayout Activity"
-        android:theme="@style/AppTheme" />
+        android:theme="@style/AppTheme"/>
     <activity
         android:name="io.github.kakaocup.sample.IntentActivity"
         android:label="Intent Activity"
-        android:theme="@style/AppTheme" />
+        android:theme="@style/AppTheme"/>
     <activity
         android:name="io.github.kakaocup.sample.AutoCompleteActivity"
         android:label="Autocomplete Activity"
-        android:theme="@style/AppTheme" />
+        android:theme="@style/AppTheme"/>
     <activity
         android:name="io.github.kakaocup.sample.DrawableListActivity"
         android:label="Drawable Activity"
-        android:theme="@style/AppTheme" />
+        android:theme="@style/AppTheme"/>
     <activity
         android:name="io.github.kakaocup.sample.DrawableRecyclerActivity"
         android:label="Drawable Activity"
-        android:theme="@style/AppTheme" />
+        android:theme="@style/AppTheme"/>
     <activity
         android:name="io.github.kakaocup.sample.PickersActivity"
         android:label="Pickers Activity"
-        android:theme="@style/AppTheme" />
+        android:theme="@style/AppTheme"/>
     <activity
         android:name="io.github.kakaocup.sample.AlertDialogActivity"
         android:label="Alert Dialog Activity"
-        android:theme="@style/AppTheme" />
+        android:theme="@style/AppTheme"/>
     <activity
         android:name="io.github.kakaocup.sample.ViewPager2Activity"
         android:label="Alert Dialog Activity"
-        android:theme="@style/AppTheme" />
+        android:theme="@style/AppTheme"/>
     <activity
         android:name="io.github.kakaocup.sample.SliderActivity"
         android:label="Slider Activity"
-        android:theme="@style/MaterialAppTheme" />
+        android:theme="@style/MaterialAppTheme"/>
     <activity
         android:name="io.github.kakaocup.sample.TabLayoutActivity"
         android:label="Tab Layout Activity"
-        android:theme="@style/MaterialAppTheme" />
+        android:theme="@style/MaterialAppTheme"/>
     <activity
         android:name="io.github.kakaocup.sample.SwitchersActivity"
         android:label="Text Switcher Activity"
-        android:theme="@style/MaterialAppTheme" />
+        android:theme="@style/MaterialAppTheme"/>
     <activity
         android:name="io.github.kakaocup.sample.LinearLayoutActivity"
         android:label="Linear Layout activity"
-        android:theme="@style/MaterialAppTheme" />
+        android:theme="@style/MaterialAppTheme"/>
 
     <activity
         android:name="io.github.kakaocup.sample.TextActivity"
         android:label="Text activity"
-        android:theme="@style/MaterialAppTheme" />
+        android:theme="@style/MaterialAppTheme"/>
 
     <activity
         android:name="io.github.kakaocup.sample.ImageViewActivity"
         android:label="Image View Activity"
-        android:theme="@style/MaterialAppTheme" />
+        android:theme="@style/MaterialAppTheme"/>
     <activity
         android:name="io.github.kakaocup.sample.ButtonClickActivity"
         android:label="Button Click Activity"
-        android:theme="@style/MaterialAppTheme" />
+        android:theme="@style/MaterialAppTheme"/>
     <activity
         android:name="io.github.kakaocup.sample.ButtonDoubleClickActivity"
         android:label="Button Double Click Activity"
-        android:theme="@style/MaterialAppTheme" />
+        android:theme="@style/MaterialAppTheme"/>
     <activity
         android:name="io.github.kakaocup.sample.AnimatedButtonClickActivity"
         android:label="Animated Button Clicks Activity"
-        android:theme="@style/MaterialAppTheme" />
+        android:theme="@style/MaterialAppTheme"/>
   </application>
 
 </manifest>

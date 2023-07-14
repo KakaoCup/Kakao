@@ -28,7 +28,8 @@ From the [androidx.test.espresso.action.GeneralClickAction.perform] comment:
  'RollBack' ViewAction which when executed will undo the effects of long press.
 ```
 
-If you experience unreliable tap/click in UI tests you can try our naive but sometimes more reliable implementation, that dispatches events
+If you experience unreliable tap/click in UI tests you can try our naive but sometimes more reliable implementation, that
+dispatches events
 directly to View.
 
 ## How to use
@@ -123,7 +124,8 @@ button {
 
 ## Click visualization
 
-Click visualization is a useful debug tool. Usually it's enabled with Android option `Developer Options > Show taps`. Or using ADB:
+Click visualization is a useful debug tool. Usually it's enabled with Android option `Developer Options > Show taps`. Or using
+ADB:
 
 ```
 adb shell settings put system show_touches 1
@@ -152,7 +154,8 @@ to apply config to all types of clicks
 ## Global Center coordinates
 
 There are some cases when standard espresso coordinates not working.
-For example clicking on center of the view with applied property animations or transitions with help of `GeneralLocation.VISIBLE_CENTER`.
+For example clicking on center of the view with applied property animations or transitions with help
+of `GeneralLocation.VISIBLE_CENTER`.
 See explanation on why it happens [here](https://github.com/avito-tech/avito-android/pull/308).
 
 `VisibleCenterGlobalCoordinatesProvider` to the rescue.

@@ -8,15 +8,19 @@ Nice and simple DSL for Espresso in Kotlin
 
 ### Introduction
 
-In many projects we have large amount of automated tests to ensure our application's quality and give our best experience to the user. The most famous library for writing automated tests is Espresso from Google. Even though Espresso is working really well with our test, the code readability is quite low. Let's look at some of the examples of how we write the test.
+In many projects we have large amount of automated tests to ensure our application's quality and give our best experience to the
+user. The most famous library for writing automated tests is Espresso from Google. Even though Espresso is working really well
+with our test, the code readability is quite low. Let's look at some of the examples of how we write the test.
 
 ```Java
 onView(allOf(withId(R.id.price_item),hasDescendant(withText("Standard Rate"))))
         .check(matches(withEffectiveVisibility(Visibility.VISIBLE)));
 ```
 
-This is an example just to check the visibility and you can see that it's not looking that good. As a developers, we want to improve not
-just our codebase quality, but also our implementation of tests as well. This is why we are introducing Kakao. The library that will make
+This is an example just to check the visibility and you can see that it's not looking that good. As a developers, we want to
+improve not
+just our codebase quality, but also our implementation of tests as well. This is why we are introducing Kakao. The library that
+will make
 you enjoy writing automated tests like you are drinking a hot chocolate.
 
 ![coco](https://user-images.githubusercontent.com/2812510/30947310-3825724c-a433-11e7-8a0d-3c3bfe00d584.png)
@@ -38,7 +42,8 @@ class FormScreen : Screen<FormScreen>()
 ```
 
 `Screen` can represent the whole user interface or a portion of UI.
-If you are using [Page Object pattern](https://martinfowler.com/bliki/PageObject.html) you can put the interactions of Kakao inside the Page
+If you are using [Page Object pattern](https://martinfowler.com/bliki/PageObject.html) you can put the interactions of Kakao
+inside the Page
 Objects.
 
 #### Create KView
@@ -208,7 +213,7 @@ Kakao provides different accessors in the adapter:
 
 ##### Custom KView
 
-If you have custom Views in your tests and you want to create your own `KView`, we have `KBaseView`. 
+If you have custom Views in your tests and you want to create your own `KView`, we have `KBaseView`.
 Just extend this class and implement as much additional Action/Assertion interfaces as you want.
 You also need to override constructors that you need.
 
@@ -316,10 +321,12 @@ dependencies {
 
 ### Contribution Policy
 
-**Kakao** is an open source project, and depends on its users to improve it. We are more than happy to find you interested in taking the
+**Kakao** is an open source project, and depends on its users to improve it. We are more than happy to find you interested in
+taking the
 project forward.
 
-Kindly refer to the [Contribution Guidelines](https://github.com/kakaocup/Kakao/blob/master/CONTRIBUTING.md) for detailed information.
+Kindly refer to the [Contribution Guidelines](https://github.com/kakaocup/Kakao/blob/master/CONTRIBUTING.md) for detailed
+information.
 
 ### Code of Conduct
 
