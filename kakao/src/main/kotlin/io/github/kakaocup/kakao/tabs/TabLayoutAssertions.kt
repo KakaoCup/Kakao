@@ -37,11 +37,28 @@ interface TabLayoutAssertions : BaseAssertions {
      * @param text tab title to be checked
      */
 
-    fun selectedTabText(text: String) {
+    fun hasSelectedText(text: String) {
         view.check { view, notFoundException ->
             notFoundException?.let { throw AssertionError(it) }
             if (view is TabLayout) {
-                checkSelectedText(view, text)
+                checkSelectedText(view, view.selectedTabPosition, text)
+            } else {
+                throw AssertionError("Expected TabLayout, but got $view")
+            }
+        }
+    }
+
+    /**
+     * Checks if TabLayout have selected tab with given text
+     *
+     * @param resId reference to string id resource
+     */
+
+    fun hasSelectedText(@StringRes resId: Int) {
+        view.check { view, notFoundException ->
+            notFoundException?.let { throw AssertionError(it) }
+            if (view is TabLayout) {
+                checkSelectedText(view, view.selectedTabPosition, view.resources.getText(resId))
             } else {
                 throw AssertionError("Expected TabLayout, but got $view")
             }
@@ -52,13 +69,32 @@ interface TabLayoutAssertions : BaseAssertions {
      * Checks if TabLayout have selected tab with given text
      *
      * @param text tab title to be checked
+     * @param position tab position, starts from 0
      */
 
-    fun selectedTabText(@StringRes resId: Int) {
+    fun hasText(text: String, position: Int) {
         view.check { view, notFoundException ->
             notFoundException?.let { throw AssertionError(it) }
             if (view is TabLayout) {
-                checkSelectedText(view, view.resources.getText(resId))
+                checkSelectedText(view, position, text)
+            } else {
+                throw AssertionError("Expected TabLayout, but got $view")
+            }
+        }
+    }
+
+    /**
+     * Checks if TabLayout have selected tab with given text
+     *
+     * @param resId reference to string id resource
+     * @param position tab position, starts from 0
+     */
+
+    fun hasText(@StringRes resId: Int, position: Int) {
+        view.check { view, notFoundException ->
+            notFoundException?.let { throw AssertionError(it) }
+            if (view is TabLayout) {
+                checkSelectedText(view, position, view.resources.getText(resId))
             } else {
                 throw AssertionError("Expected TabLayout, but got $view")
             }
@@ -66,8 +102,8 @@ interface TabLayoutAssertions : BaseAssertions {
     }
 
     @Suppress("ThrowsCount")
-    private fun checkSelectedText(tabLayout: TabLayout, text: CharSequence) {
-        val tab = tabLayout.getTabAt(tabLayout.selectedTabPosition) ?: throw AssertionError(
+    private fun checkSelectedText(tabLayout: TabLayout, tabPosition: Int, text: CharSequence) {
+        val tab = tabLayout.getTabAt(tabPosition) ?: throw AssertionError(
             "Expected selected item text is $text, but tab not selected"
         )
 
@@ -84,7 +120,7 @@ interface TabLayoutAssertions : BaseAssertions {
      *
      * @param count tabs
      */
-    fun tabCount(count: Int) {
+    fun hasTabCount(count: Int) {
         view.check { view, notFoundException ->
             notFoundException?.let { throw AssertionError(it) }
             if (view is TabLayout) {

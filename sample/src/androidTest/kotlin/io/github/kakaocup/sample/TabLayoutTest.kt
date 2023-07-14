@@ -19,7 +19,7 @@ class TabLayoutTest {
     fun testTabLayout() {
         onScreen<TabLayoutActivityScreen> {
             tabLayout {
-                tabCount(3)
+                hasTabCount(3)
 
                 isTabSelected(0)
                 assertEquals(0, getSelectedItem())
@@ -30,10 +30,12 @@ class TabLayoutTest {
                 assertEquals(1, getSelectedItem())
 
                 selectTabByText("Tab3")
-                selectedTabText("Tab3")
+                hasSelectedText("Tab3")
+                hasText("Tab3", 2)
 
                 selectTabByText(R.string.tab1)
-                selectedTabText(R.string.tab1)
+                hasSelectedText(R.string.tab1)
+                hasText(R.string.tab1, 0)
             }
         }
     }
