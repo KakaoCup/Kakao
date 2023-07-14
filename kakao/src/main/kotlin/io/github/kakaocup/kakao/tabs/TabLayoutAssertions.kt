@@ -41,7 +41,7 @@ interface TabLayoutAssertions : BaseAssertions {
         view.check { view, notFoundException ->
             notFoundException?.let { throw AssertionError(it) }
             if (view is TabLayout) {
-                checkSelectedText(view, view.selectedTabPosition, text)
+                checkTextOnPosition(view, view.selectedTabPosition, text)
             } else {
                 throw AssertionError("Expected TabLayout, but got $view")
             }
@@ -58,7 +58,7 @@ interface TabLayoutAssertions : BaseAssertions {
         view.check { view, notFoundException ->
             notFoundException?.let { throw AssertionError(it) }
             if (view is TabLayout) {
-                checkSelectedText(view, view.selectedTabPosition, view.resources.getText(resId))
+                checkTextOnPosition(view, view.selectedTabPosition, view.resources.getText(resId))
             } else {
                 throw AssertionError("Expected TabLayout, but got $view")
             }
@@ -66,7 +66,7 @@ interface TabLayoutAssertions : BaseAssertions {
     }
 
     /**
-     * Checks if TabLayout have selected tab with given text
+     * Checks if TabLayout have tab with given text with selected position
      *
      * @param text tab title to be checked
      * @param position tab position, starts from 0
@@ -76,7 +76,7 @@ interface TabLayoutAssertions : BaseAssertions {
         view.check { view, notFoundException ->
             notFoundException?.let { throw AssertionError(it) }
             if (view is TabLayout) {
-                checkSelectedText(view, position, text)
+                checkTextOnPosition(view, position, text)
             } else {
                 throw AssertionError("Expected TabLayout, but got $view")
             }
@@ -94,7 +94,7 @@ interface TabLayoutAssertions : BaseAssertions {
         view.check { view, notFoundException ->
             notFoundException?.let { throw AssertionError(it) }
             if (view is TabLayout) {
-                checkSelectedText(view, position, view.resources.getText(resId))
+                checkTextOnPosition(view, position, view.resources.getText(resId))
             } else {
                 throw AssertionError("Expected TabLayout, but got $view")
             }
@@ -102,14 +102,14 @@ interface TabLayoutAssertions : BaseAssertions {
     }
 
     @Suppress("ThrowsCount")
-    private fun checkSelectedText(tabLayout: TabLayout, tabPosition: Int, text: CharSequence) {
+    private fun checkTextOnPosition(tabLayout: TabLayout, tabPosition: Int, text: CharSequence) {
         val tab = tabLayout.getTabAt(tabPosition) ?: throw AssertionError(
-            "Expected selected item text is $text, but tab not selected"
+            "Expected selected item (position $tabPosition) text is $text, but tab not selected"
         )
 
         if (tab.text != text) {
             throw AssertionError(
-                "Expected selected item text is $text," +
+                "Expected selected item (position $tabPosition) text is $text," +
                     " but actual is ${tab.text ?: ""}"
             )
         }
