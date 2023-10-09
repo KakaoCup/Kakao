@@ -1,4 +1,4 @@
-name: master-documentation
+name: Generate Documentation
 
 on:
   push:
