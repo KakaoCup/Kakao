@@ -67,7 +67,7 @@ jobs:
       - name: Run tests on Firebase Test Lab for API ${{ matrix.api }}
         uses: vacxe/firebase-test-lab-action@0.0.6
         with:
-          service-account: "Fake token"
+          service-account: ${{ secrets.FIREBASE_TESTLAB_JSON }}
           app: apk/sample-debug.apk
           test: apk/sample-debug-androidTest.apk
           device-id: MediumPhone.arm
