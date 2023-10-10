@@ -65,7 +65,7 @@ jobs:
         with:
           name: apk
       - name: Run tests on Firebase Test Lab for API ${{ matrix.api }}
-        uses: vacxe/firebase-test-lab-action@0.0.5
+        uses: vacxe/firebase-test-lab-action@0.0.6
         with:
           service-account: ${{ secrets.FIREBASE_TESTLAB_JSON }}
           app: apk/sample-debug.apk
