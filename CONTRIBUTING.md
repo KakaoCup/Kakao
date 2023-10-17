@@ -32,5 +32,4 @@ The steps below describe how to get a patch into a master branch.
 
    ```git ls-files -z | while IFS= read -rd '' f; do tail -c1 < "$f" | read -r _ || echo >> "$f"; done```
 8. Create a [pull request](https://help.github.com/articles/about-pull-requests/) and wait for the users to review.
-9. Sign [Contributor License Agreement](https://github.com/agoda-com/kakao/blob/master/CLA.md) if not already signed.
-10. Once everything is said and done, your pull request gets merged. Your feature will be available with the next release.
+9. Once everything is said and done, your pull request gets merged. Your feature will be available with the next release.
