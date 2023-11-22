@@ -40,6 +40,18 @@
         android:label="Nested Recycler Activity"
         android:theme="@style/AppTheme" />
     <activity
+        android:name="io.github.kakaocup.sample.NestedScrollActivity"
+        android:label="Nested scroll activity"
+        android:theme="@style/AppTheme" />
+    <activity
+        android:name="io.github.kakaocup.sample.HorizontalScrollActivity"
+        android:label="Horizontal scroll activity"
+        android:theme="@style/AppTheme" />
+    <activity
+        android:name="io.github.kakaocup.sample.ScrollActivity"
+        android:label="Scroll activity"
+        android:theme="@style/AppTheme" />
+    <activity
         android:name="io.github.kakaocup.sample.WebActivity"
         android:label="Web Activity"
         android:theme="@style/AppTheme" />
