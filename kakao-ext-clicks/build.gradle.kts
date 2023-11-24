@@ -1,31 +1,30 @@
 plugins {
     id("com.android.library")
-    id("kotlin-android")
-    id("com.github.ben-manes.versions") version Versions.gradle_versions
+    kotlin("android")
 }
 
 android {
-    compileSdk = 33
+    namespace = "io.github.kakaocup.kakao.ext.clicks"
+    compileSdk = libs.versions.compileSdk.get().toInt()
     defaultConfig {
-        minSdk = 14
-        targetSdk = 33
+        minSdk = libs.versions.minSdk.get().toInt()
         multiDexEnabled = true
     }
 
-    sourceSets {
-        getByName("main") {
-            java.srcDir("src/main/kotlin")
-            res.srcDir("src/main/res")
-        }
-        getByName("test") {
-            java.srcDir("src/test/kotlin")
+    kotlin {
+        jvmToolchain(libs.versions.jvmVersion.get().toInt())
+    }
+
+    publishing {
+        singleVariant("release") {
+            withJavadocJar()
+            withSourcesJar()
         }
     }
 }
 
 dependencies {
-    implementation(Libraries.kotlin_stdlib)
-    implementation(Libraries.espresso_core)
+    implementation(libs.androidx.test.espresso.core)
     implementation(project(":kakao"))
 }
 

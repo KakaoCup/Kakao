@@ -5,7 +5,7 @@ buildscript {
         gradlePluginPortal()
     }
     dependencies {
-        classpath("com.android.tools.build:gradle:7.2.2")
+        classpath(libs.com.android.tools.build.gradle)
     }
 }
 
@@ -15,11 +15,11 @@ repositories {
 }
 
 plugins {
-    id("io.gitlab.arturbosch.detekt") version Versions.detekt
+    id("io.gitlab.arturbosch.detekt") version libs.versions.detekt
 }
 
 detekt {
-    toolVersion = "1.17.1"
+    toolVersion = libs.versions.detekt.get()
     input = files(subprojects.map {
         File(it.projectDir, "/src/main/kotlin")
     })

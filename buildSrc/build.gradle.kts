@@ -9,8 +9,8 @@ repositories {
 }
 
 dependencies {
-    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.21")
-    implementation("com.android.tools.build:gradle:7.3.1")
-    implementation("org.jetbrains.dokka:dokka-gradle-plugin:1.7.20")
-    implementation("org.kohsuke:github-api:1.129")
+    implementation(libs.org.jetbrains.kotlin.kotlinGradlePlugin )
+    implementation(libs.com.android.tools.build.gradle)
+    implementation(libs.org.jetbrains.dokka.dokkaGradlePlugin)
+    implementation(libs.org.kohsuke.githubApi)
 }

@@ -58,41 +58,15 @@ object KakaoExtClicksDeployment {
 
         project.plugins.apply("maven-publish")
 
-        val (component, additionalArtifacts) = when {
-            project.extensions.findByType(LibraryExtension::class) != null -> {
-                val android = project.extensions.findByType(LibraryExtension::class)!!
-                val main = android.sourceSets.getByName("main")
-                val sourcesJar by project.tasks.creating(Jar::class) {
-                    classifier = "sources"
-                    from(main.java.srcDirs)
-                }
-
-                Pair(project.components["release"], listOf(sourcesJar))
-            }
-            project.the(JavaPluginConvention::class) != null -> {
-                val javaPlugin = project.the(JavaPluginConvention::class)
-
-                val sourcesJar by project.tasks.creating(Jar::class) {
-                    classifier = "sources"
-                    from(javaPlugin.sourceSets["main"].allSource)
-                }
-                Pair(project.components["java"], listOf(sourcesJar))
-            }
-            else -> {
-                throw RuntimeException("Unknown plugin")
-            }
-        }
-
         project.configure<PublishingExtension> {
             publications {
                 create("default", MavenPublication::class.java) {
-                    KakaoExtClicksDeployment.customizePom(pom)
-                    additionalArtifacts.forEach { it ->
-                        artifact(it)
-                    }
-                    from(component)
+                    groupId = PackageInfo.groupId
+                    customizePom(pom)
+                    from(project.components["release"])
                 }
             }
+            
             repositories {
                 maven {
                     name = "Local"

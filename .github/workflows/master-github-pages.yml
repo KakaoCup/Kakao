@@ -10,15 +10,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - name: Set up JDK 11
-        uses: actions/setup-java@v1
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
         with:
-          java-version: 11
+          distribution: "temurin"
+          java-version: 17
       - name: dokkaHtml
         run: |
           ./gradlew clean dokkaHtml
-      - uses: helaili/jekyll-action@v2
+      - name: Build Page
+        uses: actions/jekyll-build-pages@v1
         with:
-          jekyll_src: 'html'
-          target_branch: 'gh-pages'
-          token: ${{ secrets.GITHUB_TOKEN }}
+          source: "./html"
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+
