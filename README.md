@@ -339,3 +339,7 @@ Please refer to [Code of Conduct](https://github.com/kakaocup/Kakao/blob/master/
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
+
+
+### Thanks for supporting OSS
+<img src="https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.png" width="150" height="150"> <img src="https://firebase.google.com/static/downloads/brand-guidelines/SVG/logo-logomark.svg" width="150" height="150">
