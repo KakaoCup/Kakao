@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>ViewPagerActions</title>
     <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
     <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
     <script>const storage = localStorage.getItem("dokka-dark-mode")
     if (storage == null) {
         const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
@@ -18,12 +19,13 @@
         }
     }
     </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
 <script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
 <link href="../../../styles/style.css" rel="Stylesheet">
-<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
 <link href="../../../styles/main.css" rel="Stylesheet">
 <link href="../../../styles/prism.css" rel="Stylesheet">
 <link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
 <script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
 <script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
 <script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
@@ -32,301 +34,298 @@
 <script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
 </head>
 <body>
-<div class="navigation-wrapper" id="navigation-wrapper">
-    <div id="leftToggler"><span class="icon-toggler"></span></div>
-    <div class="library-name">
-            <a href="../../../index.html">
-                    <span>kakao</span>
-            </a>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            kakao
+                    </a>
+            </div>
+            <div class="library-version">
+3.5.0-SNAPSHOT            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":kakao:dokkaHtml/release">androidJvm</button>
+        </div>
     </div>
-    <div>
-3.5.0-SNAPSHOT    </div>
-    <div class="pull-right d-flex">
-        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
-        <div id="searchBar"></div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
     </div>
-</div>
-<div id="container">
-    <div id="leftColumn">
-        <div id="sideMenu"></div>
-    </div>
-    <div id="main">
-<div class="main-content" id="content" pageIds="kakao::io.github.kakaocup.kakao.pager/ViewPagerActions///PointingToDeclaration//-222259485">
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="kakao::io.github.kakaocup.kakao.pager/ViewPagerActions///PointingToDeclaration//-222259485">
   <div class="breadcrumbs"><a href="../../../index.html">kakao</a><span class="delimiter">/</span><a href="../index.html">io.github.kakaocup.kakao.pager</a><span class="delimiter">/</span><span class="current">ViewPagerActions</span></div>
   <div class="cover ">
     <h1 class="cover"><span>View</span><wbr></wbr><span>Pager</span><wbr></wbr><span><span>Actions</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">interface </span><a href="index.html">ViewPagerActions</a><span class="token keyword"> implements </span><a href="../../io.github.kakaocup.kakao.common.actions/-base-actions/index.html">BaseActions</a></div></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">interface </span><a href="index.html">ViewPagerActions</a><span class="token keyword"> implements </span><a href="../../io.github.kakaocup.kakao.common.actions/-base-actions/index.html">BaseActions</a></div><h4 class="">Inheritors</h4><div class="table"><div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-k-view-pager/index.html">KViewPager</a></div></span></div><div></div></div></div></div></div></div>
   </div>
   <div class="tabbedcontent">
-    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Inheritors">Inheritors</button></div>
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
     <div class="tabs-section-body">
-      <h2 class="">Functions</h2>
-      <div class="table" data-togglable="Functions"><a data-name="-1274389684%2FFunctions%2F-222259485" anchor-label="act" id="-1274389684%2FFunctions%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="index.html#-1274389684%2FFunctions%2F-222259485"><span><span>act</span></span></a></div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-1274389684%2FFunctions%2F-222259485" anchor-label="act" id="-1274389684%2FFunctions%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1274389684%2FFunctions%2F-222259485"><span><span>act</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1274389684%2FFunctions%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> <a href="index.html#-1274389684%2FFunctions%2F-222259485"><span class="token function">act</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><span data-unresolved-link="kotlin.jvm.functions/Function0///PointingToDeclaration/">Function0</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/androidx/test/espresso/ViewAction.html">ViewAction</a><span class="token operator">&gt;</span> function</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Performs custom action on a view</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> <a href="index.html#-1274389684%2FFunctions%2F-222259485"><span class="token function">act</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><span data-unresolved-link="kotlin.jvm.functions/Function0///PointingToDeclaration/">Function0</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/androidx/test/espresso/ViewAction.html">ViewAction</a><span class="token operator">&gt;</span> function</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Performs custom action on a view</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-1296757946%2FFunctions%2F-222259485" anchor-label="click" id="-1296757946%2FFunctions%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="index.html#-1296757946%2FFunctions%2F-222259485"><span><span>click</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1296757946%2FFunctions%2F-222259485"><span><span>click</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1296757946%2FFunctions%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> <a href="index.html#-1296757946%2FFunctions%2F-222259485"><span class="token function">click</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><span data-unresolved-link="androidx.test.espresso.action/CoordinatesProvider///PointingToDeclaration/">CoordinatesProvider</span> location</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Performs click on view</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> <a href="index.html#-1296757946%2FFunctions%2F-222259485"><span class="token function">click</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><span data-unresolved-link="androidx.test.espresso.action/CoordinatesProvider///PointingToDeclaration/">CoordinatesProvider</span> location</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Performs click on view</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="1439800234%2FFunctions%2F-222259485" anchor-label="clickBetweenTwoTitles" id="1439800234%2FFunctions%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="click-between-two-titles.html"><span>click</span><wbr></wbr><span>Between</span><wbr></wbr><span>Two</span><wbr></wbr><span><span>Titles</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="click-between-two-titles.html"><span>click</span><wbr></wbr><span>Between</span><wbr></wbr><span>Two</span><wbr></wbr><span><span>Titles</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1439800234%2FFunctions%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> <a href="click-between-two-titles.html"><span class="token function">clickBetweenTwoTitles</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a> title1<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a> title2</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Clicks between two titles in a <code>ViewPager</code> title strip</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> <a href="click-between-two-titles.html"><span class="token function">clickBetweenTwoTitles</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a> title1<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a> title2</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Clicks between two titles in a <code>ViewPager</code> title strip</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="1415101365%2FFunctions%2F-222259485" anchor-label="doubleClick" id="1415101365%2FFunctions%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="index.html#1415101365%2FFunctions%2F-222259485"><span>double</span><wbr></wbr><span><span>Click</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1415101365%2FFunctions%2F-222259485"><span>double</span><wbr></wbr><span><span>Click</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1415101365%2FFunctions%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> <a href="index.html#1415101365%2FFunctions%2F-222259485"><span class="token function">doubleClick</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><span data-unresolved-link="androidx.test.espresso.action/CoordinatesProvider///PointingToDeclaration/">CoordinatesProvider</span> location</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Performs double click on view</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> <a href="index.html#1415101365%2FFunctions%2F-222259485"><span class="token function">doubleClick</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><span data-unresolved-link="androidx.test.espresso.action/CoordinatesProvider///PointingToDeclaration/">CoordinatesProvider</span> location</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Performs double click on view</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="2072922968%2FFunctions%2F-222259485" anchor-label="getView" id="2072922968%2FFunctions%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="index.html#2072922968%2FFunctions%2F-222259485"><span>get</span><wbr></wbr><span><span>View</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#2072922968%2FFunctions%2F-222259485"><span>get</span><wbr></wbr><span><span>View</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2072922968%2FFunctions%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">abstract </span><span class="token keyword"></span><a href="../../io.github.kakaocup.kakao.delegate/-view-interaction-delegate/index.html">ViewInteractionDelegate</a> <a href="index.html#2072922968%2FFunctions%2F-222259485"><span class="token function">getView</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword">abstract </span><span class="token keyword"></span><a href="../../io.github.kakaocup.kakao.delegate/-view-interaction-delegate/index.html">ViewInteractionDelegate</a> <a href="index.html#2072922968%2FFunctions%2F-222259485"><span class="token function">getView</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-1217720278%2FFunctions%2F-222259485" anchor-label="longClick" id="-1217720278%2FFunctions%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="index.html#-1217720278%2FFunctions%2F-222259485"><span>long</span><wbr></wbr><span><span>Click</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1217720278%2FFunctions%2F-222259485"><span>long</span><wbr></wbr><span><span>Click</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1217720278%2FFunctions%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> <a href="index.html#-1217720278%2FFunctions%2F-222259485"><span class="token function">longClick</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><span data-unresolved-link="androidx.test.espresso.action/CoordinatesProvider///PointingToDeclaration/">CoordinatesProvider</span> location</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Performs long click on view</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> <a href="index.html#-1217720278%2FFunctions%2F-222259485"><span class="token function">longClick</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><span data-unresolved-link="androidx.test.espresso.action/CoordinatesProvider///PointingToDeclaration/">CoordinatesProvider</span> location</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Performs long click on view</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="59223165%2FFunctions%2F-222259485" anchor-label="onFailure" id="59223165%2FFunctions%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="index.html#59223165%2FFunctions%2F-222259485"><span>on</span><wbr></wbr><span><span>Failure</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#59223165%2FFunctions%2F-222259485"><span>on</span><wbr></wbr><span><span>Failure</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="59223165%2FFunctions%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> <a href="index.html#59223165%2FFunctions%2F-222259485"><span class="token function">onFailure</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><span data-unresolved-link="kotlin.jvm.functions/Function2///PointingToDeclaration/">Function2</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Throwable.html">Throwable</a><span class="token punctuation">, </span><span class="token keyword"></span><span data-unresolved-link="org.hamcrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">&gt;</span> function</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Adds failure handler to the view</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> <a href="index.html#59223165%2FFunctions%2F-222259485"><span class="token function">onFailure</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><span data-unresolved-link="kotlin.jvm.functions/Function2///PointingToDeclaration/">Function2</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Throwable.html">Throwable</a><span class="token punctuation">, </span><span class="token keyword"></span><span data-unresolved-link="org.hamcrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">&gt;</span> function</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Adds failure handler to the view</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-1166109997%2FFunctions%2F-222259485" anchor-label="pressImeAction" id="-1166109997%2FFunctions%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="index.html#-1166109997%2FFunctions%2F-222259485"><span>press</span><wbr></wbr><span>Ime</span><wbr></wbr><span><span>Action</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1166109997%2FFunctions%2F-222259485"><span>press</span><wbr></wbr><span>Ime</span><wbr></wbr><span><span>Action</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1166109997%2FFunctions%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> <a href="index.html#-1166109997%2FFunctions%2F-222259485"><span class="token function">pressImeAction</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Presses IME action, if supported view is in focus</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> <a href="index.html#-1166109997%2FFunctions%2F-222259485"><span class="token function">pressImeAction</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Presses IME action, if supported view is in focus</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="1139542178%2FFunctions%2F-222259485" anchor-label="repeatUntil" id="1139542178%2FFunctions%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="index.html#1139542178%2FFunctions%2F-222259485"><span>repeat</span><wbr></wbr><span><span>Until</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1139542178%2FFunctions%2F-222259485"><span>repeat</span><wbr></wbr><span><span>Until</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1139542178%2FFunctions%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> <a href="index.html#1139542178%2FFunctions%2F-222259485"><span class="token function">repeatUntil</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> maxAttempts<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword"></span><span data-unresolved-link="kotlin.jvm.functions/Function0///PointingToDeclaration/">Function0</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/androidx/test/espresso/ViewAction.html">ViewAction</a><span class="token operator">&gt;</span> action<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword"></span><span data-unresolved-link="kotlin.jvm.functions/Function1///PointingToDeclaration/">Function1</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../io.github.kakaocup.kakao.common.builders/-view-builder/index.html">ViewBuilder</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">&gt;</span> matcher</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Repeats given action on the view until this view will match the given matcher</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> <a href="index.html#1139542178%2FFunctions%2F-222259485"><span class="token function">repeatUntil</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> maxAttempts<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword"></span><span data-unresolved-link="kotlin.jvm.functions/Function0///PointingToDeclaration/">Function0</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/androidx/test/espresso/ViewAction.html">ViewAction</a><span class="token operator">&gt;</span> action<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword"></span><span data-unresolved-link="kotlin.jvm.functions/Function1///PointingToDeclaration/">Function1</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../io.github.kakaocup.kakao.common.builders/-view-builder/index.html">ViewBuilder</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">&gt;</span> matcher</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Repeats given action on the view until this view will match the given matcher</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="517733733%2FFunctions%2F-222259485" anchor-label="scrollLeft" id="517733733%2FFunctions%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="scroll-left.html"><span>scroll</span><wbr></wbr><span><span>Left</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="scroll-left.html"><span>scroll</span><wbr></wbr><span><span>Left</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="517733733%2FFunctions%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> <a href="scroll-left.html"><span class="token function">scrollLeft</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a> smoothScroll</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Moves <code>ViewPager</code> to the left be one page.</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> <a href="scroll-left.html"><span class="token function">scrollLeft</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a> smoothScroll</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Moves <code>ViewPager</code> to the left be one page.</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="1107306716%2FFunctions%2F-222259485" anchor-label="scrollRight" id="1107306716%2FFunctions%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="scroll-right.html"><span>scroll</span><wbr></wbr><span><span>Right</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="scroll-right.html"><span>scroll</span><wbr></wbr><span><span>Right</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1107306716%2FFunctions%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> <a href="scroll-right.html"><span class="token function">scrollRight</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a> smoothScroll</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Moves <code>ViewPager</code> to the right be one page.</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> <a href="scroll-right.html"><span class="token function">scrollRight</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a> smoothScroll</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Moves <code>ViewPager</code> to the right be one page.</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="1149899519%2FFunctions%2F-222259485" anchor-label="scrollTo" id="1149899519%2FFunctions%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="index.html#1149899519%2FFunctions%2F-222259485"><span>scroll</span><wbr></wbr><span><span>To</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1149899519%2FFunctions%2F-222259485"><span>scroll</span><wbr></wbr><span><span>To</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1149899519%2FFunctions%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> <a href="index.html#1149899519%2FFunctions%2F-222259485"><span class="token function">scrollTo</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Scrolls to the view, if possible</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> <a href="index.html#1149899519%2FFunctions%2F-222259485"><span class="token function">scrollTo</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Scrolls to the view, if possible</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-607323549%2FFunctions%2F-222259485" anchor-label="scrollToFirst" id="-607323549%2FFunctions%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="scroll-to-first.html"><span>scroll</span><wbr></wbr><span>To</span><wbr></wbr><span><span>First</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="scroll-to-first.html"><span>scroll</span><wbr></wbr><span>To</span><wbr></wbr><span><span>First</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-607323549%2FFunctions%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> <a href="scroll-to-first.html"><span class="token function">scrollToFirst</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a> smoothScroll</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Moves <code>ViewPager</code> to the first page.</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> <a href="scroll-to-first.html"><span class="token function">scrollToFirst</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a> smoothScroll</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Moves <code>ViewPager</code> to the first page.</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-982599685%2FFunctions%2F-222259485" anchor-label="scrollToLast" id="-982599685%2FFunctions%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="scroll-to-last.html"><span>scroll</span><wbr></wbr><span>To</span><wbr></wbr><span><span>Last</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="scroll-to-last.html"><span>scroll</span><wbr></wbr><span>To</span><wbr></wbr><span><span>Last</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-982599685%2FFunctions%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> <a href="scroll-to-last.html"><span class="token function">scrollToLast</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a> smoothScroll</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Moves <code>ViewPager</code> to the last page.</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> <a href="scroll-to-last.html"><span class="token function">scrollToLast</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a> smoothScroll</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Moves <code>ViewPager</code> to the last page.</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-1049416855%2FFunctions%2F-222259485" anchor-label="scrollToPage" id="-1049416855%2FFunctions%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="scroll-to-page.html"><span>scroll</span><wbr></wbr><span>To</span><wbr></wbr><span><span>Page</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="scroll-to-page.html"><span>scroll</span><wbr></wbr><span>To</span><wbr></wbr><span><span>Page</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1049416855%2FFunctions%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> <a href="scroll-to-page.html"><span class="token function">scrollToPage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> page<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a> smoothScroll</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Moves <code>ViewPager</code> to a specific page.</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace block"><span class="token keyword">public </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> <a href="scroll-to-page.html"><span class="token function">scrollToPage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Integer.html">Integer</a> page<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/lang/Boolean.html">Boolean</a> smoothScroll</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Moves <code>ViewPager</code> to a specific page.</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="383912261%2FFunctions%2F-222259485" anchor-label="swipeLeft" id="383912261%2FFunctions%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="swipe-left.html"><span>swipe</span><wbr></wbr><span><span>Left</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="swipe-left.html"><span>swipe</span><wbr></wbr><span><span>Left</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="383912261%2FFunctions%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace block"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html"><span class="token annotation builtin">Deprecated</span></a><span class="token punctuation">(</span><span>message<span class="token operator"> = </span><span class="breakable-word"><span class="token string">&quot;Use scrollRight()&quot;</span></span><span class="token punctuation">, </span></span><wbr></wbr><span>replaceWith<span class="token operator"> = </span><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-replace-with/index.html"><span class="token annotation builtin">ReplaceWith</span></a><span class="token punctuation">(</span><span>imports<span class="token operator"> = </span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">, </span></span><wbr></wbr><span>expression<span class="token operator"> = </span><span class="breakable-word"><span class="token string">&quot;scrollRight()&quot;</span></span></span><wbr></wbr><span class="token punctuation">)</span></span><wbr></wbr><span class="token punctuation">)</span></div></div><span class="token keyword">public </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> <a href="swipe-left.html"><span class="token function"><strike>swipeLeft</strike></span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Swipes left on the view</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace block"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html"><span class="token annotation builtin">Deprecated</span></a><span class="token punctuation">(</span><span>message<span class="token operator"> = </span><span class="breakable-word"><span class="token string">&quot;Use scrollRight()&quot;</span></span><span class="token punctuation">, </span></span><wbr></wbr><span>replaceWith<span class="token operator"> = </span><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-replace-with/index.html"><span class="token annotation builtin">ReplaceWith</span></a><span class="token punctuation">(</span><span>imports<span class="token operator"> = </span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">, </span></span><wbr></wbr><span>expression<span class="token operator"> = </span><span class="breakable-word"><span class="token string">&quot;scrollRight()&quot;</span></span></span><wbr></wbr><span class="token punctuation">)</span></span><wbr></wbr><span class="token punctuation">)</span></div></div><span class="token keyword">public </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> <a href="swipe-left.html"><span class="token function"><strike>swipeLeft</strike></span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Swipes left on the view</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="249786194%2FFunctions%2F-222259485" anchor-label="swipeRight" id="249786194%2FFunctions%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="swipe-right.html"><span>swipe</span><wbr></wbr><span><span>Right</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="swipe-right.html"><span>swipe</span><wbr></wbr><span><span>Right</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="249786194%2FFunctions%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace block"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html"><span class="token annotation builtin">Deprecated</span></a><span class="token punctuation">(</span><span>message<span class="token operator"> = </span><span class="breakable-word"><span class="token string">&quot;Use scrollLeft()&quot;</span></span><span class="token punctuation">, </span></span><wbr></wbr><span>replaceWith<span class="token operator"> = </span><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-replace-with/index.html"><span class="token annotation builtin">ReplaceWith</span></a><span class="token punctuation">(</span><span>imports<span class="token operator"> = </span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">, </span></span><wbr></wbr><span>expression<span class="token operator"> = </span><span class="breakable-word"><span class="token string">&quot;scrollLeft()&quot;</span></span></span><wbr></wbr><span class="token punctuation">)</span></span><wbr></wbr><span class="token punctuation">)</span></div></div><span class="token keyword">public </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> <a href="swipe-right.html"><span class="token function"><strike>swipeRight</strike></span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Swipes right on the view</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace block"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html"><span class="token annotation builtin">Deprecated</span></a><span class="token punctuation">(</span><span>message<span class="token operator"> = </span><span class="breakable-word"><span class="token string">&quot;Use scrollLeft()&quot;</span></span><span class="token punctuation">, </span></span><wbr></wbr><span>replaceWith<span class="token operator"> = </span><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-replace-with/index.html"><span class="token annotation builtin">ReplaceWith</span></a><span class="token punctuation">(</span><span>imports<span class="token operator"> = </span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">, </span></span><wbr></wbr><span>expression<span class="token operator"> = </span><span class="breakable-word"><span class="token string">&quot;scrollLeft()&quot;</span></span></span><wbr></wbr><span class="token punctuation">)</span></span><wbr></wbr><span class="token punctuation">)</span></div></div><span class="token keyword">public </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> <a href="swipe-right.html"><span class="token function"><strike>swipeRight</strike></span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Swipes right on the view</p></div></div></div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <h2 class="">Inheritors</h2>
-      <div class="table" data-togglable="Inheritors"><a data-name="-550710441%2FInheritors%2F-222259485" anchor-label="KViewPager" id="-550710441%2FInheritors%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="../-k-view-pager/index.html">KViewPager</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-550710441%2FInheritors%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div></div>
           </div>
         </div>
       </div>
@@ -338,7 +337,8 @@
                 class="pull-right"><span>Generated by </span><a
                 href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
       </div>
+            </div>
+        </div>
     </div>
-</div>
 </body>
 </html>

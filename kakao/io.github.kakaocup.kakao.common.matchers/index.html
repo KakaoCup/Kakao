@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>io.github.kakaocup.kakao.common.matchers</title>
     <link href="../../images/logo-icon.svg" rel="icon" type="image/svg">
     <script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
     <script>const storage = localStorage.getItem("dokka-dark-mode")
     if (storage == null) {
         const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
@@ -18,12 +19,13 @@
         }
     }
     </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
 <script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async="async"></script>
 <link href="../../styles/style.css" rel="Stylesheet">
-<link href="../../styles/jetbrains-mono.css" rel="Stylesheet">
 <link href="../../styles/main.css" rel="Stylesheet">
 <link href="../../styles/prism.css" rel="Stylesheet">
 <link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../styles/font-jb-sans-auto.css" rel="Stylesheet">
 <script type="text/javascript" src="../../scripts/clipboard.js" async="async"></script>
 <script type="text/javascript" src="../../scripts/navigation-loader.js" async="async"></script>
 <script type="text/javascript" src="../../scripts/platform-content-handler.js" async="async"></script>
@@ -32,675 +34,685 @@
 <script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
 </head>
 <body>
-<div class="navigation-wrapper" id="navigation-wrapper">
-    <div id="leftToggler"><span class="icon-toggler"></span></div>
-    <div class="library-name">
-            <a href="../../index.html">
-                    <span>kakao</span>
-            </a>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../index.html">
+                            kakao
+                    </a>
+            </div>
+            <div class="library-version">
+3.5.0-SNAPSHOT            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":kakao:dokkaHtml/release">androidJvm</button>
+        </div>
     </div>
-    <div>
-3.5.0-SNAPSHOT    </div>
-    <div class="pull-right d-flex">
-        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
-        <div id="searchBar"></div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
     </div>
-</div>
-<div id="container">
-    <div id="leftColumn">
-        <div id="sideMenu"></div>
-    </div>
-    <div id="main">
-<div class="main-content" id="content" pageIds="kakao::io.github.kakaocup.kakao.common.matchers////PointingToDeclaration//-222259485">
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="package" id="content" pageIds="kakao::io.github.kakaocup.kakao.common.matchers////PointingToDeclaration//-222259485">
   <div class="breadcrumbs"><a href="../../index.html">kakao</a><span class="delimiter">/</span><span class="current">io.github.kakaocup.kakao.common.matchers</span></div>
   <div class="cover ">
     <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
   </div>
   <div class="tabbedcontent">
-    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Types">Types</button></div>
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button></div>
     <div class="tabs-section-body">
-      <h2 class="">Types</h2>
-      <div class="table" data-togglable="Types"><a data-name="1957646208%2FClasslikes%2F-222259485" anchor-label="AbsListViewAdapterSizeMatcher" id="1957646208%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-abs-list-view-adapter-size-matcher/index.html"><span>Abs</span><wbr></wbr><span>List</span><wbr></wbr><span>View</span><wbr></wbr><span>Adapter</span><wbr></wbr><span>Size</span><wbr></wbr><span><span>Matcher</span></span></a></div>
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="1957646208%2FClasslikes%2F-222259485" anchor-label="AbsListViewAdapterSizeMatcher" id="1957646208%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-abs-list-view-adapter-size-matcher/index.html"><span>Abs</span><wbr></wbr><span>List</span><wbr></wbr><span>View</span><wbr></wbr><span>Adapter</span><wbr></wbr><span>Size</span><wbr></wbr><span><span>Matcher</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1957646208%2FClasslikes%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-abs-list-view-adapter-size-matcher/index.html">AbsListViewAdapterSizeMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/widget/AbsListView.html">AbsListView</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matches AbsListView with count of children</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-abs-list-view-adapter-size-matcher/index.html">AbsListViewAdapterSizeMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/widget/AbsListView.html">AbsListView</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matches AbsListView with count of children</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="1006583375%2FClasslikes%2F-222259485" anchor-label="ActivatedViewMatcher" id="1006583375%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-activated-view-matcher/index.html"><span>Activated</span><wbr></wbr><span>View</span><wbr></wbr><span><span>Matcher</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-activated-view-matcher/index.html"><span>Activated</span><wbr></wbr><span>View</span><wbr></wbr><span><span>Matcher</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1006583375%2FClasslikes%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-activated-view-matcher/index.html">ActivatedViewMatcher</a><span class="token keyword"> extends </span><a href="-base-view-condition-matcher/index.html">BaseViewConditionMatcher</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-activated-view-matcher/index.html">ActivatedViewMatcher</a><span class="token keyword"> extends </span><a href="-base-view-condition-matcher/index.html">BaseViewConditionMatcher</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="600855282%2FClasslikes%2F-222259485" anchor-label="AnyTextMatcher" id="600855282%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-any-text-matcher/index.html"><span>Any</span><wbr></wbr><span>Text</span><wbr></wbr><span><span>Matcher</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-any-text-matcher/index.html"><span>Any</span><wbr></wbr><span>Text</span><wbr></wbr><span><span>Matcher</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="600855282%2FClasslikes%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-any-text-matcher/index.html">AnyTextMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/widget/TextView.html">TextView</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matches TextView views which contains any text</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-any-text-matcher/index.html">AnyTextMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/widget/TextView.html">TextView</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matches TextView views which contains any text</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="1099542216%2FClasslikes%2F-222259485" anchor-label="AutoHandwritingEnabledMatcher" id="1099542216%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-auto-handwriting-enabled-matcher/index.html"><span>Auto</span><wbr></wbr><span>Handwriting</span><wbr></wbr><span>Enabled</span><wbr></wbr><span><span>Matcher</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-auto-handwriting-enabled-matcher/index.html"><span>Auto</span><wbr></wbr><span>Handwriting</span><wbr></wbr><span>Enabled</span><wbr></wbr><span><span>Matcher</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1099542216%2FClasslikes%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/RequiresApi.html"><span class="token annotation builtin">RequiresApi</span></a><span class="token punctuation">(</span><span>value<span class="token operator"> = </span><span class="breakable-word"><span class="token constant">33</span></span></span><wbr></wbr><span class="token punctuation">)</span></div></div><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-auto-handwriting-enabled-matcher/index.html">AutoHandwritingEnabledMatcher</a><span class="token keyword"> extends </span><a href="-base-view-condition-matcher/index.html">BaseViewConditionMatcher</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/RequiresApi.html"><span class="token annotation builtin">RequiresApi</span></a><span class="token punctuation">(</span><span>value<span class="token operator"> = </span><span class="breakable-word"><span class="token constant">33</span></span></span><wbr></wbr><span class="token punctuation">)</span></div></div><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-auto-handwriting-enabled-matcher/index.html">AutoHandwritingEnabledMatcher</a><span class="token keyword"> extends </span><a href="-base-view-condition-matcher/index.html">BaseViewConditionMatcher</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-1107590514%2FClasslikes%2F-222259485" anchor-label="BackgroundColorMatcher" id="-1107590514%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-background-color-matcher/index.html"><span>Background</span><wbr></wbr><span>Color</span><wbr></wbr><span><span>Matcher</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-background-color-matcher/index.html"><span>Background</span><wbr></wbr><span>Color</span><wbr></wbr><span><span>Matcher</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1107590514%2FClasslikes%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-background-color-matcher/index.html">BackgroundColorMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="org.hamcrest/TypeSafeMatcher///PointingToDeclaration/">TypeSafeMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matches given background color with the current one</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-background-color-matcher/index.html">BackgroundColorMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="org.hamcrest/TypeSafeMatcher///PointingToDeclaration/">TypeSafeMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matches given background color with the current one</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="1865227742%2FClasslikes%2F-222259485" anchor-label="BaseViewConditionMatcher" id="1865227742%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-base-view-condition-matcher/index.html"><span>Base</span><wbr></wbr><span>View</span><wbr></wbr><span>Condition</span><wbr></wbr><span><span>Matcher</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-base-view-condition-matcher/index.html"><span>Base</span><wbr></wbr><span>View</span><wbr></wbr><span>Condition</span><wbr></wbr><span><span>Matcher</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1865227742%2FClasslikes%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-base-view-condition-matcher/index.html">BaseViewConditionMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token operator">&gt;</span></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-base-view-condition-matcher/index.html">BaseViewConditionMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="128874853%2FClasslikes%2F-222259485" anchor-label="BoldStyleMatcher" id="128874853%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-bold-style-matcher/index.html"><span>Bold</span><wbr></wbr><span>Style</span><wbr></wbr><span><span>Matcher</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-bold-style-matcher/index.html"><span>Bold</span><wbr></wbr><span>Style</span><wbr></wbr><span><span>Matcher</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="128874853%2FClasslikes%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-bold-style-matcher/index.html">BoldStyleMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/widget/TextView.html">TextView</a><span class="token operator">&gt;</span></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-bold-style-matcher/index.html">BoldStyleMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/widget/TextView.html">TextView</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="1725160472%2FClasslikes%2F-222259485" anchor-label="ChildCountMatcher" id="1725160472%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-child-count-matcher/index.html"><span>Child</span><wbr></wbr><span>Count</span><wbr></wbr><span><span>Matcher</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-child-count-matcher/index.html"><span>Child</span><wbr></wbr><span>Count</span><wbr></wbr><span><span>Matcher</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1725160472%2FClasslikes%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-child-count-matcher/index.html">ChildCountMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="org.hamcrest/TypeSafeMatcher///PointingToDeclaration/">TypeSafeMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matches view with size no of children</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-child-count-matcher/index.html">ChildCountMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="org.hamcrest/TypeSafeMatcher///PointingToDeclaration/">TypeSafeMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matches view with size no of children</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="556889518%2FClasslikes%2F-222259485" anchor-label="CompoundDrawableMatcher" id="556889518%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-compound-drawable-matcher/index.html"><span>Compound</span><wbr></wbr><span>Drawable</span><wbr></wbr><span><span>Matcher</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-compound-drawable-matcher/index.html"><span>Compound</span><wbr></wbr><span>Drawable</span><wbr></wbr><span><span>Matcher</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="556889518%2FClasslikes%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-compound-drawable-matcher/index.html">CompoundDrawableMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/widget/TextView.html">TextView</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matcher of compound drawables for TextView</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-compound-drawable-matcher/index.html">CompoundDrawableMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/widget/TextView.html">TextView</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matcher of compound drawables for TextView</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-324245296%2FClasslikes%2F-222259485" anchor-label="DirtyViewMatcher" id="-324245296%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-dirty-view-matcher/index.html"><span>Dirty</span><wbr></wbr><span>View</span><wbr></wbr><span><span>Matcher</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-dirty-view-matcher/index.html"><span>Dirty</span><wbr></wbr><span>View</span><wbr></wbr><span><span>Matcher</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-324245296%2FClasslikes%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-dirty-view-matcher/index.html">DirtyViewMatcher</a><span class="token keyword"> extends </span><a href="-base-view-condition-matcher/index.html">BaseViewConditionMatcher</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-dirty-view-matcher/index.html">DirtyViewMatcher</a><span class="token keyword"> extends </span><a href="-base-view-condition-matcher/index.html">BaseViewConditionMatcher</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="971724003%2FClasslikes%2F-222259485" anchor-label="DrawableMatcher" id="971724003%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-drawable-matcher/index.html"><span>Drawable</span><wbr></wbr><span><span>Matcher</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-drawable-matcher/index.html"><span>Drawable</span><wbr></wbr><span><span>Matcher</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="971724003%2FClasslikes%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-drawable-matcher/index.html">DrawableMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="org.hamcrest/TypeSafeMatcher///PointingToDeclaration/">TypeSafeMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matches given drawable with current one</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-drawable-matcher/index.html">DrawableMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="org.hamcrest/TypeSafeMatcher///PointingToDeclaration/">TypeSafeMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matches given drawable with current one</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="1112735918%2FClasslikes%2F-222259485" anchor-label="FirstViewMatcher" id="1112735918%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-first-view-matcher/index.html"><span>First</span><wbr></wbr><span>View</span><wbr></wbr><span><span>Matcher</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-first-view-matcher/index.html"><span>First</span><wbr></wbr><span>View</span><wbr></wbr><span><span>Matcher</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1112735918%2FClasslikes%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-first-view-matcher/index.html">FirstViewMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matches first view</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-first-view-matcher/index.html">FirstViewMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matches first view</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="732412913%2FClasslikes%2F-222259485" anchor-label="ForceDarkAllowedViewMatcher" id="732412913%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-force-dark-allowed-view-matcher/index.html"><span>Force</span><wbr></wbr><span>Dark</span><wbr></wbr><span>Allowed</span><wbr></wbr><span>View</span><wbr></wbr><span><span>Matcher</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-force-dark-allowed-view-matcher/index.html"><span>Force</span><wbr></wbr><span>Dark</span><wbr></wbr><span>Allowed</span><wbr></wbr><span>View</span><wbr></wbr><span><span>Matcher</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="732412913%2FClasslikes%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/RequiresApi.html"><span class="token annotation builtin">RequiresApi</span></a><span class="token punctuation">(</span><span>value<span class="token operator"> = </span><span class="breakable-word"><span class="token constant">29</span></span></span><wbr></wbr><span class="token punctuation">)</span></div></div><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-force-dark-allowed-view-matcher/index.html">ForceDarkAllowedViewMatcher</a><span class="token keyword"> extends </span><a href="-base-view-condition-matcher/index.html">BaseViewConditionMatcher</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/RequiresApi.html"><span class="token annotation builtin">RequiresApi</span></a><span class="token punctuation">(</span><span>value<span class="token operator"> = </span><span class="breakable-word"><span class="token constant">29</span></span></span><wbr></wbr><span class="token punctuation">)</span></div></div><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-force-dark-allowed-view-matcher/index.html">ForceDarkAllowedViewMatcher</a><span class="token keyword"> extends </span><a href="-base-view-condition-matcher/index.html">BaseViewConditionMatcher</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-1044411234%2FClasslikes%2F-222259485" anchor-label="HapticFeedbackEnabledMatcher" id="-1044411234%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-haptic-feedback-enabled-matcher/index.html"><span>Haptic</span><wbr></wbr><span>Feedback</span><wbr></wbr><span>Enabled</span><wbr></wbr><span><span>Matcher</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-haptic-feedback-enabled-matcher/index.html"><span>Haptic</span><wbr></wbr><span>Feedback</span><wbr></wbr><span>Enabled</span><wbr></wbr><span><span>Matcher</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1044411234%2FClasslikes%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-haptic-feedback-enabled-matcher/index.html">HapticFeedbackEnabledMatcher</a><span class="token keyword"> extends </span><a href="-base-view-condition-matcher/index.html">BaseViewConditionMatcher</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-haptic-feedback-enabled-matcher/index.html">HapticFeedbackEnabledMatcher</a><span class="token keyword"> extends </span><a href="-base-view-condition-matcher/index.html">BaseViewConditionMatcher</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-1002098228%2FClasslikes%2F-222259485" anchor-label="HintMatcher" id="-1002098228%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-hint-matcher/index.html"><span>Hint</span><wbr></wbr><span><span>Matcher</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-hint-matcher/index.html"><span>Hint</span><wbr></wbr><span><span>Matcher</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1002098228%2FClasslikes%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-hint-matcher/index.html">HintMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/widget/TextView.html">TextView</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matcher for hint value in TextView</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-hint-matcher/index.html">HintMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/widget/TextView.html">TextView</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matcher for hint value in TextView</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-537191207%2FClasslikes%2F-222259485" anchor-label="HoveredViewMatcher" id="-537191207%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-hovered-view-matcher/index.html"><span>Hovered</span><wbr></wbr><span>View</span><wbr></wbr><span><span>Matcher</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-hovered-view-matcher/index.html"><span>Hovered</span><wbr></wbr><span>View</span><wbr></wbr><span><span>Matcher</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-537191207%2FClasslikes%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-hovered-view-matcher/index.html">HoveredViewMatcher</a><span class="token keyword"> extends </span><a href="-base-view-condition-matcher/index.html">BaseViewConditionMatcher</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-hovered-view-matcher/index.html">HoveredViewMatcher</a><span class="token keyword"> extends </span><a href="-base-view-condition-matcher/index.html">BaseViewConditionMatcher</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-1783641845%2FClasslikes%2F-222259485" anchor-label="IndexMatcher" id="-1783641845%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-index-matcher/index.html"><span>Index</span><wbr></wbr><span><span>Matcher</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-index-matcher/index.html"><span>Index</span><wbr></wbr><span><span>Matcher</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1783641845%2FClasslikes%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-index-matcher/index.html">IndexMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="org.hamcrest/TypeSafeMatcher///PointingToDeclaration/">TypeSafeMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matches index'th view that matches given matcher</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-index-matcher/index.html">IndexMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="org.hamcrest/TypeSafeMatcher///PointingToDeclaration/">TypeSafeMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matches index'th view that matches given matcher</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-2135332326%2FClasslikes%2F-222259485" anchor-label="ItalicStyleMatcher" id="-2135332326%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-italic-style-matcher/index.html"><span>Italic</span><wbr></wbr><span>Style</span><wbr></wbr><span><span>Matcher</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-italic-style-matcher/index.html"><span>Italic</span><wbr></wbr><span>Style</span><wbr></wbr><span><span>Matcher</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2135332326%2FClasslikes%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-italic-style-matcher/index.html">ItalicStyleMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/widget/TextView.html">TextView</a><span class="token operator">&gt;</span></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-italic-style-matcher/index.html">ItalicStyleMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/widget/TextView.html">TextView</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="214998616%2FClasslikes%2F-222259485" anchor-label="ItemMatcher" id="214998616%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-item-matcher/index.html"><span>Item</span><wbr></wbr><span><span>Matcher</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-item-matcher/index.html"><span>Item</span><wbr></wbr><span><span>Matcher</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="214998616%2FClasslikes%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-item-matcher/index.html">ItemMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matches first RecyclerView descendant which matches specific matcher</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-item-matcher/index.html">ItemMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matches first RecyclerView descendant which matches specific matcher</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-1761969396%2FClasslikes%2F-222259485" anchor-label="NavigationItemMatcher" id="-1761969396%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-navigation-item-matcher/index.html"><span>Navigation</span><wbr></wbr><span>Item</span><wbr></wbr><span><span>Matcher</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-navigation-item-matcher/index.html"><span>Navigation</span><wbr></wbr><span>Item</span><wbr></wbr><span><span>Matcher</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1761969396%2FClasslikes%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-navigation-item-matcher/index.html">NavigationItemMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><span data-unresolved-link="com.google.android.material.navigation/NavigationView///PointingToDeclaration/">NavigationView</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matches NavigationView with given item id checked</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-navigation-item-matcher/index.html">NavigationItemMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><span data-unresolved-link="com.google.android.material.navigation/NavigationView///PointingToDeclaration/">NavigationView</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matches NavigationView with given item id checked</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="603362772%2FClasslikes%2F-222259485" anchor-label="PageMatcher" id="603362772%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-page-matcher/index.html"><span>Page</span><wbr></wbr><span><span>Matcher</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-page-matcher/index.html"><span>Page</span><wbr></wbr><span><span>Matcher</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="603362772%2FClasslikes%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-page-matcher/index.html">PageMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/androidx/viewpager/widget/ViewPager.html">ViewPager</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matches ViewPager which page index equals given</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-page-matcher/index.html">PageMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/androidx/viewpager/widget/ViewPager.html">ViewPager</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matches ViewPager which page index equals given</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="1300529518%2FClasslikes%2F-222259485" anchor-label="PositionMatcher" id="1300529518%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-position-matcher/index.html"><span>Position</span><wbr></wbr><span><span>Matcher</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-position-matcher/index.html"><span>Position</span><wbr></wbr><span><span>Matcher</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1300529518%2FClasslikes%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-position-matcher/index.html">PositionMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matches RecyclerView descendant at given position in adapter</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-position-matcher/index.html">PositionMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matches RecyclerView descendant at given position in adapter</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-507405710%2FClasslikes%2F-222259485" anchor-label="ProgressMatcher" id="-507405710%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-progress-matcher/index.html"><span>Progress</span><wbr></wbr><span><span>Matcher</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-progress-matcher/index.html"><span>Progress</span><wbr></wbr><span><span>Matcher</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-507405710%2FClasslikes%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-progress-matcher/index.html">ProgressMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/widget/ProgressBar.html">ProgressBar</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matcher of value progress of given matcher</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-progress-matcher/index.html">ProgressMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/widget/ProgressBar.html">ProgressBar</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matcher of value progress of given matcher</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="322315375%2FClasslikes%2F-222259485" anchor-label="RatingBarMatcher" id="322315375%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-rating-bar-matcher/index.html"><span>Rating</span><wbr></wbr><span>Bar</span><wbr></wbr><span><span>Matcher</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-rating-bar-matcher/index.html"><span>Rating</span><wbr></wbr><span>Bar</span><wbr></wbr><span><span>Matcher</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="322315375%2FClasslikes%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-rating-bar-matcher/index.html">RatingBarMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/widget/RatingBar.html">RatingBar</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matcher of value rating of given matcher</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-rating-bar-matcher/index.html">RatingBarMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/widget/RatingBar.html">RatingBar</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matcher of value rating of given matcher</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="1177936773%2FClasslikes%2F-222259485" anchor-label="RecyclerViewAdapterSizeMatcher" id="1177936773%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-recycler-view-adapter-size-matcher/index.html"><span>Recycler</span><wbr></wbr><span>View</span><wbr></wbr><span>Adapter</span><wbr></wbr><span>Size</span><wbr></wbr><span><span>Matcher</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-recycler-view-adapter-size-matcher/index.html"><span>Recycler</span><wbr></wbr><span>View</span><wbr></wbr><span>Adapter</span><wbr></wbr><span>Size</span><wbr></wbr><span><span>Matcher</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1177936773%2FClasslikes%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-recycler-view-adapter-size-matcher/index.html">RecyclerViewAdapterSizeMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/RecyclerView.html">RecyclerView</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matches RecyclerView with count of children</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-recycler-view-adapter-size-matcher/index.html">RecyclerViewAdapterSizeMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/RecyclerView.html">RecyclerView</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matches RecyclerView with count of children</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="541606604%2FClasslikes%2F-222259485" anchor-label="SelectedChipMatcher" id="541606604%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-selected-chip-matcher/index.html"><span>Selected</span><wbr></wbr><span>Chip</span><wbr></wbr><span><span>Matcher</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-selected-chip-matcher/index.html"><span>Selected</span><wbr></wbr><span>Chip</span><wbr></wbr><span><span>Matcher</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="541606604%2FClasslikes%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-selected-chip-matcher/index.html">SelectedChipMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><span data-unresolved-link="com.google.android.material.chip/Chip///PointingToDeclaration/">Chip</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matches checked chip</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-selected-chip-matcher/index.html">SelectedChipMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><span data-unresolved-link="com.google.android.material.chip/Chip///PointingToDeclaration/">Chip</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matches checked chip</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="971768486%2FClasslikes%2F-222259485" anchor-label="SliderMatcher" id="971768486%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-slider-matcher/index.html"><span>Slider</span><wbr></wbr><span><span>Matcher</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-slider-matcher/index.html"><span>Slider</span><wbr></wbr><span><span>Matcher</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="971768486%2FClasslikes%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-slider-matcher/index.html">SliderMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><span data-unresolved-link="com.google.android.material.slider/Slider///PointingToDeclaration/">Slider</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matcher of value slider of given matcher</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-slider-matcher/index.html">SliderMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><span data-unresolved-link="com.google.android.material.slider/Slider///PointingToDeclaration/">Slider</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matcher of value slider of given matcher</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-245974195%2FClasslikes%2F-222259485" anchor-label="SpanDrawableMatcher" id="-245974195%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-span-drawable-matcher/index.html"><span>Span</span><wbr></wbr><span>Drawable</span><wbr></wbr><span><span>Matcher</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-span-drawable-matcher/index.html"><span>Span</span><wbr></wbr><span>Drawable</span><wbr></wbr><span><span>Matcher</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-245974195%2FClasslikes%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-span-drawable-matcher/index.html">SpanDrawableMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="org.hamcrest/TypeSafeMatcher///PointingToDeclaration/">TypeSafeMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matches given drawable with specified span</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-span-drawable-matcher/index.html">SpanDrawableMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="org.hamcrest/TypeSafeMatcher///PointingToDeclaration/">TypeSafeMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matches given drawable with specified span</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-457024292%2FClasslikes%2F-222259485" anchor-label="SpinnerAdapterSizeMatcher" id="-457024292%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-spinner-adapter-size-matcher/index.html"><span>Spinner</span><wbr></wbr><span>Adapter</span><wbr></wbr><span>Size</span><wbr></wbr><span><span>Matcher</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-spinner-adapter-size-matcher/index.html"><span>Spinner</span><wbr></wbr><span>Adapter</span><wbr></wbr><span>Size</span><wbr></wbr><span><span>Matcher</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-457024292%2FClasslikes%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-spinner-adapter-size-matcher/index.html">SpinnerAdapterSizeMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/widget/Spinner.html">Spinner</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matches Spinner with count of children</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-spinner-adapter-size-matcher/index.html">SpinnerAdapterSizeMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/widget/Spinner.html">Spinner</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matches Spinner with count of children</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="1140527960%2FClasslikes%2F-222259485" anchor-label="SpinnerPopupMatcher" id="1140527960%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-spinner-popup-matcher/index.html"><span>Spinner</span><wbr></wbr><span>Popup</span><wbr></wbr><span><span>Matcher</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-spinner-popup-matcher/index.html"><span>Spinner</span><wbr></wbr><span>Popup</span><wbr></wbr><span><span>Matcher</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1140527960%2FClasslikes%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-spinner-popup-matcher/index.html">SpinnerPopupMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="org.hamcrest/TypeSafeMatcher///PointingToDeclaration/">TypeSafeMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/androidx/test/espresso/Root.html">Root</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matches Root View is popup window and contains DropDownView</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-spinner-popup-matcher/index.html">SpinnerPopupMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="org.hamcrest/TypeSafeMatcher///PointingToDeclaration/">TypeSafeMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/androidx/test/espresso/Root.html">Root</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matches Root View is popup window and contains DropDownView</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="1181262224%2FClasslikes%2F-222259485" anchor-label="SwipeRefreshLayoutMatcher" id="1181262224%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-swipe-refresh-layout-matcher/index.html"><span>Swipe</span><wbr></wbr><span>Refresh</span><wbr></wbr><span>Layout</span><wbr></wbr><span><span>Matcher</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-swipe-refresh-layout-matcher/index.html"><span>Swipe</span><wbr></wbr><span>Refresh</span><wbr></wbr><span>Layout</span><wbr></wbr><span><span>Matcher</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1181262224%2FClasslikes%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-swipe-refresh-layout-matcher/index.html">SwipeRefreshLayoutMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="org.hamcrest/TypeSafeMatcher///PointingToDeclaration/">TypeSafeMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token operator">&gt;</span></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-swipe-refresh-layout-matcher/index.html">SwipeRefreshLayoutMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="org.hamcrest/TypeSafeMatcher///PointingToDeclaration/">TypeSafeMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-758107946%2FClasslikes%2F-222259485" anchor-label="SwitcherCurrentViewMatcher" id="-758107946%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-switcher-current-view-matcher/index.html"><span>Switcher</span><wbr></wbr><span>Current</span><wbr></wbr><span>View</span><wbr></wbr><span><span>Matcher</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-switcher-current-view-matcher/index.html"><span>Switcher</span><wbr></wbr><span>Current</span><wbr></wbr><span>View</span><wbr></wbr><span><span>Matcher</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-758107946%2FClasslikes%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-switcher-current-view-matcher/index.html">SwitcherCurrentViewMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matches current view in View Switcher</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-switcher-current-view-matcher/index.html">SwitcherCurrentViewMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matches current view in View Switcher</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="1143452645%2FClasslikes%2F-222259485" anchor-label="TextInputLayoutCounterEnabledMatcher" id="1143452645%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-text-input-layout-counter-enabled-matcher/index.html"><span>Text</span><wbr></wbr><span>Input</span><wbr></wbr><span>Layout</span><wbr></wbr><span>Counter</span><wbr></wbr><span>Enabled</span><wbr></wbr><span><span>Matcher</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-text-input-layout-counter-enabled-matcher/index.html"><span>Text</span><wbr></wbr><span>Input</span><wbr></wbr><span>Layout</span><wbr></wbr><span>Counter</span><wbr></wbr><span>Enabled</span><wbr></wbr><span><span>Matcher</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1143452645%2FClasslikes%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-text-input-layout-counter-enabled-matcher/index.html">TextInputLayoutCounterEnabledMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="org.hamcrest/TypeSafeMatcher///PointingToDeclaration/">TypeSafeMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token operator">&gt;</span></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-text-input-layout-counter-enabled-matcher/index.html">TextInputLayoutCounterEnabledMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="org.hamcrest/TypeSafeMatcher///PointingToDeclaration/">TypeSafeMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-1400191335%2FClasslikes%2F-222259485" anchor-label="TextInputLayoutErrorEnabledMatcher" id="-1400191335%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-text-input-layout-error-enabled-matcher/index.html"><span>Text</span><wbr></wbr><span>Input</span><wbr></wbr><span>Layout</span><wbr></wbr><span>Error</span><wbr></wbr><span>Enabled</span><wbr></wbr><span><span>Matcher</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-text-input-layout-error-enabled-matcher/index.html"><span>Text</span><wbr></wbr><span>Input</span><wbr></wbr><span>Layout</span><wbr></wbr><span>Error</span><wbr></wbr><span>Enabled</span><wbr></wbr><span><span>Matcher</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1400191335%2FClasslikes%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-text-input-layout-error-enabled-matcher/index.html">TextInputLayoutErrorEnabledMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="org.hamcrest/TypeSafeMatcher///PointingToDeclaration/">TypeSafeMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token operator">&gt;</span></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-text-input-layout-error-enabled-matcher/index.html">TextInputLayoutErrorEnabledMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="org.hamcrest/TypeSafeMatcher///PointingToDeclaration/">TypeSafeMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="1218479832%2FClasslikes%2F-222259485" anchor-label="TextInputLayoutHintEnabledMatcher" id="1218479832%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-text-input-layout-hint-enabled-matcher/index.html"><span>Text</span><wbr></wbr><span>Input</span><wbr></wbr><span>Layout</span><wbr></wbr><span>Hint</span><wbr></wbr><span>Enabled</span><wbr></wbr><span><span>Matcher</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-text-input-layout-hint-enabled-matcher/index.html"><span>Text</span><wbr></wbr><span>Input</span><wbr></wbr><span>Layout</span><wbr></wbr><span>Hint</span><wbr></wbr><span>Enabled</span><wbr></wbr><span><span>Matcher</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1218479832%2FClasslikes%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-text-input-layout-hint-enabled-matcher/index.html">TextInputLayoutHintEnabledMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="org.hamcrest/TypeSafeMatcher///PointingToDeclaration/">TypeSafeMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token operator">&gt;</span></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-text-input-layout-hint-enabled-matcher/index.html">TextInputLayoutHintEnabledMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="org.hamcrest/TypeSafeMatcher///PointingToDeclaration/">TypeSafeMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-966308077%2FClasslikes%2F-222259485" anchor-label="TextSizeMatcher" id="-966308077%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-text-size-matcher/index.html"><span>Text</span><wbr></wbr><span>Size</span><wbr></wbr><span><span>Matcher</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-text-size-matcher/index.html"><span>Text</span><wbr></wbr><span>Size</span><wbr></wbr><span><span>Matcher</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-966308077%2FClasslikes%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-text-size-matcher/index.html">TextSizeMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/widget/TextView.html">TextView</a><span class="token operator">&gt;</span></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-text-size-matcher/index.html">TextSizeMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/widget/TextView.html">TextView</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-1061027787%2FClasslikes%2F-222259485" anchor-label="TextViewGravityMatcher" id="-1061027787%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-text-view-gravity-matcher/index.html"><span>Text</span><wbr></wbr><span>View</span><wbr></wbr><span>Gravity</span><wbr></wbr><span><span>Matcher</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-text-view-gravity-matcher/index.html"><span>Text</span><wbr></wbr><span>View</span><wbr></wbr><span>Gravity</span><wbr></wbr><span><span>Matcher</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1061027787%2FClasslikes%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-text-view-gravity-matcher/index.html">TextViewGravityMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/widget/TextView.html">TextView</a><span class="token operator">&gt;</span></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-text-view-gravity-matcher/index.html">TextViewGravityMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/widget/TextView.html">TextView</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-539424472%2FClasslikes%2F-222259485" anchor-label="ToolbarNavigationMatcher" id="-539424472%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-toolbar-navigation-matcher/index.html"><span>Toolbar</span><wbr></wbr><span>Navigation</span><wbr></wbr><span><span>Matcher</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-toolbar-navigation-matcher/index.html"><span>Toolbar</span><wbr></wbr><span>Navigation</span><wbr></wbr><span><span>Matcher</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-539424472%2FClasslikes%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-toolbar-navigation-matcher/index.html">ToolbarNavigationMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/androidx/appcompat/widget/Toolbar.html">Toolbar</a><span class="token operator">&gt;</span></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-toolbar-navigation-matcher/index.html">ToolbarNavigationMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/androidx/appcompat/widget/Toolbar.html">Toolbar</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="619717740%2FClasslikes%2F-222259485" anchor-label="ToolbarSubtitleMatcher" id="619717740%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-toolbar-subtitle-matcher/index.html"><span>Toolbar</span><wbr></wbr><span>Subtitle</span><wbr></wbr><span><span>Matcher</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-toolbar-subtitle-matcher/index.html"><span>Toolbar</span><wbr></wbr><span>Subtitle</span><wbr></wbr><span><span>Matcher</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="619717740%2FClasslikes%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-toolbar-subtitle-matcher/index.html">ToolbarSubtitleMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/androidx/appcompat/widget/Toolbar.html">Toolbar</a><span class="token operator">&gt;</span></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-toolbar-subtitle-matcher/index.html">ToolbarSubtitleMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/androidx/appcompat/widget/Toolbar.html">Toolbar</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-1652698910%2FClasslikes%2F-222259485" anchor-label="ToolbarTitleMatcher" id="-1652698910%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-toolbar-title-matcher/index.html"><span>Toolbar</span><wbr></wbr><span>Title</span><wbr></wbr><span><span>Matcher</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-toolbar-title-matcher/index.html"><span>Toolbar</span><wbr></wbr><span>Title</span><wbr></wbr><span><span>Matcher</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1652698910%2FClasslikes%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-toolbar-title-matcher/index.html">ToolbarTitleMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/androidx/appcompat/widget/Toolbar.html">Toolbar</a><span class="token operator">&gt;</span></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-toolbar-title-matcher/index.html">ToolbarTitleMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/androidx/appcompat/widget/Toolbar.html">Toolbar</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="891349212%2FClasslikes%2F-222259485" anchor-label="TypefaceMatcher" id="891349212%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-typeface-matcher/index.html"><span>Typeface</span><wbr></wbr><span><span>Matcher</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-typeface-matcher/index.html"><span>Typeface</span><wbr></wbr><span><span>Matcher</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="891349212%2FClasslikes%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-typeface-matcher/index.html">TypefaceMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/widget/TextView.html">TextView</a><span class="token operator">&gt;</span></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-typeface-matcher/index.html">TypefaceMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/widget/TextView.html">TextView</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="721671004%2FClasslikes%2F-222259485" anchor-label="ViewGroupPositionMatcher" id="721671004%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-view-group-position-matcher/index.html"><span>View</span><wbr></wbr><span>Group</span><wbr></wbr><span>Position</span><wbr></wbr><span><span>Matcher</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-view-group-position-matcher/index.html"><span>View</span><wbr></wbr><span>Group</span><wbr></wbr><span>Position</span><wbr></wbr><span><span>Matcher</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="721671004%2FClasslikes%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-view-group-position-matcher/index.html">ViewGroupPositionMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matches Group descendant at given position</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-view-group-position-matcher/index.html">ViewGroupPositionMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matches Group descendant at given position</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-970418251%2FClasslikes%2F-222259485" anchor-label="ViewPager2AdapterSizeMatcher" id="-970418251%2FClasslikes%2F-222259485" data-filterable-set=":kakao:dokkaHtml/release"></a>
-        <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-view-pager2-adapter-size-matcher/index.html"><span>View</span><wbr></wbr><span>Pager2Adapter</span><wbr></wbr><span>Size</span><wbr></wbr><span><span>Matcher</span></span></a></div>
+          <div class="table-row" data-filterable-current=":kakao:dokkaHtml/release" data-filterable-set=":kakao:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-view-pager2-adapter-size-matcher/index.html"><span>View</span><wbr></wbr><span>Pager2Adapter</span><wbr></wbr><span>Size</span><wbr></wbr><span><span>Matcher</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-970418251%2FClasslikes%2F-222259485"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-view-pager2-adapter-size-matcher/index.html">ViewPager2AdapterSizeMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/androidx/viewpager2/widget/ViewPager2.html">ViewPager2</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matches ViewPager2 with count of children</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":kakao:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">public </span><span class="token keyword">final </span><span class="token keyword"></span><span class="token keyword">class </span><a href="-view-pager2-adapter-size-matcher/index.html">ViewPager2AdapterSizeMatcher</a><span class="token keyword"> extends </span><span data-unresolved-link="androidx.test.espresso.matcher/BoundedMatcher///PointingToDeclaration/">BoundedMatcher</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/androidx/viewpager2/widget/ViewPager2.html">ViewPager2</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Matches ViewPager2 with count of children</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
@@ -714,7 +726,8 @@
                 class="pull-right"><span>Generated by </span><a
                 href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
       </div>
+            </div>
+        </div>
     </div>
-</div>
 </body>
 </html>
