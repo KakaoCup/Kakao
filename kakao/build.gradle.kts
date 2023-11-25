@@ -1,51 +1,46 @@
 plugins {
     id("com.android.library")
-    id("kotlin-android")
+    kotlin ("android")
     id("org.jetbrains.dokka")
-    id("com.github.ben-manes.versions") version Versions.gradle_versions
 }
 
 android {
-    compileSdk = 33
+    namespace = "io.github.kakaocup.kakao"
+    compileSdk = libs.versions.compileSdk.get().toInt()
     defaultConfig {
-        minSdk = 14
-        targetSdk = 33
+        minSdk = libs.versions.minSdk.get().toInt()
         multiDexEnabled = true
     }
 
-    sourceSets {
-        getByName("main") {
-            java.srcDir("src/main/kotlin")
-            res.srcDir("src/main/res")
-        }
-        getByName("test") {
-            java.srcDir("src/test/kotlin")
+    packaging.resources.excludes.add("META-INF/*")
+
+    kotlin {
+        jvmToolchain(libs.versions.jvmVersion.get().toInt())
+    }
+
+    publishing {
+        singleVariant("release") {
+            withJavadocJar()
+            withSourcesJar()
         }
     }
 }
 
 dependencies {
-    implementation(Libraries.kotlin_stdlib)
-    implementation(Libraries.appcompat)
-    implementation(Libraries.recyclerview)
-    implementation(Libraries.viewpager2)
-    implementation(Libraries.swiperefresh)
-    implementation(Libraries.design)
-    implementation(Libraries.espresso_core)
-    implementation(Libraries.espresso_web)
-    implementation(Libraries.espresso_intents)
-    implementation(Libraries.espresso_contrib)
-    implementation(Libraries.multidex)
+    implementation(libs.androidx.test.espresso.core)
+    implementation(libs.androidx.test.espresso.web)
+    implementation(libs.androidx.test.espresso.intents)
+    implementation(libs.androidx.test.espresso.contrib)
 
-    dokkaHtmlPlugin(Libraries.dokka)
-}
+    implementation(libs.androidx.appcompat)
+    implementation(libs.androidx.recyclerview)
+    implementation(libs.androidx.viewpager2)
+    implementation(libs.androidx.swiperefreshlayout)
+    implementation(libs.com.google.android.material)
 
-tasks.named("dependencyUpdates", com.github.benmanes.gradle.versions.updates.DependencyUpdatesTask::class).configure {
-    rejectVersionIf {
-        val stableKeyword: Boolean = listOf("RELEASE", "FINAL", "GA").any { currentVersion.toUpperCase().contains(it) }
-        val regex = "/^[0-9,.v-]+(-r)?$/".toRegex()
-        !stableKeyword && !(regex.matches(currentVersion))
-    }
+    implementation(libs.androidx.multidex.multidex)
+
+    dokkaHtmlPlugin(libs.org.jetbrains.dokka.kotlinAsJavaPlugin)
 }
 
 tasks.dokkaGfm {

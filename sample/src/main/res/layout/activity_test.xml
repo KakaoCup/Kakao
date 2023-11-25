@@ -45,28 +45,22 @@
             android:text="SINGLE TYPE RECYCLER"/>
 
         <Button
-            android:id="@+id/multi_type_recycler"
+            android:id="@+id/alert_dialog_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="MULTI TYPE RECYCLER"/>
-
-        <Button
-            android:id="@+id/auto_complete"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="AUTO_COMPLETE"/>
-
-        <Button
-            android:id="@+id/drawableList"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="DRAWABLE LIST"/>
+            android:text="ALERT DIALOG"/>
 
         <Button
             android:id="@+id/spinner_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="SPINNER"/>
+
+        <Button
+            android:id="@+id/multi_type_recycler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MULTI TYPE RECYCLER"/>
 
         <Button
             android:id="@+id/web_button"
@@ -81,6 +75,12 @@
             android:text="VIEW PAGER 2"/>
 
         <Button
+            android:id="@+id/auto_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AUTO_COMPLETE"/>
+
+        <Button
             android:id="@+id/snackbar_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -93,10 +93,10 @@
             android:text="PICKERS"/>
 
         <Button
-            android:id="@+id/alert_dialog_button"
+            android:id="@+id/drawableList"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ALERT DIALOG"/>
+            android:text="DRAWABLE LIST"/>
 
         <Button
             android:id="@+id/slider_button"
@@ -105,22 +105,16 @@
             android:text="SLIDER"/>
 
         <Button
-            android:id="@+id/google_maps"
+            android:id="@+id/text_activity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="GOOGLE MAPS"/>
+            android:text="TEXT VIEWS"/>
 
         <Button
             android:id="@+id/text_input_layout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TEXT INPUT LAYOUT"/>
-
-        <Button
-            android:id="@+id/text_activity"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TEXT VIEWS"/>
 
         <Button
             android:id="@+id/switchers_button"
