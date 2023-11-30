@@ -2,6 +2,7 @@ package io.github.kakaocup.sample
 
 import androidx.test.ext.junit.rules.ActivityScenarioRule
 import androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner
+import io.github.kakaocup.kakao.common.utilities.getResourceDrawable
 import io.github.kakaocup.kakao.screen.Screen
 import io.github.kakaocup.sample.screen.AlertDialogActivityScreen
 import org.junit.Rule
@@ -17,6 +18,7 @@ class AlertDialogTest {
     @Test
     fun testAlertDialog() {
         Screen.onScreen<AlertDialogActivityScreen> {
+            getResourceDrawable(R.drawable.ic_android_black_24dp)
             showAlertDialogButton {
                 click()
             }

@@ -23,6 +23,8 @@ junitVersion = "4.13.2"
 junitExtVersion = "1.1.5"
 multidexVersion = "2.0.1"
 materialVersion = "1.10.0"
+kakaoversion = "3.4.1"
+kakaoClickversion = "1.0.0"
 
 detekt = "1.17.1"
 
@@ -57,3 +59,6 @@ org-jetbrains-dokka-kotlinAsJavaPlugin = { group = "org.jetbrains.dokka", name =
 org-jetbrains-dokka-dokkaGradlePlugin = { group = "org.jetbrains.dokka", name = "dokka-gradle-plugin", version.ref = "dokkaVersion" }
 
 org-kohsuke-githubApi = { group = "org.kohsuke", name = "github-api", version.ref = "githubApiVersion" }
+
+kakao-published = { group = "io.github.kakaocup", name = "kakao", version.ref = "kakaoversion" }
+kakao-click-published = { group = "io.github.kakaocup", name = "kakao-ext-clicks", version.ref = "kakaoClickversion" }
