@@ -1,4 +1,5 @@
 [versions]
+gradle = "8.1"
 jvmVersion = "17"
 
 targetSdk = "34"

@@ -41,3 +41,8 @@ subprojects {
 
     group = Description.mavenGroup
 }
+
+tasks.wrapper {
+    distributionType = Wrapper.DistributionType.ALL
+    gradleVersion = libs.versions.gradle.get()
+}
