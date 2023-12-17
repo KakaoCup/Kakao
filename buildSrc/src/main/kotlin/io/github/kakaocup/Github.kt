@@ -1,3 +1,5 @@
+package io.github.kakaocup
+
 import org.kohsuke.github.GitHubBuilder
 
 class Github(private val token: String) {
