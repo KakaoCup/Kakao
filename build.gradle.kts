@@ -1,19 +1,3 @@
-buildscript {
-    repositories {
-        mavenCentral()
-        google()
-        gradlePluginPortal()
-    }
-    dependencies {
-        classpath(libs.com.android.tools.build.gradle)
-    }
-}
-
-repositories {
-    gradlePluginPortal()
-    google()
-}
-
 plugins {
     id("io.gitlab.arturbosch.detekt") version libs.versions.detekt
 }
@@ -31,15 +15,6 @@ detekt {
         html.enabled = true
         xml.enabled = true
     }
-}
-
-subprojects {
-    repositories {
-        mavenCentral()
-        google()
-    }
-
-    group = Description.mavenGroup
 }
 
 tasks.wrapper {

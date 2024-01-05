@@ -1,40 +1,13 @@
 plugins {
-    id("com.android.application")
-    kotlin("android")
+    id("convention.application")
 }
 
 android {
     namespace = "io.github.kakaocup.sample"
-    compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {
-        minSdk = 21
-        targetSdk = libs.versions.targetSdk.get().toInt()
         versionCode = 1
         versionName = "1.0.0"
-        multiDexEnabled = true
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-    }
-
-    testOptions {
-        animationsDisabled = true
-    }
-
-    signingConfigs {
-        create("kakao") {
-            storeFile = File("${project.rootDir}/buildsystem/debug.keystore")
-            storePassword = "android"
-            keyAlias = "kakaodebugkey"
-            keyPassword = "android"
-        }
-    }
-
-    buildTypes {
-        debug { signingConfig = signingConfigs.getByName("kakao") }
-    }
-
-    kotlin {
-        jvmToolchain(libs.versions.jvmVersion.get().toInt())
     }
 }
 

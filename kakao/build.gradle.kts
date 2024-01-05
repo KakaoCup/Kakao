@@ -1,29 +1,13 @@
 plugins {
-    id("com.android.library")
-    kotlin ("android")
+    id("convention.library")
+    id("convention.publishing")
     id("org.jetbrains.dokka")
 }
 
+description = "Nice and simple DSL for Espresso in Kotlin"
+
 android {
     namespace = "io.github.kakaocup.kakao"
-    compileSdk = libs.versions.compileSdk.get().toInt()
-    defaultConfig {
-        minSdk = libs.versions.minSdk.get().toInt()
-        multiDexEnabled = true
-    }
-
-    packaging.resources.excludes.add("META-INF/*")
-
-    kotlin {
-        jvmToolchain(libs.versions.jvmVersion.get().toInt())
-    }
-
-    publishing {
-        singleVariant("release") {
-            withJavadocJar()
-            withSourcesJar()
-        }
-    }
 }
 
 dependencies {
@@ -50,8 +34,4 @@ tasks.dokkaGfm {
 tasks.dokkaHtml.configure {
     moduleName.set("kakao")
     outputDirectory.set(File("$rootDir/html"))
-}
-
-afterEvaluate {
-    KakaoDeployment.initialize(project)
 }
