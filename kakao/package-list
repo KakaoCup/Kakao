@@ -331,8 +331,10 @@ $dokka.location:io.github.kakaocup.kakao.common.matchers/ViewPager2AdapterSizeMa
 $dokka.location:io.github.kakaocup.kakao.common.matchers/ViewPager2AdapterSizeMatcher/describeTo/#org.hamcrest.Description/PointingToDeclaration/kakao/io.github.kakaocup.kakao.common.matchers/-view-pager2-adapter-size-matcher/describe-to.html
 $dokka.location:io.github.kakaocup.kakao.common.utilities////PointingToDeclaration/kakao/io.github.kakaocup.kakao.common.utilities/index.html
 $dokka.location:io.github.kakaocup.kakao.common.utilities/ContextUtilsKt///PointingToDeclaration/kakao/io.github.kakaocup.kakao.common.utilities/-context-utils-kt/index.html
+$dokka.location:io.github.kakaocup.kakao.common.utilities/ContextUtilsKt/getQuantityString/#kotlin.Int#kotlin.Int/PointingToDeclaration/kakao/io.github.kakaocup.kakao.common.utilities/-context-utils-kt/get-quantity-string.html
 $dokka.location:io.github.kakaocup.kakao.common.utilities/ContextUtilsKt/getResourceColor/#kotlin.Int/PointingToDeclaration/kakao/io.github.kakaocup.kakao.common.utilities/-context-utils-kt/get-resource-color.html
 $dokka.location:io.github.kakaocup.kakao.common.utilities/ContextUtilsKt/getResourceDrawable/#kotlin.Int/PointingToDeclaration/kakao/io.github.kakaocup.kakao.common.utilities/-context-utils-kt/get-resource-drawable.html
+$dokka.location:io.github.kakaocup.kakao.common.utilities/ContextUtilsKt/getResourceString/#kotlin.Int#kotlin.Array[kotlin.Any]/PointingToDeclaration/kakao/io.github.kakaocup.kakao.common.utilities/-context-utils-kt/get-resource-string.html
 $dokka.location:io.github.kakaocup.kakao.common.utilities/ContextUtilsKt/getResourceString/#kotlin.Int/PointingToDeclaration/kakao/io.github.kakaocup.kakao.common.utilities/-context-utils-kt/get-resource-string.html
 $dokka.location:io.github.kakaocup.kakao.common.views////PointingToDeclaration/kakao/io.github.kakaocup.kakao.common.views/index.html
 $dokka.location:io.github.kakaocup.kakao.common.views/KBaseView///PointingToDeclaration/kakao/io.github.kakaocup.kakao.common.views/-k-base-view/index.html
