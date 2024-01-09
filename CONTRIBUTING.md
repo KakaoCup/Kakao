@@ -18,10 +18,10 @@ General Workflow
 
 The steps below describe how to get a patch into a master branch.
 
-1. Find an open issue or create a new issue on [issue tracker](https://github.com/agoda-com/kakao/issues) for the work you want to
+1. Find an open issue or create a new issue on [issue tracker](https://github.com/KakaoCup/Kakao/issues) for the work you want to
    contribute. In case you wish to work on an existing issue make sure no one else is working on it. Comment on the issue declaring you are
    willing to take it up to avoid possible conflicts and reworks. Also avoid picking up issues tagged as Invalid.
-2. [Fork the project](https://github.com/agoda-com/kakao#fork-destination-box) on GitHub. You'll need to create a feature-branch for your
+2. [Fork the project](https://github.com/KakaoCup/Kakao/issues#fork-destination-box) on GitHub. You'll need to create a feature-branch for your
    work on your fork, as this way you'll be able to submit a pull request against Kakao.
 3. Continue working on the feature branch until you are satisfied. Add tests for new features and modify existing tests if required.
 4. Run all unit tests from sbt and make sure all of them pass.
