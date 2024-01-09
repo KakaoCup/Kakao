@@ -32,7 +32,7 @@ configure<PublishingExtension> {
             pom {
                 name.set(project.name)
                 url.set("https://github.com/KakaoCup/Kakao")
-                description.set(project.description)
+                description.set(project.description ?: "Nice and simple DSL for Espresso in Kotlin")
 
                 licenses {
                     license {
