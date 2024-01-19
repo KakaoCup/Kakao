@@ -4,7 +4,7 @@ plugins {
 
 detekt {
     toolVersion = libs.versions.detekt.get()
-    input = files(subprojects.map {
+    source = files(subprojects.map {
         File(it.projectDir, "/src/main/kotlin")
     })
     buildUponDefaultConfig = true
@@ -12,8 +12,8 @@ detekt {
     baseline = file("$projectDir/detekt-baseline.xml")
 
     reports {
-        html.enabled = true
-        xml.enabled = true
+        html.required.set(true)
+        xml.required.set(true)
     }
 }
 

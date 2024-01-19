@@ -3,7 +3,6 @@
 package io.github.kakaocup.kakao.common.actions
 
 import android.view.View
-import androidx.test.espresso.FailureHandler
 import androidx.test.espresso.ViewAction
 import androidx.test.espresso.action.CoordinatesProvider
 import androidx.test.espresso.action.GeneralLocation
@@ -82,7 +81,7 @@ interface BaseActions {
      * @param function Lambda that handles this view's errors
      */
     fun onFailure(function: (error: Throwable, matcher: Matcher<View>) -> Unit) {
-        view.withFailureHandler(FailureHandler { error, viewMatcher -> function(error, viewMatcher) })
+        view.withFailureHandler { error, viewMatcher -> function(error, viewMatcher) }
     }
 
     /**

@@ -8,7 +8,7 @@ plugins {
 }
 
 withVersionCatalog { libs ->
-    configure<AppExtension>() {
+    configure<AppExtension> {
         defaultConfig {
             targetSdk = libs.versions.targetSdk.get().toInt()
             testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"

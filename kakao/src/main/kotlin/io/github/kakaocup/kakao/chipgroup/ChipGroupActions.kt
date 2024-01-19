@@ -33,7 +33,6 @@ interface ChipGroupActions : BaseActions {
                     }
                 }
             }
-
         })
     }
 
@@ -54,14 +53,13 @@ interface ChipGroupActions : BaseActions {
                     chip.performClick()
                 }
             }
-
         })
     }
 
     /**
      *  Select a Chip in a ChipGroup at a particular index
      *
-     *  @param index ChipGroup Chip indes
+     *  @param index ChipGroup Chip index
      */
     fun selectChipAt(index: Int) {
         view.perform(object : ViewAction {
@@ -80,7 +78,6 @@ interface ChipGroupActions : BaseActions {
                     }
                 }
             }
-
         })
     }
 }

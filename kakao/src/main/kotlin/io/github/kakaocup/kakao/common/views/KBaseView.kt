@@ -23,7 +23,7 @@ import org.hamcrest.Matchers
 /**
  * Base class for all Kakao views
  *
- * This base class allows create new custom view with ease. All you
+ * This base class allows to create new custom view with ease. All you
  * have to do is to extend this class, implement all necessarily additional
  * actions/assertions interfaces and override necessary constructors
  *
@@ -31,7 +31,7 @@ import org.hamcrest.Matchers
  */
 @KakaoDslMarker
 open class KBaseView<T> : KDSLView<T>, BaseActions, BaseAssertions, Interceptable<ViewInteraction, ViewAssertion, ViewAction> {
-    override val view: ViewInteractionDelegate
+    final override val view: ViewInteractionDelegate
     override var root: Matcher<Root> = RootMatchers.DEFAULT
 
     /**

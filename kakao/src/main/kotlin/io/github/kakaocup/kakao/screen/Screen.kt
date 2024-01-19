@@ -135,6 +135,10 @@ open class Screen<out T : Screen<T>> : ScreenActions {
     }
 
     companion object {
+        internal val viewInterceptors: Deque<Interceptor<ViewInteraction, ViewAssertion, ViewAction>> = LinkedList()
+        internal val dataInterceptors: Deque<Interceptor<DataInteraction, ViewAssertion, ViewAction>> = LinkedList()
+        internal val webInterceptors: Deque<Interceptor<Web.WebInteraction<*>, WebAssertion<*>, Atom<*>>> = LinkedList()
+
         /**
          * Idles for given amount of time
          *
@@ -167,9 +171,5 @@ open class Screen<out T : Screen<T>> : ScreenActions {
                 .newInstance()
                 .apply { this(function) }
         }
-
-        internal val viewInterceptors: Deque<Interceptor<ViewInteraction, ViewAssertion, ViewAction>> = LinkedList()
-        internal val dataInterceptors: Deque<Interceptor<DataInteraction, ViewAssertion, ViewAction>> = LinkedList()
-        internal val webInterceptors: Deque<Interceptor<Web.WebInteraction<*>, WebAssertion<*>, Atom<*>>> = LinkedList()
     }
 }

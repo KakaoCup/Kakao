@@ -7,7 +7,7 @@ compileSdk = "34"
 minSdk = "14"
 
 agpVersion = "8.2.1"
-kotlinVersion = "1.9.21"
+kotlinVersion = "1.9.22"
 
 dokkaVersion = "1.9.10"
 appcompatVersion = "1.6.1"
@@ -25,7 +25,7 @@ junitExtVersion = "1.1.5"
 multidexVersion = "2.0.1"
 materialVersion = "1.11.0"
 
-detekt = "1.17.1"
+detekt = "1.19.0"
 
 githubApiVersion = "1.318"
 

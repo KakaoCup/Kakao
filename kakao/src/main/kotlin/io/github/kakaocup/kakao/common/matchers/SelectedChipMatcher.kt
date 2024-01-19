@@ -10,7 +10,7 @@ import org.hamcrest.Description
  *
  * @see Chip
  */
-class SelectedChipMatcher() :
+class SelectedChipMatcher :
     BoundedMatcher<View, Chip>(Chip::class.java) {
     override fun describeTo(description: Description) {
         description.appendText("Chip is checked")
