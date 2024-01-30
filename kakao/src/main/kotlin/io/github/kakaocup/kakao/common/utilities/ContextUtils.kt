@@ -11,7 +11,7 @@ fun getResourceString(@StringRes resId: Int) =
     InstrumentationRegistry.getInstrumentation().targetContext.resources.getString(resId)
 
 fun getResourceString(@StringRes resId: Int, vararg args: Any) =
-    InstrumentationRegistry.getInstrumentation().targetContext.resources.getString(resId, args)
+    InstrumentationRegistry.getInstrumentation().targetContext.resources.getString(resId, *args)
 
 fun getQuantityString(@PluralsRes resId: Int, quantity: Int) =
     InstrumentationRegistry.getInstrumentation().targetContext.resources.getQuantityString(resId, quantity)
