@@ -77,7 +77,7 @@ configure<PublishingExtension> {
 }
 
 plugins.withId("com.android.library") {
-    configure<LibraryExtension>() {
+    configure<LibraryExtension> {
         publishing {
             singleVariant("release") {
                 withJavadocJar()

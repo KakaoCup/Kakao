@@ -104,7 +104,7 @@ class KViewPager2 : ViewPager2Actions, ViewPager2AdapterAssertions, SwipeableAct
 
         try {
             scrollTo(position)
-        } catch (error: Throwable) {
+        } catch (_: Throwable) {
         }
 
         val vb = ViewBuilder().apply {

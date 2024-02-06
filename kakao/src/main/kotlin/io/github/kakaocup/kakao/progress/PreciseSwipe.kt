@@ -10,14 +10,15 @@ import androidx.test.espresso.action.Swiper
 import androidx.test.espresso.core.internal.deps.guava.base.Preconditions.checkElementIndex
 
 object PreciseSwipe : Swiper {
+
+    private const val EVENT_COUNT = 40
+    private const val DURATION_MS = 1000L
+    private const val TAG = "PreciseSwipe"
+
     override fun sendSwipe(
         uiController: UiController, startCoordinates: FloatArray,
         endCoordinates: FloatArray, precision: FloatArray
     ): Swiper.Status {
-        checkNotNull(uiController)
-        checkNotNull(startCoordinates)
-        checkNotNull(endCoordinates)
-        checkNotNull(precision)
 
         val steps = interpolate(startCoordinates, endCoordinates, EVENT_COUNT)
         val delayBetweenMovements = DURATION_MS / steps.size
@@ -65,9 +66,4 @@ object PreciseSwipe : Swiper {
 
         return res
     }
-
-    private const val EVENT_COUNT = 40
-    private const val DURATION_MS = 1000L
-    private const val TAG = "PreciseSwipe"
-
 }

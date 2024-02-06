@@ -18,7 +18,6 @@ import io.github.kakaocup.kakao.common.utilities.getResourceDrawable
 import org.hamcrest.Description
 import org.hamcrest.TypeSafeMatcher
 
-
 /**
  * Matches given drawable with current one
  *
