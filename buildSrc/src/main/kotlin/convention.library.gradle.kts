@@ -3,7 +3,3 @@ plugins {
     id("convention.android-base")
     id("convention.kotlin")
 }
-
-android {
-    packaging.resources.excludes.add("META-INF/*")
-}
