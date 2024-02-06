@@ -1,6 +1,6 @@
 [versions]
 gradle = "8.5"
-jvmVersion = "17"
+jvmVersion = "11"
 
 targetSdk = "34"
 compileSdk = "34"

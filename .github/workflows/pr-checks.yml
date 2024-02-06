@@ -6,11 +6,11 @@ jobs:
     name: Detekt
     steps:
       - uses: actions/checkout@v3
-      - name: Set up JDK 17
+      - name: Set up JDK 11
         uses: actions/setup-java@v3
         with:
           distribution: "temurin"
-          java-version: 17
+          java-version: 11
       - name: detekt
         run: |
           ./gradlew clean detekt
@@ -21,11 +21,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Set up JDK 17
+      - name: Set up JDK 11
         uses: actions/setup-java@v3
         with:
           distribution: "temurin"
-          java-version: 17
+          java-version: 11
       - name: Assemble Debug APK
         run: bash ./gradlew sample:assembleDebug
       - name: Upload app APK
@@ -40,11 +40,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Set up JDK 17
+      - name: Set up JDK 11
         uses: actions/setup-java@v3
         with:
           distribution: "temurin"
-          java-version: 17
+          java-version: 11
       - name: Assemble Instrumental APK
         run: bash ./gradlew sample:assembleDebugAndroidTest
       - name: Upload app APK
