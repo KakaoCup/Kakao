@@ -41,6 +41,7 @@ class TestActivity : AppCompatActivity() {
         addRoute(R.id.text_input_layout, TextInputLayoutActivity::class.java)
         addRoute(R.id.text_activity, TextActivity::class.java)
         addRoute(R.id.switchers_button, SwitchersActivity::class.java)
+        addRoute(R.id.flexbox_chips_type_recycler, ChipsActivity::class.java)
 
         findViewById<Button>(R.id.snackbar_button).setOnClickListener {
             val snackbar = Snackbar.make(
