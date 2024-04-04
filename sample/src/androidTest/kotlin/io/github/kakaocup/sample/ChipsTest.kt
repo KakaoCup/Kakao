@@ -18,18 +18,22 @@ class ChipsTest {
     fun testCorrectChipsDisplayed() {
         onScreen<ChipsScreen> {
             chip1 {
+                isChecked()
                 hasText("Chip1")
                 hasCheckedIcon(R.drawable.ic_sentiment_very_satisfied_black_24dp)
             }
             chip2 {
+                isNotChecked()
                 hasText("Chip2")
                 hasChipIcon(R.drawable.ic_auto_fix_high_24dp)
             }
             chip3 {
+                isNotChecked()
                 hasText("Chip3")
                 hasCloseIcon(R.drawable.ic_android_black_24dp, tintColorId = android.R.color.black)
             }
             chip4 {
+                isNotChecked()
                 hasText("Chip4")
                 hasNoIconVisible()
             }
