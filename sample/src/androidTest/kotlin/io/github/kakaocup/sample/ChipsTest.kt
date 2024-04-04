@@ -15,7 +15,7 @@ class ChipsTest {
     val rule = ActivityScenarioRule(ChipsActivity::class.java)
 
     @Test
-    fun testContentItemsRecyclerView() {
+    fun testCorrectChipsDisplayed() {
         onScreen<ChipsScreen> {
             chip1 {
                 hasText("Chip1")
