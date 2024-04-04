@@ -123,10 +123,10 @@
             android:text="SWITCHERS"/>
 
         <Button
-            android:id="@+id/flexbox_chips_type_recycler"
+            android:id="@+id/chips"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="FLEXBOX CHIPS"/>
+            android:text="CHIPS"/>
 
       </GridLayout>
 
