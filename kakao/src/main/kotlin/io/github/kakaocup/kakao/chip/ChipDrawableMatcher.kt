@@ -39,36 +39,33 @@ class ChipDrawableMatcher(
 
     override fun matchesSafely(view: View?): Boolean {
         val viewAsChip = view as? Chip ?: return false
-
-        if (resId < 0 && drawable == null) {
-            return viewAsChip.chipDrawable == null
+        val expectedDrawable: Drawable? = when {
+            drawable != null -> drawable
+            resId >= 0 -> getResourceDrawable(resId)?.mutate()
+            else -> return viewAsChip.chipDrawable == null
         }
 
-        var expectedDrawable: Drawable? = drawable ?: getResourceDrawable(resId)?.mutate()
+        // Apply backward compatibility wrap and tints if necessary
+        val finalDrawable = when {
+            Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP && expectedDrawable != null -> DrawableCompat.wrap(
+                expectedDrawable
+            )
+                .mutate()
 
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP && expectedDrawable != null) {
-            expectedDrawable = DrawableCompat.wrap(expectedDrawable).mutate()
-        }
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            tintColorId?.let { tintColorId ->
+            Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP && tintColorId != null -> expectedDrawable?.apply {
                 val tintColor = getResourceColor(tintColorId)
-                expectedDrawable?.apply {
-                    setTintList(ColorStateList.valueOf(tintColor))
-                    setTintMode(PorterDuff.Mode.SRC_IN)
-                }
+                setTintList(ColorStateList.valueOf(tintColor))
+                setTintMode(PorterDuff.Mode.SRC_IN)
             }
-        }
 
-        if (expectedDrawable == null) {
-            return false
-        }
+            else -> expectedDrawable
+        } ?: return false
 
-        return viewAsChip.getChipActualDrawable(chipIconType)?.mutate()?.let {
-            val bitmap = toBitmap?.invoke(it) ?: it.toBitmap()
-
-            val otherBitmap = toBitmap?.invoke(expectedDrawable) ?: expectedDrawable.toBitmap()
-            bitmap.sameAs(otherBitmap)
+        // Compare actual vs expected drawables
+        return viewAsChip.getChipActualDrawable(chipIconType)?.mutate()?.let { actualDrawable ->
+            val actualBitmap = toBitmap?.invoke(actualDrawable) ?: actualDrawable.toBitmap()
+            val expectedBitmap = toBitmap?.invoke(finalDrawable) ?: finalDrawable.toBitmap()
+            actualBitmap.sameAs(expectedBitmap)
         } ?: false
     }
 
