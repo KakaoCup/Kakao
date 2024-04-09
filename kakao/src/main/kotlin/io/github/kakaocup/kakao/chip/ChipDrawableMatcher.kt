@@ -37,6 +37,7 @@ class ChipDrawableMatcher(
         desc.appendText("with drawable id $resId or provided instance for the $chipIconType icon")
     }
 
+    @Suppress("ReturnCount")
     override fun matchesSafely(view: View?): Boolean {
         val expectedDrawable: Drawable? = when {
             drawable != null -> drawable
