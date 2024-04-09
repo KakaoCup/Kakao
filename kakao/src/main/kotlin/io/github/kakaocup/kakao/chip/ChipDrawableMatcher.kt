@@ -38,35 +38,36 @@ class ChipDrawableMatcher(
     }
 
     override fun matchesSafely(view: View?): Boolean {
-        val viewAsChip = view as? Chip ?: return false
         val expectedDrawable: Drawable? = when {
             drawable != null -> drawable
             resId >= 0 -> getResourceDrawable(resId)?.mutate()
-            else -> return viewAsChip.chipDrawable == null
+            else -> return (view as? Chip)?.chipDrawable == null
         }
 
         // Apply backward compatibility wrap and tints if necessary
-        val finalDrawable = when {
-            Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP && expectedDrawable != null -> DrawableCompat.wrap(
-                expectedDrawable
-            )
-                .mutate()
-
-            Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP && tintColorId != null -> expectedDrawable?.apply {
-                val tintColor = getResourceColor(tintColorId)
-                setTintList(ColorStateList.valueOf(tintColor))
-                setTintMode(PorterDuff.Mode.SRC_IN)
-            }
-
-            else -> expectedDrawable
-        } ?: return false
+        val finalDrawable = expectedDrawable.processDrawableForDueToSdk() ?: return false
 
         // Compare actual vs expected drawables
-        return viewAsChip.getChipActualDrawable(chipIconType)?.mutate()?.let { actualDrawable ->
+        return (view as? Chip)?.getChipActualDrawable(chipIconType)?.mutate()?.let { actualDrawable ->
             val actualBitmap = toBitmap?.invoke(actualDrawable) ?: actualDrawable.toBitmap()
             val expectedBitmap = toBitmap?.invoke(finalDrawable) ?: finalDrawable.toBitmap()
             actualBitmap.sameAs(expectedBitmap)
         } ?: false
+    }
+
+    private fun Drawable?.processDrawableForDueToSdk() = when {
+        Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP && this != null -> DrawableCompat.wrap(
+            this
+        )
+            .mutate()
+
+        Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP && tintColorId != null -> this?.apply {
+            val tintColor = getResourceColor(tintColorId)
+            setTintList(ColorStateList.valueOf(tintColor))
+            setTintMode(PorterDuff.Mode.SRC_IN)
+        }
+
+        else -> this
     }
 
     private fun Chip.getChipActualDrawable(chipIconType: ChipIconType): Drawable? = when (chipIconType) {
