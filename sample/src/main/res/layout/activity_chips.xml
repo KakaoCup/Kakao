@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+  <com.google.android.material.chip.ChipGroup
+      android:id="@+id/chip_group1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      app:chipSpacing="8dp">
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip1"
+        style="@style/Widget.MaterialComponents.Chip.Filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkable="true"
+        android:checked="true"
+        app:checkedIcon="@drawable/ic_sentiment_very_satisfied_black_24dp"
+        android:text="Chip1" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip2"
+        style="@style/Base.Widget.MaterialComponents.Chip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkable="true"
+        app:chipIcon="@drawable/ic_auto_fix_high_24dp"
+        app:chipIconVisible="true"
+        app:closeIconVisible="false"
+        android:text="Chip2" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip3"
+        style="@style/Base.Widget.MaterialComponents.Chip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkable="true"
+        app:closeIcon="@drawable/ic_android_black_24dp"
+        app:closeIconTint="@android:color/black"
+        android:text="Chip3" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip4"
+        style="@style/Base.Widget.MaterialComponents.Chip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkable="true"
+        app:closeIconVisible="false"
+        app:checkedIconVisible="false"
+        app:chipIconVisible="false"
+        android:text="Chip4" />
+
+  </com.google.android.material.chip.ChipGroup>
+</LinearLayout>

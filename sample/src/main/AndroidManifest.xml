@@ -128,6 +128,10 @@
         android:name="io.github.kakaocup.sample.AnimatedButtonClickActivity"
         android:label="Animated Button Clicks Activity"
         android:theme="@style/MaterialAppTheme" />
+    <activity
+        android:name="io.github.kakaocup.sample.ChipsActivity"
+        android:label="Chips Activity"
+        android:theme="@style/MaterialAppTheme" />
   </application>
 
 </manifest>
