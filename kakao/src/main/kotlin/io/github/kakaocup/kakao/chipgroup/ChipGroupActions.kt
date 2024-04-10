@@ -25,10 +25,8 @@ interface ChipGroupActions : BaseActions {
                 if (view is ChipGroup) {
                     for (i in 0 until view.childCount) {
                         val chip = view.getChildAt(i)
-                        if (chip is Chip) {
-                            if (text.contentEquals(chip.text)) {
-                                chip.performClick()
-                            }
+                        if (chip is Chip && text.contentEquals(chip.text)) {
+                            chip.performClick()
                         }
                     }
                 }
