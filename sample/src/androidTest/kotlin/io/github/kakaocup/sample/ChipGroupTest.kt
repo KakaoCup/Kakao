@@ -16,32 +16,44 @@ class ChipGroupTest {
     val rule = ActivityScenarioRule(ChipGroupActivity::class.java)
 
     @Test
-    fun testChipGroupInteraction() {
+    fun testSelectChipByText() {
         onScreen<ChipGroupActivityScreen> {
             chipGroup {
-                selectChip("Chip2")
-
-                isChipSelected("Chip2")
-
-                isChipSelected(`is`("Chip2"))
-
-                selectChipAt(3)
-
-                isChipSelected("Chip4")
-
-                hasSize(4)
-            }
-
-            chipGroup1 {
-                hasChip(R.id.chip1)
-
-                selectChip(R.id.chip1)
-
-                isChipSelected(R.id.chip1)
-
-                hasSize(1)
+                val chipText = "Chip2"
+                selectChip(chipText)
+                isChipSelected(chipText)
+                isChipSelected(`is`(chipText))
             }
         }
     }
 
+    @Test
+    fun testSelectChipByIndex() {
+        onScreen<ChipGroupActivityScreen> {
+            chipGroup {
+                selectChipAt(3)
+                isChipSelected("Chip4")
+            }
+        }
+    }
+
+    @Test
+    fun testSelectChipById() {
+        onScreen<ChipGroupActivityScreen> {
+            val chipId = R.id.chip1
+            chipGroup1 {
+                hasChip(chipId)
+                selectChip(chipId)
+                isChipSelected(chipId)
+            }
+        }
+    }
+
+    @Test
+    fun testChipsGroupSize() {
+        onScreen<ChipGroupActivityScreen> {
+            chipGroup { hasSize(4) }
+            chipGroup1 { hasSize(1) }
+        }
+    }
 }
