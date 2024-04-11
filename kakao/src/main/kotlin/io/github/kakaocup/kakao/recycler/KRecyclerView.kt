@@ -110,7 +110,7 @@ class KRecyclerView : RecyclerActions, BaseAssertions, RecyclerAdapterAssertions
 
         try {
             scrollTo(position)
-        } catch (error: Throwable) {
+        } catch (_: Throwable) {
         }
 
         function((provideItem(PositionMatcher(matcher, position)) as T).also { inRoot { withMatcher(this@KRecyclerView.root) } })
@@ -162,7 +162,7 @@ class KRecyclerView : RecyclerActions, BaseAssertions, RecyclerAdapterAssertions
 
         try {
             scrollTo(childMatcher)
-        } catch (error: Throwable) {
+        } catch (_: Throwable) {
         }
 
         return (provideItem(
