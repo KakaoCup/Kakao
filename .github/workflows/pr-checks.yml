@@ -11,9 +11,24 @@ jobs:
         with:
           distribution: "temurin"
           java-version: 17
+          cache: gradle
       - name: detekt
         run: |
           ./gradlew clean detekt
+      - name: Upload Detekt Artifacts
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: detektArtifacts
+          path: build/reports/detekt
+      - name: Danger
+        uses: danger/kotlin@1.3.1
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+           dangerfile: ".danger/pr_detekt.df.kts"
+           args: "--failOnErrors --no-publish-check"
 
   assemble-debug-apk:
     needs: [ detekt ]
@@ -26,6 +41,7 @@ jobs:
         with:
           distribution: "temurin"
           java-version: 17
+          cache: gradle
       - name: Assemble Debug APK
         run: bash ./gradlew sample:assembleDebug
       - name: Upload app APK
@@ -45,6 +61,7 @@ jobs:
         with:
           distribution: "temurin"
           java-version: 17
+          cache: gradle
       - name: Assemble Instrumental APK
         run: bash ./gradlew sample:assembleDebugAndroidTest
       - name: Upload app APK
