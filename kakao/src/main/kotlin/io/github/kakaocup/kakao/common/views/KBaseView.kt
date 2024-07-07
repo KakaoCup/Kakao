@@ -30,8 +30,8 @@ import org.hamcrest.Matchers
  * @param T Type of your custom view. Needs to be defined to enable invoke() and perform() for descendants
  */
 @KakaoDslMarker
-open class KBaseView<T> : KDSLView<T>, BaseActions, BaseAssertions, Interceptable<ViewInteraction, ViewAssertion, ViewAction> {
-    override val view: ViewInteractionDelegate
+abstract class KBaseView<T> : KDSLView<T>, BaseActions, BaseAssertions, Interceptable<ViewInteraction, ViewAssertion, ViewAction> {
+    final override val view: ViewInteractionDelegate
     override var root: Matcher<Root> = RootMatchers.DEFAULT
 
     /**
