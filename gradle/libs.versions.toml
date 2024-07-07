@@ -1,36 +1,39 @@
 [versions]
-gradle = "8.5"
+gradle = "8.8"
 jvmVersion = "17"
 
 targetSdk = "34"
 compileSdk = "34"
-minSdk = "14"
+minSdk = "21"
 
-agpVersion = "8.2.1"
-kotlinVersion = "1.9.21"
+agpVersion = "8.5.0"
+kotlinVersion = "2.0.0"
 
 dokkaVersion = "1.9.10"
-appcompatVersion = "1.6.1"
+appcompatVersion = "1.7.0"
 recyclerviewVersion = "1.3.2"
-viewPager2Version = "1.0.0"
+viewPager2Version = "1.1.0"
 swiperefreshlayoutVersion = "1.1.0"
-annotationVersion = "1.3.0"
-testRunnerVersion = "1.5.2"
-testRulesVersion = "1.5.0"
+annotationVersion = "1.6.0"
+testRunnerVersion = "1.6.1"
+testRulesVersion = "1.6.1"
 
-espressoVersion = "3.5.1"
+espressoVersion = "3.6.1"
 
 junitVersion = "4.13.2"
-junitExtVersion = "1.1.5"
+junitExtVersion = "1.2.1"
 multidexVersion = "2.0.1"
-materialVersion = "1.11.0"
+materialVersion = "1.12.0"
 
 detekt = "1.17.1"
+
+guavaVersion = "33.2.1-android"
 
 githubApiVersion = "1.318"
 
 [libraries]
 com-android-tools-build-gradle = { group = "com.android.tools.build", name = "gradle", version.ref = "agpVersion" }
+guava = { module = "com.google.guava:guava", version.ref = "guavaVersion" }
 org-jetbrains-kotlin-kotlinGradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlinVersion" }
 
 com-google-android-material = { group = "com.google.android.material", name = "material", version.ref = "materialVersion" }

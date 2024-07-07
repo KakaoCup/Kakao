@@ -7,7 +7,7 @@ import android.util.Log
 import androidx.test.espresso.UiController
 import androidx.test.espresso.action.MotionEvents
 import androidx.test.espresso.action.Swiper
-import androidx.test.espresso.core.internal.deps.guava.base.Preconditions.checkElementIndex
+import com.google.common.base.Preconditions.checkElementIndex
 
 object PreciseSwipe : Swiper {
     override fun sendSwipe(
