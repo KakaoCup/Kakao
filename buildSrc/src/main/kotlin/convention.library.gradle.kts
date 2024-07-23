@@ -3,3 +3,7 @@ plugins {
     id("convention.android-base")
     id("convention.kotlin")
 }
+
+kotlin {
+    jvmToolchain(8)
+}
