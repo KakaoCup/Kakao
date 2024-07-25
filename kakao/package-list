@@ -19,6 +19,27 @@ $dokka.location:io.github.kakaocup.kakao.check/KCheckBox///PointingToDeclaration
 $dokka.location:io.github.kakaocup.kakao.check/KCheckBox/KCheckBox/#androidx.test.espresso.DataInteraction#kotlin.Function1[io.github.kakaocup.kakao.common.builders.ViewBuilder,kotlin.Unit]/PointingToDeclaration/kakao/io.github.kakaocup.kakao.check/-k-check-box/-k-check-box.html
 $dokka.location:io.github.kakaocup.kakao.check/KCheckBox/KCheckBox/#kotlin.Function1[io.github.kakaocup.kakao.common.builders.ViewBuilder,kotlin.Unit]/PointingToDeclaration/kakao/io.github.kakaocup.kakao.check/-k-check-box/-k-check-box.html
 $dokka.location:io.github.kakaocup.kakao.check/KCheckBox/KCheckBox/#org.hamcrest.Matcher[android.view.View]#kotlin.Function1[io.github.kakaocup.kakao.common.builders.ViewBuilder,kotlin.Unit]/PointingToDeclaration/kakao/io.github.kakaocup.kakao.check/-k-check-box/-k-check-box.html
+$dokka.location:io.github.kakaocup.kakao.chip////PointingToDeclaration/kakao/io.github.kakaocup.kakao.chip/index.html
+$dokka.location:io.github.kakaocup.kakao.chip/ChipAssertions///PointingToDeclaration/kakao/io.github.kakaocup.kakao.chip/-chip-assertions/index.html
+$dokka.location:io.github.kakaocup.kakao.chip/ChipAssertions/hasCheckedIcon/#kotlin.Int#android.graphics.drawable.Drawable?#kotlin.Int?#kotlin.Function1[android.graphics.drawable.Drawable,android.graphics.Bitmap]?/PointingToDeclaration/kakao/io.github.kakaocup.kakao.chip/-chip-assertions/has-checked-icon.html
+$dokka.location:io.github.kakaocup.kakao.chip/ChipAssertions/hasChipIcon/#kotlin.Int#android.graphics.drawable.Drawable?#kotlin.Int?#kotlin.Function1[android.graphics.drawable.Drawable,android.graphics.Bitmap]?/PointingToDeclaration/kakao/io.github.kakaocup.kakao.chip/-chip-assertions/has-chip-icon.html
+$dokka.location:io.github.kakaocup.kakao.chip/ChipAssertions/hasCloseIcon/#kotlin.Int#android.graphics.drawable.Drawable?#kotlin.Int?#kotlin.Function1[android.graphics.drawable.Drawable,android.graphics.Bitmap]?/PointingToDeclaration/kakao/io.github.kakaocup.kakao.chip/-chip-assertions/has-close-icon.html
+$dokka.location:io.github.kakaocup.kakao.chip/ChipAssertions/hasNoIconVisible/#/PointingToDeclaration/kakao/io.github.kakaocup.kakao.chip/-chip-assertions/has-no-icon-visible.html
+$dokka.location:io.github.kakaocup.kakao.chip/ChipAssertions/verifyNoIconVisible/com.google.android.material.chip.ChipDrawable#/PointingToDeclaration/kakao/io.github.kakaocup.kakao.chip/-chip-assertions/verify-no-icon-visible.html
+$dokka.location:io.github.kakaocup.kakao.chip/ChipDrawableMatcher///PointingToDeclaration/kakao/io.github.kakaocup.kakao.chip/-chip-drawable-matcher/index.html
+$dokka.location:io.github.kakaocup.kakao.chip/ChipDrawableMatcher/ChipDrawableMatcher/#kotlin.Int#android.graphics.drawable.Drawable?#io.github.kakaocup.kakao.chip.ChipIconType#kotlin.Int?#kotlin.Function1[android.graphics.drawable.Drawable,android.graphics.Bitmap]?/PointingToDeclaration/kakao/io.github.kakaocup.kakao.chip/-chip-drawable-matcher/-chip-drawable-matcher.html
+$dokka.location:io.github.kakaocup.kakao.chip/ChipDrawableMatcher/describeTo/#org.hamcrest.Description/PointingToDeclaration/kakao/io.github.kakaocup.kakao.chip/-chip-drawable-matcher/describe-to.html
+$dokka.location:io.github.kakaocup.kakao.chip/ChipIconType.CHECKED///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}kakao/io.github.kakaocup.kakao.chip/-chip-icon-type/-c-h-e-c-k-e-d/index.html
+$dokka.location:io.github.kakaocup.kakao.chip/ChipIconType.CHIP///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}kakao/io.github.kakaocup.kakao.chip/-chip-icon-type/-c-h-i-p/index.html
+$dokka.location:io.github.kakaocup.kakao.chip/ChipIconType.CLOSE///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}kakao/io.github.kakaocup.kakao.chip/-chip-icon-type/-c-l-o-s-e/index.html
+$dokka.location:io.github.kakaocup.kakao.chip/ChipIconType///PointingToDeclaration/kakao/io.github.kakaocup.kakao.chip/-chip-icon-type/index.html
+$dokka.location:io.github.kakaocup.kakao.chip/ChipIconType/getEntries/#/PointingToDeclaration/kakao/io.github.kakaocup.kakao.chip/-chip-icon-type/get-entries.html
+$dokka.location:io.github.kakaocup.kakao.chip/ChipIconType/valueOf/#kotlin.String/PointingToDeclaration/kakao/io.github.kakaocup.kakao.chip/-chip-icon-type/value-of.html
+$dokka.location:io.github.kakaocup.kakao.chip/ChipIconType/values/#/PointingToDeclaration/kakao/io.github.kakaocup.kakao.chip/-chip-icon-type/values.html
+$dokka.location:io.github.kakaocup.kakao.chip/KChip///PointingToDeclaration/kakao/io.github.kakaocup.kakao.chip/-k-chip/index.html
+$dokka.location:io.github.kakaocup.kakao.chip/KChip/KChip/#androidx.test.espresso.DataInteraction#kotlin.Function1[io.github.kakaocup.kakao.common.builders.ViewBuilder,kotlin.Unit]/PointingToDeclaration/kakao/io.github.kakaocup.kakao.chip/-k-chip/-k-chip.html
+$dokka.location:io.github.kakaocup.kakao.chip/KChip/KChip/#kotlin.Function1[io.github.kakaocup.kakao.common.builders.ViewBuilder,kotlin.Unit]/PointingToDeclaration/kakao/io.github.kakaocup.kakao.chip/-k-chip/-k-chip.html
+$dokka.location:io.github.kakaocup.kakao.chip/KChip/KChip/#org.hamcrest.Matcher[android.view.View]#kotlin.Function1[io.github.kakaocup.kakao.common.builders.ViewBuilder,kotlin.Unit]/PointingToDeclaration/kakao/io.github.kakaocup.kakao.chip/-k-chip/-k-chip.html
 $dokka.location:io.github.kakaocup.kakao.chipgroup////PointingToDeclaration/kakao/io.github.kakaocup.kakao.chipgroup/index.html
 $dokka.location:io.github.kakaocup.kakao.chipgroup/ChipGroupActions///PointingToDeclaration/kakao/io.github.kakaocup.kakao.chipgroup/-chip-group-actions/index.html
 $dokka.location:io.github.kakaocup.kakao.chipgroup/ChipGroupActions/selectChip/#kotlin.Int/PointingToDeclaration/kakao/io.github.kakaocup.kakao.chipgroup/-chip-group-actions/select-chip.html
@@ -1028,6 +1049,7 @@ $dokka.location:io.github.kakaocup.kakao/Kakao/setSingleClickAction/#io.github.k
 io.github.kakaocup.kakao
 io.github.kakaocup.kakao.bottomnav
 io.github.kakaocup.kakao.check
+io.github.kakaocup.kakao.chip
 io.github.kakaocup.kakao.chipgroup
 io.github.kakaocup.kakao.common
 io.github.kakaocup.kakao.common.actions
