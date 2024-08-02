@@ -7,7 +7,6 @@ import android.util.Log
 import androidx.test.espresso.UiController
 import androidx.test.espresso.action.MotionEvents
 import androidx.test.espresso.action.Swiper
-import com.google.common.base.Preconditions.checkElementIndex
 
 object PreciseSwipe : Swiper {
     override fun sendSwipe(
@@ -53,8 +52,8 @@ object PreciseSwipe : Swiper {
     }
 
     private fun interpolate(start: FloatArray, end: FloatArray, steps: Int): Array<FloatArray> {
-        checkElementIndex(1, start.size)
-        checkElementIndex(1, end.size)
+        require(1 in start.indices)
+        require(1 in end.indices)
 
         val res = Array(steps) { FloatArray(2) }
 
