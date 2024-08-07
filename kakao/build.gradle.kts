@@ -24,8 +24,6 @@ dependencies {
 
     implementation(libs.androidx.multidex.multidex)
 
-    implementation(libs.guava)
-
     dokkaHtmlPlugin(libs.org.jetbrains.dokka.kotlinAsJavaPlugin)
 }
 

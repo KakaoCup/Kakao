@@ -27,13 +27,10 @@ materialVersion = "1.12.0"
 
 detekt = "1.17.1"
 
-guavaVersion = "33.2.1-android"
-
 githubApiVersion = "1.318"
 
 [libraries]
 com-android-tools-build-gradle = { group = "com.android.tools.build", name = "gradle", version.ref = "agpVersion" }
-guava = { module = "com.google.guava:guava", version.ref = "guavaVersion" }
 org-jetbrains-kotlin-kotlinGradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlinVersion" }
 
 com-google-android-material = { group = "com.google.android.material", name = "material", version.ref = "materialVersion" }
