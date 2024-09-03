@@ -81,7 +81,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Download APKs
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v4.1.7
         with:
           name: apk
       - name: Run tests on Firebase Test Lab for API ${{ matrix.api }}
