@@ -3,6 +3,7 @@
 package io.github.kakaocup.kakao.recycler
 
 import android.view.View
+import androidx.annotation.CheckResult
 import androidx.test.espresso.DataInteraction
 import androidx.test.espresso.Espresso
 import androidx.test.espresso.Root
@@ -155,6 +156,7 @@ class KRecyclerView : RecyclerActions, BaseAssertions, RecyclerAdapterAssertions
      * @param childMatcher Matcher for item in adapter
      * @return Item with type T. To make actions/assertions on it immediately, use perform() infix function.
      */
+    @CheckResult
     inline fun <reified T : KRecyclerItem<*>> childWith(noinline childMatcher: ViewBuilder.() -> Unit): T {
         val provideItem = itemTypes.getOrElse(T::class) {
             throw IllegalStateException("${T::class.java.simpleName} did not register to KRecyclerView")
