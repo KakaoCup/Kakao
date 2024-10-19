@@ -45,9 +45,9 @@ jobs:
       - name: Assemble Debug APK
         run: bash ./gradlew sample:assembleDebug
       - name: Upload app APK
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
-          name: apk
+          name: debug-apk
           path: sample/build/outputs/apk/debug/sample-debug.apk
 
   assemble-debug-android-test-apk:
@@ -65,9 +65,9 @@ jobs:
       - name: Assemble Instrumental APK
         run: bash ./gradlew sample:assembleDebugAndroidTest
       - name: Upload app APK
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
-          name: apk
+          name: test-apk
           path: sample/build/outputs/apk/androidTest/debug/sample-debug-androidTest.apk
 
   firebase-lab-test:
@@ -80,16 +80,20 @@ jobs:
         api: [ 26, 27, 28, 29, 30, 31, 32, 33 ]
     steps:
       - uses: actions/checkout@v1
-      - name: Download APKs
-        uses: actions/download-artifact@v1
+      - name: Download Debug APK
+        uses: actions/download-artifact@v4
         with:
-          name: apk
+          name: debug-apk
+      - name: Download Test APK
+        uses: actions/download-artifact@v4
+        with:
+          name: test-apk
       - name: Run tests on Firebase Test Lab for API ${{ matrix.api }}
         uses: vacxe/firebase-test-lab-action@0.0.6
         with:
           service-account: ${{ secrets.FIREBASE_TESTLAB_JSON }}
-          app: apk/sample-debug.apk
-          test: apk/sample-debug-androidTest.apk
+          app: sample-debug.apk
+          test: sample-debug-androidTest.apk
           device-id: MediumPhone.arm
           os-version-id: ${{ matrix.api }}
           num-flaky-test-attempts: 4
