@@ -3,15 +3,12 @@
 package io.github.kakaocup.kakao.common.assertions
 
 import android.os.Build
-import android.view.View
-import android.widget.TextView
 import androidx.annotation.ColorRes
 import androidx.annotation.RequiresApi
 import androidx.test.espresso.Root
 import androidx.test.espresso.ViewAssertion
 import androidx.test.espresso.assertion.PositionAssertions
 import androidx.test.espresso.assertion.ViewAssertions
-import androidx.test.espresso.matcher.BoundedMatcher
 import androidx.test.espresso.matcher.ViewMatchers
 import io.github.kakaocup.kakao.common.builders.RootBuilder
 import io.github.kakaocup.kakao.common.builders.ViewBuilder
@@ -23,7 +20,6 @@ import io.github.kakaocup.kakao.common.matchers.ForceDarkAllowedViewMatcher
 import io.github.kakaocup.kakao.common.matchers.HapticFeedbackEnabledMatcher
 import io.github.kakaocup.kakao.common.matchers.HoveredViewMatcher
 import io.github.kakaocup.kakao.delegate.ViewInteractionDelegate
-import org.hamcrest.Description
 import org.hamcrest.Matcher
 import org.hamcrest.Matchers
 
@@ -450,6 +446,15 @@ interface BaseAssertions {
     }
 
     /**
+     * Checks if the view is not activated
+     */
+    fun isDeactivated() {
+        view.check(
+            ViewAssertions.matches(Matchers.not(ActivatedViewMatcher()))
+        )
+    }
+
+    /**
      * Checks if the view is dirty
      */
     fun isDirty() {
@@ -493,6 +498,17 @@ interface BaseAssertions {
     fun isAutoHandwritingEnabled() {
         view.check(
             ViewAssertions.matches(AutoHandwritingEnabledMatcher())
+        )
+    }
+
+    /**
+     * Checks if the view has given alpha value
+     *
+     * @param alpha Alpha value to be matched
+     */
+    fun hasAlpha(alpha: Float) {
+        view.check(
+            ViewAssertions.matches(ViewMatchers.withAlpha(alpha))
         )
     }
 }
