@@ -1,13 +1,13 @@
 [versions]
-gradle = "8.8"
+gradle = "8.10.2"
 jvmVersion = "8"
 
 targetSdk = "34"
 compileSdk = "34"
 minSdk = "21"
 
-agpVersion = "8.5.0"
-kotlinVersion = "2.0.0"
+agpVersion = "8.5.2"
+kotlinVersion = "2.0.21"
 
 dokkaVersion = "1.9.20"
 appcompatVersion = "1.7.0"
@@ -15,7 +15,7 @@ recyclerviewVersion = "1.3.2"
 viewPager2Version = "1.1.0"
 swiperefreshlayoutVersion = "1.1.0"
 annotationVersion = "1.6.0"
-testRunnerVersion = "1.6.1"
+testRunnerVersion = "1.6.2"
 testRulesVersion = "1.6.1"
 
 espressoVersion = "3.6.1"
