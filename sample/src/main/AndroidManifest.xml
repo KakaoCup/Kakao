@@ -132,6 +132,10 @@
         android:name="io.github.kakaocup.sample.ChipsActivity"
         android:label="Chips Activity"
         android:theme="@style/MaterialAppTheme" />
+    <activity android:name=".EmptyImageViewActivity"
+        android:label="Empty ImageView Activity"
+        android:theme="@style/MaterialAppTheme"
+        />
   </application>
 
 </manifest>
