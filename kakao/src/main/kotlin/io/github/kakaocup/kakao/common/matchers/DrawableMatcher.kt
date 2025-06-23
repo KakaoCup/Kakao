@@ -63,11 +63,13 @@ class DrawableMatcher(
                 }
             }
 
-            if (expectedDrawable == null) {
-                return false
+            val actualDrawable: Drawable? = (imageView as ImageView).drawable
+
+            if (expectedDrawable == null || actualDrawable == null) {
+                return expectedDrawable == actualDrawable
             }
 
-            val convertDrawable = (imageView as ImageView).drawable.mutate()
+            val convertDrawable = actualDrawable.mutate()
             val bitmap = toBitmap?.invoke(convertDrawable) ?: convertDrawable.toBitmap()
 
             val otherBitmap = toBitmap?.invoke(expectedDrawable) ?: expectedDrawable.toBitmap()
