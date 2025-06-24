@@ -17,7 +17,6 @@ class EmptyDrawableMatcherTest {
     val rule = ActivityScenarioRule(EmptyImageViewActivity::class.java)
 
     @Test
-    @Ignore("DrawableMatcher needs to be fixed")
     fun test() {
         Screen.onScreen<EmptyImageViewScreen> {
             imageViewWithDrawable.isVisible()
