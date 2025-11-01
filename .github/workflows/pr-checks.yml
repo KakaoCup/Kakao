@@ -77,7 +77,11 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
+<<<<<<< Updated upstream
         api: [ 26, 27, 28, 29, 30, 31, 32, 33 ]
+=======
+        api: [ 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36: ]
+>>>>>>> Stashed changes
     steps:
       - uses: actions/checkout@v1
       - name: Download Debug APK
