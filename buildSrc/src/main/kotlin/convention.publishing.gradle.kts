@@ -55,7 +55,7 @@ configure<PublishingExtension> {
     repositories {
         maven {
             name = "Local"
-            setUrl("${project.rootDir}/build/repository")
+            setUrl(project.layout.buildDirectory.dir("repository"))
         }
         maven {
             name = "OSSHR"
@@ -97,6 +97,19 @@ if (!passphrase.isNullOrBlank()) {
     project.extra.set("signing.keyId", "0110979F")
     project.extra.set("signing.password", passphrase)
     project.extra.set("signing.secretKeyRingFile", "${project.rootProject.rootDir}/buildsystem/secring.gpg")
+}
+
+tasks.register<Zip>("bundleForCentralSigned") {
+    from(project.layout.buildDirectory.dir("repository")) {
+        include("**/*")
+    }
+
+    archiveFileName.set("${project.name}-signed.zip")
+    destinationDirectory.set(layout.buildDirectory.dir("central-bundles"))
+
+    doLast {
+        println("✓ Signed bundle ready: ${archiveFile.get().asFile.absolutePath}")
+    }
 }
 
 fun readVersion(): String {
