@@ -138,4 +138,13 @@ class TextViewTest {
             textViewWithMultipleSpanDrawable.hasDrawableSpanWithTint(spanIndex = 1, drawable = drawable, tintColorId = R.color.red)
         }
     }
+
+    @Test
+    fun testContainsTextInTextView() {
+        Screen.onScreen<TextScreen> {
+            textViewMultipleClickableSpans.scrollTo()
+            textViewMultipleClickableSpans.containsText("First span")
+            textViewMultipleClickableSpans.notContainsText("Hello world")
+        }
+    }
 }
