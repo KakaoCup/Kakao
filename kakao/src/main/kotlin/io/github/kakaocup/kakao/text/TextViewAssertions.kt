@@ -152,6 +152,21 @@ interface TextViewAssertions : BaseAssertions {
     }
 
     /**
+     * Checks if the view does not contain given text
+     *
+     * @param text Text to be searched
+     */
+    fun notContainsText(text: String) {
+        view.check(
+            ViewAssertions.matches(
+                CoreMatchers.not(
+                    ViewMatchers.withText(Matchers.containsString(text))
+                )
+            )
+        )
+    }
+
+    /**
      * Checks if the view text start with given substring
      *
      * @param text Text to be searched

@@ -162,12 +162,21 @@ class ViewBuilder {
     }
 
     /**
-     * Matches the view which contain given text
+     * Matches the view which contains given text
      *
      * @param text Text to search
      */
     fun containsText(text: String) {
         viewMatchers.add(ViewMatchers.withText(Matchers.containsString(text)))
+    }
+
+    /**
+     * Matches the view which does not contain given text
+     *
+     * @param text Text to search
+     */
+    fun notContainsText(text: String) {
+        viewMatchers.add(CoreMatchers.not(ViewMatchers.withText(Matchers.containsString(text))))
     }
 
     /**
