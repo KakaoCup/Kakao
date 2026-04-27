@@ -19,7 +19,7 @@ class SingleTypeRecyclerTest {
         onScreen<TestRecyclerScreen> {
             recycler {
                 isVisible()
-                hasSize(5)
+                hasSize(6)
 
                 firstChild<TestRecyclerScreen.MainItem> {
                     isVisible()
@@ -47,6 +47,15 @@ class SingleTypeRecyclerTest {
                         isDisplayed()
                         hasText("Title 2")
                     }
+                }
+
+                childWith<TestRecyclerScreen.MainItem> {
+                    withDescendant {
+                        notContainsText("Pre")
+                        containsText("Final Title")
+                    }
+                } perform {
+                    isDisplayed()
                 }
             }
         }

@@ -14,6 +14,7 @@ class RecyclerAdapter : BaseDelegatesAdapter<RecyclerAdapter.ListItem>(MainItemD
 
     companion object {
         val finalItem = ListItem.TextItem("Final Title")
+        val prefinalItem = ListItem.TextItem("Pre-Final Title")
         val textItems = (0..3).map { ListItem.TextItem("Title $it") }
         val checkBoxItems = (0..3).map { ListItem.CheckBoxItem("CheckBox $it") }
     }
